@@ -1,0 +1,29 @@
+
+<script>
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+console.log("in BYS kbb overlay....");
+try{			
+	var kbbTradeInValue = getUrlParameter('tradeInValue');
+	// window.parent.$(".modalKBBCloseButton" ).trigger( "click" );
+	console.log("after triggering th clickbutton... upating trade in value with: "+kbbTradeInValue);
+	//Updating both Lease and Purchase trade in values.
+	window.parent.document.getElementById("tradein").value = kbbTradeInValue;
+	// window.parent.$(".purchase-form #tradein").val(kbbTradeInValue);
+}catch(err){
+	console.log('Error in setKbbTradeInValue: '+err);
+}
+ 
+
+</script>

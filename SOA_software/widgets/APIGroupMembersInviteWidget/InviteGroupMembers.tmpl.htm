@@ -1,0 +1,36 @@
+<script id="InviteAPIGroupMembersWidgetTemplate" type="text/x-jQuery-tmpl">
+	<div class="contentHeader" id="inviteGroupMembersContentHeader">
+		<h2>Invite Group Members</h2>
+	</div>
+ 	<form id="inviteGroupMembersWidgetForm" class="contentBody">
+		 
+ 			<p>
+				<label for="inviteGroupMemberEmailText">Email<span class="required">*</span></label>
+				<textarea id="inviteGroupMemberEmailText" name="Email" class="inputHelpText"></textarea>
+			</p>
+			<p>
+				<label for="inviteGroupMemberInviteText">Add a Brief Message</label>
+				<textarea id="inviteGroupMemberInviteText" class="inputHelpText value_textbox"></textarea>
+			</p>
+			<ul class="buttons">
+				<li><button id="inviteGroupMemberCancelButton" class="button_basic">CANCEL</button></li>
+				<li><button id="inviteGroupMemberAddButton" class="action_call">Send Invite</button></li>
+			</ul>
+		 
+ 	</form>
+
+	<div id="inviteGroupMemberStatus"> <!-- TODO: make this a separate template -->
+		<div class="contentHeader">
+			<h2>Status</h2>
+		</div>
+		<div class="contentBody">
+			<p>
+				<textarea id="inviteGroupMemberStatusText" class="inviteStatusText" cols="50" rows="6" readonly="readonly"></textarea>
+			</p>
+			<ul class="buttons">
+				<li><button id="inviteGroupMemberDoneButton" class="action_call">Done</button></li>
+			</ul>
+		</div>
+	 </div>
+</script>
+

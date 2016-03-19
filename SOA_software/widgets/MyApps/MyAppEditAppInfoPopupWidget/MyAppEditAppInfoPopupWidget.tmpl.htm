@@ -1,0 +1,46 @@
+<script id="MyAppsEditAppInfoPopupTemplate" type="text/x-jQuery-tmpl">
+<div id="MyAppsEditAppInfoPopupDiv">
+<h1 class="headerPanel headerBottomBorder headerPadding">Edit App Info</h1>
+
+<div id="myAppsEditFormDiv">
+	<form name="editAppForm" id="editAppForm">
+		<table width="95%">
+			<tr>
+				<td >&nbsp;</td>
+			</tr>
+			<tr>
+				<td>App Name<span class="required">*</span></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="myAppsEditAppName" name="appname" type="text" value="${Name}" class="validate[required] formEditInput"/>
+				</td>
+			</tr>
+			<tr>
+				<td >&nbsp;</td>
+			</tr>
+			<tr>
+				<td >Description</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="myAppsEditVersionNotes" name="versionnotes" type="text" value="${Description}" class="validate formEditInput"/>
+				</td>
+			</tr>
+			<tr>
+				<td >&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="myAppEditPopupButtonRow">
+					<button id="cancelSaveApp" class="button_basic"><img alt="x" src="/resources/style/images/decline_icon.gif"> CANCEL</button> 
+					<button class="button" id="saveApp">Save <img alt="x" src="/resources/style/images/arrow_right.gif"></button>
+				</td>
+			</tr>
+		</table>
+			
+	</form>
+</div>
+
+
+</div>
+</script>

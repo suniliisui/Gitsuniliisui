@@ -1,0 +1,26 @@
+<h1 ng-if="utils.isBysApp()" class="page-title">CHOOSE A MODEL TO START BUILDING</h1>
+<h1 ng-if="utils.isInvApp()" class="page-title">CHOOSE A MODEL TO SEARCH INVENTORY</h1>
+<h1 ng-if="utils.isPesApp()" class="page-title">CHOOSE A MODEL</h1>
+
+<div class="row" ng-if="availableSeries">
+	<div ng-if="!utils.isPesApp()" ng-init="utils.omnitureFireTag('792.43')"></div>
+	<a ng-repeat="serie in availableSeries | orderObjectBy:'startingMSRPInt'" ng-click="$event.stopPropagation(); utils.omnitureFireTag('792.45', {model:serie.title}); selectSeries($event, serie)" class="model col-xs-12 col-sm-5 col-md-4 row">
+		<div class="col-xs-8 col-md-12">
+			<img ng-src="../bys-content/img/car-images/fpo_select_{{serie.title}}.png" class="img-responsive" />
+		</div>
+		<div class="col-xs-4 col-md-12">
+			<h3>{{serie.title}}</h3>
+			<!-- Removed per Hitachi's request
+			<p>
+				<span ng-if="(!serie.startingMSRPDisclaimer || utils.isDeviceDesktop())">{{serie.startingMSRP}}</span>
+				<span ng-if="(serie.startingMSRPDisclaimer && !utils.isDeviceDesktop())" ng-init="initDisclaimers([serie.startingMSRPDisclaimer], true)" ng-controller="CommonController" ng-click="$event.stopPropagation(); disclaimerModal(disclaimers[0].index, disclaimers[0].static, $event)">{{serie.startingMSRP}}</span>
+				<small>
+					<span ng-if="(!serie.startingMSRPDisclaimer || utils.isDeviceDesktop())">{{serie.transmissionText}} MSRP</span>
+					<span ng-if="(serie.startingMSRPDisclaimer && !utils.isDeviceDesktop())" ng-init="initDisclaimers([serie.startingMSRPDisclaimer], true)" ng-controller="CommonController" ng-click="$event.stopPropagation(); disclaimerModal(disclaimers[0].index, disclaimers[0].static, $event)">{{serie.transmissionText}} MSRP</span>
+					<sup ng-if="serie.startingMSRPDisclaimer" ng-init="initDisclaimers([serie.startingMSRPDisclaimer], true)" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+				</small>
+			</p>
+			-->
+		</div>
+	</a>
+</div>

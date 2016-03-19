@@ -1,0 +1,26 @@
+<script id="MyAppsCertificatePopupTemplate" type="text/x-jQuery-tmpl">
+	<div id="MyAppsCertificatePopup" class="contentHeader">
+		<h2>${title}</h2>
+	</div>
+ 
+<div  class="cwrap">
+ 	<form id="myAppsCertForm"  class="contentBody" enctype="multipart/form-data" method="POST" target="cert_upload_iframe">
+		<p>
+			${intro}
+		</p>
+		<div class="clearthis">
+			<div  id="uploadContainer">
+				<button id="invokeFile" class="action_call">CHOOSE FILE</button>
+				<input id="myAppsCertFile" size="56" type="file" name="Certificate">
+			</div>
+			<span class="selectedCertFile">no file selected</span>
+		</div>
+		<ul class="buttons">
+			<li><button type="button" id="myAppsCertCancel" class="button_basic">CANCEL</button></li>
+			<li><button id="myAppsCertSave" type="submit" class="action_call">SAVE</button></li>
+		</ul>
+		<div id="myAppsCertResultsTarget"></div>
+  	</form>
+	<iframe src="/resources/global/upload.html?dynamic=true" class="upload_iframe" id="cert_upload_iframe" name="cert_upload_iframe" style="visibility:hidden;display:none"/>
+</div>
+</script>

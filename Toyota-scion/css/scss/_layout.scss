@@ -1,0 +1,799 @@
+html, body {
+	height: 100%;
+}
+body[ng-app="invApp"] {
+	.background {
+		background-color: #004090;
+		@include gradient-radial(#505050, #272727);
+    }
+}
+body[ng-app="bysApp"], body.pesClass, div[ng-app="pesApp"] {
+	.background {
+		background-color: #3f3f3f;
+    }
+}
+body[ng-app="bysApp"], body[ng-app="invApp"], body[ng-app="regApp"], body.pesClass, div[ng-app="pesApp"] {
+	.mainContainer {
+	  a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+		min-height: 100%;
+		position: relative;
+        &.model, &.series{
+            min-height: 0;
+        }
+	}
+  .model-wrapper .row{
+      padding-bottom:30px;
+  }
+  a, button, .btn {
+    outline: none;
+    &:active, &:focus { outline: none; }
+  }
+	.background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.mainContainer.model > div,
+	.mainContainer.series > div {
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	}
+	.mainContainer.model > div,
+	.mainContainer.series > div,
+	.mainContainer.summary > div {
+		&:before {
+		    content:'';
+		    float: left;
+		    height: 100%;
+		}
+	}
+	header.page-header {
+		margin: 0 10%;
+		padding: 15px 0;
+		border-bottom: 1px solid #606060;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+		> * {
+			display: inline-block;
+		}
+		.model-name {
+			color: #fff;
+			font: 500 26px/24px "DINPro";
+			display: inline-block;
+			img {
+				vertical-align: baseline;
+				margin: 0 5px;
+			}
+		}
+		.breadcrumbs {
+			float: left;
+			p {
+				margin: 0 0 0 10px;
+				padding: 0;
+				font: 300 26px/28px "DINPro";
+				background: transparent;
+				color: #fff;
+				display: inline-block;
+				span {
+					vertical-align: middle;
+					display: inline-block;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+			p:after {
+				content: "";
+				background: url(#{$imgPath}/sprite.png) no-repeat 0 0;
+				height: 23px;
+				width: 13px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 10px;
+			}
+			p:last-child:after {
+				display: none;
+			}
+		}
+	}
+	.zipcode {
+		float: right;
+		.form-group {
+			margin: 0;
+		}
+		.form-group > * {
+			display: inline-block;
+		}
+		label {
+			font: 500 12px/24px "DINPro";
+			color: rgba(255,255,255,0.3);
+			text-transform: uppercase;
+			margin: 0 10px 0 0;
+		}
+		p {
+			font: 500 16px/24px "DINPro";
+			color: #fff;
+			margin: 0;
+			/* &:before {
+				content: "";
+				background: url(#{$imgPath}/sprite.png) no-repeat -53px 0px;
+				height: 24px;
+				width: 12px;
+				display: inline-block;
+				margin-right: 3px;
+				vertical-align: top;
+                -webkit-filter: brightness(0) invert(1);
+			} */
+		}
+		&.light p,
+		&.light a {
+			color: #333;
+		}
+		.fa-map-marker {
+			position: relative;
+			top: -1px;
+			right: 5px;
+			font-size: 14px;
+		}
+		a {
+			font: 500 12px/22px "DINPro";
+			color: #9d9d9d;
+			text-transform: uppercase;
+			vertical-align: top;
+			padding: 0 5px;
+		}
+	}
+
+	h1.page-title {
+		font: 700 44px/46px "DINPro";
+		color: #333333;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 30px 0;
+		&.light {
+			color: #fff;
+
+		}
+	}
+
+	header.model-header,
+	header.summary-header {
+		padding: 45px 0 35px;
+		.header-top {
+			border-bottom: 1px solid #6a6a6a;
+			padding-bottom: 20px;
+			display: block;
+			overflow: hidden;
+		}
+		h2 {
+			font: 700 44px/46px "DINPro";
+			text-align: center;
+			text-transform: uppercase;
+			display: block;
+			margin: 30px 0;
+			color: #fff;
+		}
+		p.lead {
+			font: 400 16px/18px "DINPro";
+			color: #f2f2f2;
+			text-align: center;
+			margin: 0;
+			display: block;
+		}
+		.zipcode {
+			.form-group {
+				margin: 0;
+			}
+		}
+	}
+	section.summary-content,
+	section.model-content {
+		text-align: center;
+		background-color: #e9e9e9;
+		padding: 0 15%;
+		&:after {
+		    content:'';
+		    display: block;
+		    clear: both;
+		}
+	}
+	section.page-content {
+		padding: 15px 10% 0;
+	}
+      .padding-none{
+            padding-left:0 !important;
+            padding-right:0 !important;
+        }
+	.price-summary {
+		margin-left: 20%;
+		padding-left: 23px;
+		height: 84px;
+		.nav-pills {
+			float: left;
+			width: 24%;
+			> li > a {
+				font: 700 12px/40px "DINPro";
+				color: rgba(102,102,102,0.5);
+				border: 1px solid transparent;
+				border-right: 1px solid #e5e3e3;
+				padding: 0;
+				border-radius: 0;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			> li.active > a {
+				color: #666666;
+				background-color: #f2f2f2;
+				border: 1px solid #e5e3e3;
+				border-right: 0;
+				border-radius: 5px 0 0 5px;
+			}
+			> li + li {
+				margin-top: 0;
+			}
+		}
+		.tab-content {
+			float: left;
+			width: 76%;
+			height: 84px;
+			border: 1px solid #e5e3e3;
+			border-left: 0;
+			border-radius: 0 5px 5px 0;
+			background-color: #f2f2f2;
+			.tab-pane {
+				padding: 10px 0 15px 2%;
+			}
+			.row {
+				margin: 0;
+				> * {
+				    padding: 0 13px;
+				}
+			}
+			h2 {
+				text-align: left;
+				font-size: 30px;
+				line-height: 32px;
+				small {
+					text-align: left;
+					font-size: 10px;
+					color: rgba(84,84,84,0.6);
+				}
+			}
+		}
+	}
+	footer.page-footer {
+		background: #fff;
+		padding: 8px 90px;
+		height: 100px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 1020;
+		.total-price {
+			float: left;
+			width: 20%;
+			height: 84px;
+			border-right: 1px solid #dddddd;
+			padding-top: 20px;
+		}
+		.dealer-info {
+			height: 84px;
+			line-height: 84px;
+			float: left;
+			width: 40%;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 0;
+			&:first-child {
+				border-right: 1px solid rgba(171,171,171,0.4);
+				width: 60%;
+				padding-left: 0;
+			}
+			> * {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 5px;
+				width: 50%;
+			}
+			.note {
+				margin: 0;
+				color: rgba(95,94,94,0.8);
+				font: 400 13px/15px "DINPro";
+			}
+			.info-text {
+				text-transform: uppercase;
+			}
+			.ppp-info {
+				width: 50%;
+				p {
+					line-height: 84px;
+				}
+			}
+			.customize-payments-trigger {
+				width: 50%;
+				text-align: center;
+				span {
+					text-align: left;
+				}
+			}
+			.btn {
+				font-size: 0.7vw;
+			}
+		}
+	}
+
+	&[class^="configure"] footer#bys-footer {
+		margin-bottom: 100px;
+	}
+
+	.modal-header {
+		overflow: hidden;
+		.close i {
+			font-size: 40px;
+		}
+	}
+	.zipcodeModal {
+		text-align: center;
+		p {
+			font: 400 16px/18px "DINPro";
+			margin-top: 15px;
+		}
+		form {
+			margin-top: 60px;
+		}
+		.form-group {
+			width: 200px;
+			margin-right: 10px;
+		}
+		input {
+			font: 500 14px/58px "DINPro";
+			color: #333333;
+			height: 60px;
+			&::-ms-clear {
+			    display: none;
+			}
+			&::-webkit-inner-spin-button,
+			&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+			}
+		}
+		.btn {
+			line-height: 60px;
+			width: 76px;
+			height: 60px;
+		}
+	}
+
+	.modalDisclaimer {
+		.modal-dialog {
+			position: fixed;
+			height: 96vh;
+			width: auto;
+			margin: 2vh 5%;
+			padding: 0px;
+		}
+		.modal-content {
+			z-index: 1100;
+		    top: 0px;
+		    left: 0px;
+		    height: auto;
+		    width: 100%;
+		    margin: 0px;
+		    padding: 5px 0px;
+		    border: 0;
+		    border-radius: 5px;
+		    background: #fff;
+		    overflow: hidden !important;
+			.modal-header {
+				z-index: 1101;
+				position: absolute;
+				height: auto;
+				width: 100%;
+				min-height: 1%;
+				margin: 0px;
+				border: 0;
+				.close {
+					z-index: 1102;
+					position: relative;
+					top: 2px;
+					right: 13px;
+					&:active, &:focus {
+						background-color: #ccc;
+						border-radius: 5px;
+					}
+				}
+				h3 {
+		    		margin: 0;
+		    		line-height: 8vh;
+		    	}
+		    }
+		    .modal-body {
+				height: 100%;
+		    	padding: 0 0 0 0 !important;
+                margin-top: 7%;
+		    }
+			.modal-footer {
+				position: relative;
+				height: 1vh;
+				padding: 0;
+				border-bottom-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+				border: 0;
+			}
+
+		}
+		.disclaimer-list {
+			counter-reset: disclaimer-counter;
+			list-style: none;
+			padding: 0;
+			position: relative;
+	    	height: 85vh;
+	    	width: 100%;
+	    	padding: 0;
+	    	margin: 12vh 0 0;
+			overflow-y: scroll;
+			li {
+				font: 500 20px/24px "DINPro";
+				color: #999999;
+				position: relative;
+				top: 0;
+				margin: 0 60px;
+				li {
+					margin: 0;
+					padding: 5px 0px;
+					list-style: none;
+					text-indent: 0;
+				}
+				&:first-child {
+					margin-top: 3vh;
+				}
+				&.active, &:focus, &:active {
+					color: #333333;
+					background: #e6e6e6;
+					&:before {
+						color: #333333;
+					}
+				}
+				&:before {
+					font: 500 60px/60px "DINCondensed";
+					color: rgba(51,51,51,0.2);
+					position: absolute;
+					top: 20px;
+					left: 100px;
+				}
+			}
+			> li {
+				padding: 25px 100px 25px 170px;
+				&:before {
+					content: counter(disclaimer-counter);
+					counter-increment: disclaimer-counter;
+				}
+			}
+		}
+	}
+
+	.error-modal {
+		.modalImages img {
+			margin: 10px auto;
+		}
+		.accessoryCarousel {
+			position: relative;
+			.message {
+				display: none;
+				&.active {
+					display: block;
+				}
+			}
+		}
+		.accessory-prev,
+		.accessory-next {
+			position: absolute;
+			top: 50%;
+			font-size: 30px;
+			color: #333;
+			margin-top: -20px;
+			padding: 5px 10px;
+		}
+		.accessory-prev {
+			left: 10%;
+		}
+		.accessory-next {
+			right: 10%;
+		}
+	}
+
+	.calculated-modal.modal-header {
+		padding-bottom: 0;
+	}
+
+	/* Helpers */
+	  a:hover{
+      cursor: pointer;
+    }
+    .modal-content{
+      sup{
+        a{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+	.nav, .pagination, .panel-title a { cursor: pointer; }
+	h4 sup {
+		font-size: .5em;
+		top: -0.75em;
+	}
+	sup {
+		font-size: .75em;
+		cursor: pointer;
+	}
+	sup a {
+		color: inherit;
+	}
+	.info {
+		background: url(#{$imgPath}/sprite.png) no-repeat -183px -3px;
+		width: 21px;
+		height: 21px;
+		display: inline-block;
+	}
+	.alert-info {
+		background-color: rgba(0,0,0,0.3);
+		padding: 18px 26px;
+		font: 400 18px/18px "DINPro";
+		color: #fff;
+		border: 0;
+	}
+	.nocap {
+		text-transform: none;
+	}
+	.clear {
+		clear: both;
+	}
+	.img-placeholder {
+		margin-top: 70%;
+	}
+	.upscale {
+		width: 100%;
+	}
+	.upscale-height {
+		height: 100%;
+	}
+	.group-inline {
+		@include pie-clearfix();
+		> label {
+			display: block;
+		}
+		.form-group {
+			float: left;
+		}
+	}
+	footer#bys-footer {
+		overflow: hidden;
+	}
+}
+
+// OVERRRIDES
+.close {
+  @include opacity(.4);
+  &:hover, &:focus { @include opacity(.65); }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+	body[ng-app="bysApp"], body[ng-app="invApp"], body[ng-app="regApp"], body.pesClass, div[ng-app="pesApp"] {
+		header.page-header {
+			margin: 0 20px;
+			padding: 10px 0;
+			&.model-header,
+			&.summary-header {
+				padding: 0;
+				.header-top {
+					padding: 12px 0;
+				}
+				.header-bottom {
+					padding-top: 12px;
+				}
+			}
+			.breadcrumbs p {
+				font-size: 5.5vw;
+				line-height: 6vw;
+				margin-left: 5px;
+				vertical-align: middle;
+				span {
+					vertical-align: middle;
+				}
+				&:after {
+					margin-left: 5px;
+				}
+			}
+		}
+		section.page-content {
+			padding: 0 20px;
+		}
+		h1.page-title {
+			font-size: 30px;
+			line-height: 30px;
+		}
+		.mainContainer.model > div,
+		.mainContainer.series > div {
+			position: static;
+		}
+		.zipcodeModal {
+			form.form-inline {
+				margin-top: 35px;
+				.form-group {
+					display: inline-block;
+					margin: 0 5px 0 0;
+					vertical-align: middle;
+					width: 60%;
+				}
+			}
+		}
+		.modalDisclaimer {
+			.modal-dialog {
+				margin: 5px 5%;
+			}
+		}
+		.modal-header {
+			padding: 15px 20px 0;
+			.close {
+				opacity: 1;
+			}
+			.close i {
+				font-size: 24px;
+				color: #333333;
+			}
+		}
+		.modal-body {
+			padding: 20px 20px;
+		}
+		.modal-title {
+			font-size: 20px;
+			line-height: 26px;
+			//white-space: pre;
+		}
+		.modal-full {
+			.modal-header {
+				i {
+					color: #fff;
+				}
+			}
+		}
+
+		.modal-footer {
+			padding: 20px;
+		}
+		.error-modal.modal-body {
+			.thumb {
+				margin-bottom: 20px;
+			}
+			.media-body p {
+				font-size: 14px;
+				&.price {
+					font-weight: 500;
+				}
+			}
+		}
+		.error-modal.modal-footer {
+			white-space: nowrap;
+			.btn {
+				width: 50%;
+				display: inline-block;
+			}
+		}
+		.modalDisclaimer {
+            .modal-content {
+            	.modal-header{
+					min-height: 25px;
+					max-height: 8vh;
+	                h3{
+	                    line-height: 3vh;
+	                }
+	                .close{
+	                	top: -8px;
+	                    right: 0;
+	                }
+	            }
+	            .modal-body {
+					margin-top: 80px;
+	            }
+            }
+			.disclaimer-list {
+				margin-top: 0;
+                li {
+				padding: 15px 5px;
+				font-size: 16px;
+				line-height: 18px;
+				text-indent: 30px;
+				margin: 0 20px;
+				&:before {
+					top: 8px;
+					left: 2px;
+					font: 500 30px/30px "DINCondensed";
+					width: 30px;
+					text-align: center;
+					text-indent: 0px;
+				    }
+			    }
+            }
+		}
+
+	}
+
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	body[ng-app="bysApp"], body[ng-app="invApp"], body[ng-app="regApp"], body.pesClass, div[ng-app="pesApp"] {
+		header.page-header {
+			margin: 0 30px;
+		}
+		section.page-content {
+			padding: 1px 30px;
+		}
+		.mainContainer.series > div {
+		/*	position: static; */
+		}
+		h1.page-title {
+			font-size: 35px;
+			line-height: 37px;
+		}
+		.modal-body {
+			padding: 20px 30px;
+		}
+		.modalDisclaimer {
+            .modal-content .modal-header{
+            	min-height: 14vh;
+                h3{
+                	line-height: 6vh;
+                }
+                .close{
+                	top: -8px;
+                    right: 0;
+                }
+            }
+			.disclaimer-list {
+				height: 79vh;
+                margin: 14vh 0 0 ;
+                li {
+				padding: 25px 15px 25px 65px;
+				margin: 0 30px;
+				&:before {
+					top: 20px;
+					left: 5px;
+				    }
+			    }
+            }
+        }
+	}
+}
+
+@media (min-width: $screen-md-min) {
+
+}
+
+/** IE **/
+
+body[ng-app="bysApp"], body[ng-app="invApp"], body[ng-app="regApp"], body.pesClass, div[ng-app="pesApp"] {
+
+	.browser-ie {
+		&.modalDisclaimer {
+			.modal-content {
+				.modal-header {
+					width: 90%;
+				}
+			}
+		}
+	}
+
+}

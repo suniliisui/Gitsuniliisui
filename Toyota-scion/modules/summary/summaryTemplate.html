@@ -1,0 +1,311 @@
+<header class="page-header summary-header">
+  <div class="header-top">
+    <div class="breadcrumbs">
+      <p><span>{{currentModel.year}}</span> <span>{{currentModel.seriesTitle}}</span>
+      <!-- JV::ToDo -- Comment this out until we have all the icons for series -->
+      <!-- <img ng-src="../bys-content/img/car-models/{{currentModel.series}}.png" /> --></p>
+      <p ng-if="utils.isBysApp()"><span>Summary</span></p>
+      <p ng-if="utils.isInvApp()"><span>Inventory Details</span></p>
+    </div>
+    <div ng-if="utils.isBysApp()" class="header-actions hidden-xs">
+      <button type="button" class="btn btn-default" ng-controller="CommonController" ng-click="utils.omnitureFireTag('792.22'); printModal()"><i class="icon-print"></i> Print</button>
+      <button type="button" class="btn btn-default" ng-controller="CommonController" ng-click="utils.omnitureFireTag('792.23'); emailModal()"><i class="icon-email"></i> Email</button>
+    </div>
+    <div ng-if="utils.isInvApp()" class="header-actions hidden-xs">
+      <button type="button" class="btn btn-default" ng-controller="CommonController" ng-click="utils.omnitureFireTag('798.20'); printModal()"><i class="icon-print"></i> Print</button>
+      <button type="button" class="btn btn-default" ng-controller="CommonController" ng-click="utils.omnitureFireTag('798.21'); emailModal()"><i class="icon-email"></i> Email</button>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <button ng-if="utils.isBysApp()" ng-click="utils.omnitureFireTag('792.21')" type="button" class="btn btn-default" ui-sref="configuration.transmission">
+      <i class="icon-button-back"></i>
+      <span>Edit Your</span>
+      <span class="nocap hidden-sm hidden-md hidden-lg">{{currentModel.seriesTitle | limitTo: 14}} {{currentModel.seriesTitle.length > 14 ? '&#8230;' : ''}}</span>
+    <span class="nocap hidden-xs">{{currentModel.seriesTitle}}</span>
+    </button>
+    <button ng-if="utils.isInvApp()" ng-click="utils.omnitureFireTag('798.19')" type="button" class="btn btn-default" ui-sref="inventory.results">
+      <i class="icon-button-back"></i>
+      <span>Back To Results</span>
+    </button>
+    <div ng-if="galleryCount" class="image-gallery-trigger">
+      <a ng-if="utils.isBysApp()" ng-click="utils.omnitureFireTag('792.2', {cta:'Image Gallery'}); bysApi.preloadThreedImages(); utils.omnitureFireTag('792.33')">
+        <div data-toggle="modal" data-target="#image-gallery" stop-event="touchend">
+          Image Gallery
+          <i class="gallery">
+            <span>{{galleryCount}}</span>
+          </i>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section ng-if="(bysApi && bysApi.isReady())" class="summary-content page-content">
+  <div class="content-top">
+    <div class="clearfix">
+      <div class="summary-sidebar">
+        <div class="summary-info" ng-class="{'is-exactMatch': (currentModel.exactMatch)}">
+          <div ng-if="(utils.isInvApp() && currentModel.exactMatch)" class="match-tag">
+            <span>Exact Match</span>
+          </div>
+          <div class="summary-buttons row">
+             <div class="col-xs-12 col-sm-6">
+             <button ui-sref="dealer.contact" class="btn btn-block btn-blue visible-xs visible-sm" type="button">Contact Dealer</button>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+             <button ng-if="(utils.isBysApp() && showInventoryItems)" class="btn btn-block btn-gray visible-xs visible-sm" type="button" ng-click="gotoInventory()">View Inventory Near You</button>
+           </div>
+          </div>
+          <div class="row summary-body">
+            <div class="col-sm-6 col-md-12">
+            <table class="table bys-table">
+              <tbody>
+                <tr>
+                  <td>
+                    {{currentModel.year}} {{currentModel.title}}
+                    <sup ng-init="initDisclaimers(['BYS_MSRP_BASE'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                  </td>
+                  <td>{{currentModel.msrpCurrency}}</td>
+                </tr>
+                <tr ng-if="currentModel.deliveryProcessingHandlingInt">
+                  <td>
+                    Delivery, Processing & Handling
+                    <sup ng-init="initDisclaimers(['BYS_DPH'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                  </td>
+                  <td>{{currentModel.deliveryProcessingHandlingCurrency}}</td>
+                </tr>
+                <tr ng-if="currentModel.colorsTotalInt">
+                  <td>Color - {{currentModel.colorTitle}}</td>
+                  <td>{{currentModel.colorsTotalCurrency}}</td>
+                </tr>
+                <tr ng-if="(upgradesListCount)">
+                  <td>Upgrades ({{upgradesListCount}})</td>
+                  <td>{{currentModel.upgradesTotalCurrency}}</td>
+                </tr>
+                <tr ng-if="(bysApi.isDealerPPP() && currentModel.taxesTitleFeesInt)">
+                  <td>
+                    Taxes, Titles and Fees
+                    <sup ng-init="initDisclaimers(['BYS_TAXES_FEES'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                  </td>
+                  <td>{{currentModel.taxesTitleFeesCurrency}}</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>
+                    Total MSRP
+                    <sup ng-if="!bysApi.isDealerPPP()" ng-init="initDisclaimers(['BYS_MSRP_NO_TAXES'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                    <sup ng-if="(bysApi.isDealerPPP() && paymentCalculator.paymentMethod=='lease')" ng-init="initDisclaimers(['BYS_MSRP_NO_TAXES'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                    <sup ng-if="(bysApi.isDealerPPP() && paymentCalculator.paymentMethod=='purchase')" ng-init="initDisclaimers(['BYS_MSRP_WITH_TAXES'])" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                  </td>
+                  <td>{{totalMsrpCurrency}}</td>
+                </tr>
+              </tfoot>
+            </table>
+            </div>
+            <div class="col-sm-6 col-md-12">
+            <div ng-if="showPaymentItems" class="payment-tabs">
+              <!-- Nav tabs -->
+              <ul ng-if="utils.isBysApp()" class="nav nav-tabs bys-tabs" role="tablist">
+                <li role="presentation" ng-class="{'active': (paymentCalculator.paymentMethod=='lease')}"><a ng-href="#customizeLeaseSummary" aria-controls="customizeLeaseSummary" role="tab" data-toggle="tab" ng-click="showTab($event, 'lease')">Lease</a></li>
+                <li role="presentation" ng-class="{'active': (paymentCalculator.paymentMethod=='purchase')}"><a ng-href="#customizeLeaseSummary" aria-controls="customizeLeaseSummary" role="tab" data-toggle="tab" ng-click="showTab($event, 'purchase')">Purchase</a></li>
+              </ul>
+              <ul ng-if="utils.isInvApp()" class="nav nav-tabs bys-tabs" role="tablist">
+                <li role="presentation" ng-class="{'active': (paymentCalculator.paymentMethod=='lease')}"><a ng-href="#customizeLeaseSummary" aria-controls="customizeLeaseSummary" role="tab" data-toggle="tab" ng-click="showTab($event, 'lease')">Lease</a></li>
+                <li role="presentation" ng-class="{'active': (paymentCalculator.paymentMethod=='purchase')}"><a ng-href="#customizeLeaseSummary" aria-controls="customizeLeaseSummary" role="tab" data-toggle="tab" ng-click="showTab($event, 'purchase')">Purchase</a></li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" ng-class="{'active': (paymentCalculator.paymentMethod=='lease')}" class="tab-pane" id="customizeLeaseSummary" ng-include="'../modules/summary/partials/leasepaneTemplate.html'"></div>
+                <div role="tabpanel" ng-class="{'active': (paymentCalculator.paymentMethod=='purchase')}" class="tab-pane" id="customizePurchaseSummary" ng-include="'../modules/summary/partials/purchasepaneTemplate.html'"></div>
+              </div>
+            </div>
+            <div class="summary-actions">
+
+              <div ng-if="bysApi.isDealerPPP()" class="ppp-info">
+               <div class="row">
+                <p class="img"><img ng-src="../bys-content/img/ppp-logo.png" class="img-responsive" /></p>
+                <p class="text"><span>Includes Fees, Taxes,<br> and Dealer Charges.</span></p>
+                </div>
+              </div>
+
+              <div ng-if="(!bysApi.isDealerPPP() && bysApi.getRegion()!=='SET')" class="ppp-info non-ppp">
+                <p class="text"><span>Excludes Fees, Taxes,<br> and Dealer Charges.</span></p>
+              </div>
+
+              <div ng-if="utils.isBysApp()">
+                <button ng-if="showPaymentItems" class="btn info-text" ng-controller="CommonController" ng-click="utils.omnitureFireTag('792.51'); calculatedModal(true)">How Was This Calculated</button><br>
+                <button ng-if="showPaymentItems" class="btn customize-payments-trigger customize-payments-trigger-extra-space" ng-controller="CommonController" ng-click="utils.omnitureFireTag('792.8'); customizePaymentsModal()"><i class="icon-settings"></i> <span>Estimate Payments</span></button>
+                <button type="button" class="btn btn-default visible-xs" ng-controller="CommonController" ng-click="emailModal()"><i class="fa fa-envelope"></i> Email</button>
+                <button ui-sref="dealer.contact" ng-click="utils.omnitureFireTag('792.9')" class="btn btn-block btn-blue hidden-xs hidden-sm" type="button">Contact Dealer</button>
+                <button ng-if="showInventoryItems" class="btn btn-block btn-gray hidden-xs hidden-sm" type="button" ng-click="utils.omnitureFireTag('792.24'); gotoInventory()">View Inventory Near You</button>
+              </div>
+
+              <div ng-if="utils.isInvApp()">
+                <button ng-if="showPaymentItems" class="btn info-text" ng-controller="CommonController" ng-click="utils.omnitureFireTag('798.29'); calculatedModal(true)">How Was This Calculated</button><br>
+                <button ng-if="showPaymentItems" class="btn customize-payments-trigger" ng-controller="CommonController" ng-click="utils.omnitureFireTag('798.23'); customizePaymentsModal()"><i class="icon-settings"></i> <span>Estimate Payments</span></button>
+                <button type="button" class="btn btn-default visible-xs" ng-controller="CommonController" ng-click="emailModal()"><i class="fa fa-envelope"></i> Email</button>
+                <button ui-sref="dealer.contact" ng-click="utils.omnitureFireTag('798.24')" class="btn btn-block btn-blue hidden-xs hidden-sm" type="button">Contact Dealer</button>
+              </div>
+
+              <p ng-if="(utils.isInvApp() && matchesCount)" class="matches">There are <b>{{matchesCount}} vehicles</b> like this in your area.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="summary-content">
+        <div ng-if="utils.isBysApp()" class="carImage">
+          <img ng-if="currentModel.carImagePath" ng-src="{{currentModel.carImagePath}}" class="img-responsive" data-toggle="modal" data-target="#image-gallery"/>
+        </div>
+        <div ng-if="utils.isInvApp()" class="carImage">
+          <img ng-if="currentModel.carImagePath" ng-src="{{currentModel.carImagePath}}" class="img-responsive"/>
+        </div>
+        <div class="summary-upgrades">
+          <div class="panel-group">
+            <div ng-if="selectedColor" class="panel">
+              <div class="panel-heading">
+                <a class="btn btn-panel">Color</a>
+              </div>
+              <div class="panel-collapse">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="media-stacked">
+                      <div class="media-color">
+                        <div class="media-body">
+                          <p class="title">{{selectedColor.title}}</p>
+                          <p ng-if="(selectedColor.msrpInt && utils.isBysApp())" class="media-price">{{selectedColor.msrpCurrency}}</p>
+                            <p ng-if="(!selectedColor.msrpInt && utils.isBysApp())" class="media-price">$0</p>
+                          <!--
+                          <div ng-if="(selectedColor.colorHexValue || selectedColor.hexvalue)">
+                            <div class="color-swatch">
+                              <div class="color" ng-style="{'background-color': '#' + (selectedColor.colorHexValue || selectedColor.hexvalue)}">Change this</div>
+                            </div>
+                          </div>
+                        </div>
+                        -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div ng-if="dislayIncludedList" class="panel">
+              <div class="panel-heading" ng-click="collapsePreinstalled = !collapsePreinstalled">
+                <a class="btn btn-panel">Pre-Installed [{{preinstalledListCount}}]</a>
+                <i class="icon-blue-arrow" ng-class="{right:collapsePreinstalled, down:!collapsePreinstalled}"></i>
+              </div>
+
+
+
+
+<div ui-view autoscroll="true" resizable class="">
+
+
+<div class="carousel" ng-if="!loading" ng-controller="Carousel"
+ng-swipe-right="shiftCarousel($event, 'left', (carouselPosition > 1))"
+ng-swipe-left="shiftCarousel($event, 'right', (carouselPosition < carouselCount))">
+
+	<div id="preinstalledList" class="carousel-wrapper" ng-init="(carouselCount = preinstalledAccessory.length)" >
+	<div class="panel-collapse" collapse="collapsePreinstalled">
+		<div class="row" ng-if="(preinstalledList)">
+
+			<div id="preinstalledAccessory" class="col-xs-12 col-sm-4 col-lg-3"
+				ng-repeat="preinstalledAccessory in preinstalledList | limitTo:pageSize"
+				repeat-item="preinstalledAccessory">
+				<div class="media-stacked">
+				<div ng-if="(preinstalledAccessory.thumbImage && preinstalledAccessory.thumbImage.url)" class="media-top">
+				<div class="img-placeholder">
+					<img ng-src="{{preinstalledAccessory.thumbImage.url}}" ng-alt="{{preinstalledAccessory.thumbImage.name}}"
+					class="img-responsive"/>
+				</div>
+				</div>
+				<div class="media-body">
+					<p class="description">{{preinstalledAccessory.title}}</p>
+				</div>
+				</div>
+			</div>
+
+
+		</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+</div> <!-- ui-view  -->
+
+
+
+
+            </div>
+            <div ng-if="dislayUpgradesList" class="panel">
+              <div class="panel-heading" ng-click="collapseUpgrades = !collapseUpgrades">
+                <a class="btn btn-panel">Your Upgrades ({{upgradesListCount}})</a>
+                <i class="icon-blue-arrow hidden-xs" ng-class="{right:collapseUpgrades, down:!collapseUpgrades}"></i>
+              </div>
+              <div class="panel-collapse" collapse="collapseUpgrades">
+                <div class="row added-upgrades">
+                  <div ng-repeat="upgrade in upgradesList" class="col-xs-12 col-sm-4 col-lg-3">
+                    <div class="media-stacked">
+                      <!--
+                      <div ng-if="upgrade.colorHexValue" class="media-top">
+                        <div class="img-placeholder">
+                          <div class="color-swatch">
+                            <div class="color" ng-style="{'background-color': '#' + upgrade.colorHexValue}"></div>
+                          </div>
+                        </div>
+                      </div>
+                      -->
+                      <div ng-if="(upgrade.thumbImage && upgrade.thumbImage.url)" class="media-top">
+                        <div class="img-placeholder">
+                          <img ng-src="{{upgrade.thumbImage.url}}" ng-alt="{{upgrade.thumbImage.name}}" class="img-responsive" />
+                        </div>
+                      </div>
+                      <div class="media-body">
+                        <p class="description">{{upgrade.title}}</p>
+                        <p class="price">
+                          {{upgrade.msrpCurrency}}
+                          <small>MSRP</small>
+                          <sup ng-init="initDisclaimers(upgrade.priceDisclaimerCodes)" ng-controller="CommonController" ng-include="'../modules/common/disclaimerTemplate.html'"></sup>
+                        </p>
+                      </div>
+                      <div ng-if="(utils.isBysApp() && !upgrade.isPickOne)" class="media-action">
+                        <button ng-if="upgrade.isSelected" ng-click="utils.omnitureFireTag('792.27', {product_name:upgrade.title}); clickAccessory(upgrade.code)" type="button" class="btn info-text"><span >&times; Remove</span></button>
+                        <button ng-if="!upgrade.isSelected" ng-click="clickAccessory(upgrade.code)" type="button" class="btn info-text"><span class="add">&plus; Add Back</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div ng-if="standardFeaturesListCount" class="panel">
+              <div class="panel-heading" ng-click="collapseStandard = !collapseStandard">
+                <a class="btn btn-panel">Standard Features ({{standardFeaturesListCount}})</a>
+                <i class="icon-blue-arrow hidden-xs" ng-class="{right:collapseStandard, down:!collapseStandard}"></i>
+              </div>
+              <div class="panel-collapse" collapse="collapseStandard">
+                <div class="row standard-features">
+                  <div ng-repeat="featureData in standardFeaturesList" class="col-xs-12 col-sm-6" ng-class="{clear:$index % 2 == 0}">
+                    <h4 ng-show="(utils.isBysApp() && collapseList)" ng-click="utils.omnitureFireTag('792.40', {cta:featureData.categoryName, feature:featureData.categoryName}); (collapseList = !collapseList)">{{featureData.categoryName}} <i class="visible-xs im-plus"></i></h4>
+                    <h4 ng-show="(utils.isInvApp() && collapseList)" ng-click="utils.omnitureFireTag('798.26', {cta:featureData.categoryName, feature:featureData.categoryName}); (collapseList = !collapseList)">{{featureData.categoryName}} <i class="visible-xs im-plus"></i></h4>
+                    <h4 ng-show="!collapseList" ng-click="(collapseList = !collapseList)">{{featureData.categoryName}} <i class="visible-xs im-minus"></i></h4>
+                    <ul class="list-features" collapse="collapseList">
+                      <li ng-repeat="feature in featureData.items">
+                        <span bind-html-dynamic="{{feature.descriptionWithDisclaimer}}" ng-controller="CommonController">{{feature.description}}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div ng-controller="ImageGalleryController" ng-include="'../modules/imagegallery/imagegalleryTemplate.html'"></div>

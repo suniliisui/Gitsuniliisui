@@ -1,0 +1,49 @@
+<script id="MyAppRequestAPIAvailableListTemplate" type="text/x-jQuery-tmpl">
+   {{each(index3,availableAndSelectedApi) availableAndSelectedApis}}
+	<tr>
+		<td class="apilist" style="width:55%">
+			<div class="apinamewrap">
+			<a id="showHideDesc" href="javascript:" class="showdesc"><img src="/resources/style/images/requestapi_collapsed_icon.png"></a>
+			<span id="serviceName" class="servicename" > ${availableAndSelectedApi.name} {{if availableAndSelectedApi.visibility == 'Limited'}}<image id="requestApiLockImage" valign=bottom src='/resources/style/images/DevEx_PrivateAPI_Lock_01.26.png'">{{/if}}</span> 
+			
+		</td>
+		<td style="width:32%">					
+
+			
+ 			{{if availableAndSelectedApi.apiVersions.length > 1 }}
+				<span class="versionText">Version:</span>
+				<div class="apiversiondd">
+				<select  id='apiversionsDropdown_${availableAndSelectedApi.apiDN}' class="apiversionsDropdown" name='apiversionsDropdown' apiid="${availableAndSelectedApi.apiDN}"> 				
+					{{each(index1,apiVersion) availableAndSelectedApi.apiVersions}}
+						<option appVersionId="${appVersionId}" value='${apiVersion.guid.value}' desc="${apiVersion.description}">${apiVersion.title}</option> 
+					{{/each}}
+ 				</select>
+				</div>
+			{{else}}
+				<span class="versionText">Version:</span>
+				<span value='${availableAndSelectedApi.apiVersions[0].guid.value}' desc="${availableAndSelectedApi.apiVersions[0].description}" class="serviceapiversion"> ${availableAndSelectedApi.apiVersions[0].title}</span>
+			{{/if}}
+			</div>
+  		</td>
+		<td class="apilistcheckbox">
+  			{{if availableAndSelectedApi.apiVersions.length > 1 }}
+				Add<input name="selectedList" appid="${appVersionId}" value="" apiId="${availableAndSelectedApi.apiDN}" environment="${availableAndSelectedApi.environment}" type="checkbox"/> 
+ 			{{else}}	
+				Add<input name="selectedList" appid="${appVersionId}" value="${availableAndSelectedApi.apiVersions[0].guid.value}" environment="${availableAndSelectedApi.environment}" title="${availableAndSelectedApi.apiVersions[0].title}" apiId="${availableAndSelectedApi.apiDN}" type="checkbox"/>
+	 		{{/if}}
+		</td>
+	</tr>
+	<tr class="hideapidivider">
+		<td colspan="3"><hr class="horizontalDottedRow"/></td>
+ 	</tr>
+	 
+ 	<tr class="hideDesc">
+		<td class="description" colspan="3"><span id="desc" >${availableAndSelectedApi.apiVersions[0].description} </span></td>
+ 	</tr>
+	<tr>
+		<td colspan="3"><hr class="horizontalRow"/></td>
+	</tr>
+			
+		 
+ 	{{/each}}
+ </script>

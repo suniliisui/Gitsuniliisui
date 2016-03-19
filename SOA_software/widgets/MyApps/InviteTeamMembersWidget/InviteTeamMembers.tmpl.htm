@@ -1,0 +1,37 @@
+<script id="InviteTeamMembersWidgetTemplate" type="text/x-jQuery-tmpl">
+ 	<div class="headerPanel inPopup clearthis">  
+		<div class="titleLabel noPadding">Invite Team Members</div>
+	 </div>
+	<form id="inviteTeamMembersWidgetForm" class="contentBody">
+		<div id="inviteTeamMemberForm">
+			<p>
+				<span id="inviteTeamMemberInviteTextTitle"></span>
+ 			</p>
+			<p>
+				<span id="inviteTeamMemberInviteTextLabel"></span>
+ 			</p>
+			<p>
+				<label for="inviteTeamMemberEmailText">Email </label><span class="required">*</span>
+				<textarea id="inviteTeamMemberEmailText" name="Email" class="helperText">${getDisplayValue('com.soa.atmosphere.invite.email')}</textarea>
+			</p>
+			
+			<ul class="buttons">
+				<li><button class="button_basic" id="inviteTeamMemberCancelButton">CANCEL</button></li>
+				<li><button class="action_call" id="inviteTeamMemberAddButton" class="button">Send Invite</button></li>
+			</ul>
+		</div>
+	</form>
+	<div id="inviteTeamMemberStatus"> <!-- TODO: make this a separate template -->
+		<div class="contentHeader">
+			<h2>Status</h2>
+		</div>
+		<div class="contentBody">
+			<p>	
+				<textarea id="inviteTeamMemberStatusText" class="inviteStatusText" cols="50" rows="6" readonly="readonly"></textarea>
+			</p>
+			<ul class="buttons">
+				<li><button id="inviteTeamMemberDoneButton" class="action_call">Done</button></li>
+			</ul>
+		</div>
+	</div>
+</script>

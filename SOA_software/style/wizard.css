@@ -1,0 +1,170 @@
+.wizardTab
+{
+	background-image:	url(images/circle.png);
+	color:				#2683B4;	
+	background-repeat:	no-repeat;
+	font-size:			20px;
+	font-weight:		bold;
+	text-align:			center;
+	width:				26px;
+	float:				left;
+	cursor:				pointer;
+}
+.wizardTab.wizardTabDone {
+	color: #53b84b;
+	background-image: url(images/circle_done.png);
+}
+.wizardTabTitle.wizardTabDone{
+	color: #53b84b;
+	background-image:none;
+}
+.wizardTabOn
+{
+	background-image:	url(images/circle_complete.png);
+	color:				white;
+	cursor:				pointer;
+}
+.wizardTab.wizardTabError {
+	color: #ff0000;
+	background-image: url(images/circle_error.png);
+}
+.wizardTabOn.wizardTabError {
+	color: white;
+	background-image: url(images/circle_error_on.png);
+}
+.wizardTabTitle.wizardTabError {
+	color: red;
+}
+.wizardTabDisabled {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+.wizardTabTitle
+{
+	font-size:			17px;
+	font-weight:		bold;
+	padding:			2px 12px 0px 2px;
+	color:				#2683B4;	
+	float:				left;
+	cursor:				pointer;
+}
+.wizardTitleDone {
+	color: #53b84b;
+	padding-right: 20px;
+	margin-right: 10px;
+	background: url(images/wizard_tick.gif) right 4px no-repeat;
+}
+
+.wizardContentPanel .cancelPanel
+{
+	color:				#c01e2e;
+	font-size:			24px;
+	font-weight:		bold;
+	padding:			50px;
+	text-align:			center;
+}
+
+.wizardHeadingAndTabs
+{
+    height:				20px;
+    padding:			8px 12px 12px 10px;
+}
+
+/*
+.wizardTabButtons
+{
+	float:				right;
+}
+.wizardTabBack, .wizardTabNext
+{
+	float:				right;
+	font-size:			17px;
+	font-weight:		bold;
+	color:				#fff;
+	background-color:	#2683B4;
+	margin-right:		10px;
+	padding:			2px 10px;
+	cursor:				pointer;
+}
+
+.wizardTabNext
+{
+	margin-right:		0px;
+}
+
+.wizardTabBackOff, .wizardTabNextOff
+{
+	color:				#888;
+	background-color:	#e3eef9;
+	cursor:				default;
+}
+*/
+#wizardContent {
+	padding-top: 10px;
+}
+#wizardContent:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.wizardPageContent
+{
+	float:				left;
+	display:			none;
+	margin:				10px;
+	width:				auto;
+}
+
+
+.advancedOptionsContent{
+	margin-top:			10px;
+	float:				left;
+	display:			none;
+}
+
+.wizardFooter{
+	margin: 20px 10px;
+	line-height: 19px;
+	text-align:right;
+}
+
+.wizardFooter>div{
+	float:left;
+	width:50%;
+}
+
+.wizardFooter>div.ctr_buttons_left{
+	text-align:left;
+}
+
+.wizardFooter button, .wizardFooter .button {
+	margin-left: 5px !important;
+	margin-right: 0 !important;
+}
+/*
+.wizardCancelButton, .wizardSaveButton
+{
+	background-color:	#2683B4;
+	color:				#fff;
+	font-size:			17px;
+	font-weight:		bold;	
+	border:				none;
+	height:				24px;
+	float:				right;	
+	margin-left:		10px;
+	margin-right:		10px;
+	padding:			2px 10px;
+}
+*/
+
+.wizardCW
+{
+	border:				1px solid #cfd1d2;
+	padding:			1px;
+	min-height:			0;
+}

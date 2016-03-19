@@ -1,0 +1,102 @@
+<script id="HeaderTemplate" type="text/x-jQuery-tmpl">
+	<div class="clearthis" id="top">
+		<form id="formSearch">
+			<p>
+				<input  type="text" id="searchInput" name="searchInput" autocomplete=off/>
+				<button id="submitButtonContainer" type="submit">GO</button>
+			</p>
+		</form>
+		{{if login.isUserLoggedIn()}}
+			<div id="user_menu">
+				<h5 id="user_link">
+					<a href="#{{= getUriParser('home').constructUri({"objectType" : "home", "viewName" : "personalinfodetails"})}}">
+						{{= login.userName()}}
+					</a>
+				</h5>
+				<ul>
+					<li><a href="#/home/personalinfodetails">Personal Info</a></li>
+					<li><a href="#/home/accountsettingsdetails">Account Settings</a></li>
+					<li><a href="/#/home/landing" id="menu_logout">Sign Out</a></li>
+				</ul>
+			</div>
+		{{else}}
+			<h5 id="user_link">
+				<a href="#/home/signup">
+					Sign Up/Log In
+				</a>
+			</h5>
+		{{/if}}
+	</div>
+	<div class="header_bottom clearthis">
+		<h2 class="logo_container">
+			<a href="#" id="HomeLogo" title="Go to Home Page" class="imgtxt img_logo">American Express Devexchange</a>
+		</h2>
+		<ul class="clearthis topnav">
+			{{each links }}
+				<li id="menu_parent_{{= objectType=="home"?viewName:objectType}}">
+					<a href="#{{= href}}" class="top_menu_link" id="menu_{{= objectType=="home"?viewName:objectType}}">{{= $.trim(displayName)}}</a>
+				</li>
+			{{/each}}
+		</ul>
+		{{if login.isUserLoggedIn()}}
+			<ul class="clearthis dashboard">
+				<li id="menu_parent_dashboard">
+					<a href="#/home/dashboard" id="menu_dashboard" class="clearthis top_menu_link">
+						<span>Dashboard</span>
+						<span class="menu_notifications" id="notification_display_count">0</span>	
+					</a>
+				</li>
+				<li id="menu_parent_myapps">
+					<a href="#/home/apps" id="menu_myapps" class="top_menu_link"><span>My Apps</span></a>
+				</li>
+			</ul>
+		{{/if}}
+	</div>
+</script>
+
+
+<script id="SOAPopupTemplate" type="text/x-jQuery-tmpl">
+<div id="${id}" class="soapopup ${cssClass}">
+	{{if titleBar.visible}}
+		<h2 class="titleBar">${titleBar.title}</h2>
+	{{/if}}	
+	<div class="content">{{html content}}</div>
+	<ul class="buttonBar ${buttonsBar.buttonsAlignment}Aligned">
+		{{each(i, button) buttonsBar.buttons}}
+			<li><button class="btn ${button.cssClass}" tabindex="${i}">${button.label}</button></li>
+		{{/each}}		
+	</ul>
+</div>
+</script>
+<script id="DisplayLegalsTemplate" type="text/x-jQuery-tmpl">
+<div id="legalAgreements">
+	<a>&nbsp;PREVIOUS</a>
+</div>
+<div class="selectapistext">
+	Please select the APIs you would like to use in your application.
+</div> 	
+<div  id="legalsDisplay">
+<div id="tabs">
+		<div id="pageThree">
+		<div id="contentPageThree" class="legal"></div>
+			 <div class="borderTopSolidGray">
+					<div id="agree">
+						By clicking the <b>I AGREE</b> button below, you confirm you have reviewed, understood and agree to the above Addendum.
+					</div>
+					<div id="legalPrintSaveButtons">
+						<button id="myAppsRequestAPIPrint" class="button_basic">PRINT</button> 
+						<button id="myAppsRequestAPISave" class="button_basic">SAVE</button>
+					</div>
+			</div>	</div>	
+
+</div>	
+ 
+<div id="legalsButtons" class="showFooterLinks">
+	<button id="cancelRequestAPINL" class="button_basic" >
+		CANCEL
+	</button> 
+	<button id="myAppsRequestAPIAgreeButton" name="legalsAccept" action="activateNextLegal" class="action_call">
+	</button>
+</div>	
+</div>
+</script>

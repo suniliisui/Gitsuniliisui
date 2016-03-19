@@ -1,0 +1,25 @@
+<script id="MyAppsEditVersionInfoTemplate" type="text/x-jQuery-tmpl">
+	<div class="headerPanel inPopup clearthis">  
+		<div class="titleLabel noPadding">Add New Version</div>
+	 </div>
+	<form id="MyAppsVersionInfoForm" class="contentBody gridForm">
+		<p>
+			<label for="versionid">Version ID<span class="required">*</span></label>
+			<input type="text" name="VersionId" id="versionid" class="required helperText" value="${$.i18n.prop('com.soa.atmosphere.versionid.help')}"/>
+
+		</p>
+		<p>
+			<label for="versionnotes">Version Notes</label>
+			<textarea id="versionnotes" name="VersionNotes" value="" type="text" onfocus="this.select();" autocomplete="off" class="helperText" maxlength="1024">${$.i18n.prop('com.soa.atmosphere.versionnotes.help')}</textarea>
+		</p>
+		<p>
+			<label for="editVersionInfoTags">Tags e.g: Staging, production, Version 1</label>
+			<input id="editVersionInfoTags" name="VersionTags" value="${$.i18n.prop('com.soa.atmosphere.tags.help')}" type="text" name="tags" class="helperText" autocomplete="off" />	
+		</p>
+		<ul class="buttons">
+			<li><button type="button" id="cancelVersionInfo">CANCEL</button></li>
+			<li><button class="action_call button" id="saveVersionInfo" type="submit">Save</button></li>
+		</ul>
+		
+	</form>
+</script>

@@ -1,0 +1,138 @@
+<script id="MyAppAPIManagerTemplate" type="text/x-jQuery-tmpl">
+<div id="MyAppAPIManagerDiv">	
+	<h4 id="myAppAPIHeaderPanel" class="headerPadding">
+		${jQuery.i18n.prop('com.soa.atmosphere.appmenu.apiaccess')}
+	</h4>
+	<div class="headerPadding">	
+		<span class="statusMessage">
+			${jQuery.i18n.prop('com.soa.atmosphere.apimanagement')}
+		</span>
+	</div>
+	<span class="versionTitle headerPadding">
+			{{if $data.state == 'com.soa.app.state.initial' || $data.state == 'com.soa.app.state.sandbox' }}
+				<button id="requestAPIAccess" class="button_basic">Add API</button>
+			{{else}}
+				<button id="requestAPIAccess" class="button_basic_inactive" disabled>Add API</button>
+			{{/if}}
+ 	</span>
+ 	<div id="apilist" class="headerPadding">
+	 
+	</div>
+	<div class="headerPadding">		
+		<span id="apimanager-note">
+	 		{{html jQuery.i18n.prop('com.soa.atmosphere.apimanagement.notes')}}
+		</span>
+	</div>
+</div>
+</script>
+
+<script id="WorkflowActionTemplate" type="text/x-jQuery-tmpl">
+	<h1 class="headerPanel headerBottomBorder headerPadding">${title}</h1>
+	<form id="commentForm" class="executeActionForm">
+		<h5>${message}</h5>
+		{{if optional}}
+			<p>
+				${optional}
+			</p>
+		{{/if}}
+		<h5>Comments</h5>
+		<textarea name="${areaId}" id="${areaId}" class="required helperText">Enter comments here</textarea>
+		<p class="buttons">
+			<button id="${cancelButtonId}" class="button_basic">Cancel</button>
+			<button id="${confirmButtonId}" class="action_call" type="submit">Confirm</button>
+		</p>
+	</form>
+</script>
+
+<script id="MyAppAPIManagerTemplateDet" type="text/x-jQuery-tmpl">
+	<div class="appAPI">
+		<div class="appAPITitle">
+			<span class="appAPIName {{if $data.is_private}}private{{/if}}">${getReferenceApiName($data)} (${getReferenceAPIVersionName($data)})</span>
+			<span class="appAPIShowHide">
+				<a class="showHideEndPoints" href="#">
+					<span>HIDE ENDPOINTS</span>
+					<img id="ShowHideEpArrow" src="/resources/style/images/DevEx_HideEndpointArrow.png" height="6px;" width="6px"/>
+				</a>
+		</div>
+		<div class="appAPIDetail">
+			<div class="appAPIStateActions clearthis">
+				<div class="sandboxContract">
+				{{if $data.sandboxContract}}
+					{{if getWorkflowState($data.sandboxContract) == "apicontract.status.pending_approval"}}
+						<span class="apiEndpointEnvironment">Sandbox: <span class="sandAppAPIAcessPendingContract">${jQuery.i18n.prop(getWorkflowState($data.sandboxContract))}</span></span>
+					{{else}}
+						<span class="apiEndpointEnvironment">Sandbox: </span><span class="appAPIActiveContract">${jQuery.i18n.prop(getWorkflowState($data.sandboxContract))}</span>
+					{{/if}}
+				{{else}}
+					{{if $data.hasSandboxEndpoint}}
+						 <span class="apiEndpointEnvironment">Sandbox: </span><span class="appAPIinActiveContract">INACTIVE</span>
+					{{else}}
+						<span class="apiEndpointEnvironment">Sandbox: </span><span class="appNonAvailableContract">${jQuery.i18n.prop('apicontract.endPoint.notAvailable')}</span>
+					{{/if}}
+				{{/if}}
+				
+				{{if $data.sandboxContract != null && $data.sandboxContract.Actions }}
+					{{each(index9, actionCategory) $data.sandboxContract.Actions.Action}}
+						{{if $data.state != 'com.soa.app.state.live'}}
+							{{if actionCategory.value != 'Finished'}}
+								{{if actionCategory.value == 'apicontract.action.resubmit' || actionCategory.value == 'apicontract.action.cancel'}}
+								<button environment="Sandbox" contractId="${sandboxContract.title}" class="button_basic executeWorkflowAction" value="${actionCategory.value} " actionName="${actionCategory.value}">
+										${jQuery.i18n.prop(actionCategory.value)}
+								</button>
+								{{/if}}
+							{{/if}}
+						{{/if}}
+					{{/each}}
+				{{/if}}
+				</div>
+				<div class="productionContract">
+				{{if $data.productionContract}}
+					
+					{{if getWorkflowState($data.productionContract) == "apicontract.status.pending_approval"}}
+						<span class="apiEndpointEnvironment">Production: </span><span class="prodAppAPIAcessPendingContract">${jQuery.i18n.prop(getWorkflowState($data.productionContract))}</span>
+					{{else}}
+						<span class="apiEndpointEnvironment">Production: </span><span class="prodAppAPIActiveContract">${jQuery.i18n.prop(getWorkflowState($data.productionContract))}</span>
+					{{/if}}
+				{{else}}
+					{{if $data.hasProductionEndpoint}}
+						<span class="apiEndpointEnvironment">Production: </span> <span class="appAPIinActiveContract">INACTIVE</span>
+					{{/if}}
+					
+				{{/if}}
+				{{if $data.productionContract != null && $data.productionContract.Actions }}
+					{{each(index9, actionCategory) $data.productionContract.Actions.Action}}
+						{{if $data.state != 'com.soa.app.state.live'}}
+							{{if actionCategory.value != 'Finished'}}
+								{{if actionCategory.value == 'apicontract.action.resubmit' || actionCategory.value == 'apicontract.action.cancel'}}
+									<button environment="Production" contractId="${productionContract.title}" class="button_basic executeWorkflowAction" value="${actionCategory.value} " actionName="${actionCategory.value}">
+										${jQuery.i18n.prop(actionCategory.value)}
+									</button>
+								{{/if}}
+							{{/if}}
+						{{/if}}
+					{{/each}}
+				{{/if}}
+				</div>
+			</div>
+			<div class="appAPIEndpoints">
+				{{if $data.hasSandboxEndpoint}}
+					<div id="sandBoxEndPoint">
+						<label>Sandbox Endpoint:</label> ${getSandboxEndpoint($data).Uri}
+					</div>
+				{{else}}
+					<div id="sandBoxEndPoint">
+						<label>Sandbox Endpoint:</label> Not Available
+					</div>
+				{{/if}}
+				{{if $data.hasProdEndpoint}}
+					<div id="productionEndPoint">
+						<label>Production Endpoint:</label> ${getProductionEndpoint($data).Uri}
+					</div>
+				{{else}}
+					<div id="productionEndPoint">
+						<label>Production Endpoint:</label> Not Available
+					</div>
+				{{/if}}
+			</div>
+		</div>
+</script>

@@ -1,0 +1,17 @@
+<script id="DownloadTemplate" type="text/x-jQuery-tmpl">
+	<p><ul>
+		{{each resource}}
+		<li>
+			<a href="../content/${uri}">${name}</a>
+			<span onclick="downloadWidget.delDoc('${name}')" style="text-decoration: underline;cursor: pointer;">X</span> 
+		</li>
+		{{/each}}
+	</ul></p> 
+	<span id="fileUploadButton" style="text-decoration: underline;cursor: pointer;">Upload File</span>
+	
+ 	<div id="filenameDialog" title="Filename">
+      <p>Provide Filename:</p>
+      <input type="text" id="fileName" size="75"/><br>
+    </div>
+
+</script>

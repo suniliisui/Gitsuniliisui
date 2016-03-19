@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Scion Car Inventory | Find an iM, iA, tC or FR-S | Scion.com</title>
+		<meta name="description" content="If you're looking for a new Scion iA, iM, tC or FR-S near you, check out our simple and easy-to-use inventory tool to find the local Scion dealer who has the car you need.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<!-- build:css(app) bys-content/styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="../bower_components/angular-ui-select/dist/select.css" />
+		<link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css(.tmp/placeholder) bys-content/styles/main.css -->
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<!-- endbuild -->
+
+	</head>
+
+	<body ng-app="invApp" bgcolor="black" class="{{sectionName}} {{browserName}} {{pageName}}">
+
+		<!--[if lt IE 7]>
+		  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Huge: remoteHeader -->
+		<div ng-controller="HeaderController" ng-include="'../modules/header/headerTemplate.html'"></div>
+		<!-- Huge: remoteHeader end -->
+		<header id="bys-header"></header>
+
+		<!-- background -->
+		<div class="background"></div>
+		<!-- background end -->
+
+		<!-- loader -->
+		<div class="loader loading"></div>
+		<!-- loader end -->
+
+		<!-- mainApp -->
+		<div id="mainContainer" class="mainContainer {{sectionName}} {{APP_NAME}}">
+			<div ui-view="" autoscroll="true"></div>
+		</div>
+		<!-- mainApp end -->
+
+		<!-- Huge: remoteFooter -->
+		<div ng-controller="FooterController" ng-include="'../modules/footer/footerTemplate.html'"></div>
+		<!-- Huge: remoteFooter end -->
+		<footer id="bys-footer"></footer>
+
+
+		<!-- build:js(app) bys-content/external-scripts/jquery.min.js -->
+		<script src="../bower_components/jquery/jquery.js"></script>
+		<!-- endbuild -->
+
+		<!-- Google: GoogleMaps API -->
+		<script defer type="text/javascript">function googleMapsInit(){console.log('Google Maps loaded.');}</script>
+		<script defer src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=googleMapsInit"></script>
+		<!-- Google: GoogleMaps API end -->
+
+
+		<!-- build:js(app/inventory) bys-content/scripts/main-inventory.min.js -->
+
+		<script defer src="../../bower_components/angular/angular.js"></script>
+		<script defer src="../../bower_components/angular-animate/angular-animate.js"></script>
+		<script defer src="../../bower_components/angular-cookies/angular-cookies.js"></script>
+		<script defer src="../../bower_components/angular-resource/angular-resource.js"></script>
+		<script defer src="../../bower_components/angular-route/angular-route.js"></script>
+		<script defer src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script defer src="../../bower_components/angular-touch/angular-touch.js"></script>
+		<script defer src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script defer src="../../bower_components/ngstorage/ngStorage.js"></script>
+		<script defer src="../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+		<script defer src="../../bower_components/angular-ui-select/dist/select.js"></script>
+		<script defer src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script defer src="../../bower_components/re-tree/re-tree.js"></script>
+		<script defer src="../../bower_components/ng-device-detector/ng-device-detector.js"></script>
+
+		<!-- bys-content/scripts/scripts-inv.js -->
+		<script defer src="../inventory/inv.js"></script>
+		<script defer src="../inventory/inv.routes.js"></script>
+		<script defer src="../inventory/inv.templates.js"></script>
+		<script defer src="../modules/inventory/inventoryController.js"></script>
+		<script defer src="../modules/inventory/results/resultsController.js"></script>
+		<script defer src="../modules/inventory/upgrades/upgradesController.js"></script>
+
+		<!-- bys-content/scripts/scripts-pes.js -->
+		<script defer src="../payment-estimator-standalone/pes.js"></script>
+		<script defer src="../payment-estimator-standalone/pes.routes.js"></script>
+		<script defer src="../payment-estimator-standalone/pes.templates.js"></script>
+		<script defer src="../modules/lib/pesService.js"></script>
+		<script defer src="../modules/pes/pesController.js"></script>
+
+		<!-- bys-content/scripts/scripts.js -->
+		<script defer src="../modules/lib/configService.js"></script>
+		<script defer src="../modules/lib/bysApiService.js"></script>
+		<script defer src="../modules/lib/bysCookiesService.js"></script>
+		<script defer src="../modules/lib/consumerService.js"></script>
+		<script defer src="../modules/lib/paymentCalculatorService.js"></script>
+		<script defer src="../modules/lib/omnitureTagsService.js"></script>
+		<script defer src="../modules/lib/utilsService.js"></script>
+		<script defer src="../modules/common/commonController.js"></script>
+		<script defer src="../modules/common/modalController.js"></script>
+		<script defer src="../modules/dealer/dealerController.js"></script>
+		<script defer src="../modules/dealer/select/dealerSelectController.js"></script>
+		<script defer src="../modules/dealer/contact/dealerContactController.js"></script>
+		<script defer src="../modules/dealer/confirmation/dealerConfirmationController.js"></script>
+		<script defer src="../modules/select/selectController.js"></script>
+		<script defer src="../modules/select/model/modelController.js"></script>
+		<script defer src="../modules/select/series/seriesController.js"></script>
+		<script defer src="../modules/apply/applyController.js"></script>
+		<script defer src="../modules/apply/step1/apply1Controller.js"></script>
+		<script defer src="../modules/apply/step2/apply2Controller.js"></script>
+		<script defer src="../modules/summary/summaryController.js"></script>
+		<script defer src="../modules/summaryBar/summaryBarController.js"></script>
+		<script defer src="../modules/error/errorController.js"></script>
+		<script defer src="../modules/imagegallery/imagegalleryController.js"></script>
+		<script defer src="../modules/header/headerController.js"></script>
+		<script defer src="../modules/footer/footerController.js"></script>
+
+		<!-- endbuild -->
+
+
+		<!-- build:js(app) bys-content/external-scripts/ScionSyndication.js -->
+		<!-- Huge: async header and footer -->
+		<script async src="../bys-content/js/ScionSyndication.js"></script>
+		<!-- Huge: async header and footer end -->
+		<!-- endbuild -->
+
+		<!-- Omniture -->
+		<!-- build:js(app) bys-content/external-scripts/analytics/Scion2.0.json -->
+		<script async src="../bys-content/js/analytics/Scion2.0.json"></script>
+		<!-- endbuild -->
+		<!-- build:js(app) bys-content/external-scripts/analytics/cod.js -->
+		<script async src="../bys-content/js/analytics/cod.js"></script>
+		<!-- endbuild -->
+		<!-- build:js(app) bys-content/external-scripts/analytics/scion_scode.js -->
+		<script async src="../bys-content/js/analytics/scion_scode.js"></script>
+		<!-- endbuild -->
+		<!-- Omniture end -->
+
+		<!-- Hitachi: EFC API -->
+		<script defer src="/config/services/public/ConfiguratorClient/efcmain.js"></script>
+		<script src="/config/services/public/ConfiguratorClient/client_solver/client_solver.nocache.js"></script>
+		<script src="/config/services/public/ConfiguratorClient/image_model/c3i.nocache.js"></script>
+		<!-- Hitachi: EFC API end -->
+
+
+	</body>
+
+</html>

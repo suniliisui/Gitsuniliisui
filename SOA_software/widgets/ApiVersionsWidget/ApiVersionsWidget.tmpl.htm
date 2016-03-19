@@ -1,0 +1,33 @@
+<script id="ApiVersionsTemplate" type="text/x-jQuery-tmpl">
+
+<h1 class="headerPanel headerPadding headerBottomBorder" valign=top>
+	${apiName}
+</h1>
+
+{{each channel.item}}
+<div style="padding-left:10px;padding-top:10px;font-size: 24px;font-weight: bold;">
+		${title}
+</div>
+
+<div style="padding: 10px;" class="resource_item">
+	${category.value}
+</div>
+
+<div style="padding: 10px;font-size: 12px;font-weight: bold;">
+	API Credentials:
+	<table width="600">
+		<tr>
+			<td width="50">
+				API ID: 
+			</td>
+			<td>
+				${guid.value}
+			</td>
+		</tr>
+		
+	</table>
+<div style="font-size:0;height:1px;background-color:#999;"><img height="1" src="/resources/static/images/spacer.gif"></div>
+</div>
+{{/each}}
+
+</script>

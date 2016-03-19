@@ -1,0 +1,193 @@
+<div class="modal-content cam-modal-content-adjustment">
+  <form name="engineConfigForm" class="camFormNoBorder" ng-submit="addForm()">
+    <div class="modal-header camModalHeader">
+      <div class="row cam-row-main">
+        <div class="col-xs-11 camColpadding">
+          <h4 class="modal-title titleFont" id="actionLabel">
+            EDIT Scheduler
+          </h4>
+        </div>
+        <div class="col-xs-1 camColpadding cam-close-btn-adjustment pull-right">
+          <button type="button" class="close closeX" data-dismiss="modal" ng-click="cancel()">
+            <span aria-hidden="true">
+              &times;
+            </span>
+            <span class="sr-only">
+              {{'enginesList.configDialog.closeButtonLabel' | i18next}}
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="row cam-row-main">
+        <div ng-hide="camHiddenValue" class="ng-hide camHiddenValue">
+          <p ng-if="showSuccessMessage === true && showErrorMessage === false" id="camSuccessIcon"><i
+            class="camSuccessIcon"></i>{{successMessage}}</p>
+
+          <p ng-if="showErrorMessage === true && showSuccessMessage === false" id="camErrorIcon"><i
+            class="camErrorIcon"></i> {{errorMessage}}</p>
+        </div>
+      </div>
+      <hr class="camDialogDivider"/>
+    </div>
+    <div class="modal-body camModalBody">
+      <div class="row cam-row-required">
+        <div class="col-xs-12 camColpadding label-adjustment">
+          <span class="cam-engine-list-required"></span>
+          {{'enginesList.configDialog.requiredText' | i18next}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment ">
+          <label class="label-adjustment">
+            {{'enginesList.configDialog.nameLabel' | i18next}}
+          </label>
+        </div>
+        <div class="col-xs-10 remove-adjust cam-wrap-adjust">
+          {{engine.name}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="engineTypeSelect" class="label-adjustment cam-engine-list-required">
+            {{'enginesList.configDialog.typeLabel' | i18next}}
+          </label>
+        </div>
+        <div class="col-xs-4">
+          <select id="engineTypeSelect" class="form-control" ng-model="engine.type"
+                  ng-change="triggerSelect(engine.type)" ng-class="selectDisable"
+                  ng-options="engineType for engineType in engineTypes" required>
+            <option value="">Select Type</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row cam-row-input addressRow-adjust">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="engineAddressField" class="label-adjustment cam-engine-list-required">
+            {{'enginesList.configDialog.addressLabel' | i18next}}
+          </label>
+        </div>
+
+        <div class="col-xs-3 camAddProtocol">
+          <select class="form-control text-left protocol-adjust" ng-model="engine.protocol"
+                  ng-disabled="isProtocolDisabled" ng-class="{'has-error' : confirmError[400]}"
+                  ng-options="protocolProp as protocolName for (protocolProp, protocolName) in protocols" required>
+          </select>
+        </div>
+        <div class="col-xs-7 camAddField">
+          <input id="engineAddressField" type="text" name="engineAddress" class="form-control" ng-model="engine.address"
+                 required="text" ng-pattern="/^[\S]+$/" ng-class="{'has-error' : confirmError[404]}"
+                 placeholder="No Spaces"/>
+        </div>
+
+        <div class=" errorIcon addressError-icon-adjust">
+          <div ng-show="(engineConfigForm.$submitted || engineConfigForm.engineAddress.$touched)">
+            <div ng-show="engineConfigForm.engineAddress.$error.pattern || !engineConfigForm.engineAddress.$valid">
+              <div timeout-popover="">
+              <img id="camEngineAddressFieldErr" class="camErrorHint" popover="No Spaces" popover-popup-delay="500" popover-placement="bottom" popover-trigger="mouseenter" src="images/Failed.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="enginePortField" class="label-adjustment cam-engine-list-required">{{'enginesList.configDialog.portLabel'
+            | i18next}}</label>
+        </div>
+        <div class="col-xs-5 camPortField">
+          <input id="enginePortField" name="engine_port" type="number" min="1" max="65535" class="form-control"
+                 ng-class="{'has-error' : confirmError[404]}"
+                 ng-model="engine.port" placeholder="1 to 65535" required/>
+        </div>
+        <div class="col-xs-1 errorIcon">
+          <div ng-show="(engineConfigForm.$submitted || engineConfigForm.engine_port.$touched)">
+            <div ng-show="!engineConfigForm.engine_port.$valid">
+              <div timeout-popover="">
+              <img id="camEnginePortFieldErr" class="camErrorHint" popover="Ranges from 1 to 65535" popover-popup-delay="500" popover-trigger="mouseenter" popover-placement="right" src="images/Failed.png">
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="engineInstanceField" class="label-adjustment"
+                 ng-class="{'cam-engine-list-required' : false, 'camDisableLabel' : engine.type == 'dSeries' || engine.type == 'ESP' || engine.type == ''}">{{'enginesList.configDialog.instanceLabel'
+            | i18next}}
+            <span ng-if="engine.type == 'CA7'"><span class="cam-engine-list-required"></span></span></label>
+        </div>
+        <div class="col-xs-5 camPortField">
+          <input id="engineInstanceField" name="engine_instance" type="text" class="form-control" cam-uppercase
+                 ng-pattern="camChangeInstancePattern()"
+                 ng-disabled="engine.type == 'dSeries' || engine.type == 'ESP' || engine.type == ''"
+                 ng-required="engine.type == 'CA7'"
+                 ng-model="engine.instance"
+                 ng-class="{'camDisabledBorder': engine.type == 'dSeries' || engine.type == 'ESP' || engine.type == ''}"
+                 placeholder="3 to 4 Characters"/>
+        </div>
+        <div class="col-xs-1 errorIcon">
+          <div ng-show="(engineConfigForm.$submitted || engineConfigForm.engine_instance.$touched)">
+            <div ng-show="!engineConfigForm.engine_instance.$valid">
+              <div timeout-popover="">
+              <img id="camEngineInstanceFieldErr" class="camErrorHint" popover="3 to 4 Characters" popover-popup-delay="500" popover-trigger="mouseenter" popover-placement="right" src="images/Failed.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="engineUserIdField" class="label-adjustment cam-engine-list-required">{{'enginesList.configDialog.userIdLabel'
+            | i18next}}</label>
+        </div>
+        <div class="col-xs-8">
+          <input id="engineUserIdField" name="engineUserId" type="text" class="form-control"
+                 ng-class="{'has-error' : confirmError[401]}"
+                 ng-model="engine.userid" required/>
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="enginePasswordField" class="label-adjustment">{{'enginesList.configDialog.passwordLabel' |
+            i18next}}</label>
+        </div>
+        <div class="col-xs-8">
+          <input id="enginePasswordField" name="engine_password" type="password" class="form-control"
+                 ng-class="{'has-error' : confirmError[401]}"
+                 ng-model="engine.password" placeholder="********"/>
+        </div>
+      </div>
+      <div class="row cam-row-input-last">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label for="engineCertOption" class="label-adjustment camSslLabel" ng-disabled="engine.protocol == 'http'"
+                 ng-class="{'cam-engine-list-required' : false, 'camDisableLabel' : engine.protocol == 'http'}">{{'enginesList.configDialog.certOptionLabel'
+            | i18next}}</label>
+        </div>
+        <div class="col-xs-8">
+          <select id="engineCertOption" class="form-control" ng-model="engine.securityOption"
+                  ng-disabled="engine.protocol == 'http'"
+                  ng-options="certOptionProp as certOptionName for (certOptionProp, certOptionName) in certOptions"
+                  ng-class="{'camDisabledBorder': engine.protocol == 'http'}"></select>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer camModalFooter">
+      <hr class="footer-divider"/>
+      <div class="btn-block">
+        <button id="camConfigEngineVerifyButton" type="button" class="btn btn-light"
+                ng-disabled="engineConfigForm.$invalid"
+                ng-click="confirmEngine(engine)">{{'enginesList.configDialog.verifyButtonLabel' | i18next}}
+        </button>
+        <button id="camConfigEngineSaveButton" type="button" class="btn btn-light"
+                ng-disabled="engineConfigForm.$invalid" data-dismiss="modal"
+                ng-click="updateScheduler(engine)">SAVE
+        </button>
+        <button id="camConfigEngineCancelButton" type="button" class="btn btn-primary"
+                cam-auto-focus="camModalFocus" data-dismiss="modal" ng-click="cancel()">
+          {{'enginesList.configDialog.cancelButtonLabel' | i18next}}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

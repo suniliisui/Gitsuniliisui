@@ -1,0 +1,22 @@
+<script id="MyAppRequestAPISelectedListTemplate" type="text/x-jQuery-tmpl">
+{{if selected }}
+	{{each selected.channel.item }}
+		<tr>
+			<td class="apilist">
+					<a id="showHideDesc" href="javascript:">+ &nbsp;</a> 
+					<span id="serviceName">  ${$value.EntityReferences.EntityReference[0].Title} </span>
+			</td>
+			<td class="apilistcheckbox">
+				<input name="selectedList" value="${$value.EntityReferences.EntityReference[0].Guid}" appId="${appId}" checked="checked" type="checkbox"/> Add
+			</td>
+		</tr>
+		<tr class="hideDesc">
+			<td class="description">${$value.description}</td>
+			<td> &nbsp;</td>
+		</tr> 
+		<tr>
+			<td colspan="2"><hr class="horizontalRow"/></td>
+		</tr>
+	{{/each}}
+{{/if}}
+</script>

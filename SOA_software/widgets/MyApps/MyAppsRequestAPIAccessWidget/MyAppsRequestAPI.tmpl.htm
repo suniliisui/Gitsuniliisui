@@ -1,0 +1,88 @@
+<script id="MyAppRequestAPITemplate" type="text/x-jQuery-tmpl">
+<div class="headerPanel inPopup clearthis">
+	<div class="titleLabel noPadding">
+		Request API Access for ${jqAppName}
+		<span class="versionTitle">
+			${jqAppVersionName}
+		</span>
+	</div>
+</div>
+
+<div id="legalAgreements">
+	<a>&nbsp;PREVIOUS</a>
+</div>
+<div class="selectapistext">
+	Please select the APIs you would like to use in your application.
+</div>
+
+<div id="tabs">
+	<form name="requestAccess"  id="requestAccess">
+		<div>
+			<div id="pageOne">
+				<div id="myAppsRequestAPIList">
+					<table width="100%" cellspacing=0 cellpadding=0>
+						<tbody key='myAppsRequestAPIList'>
+						</tbody>
+					</table>
+				</div>
+			</div>	
+		</div>
+		<div>
+			<div id="pageThree">
+				<div id="contentPageThree" class="legal">
+				</div>
+				<div class="borderTopSolidGray">
+					<div id="agree">
+						By clicking the <b>I AGREE</b> button below, you confirm you have reviewed, understood and agree to the above Addendum.
+					</div>
+					<div id="legalPrintSaveButtons">
+						<button id="myAppsRequestAPIPrint" class="button_basic">PRINT</button> 
+						<button id="myAppsRequestAPISave" class="button_basic">SAVE</button>
+					</div>
+				</div>	
+			</div>	 
+		</div>
+		<div>
+			<div id="pageFour" class="tabs">
+				<div id="statusDialog">
+					<table width="100%" cellspacing="0" cellpadding="0"> 						
+						<tbody key='statusDialogTable'>	
+						</tbody>
+					</table>
+				</div>
+				<div id="messages">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div id="legalsButtons" class="showFooterLinks">
+	<button id="cancelRequestAPINL" class="button_basic" >
+		CANCEL
+	</button> 
+	<button id="myAppsRequestAPIAgreeButton" name="legalsAccept" action="showNextLegal" class="action_call">
+	</button>
+</div>
+
+<ul id="footerlinks" class="showFooterLinks buttons">
+	<li>
+		<button id="cancelRequestAPIDL" class="button_basic">
+			CANCEL
+		</button>
+	</li> 
+	<li>
+		<button id="displayLegals" action="displayLegals" class="button action_call button_basic_inactive" disabled="disabled">
+			NEXT
+		</button> 
+	</li> 
+</ul>
+ <ul class="buttons hidestatusbtns" id="statusButtons">
+	<li>
+		<button id="closeDialog" action="closeDialog" class="button action_call" disabled>
+			OK
+		</button>
+	</li>
+</ul> 
+ 
+</script>

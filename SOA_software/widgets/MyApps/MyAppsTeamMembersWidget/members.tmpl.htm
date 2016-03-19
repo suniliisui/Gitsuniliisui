@@ -1,0 +1,67 @@
+<script id="MyAppsTeamMembersTemplate" type="text/x-jQuery-tmpl">
+<div class="contentHeader">
+	<h1 id="myAppsHeader">Team Members</h1>
+</div>
+<div class="contentBody">
+	<div id="myAppsVersionHistoryDiv" class="myAppsVersionHistoryDiv">
+		<h4 id="teamMembersHeader" class="sectionHeader" style="padding:10px 0;"><span>Your Team</span>
+			<button id="myAppsInviteButton" class="button_basic button_basic_height">Invite</button>
+		</h4>
+	</div>
+	<div id="myAppsTeamEmpty">You do not have any team members</div>
+		<table id="tblMember">
+			{{each item}}
+ 				<tr><td class="rowBorder" colspan="6">&nbsp;</td></tr>
+				<tr>
+					<td width="48px" class="membership-status">
+						<img src="{{= atmometadata.getUserPictureEndpoint($value.guid.value)}}" class="imageMedium"/>
+					</td>
+				{{if $value.title == null}}
+					<td width="180px" class="disabledText">		
+						unregistered user
+				{{else}}
+					<td class="centeredText word-wrap-email team-member-title">
+						${$value.title} 
+				{{/if}}
+					</td>
+					<td class="disabledText word-wrap-email" width="190px">
+						${$value.description}
+					</td>
+					<td width="64px" class="membership-status">
+					 	<img src=${$value.statusSrc} class="statusImage">&nbsp;${$value.statusText}</div> 
+					</td> 
+					<td width="64px" class="membership-status">
+					 	{{if $value.statusText  == 'Pending' || $value.statusText == 'Rejected'}}
+							<button id="resendInvitationToTeamMember_${$value.guid.value}" class="invite-members-action-button resend_invite " emailId="${$value.description}">RESEND</button>
+						{{/if}}
+					</td> 
+							 
+					<td width="64px" class="membership-status">
+						{{if $value.description != email}} 
+							<button id="myAppsTeamRemove_${$value.guid.value}" userName="${$value.title}" userId="${$value.guid.value}" class="invite-members-action-button button_basic removeMember">Remove</button>
+						{{/if}}
+					</td>
+				</tr>
+			{{/each}}
+ 		</table>
+		<div style="padding-top:25px;"></div>
+	</div>
+</script> 
+
+<script id="RemoveTeammemberTemplate" type="text/x-jQuery-tmpl">
+	<h1 class="headerPanel headerBottomBorder headerPadding">${title}</h1>
+	<form id="commentForm" class="executeActionForm">
+		<h5>${message}</h5>
+		{{if optional}}
+			<p>
+				${optional}
+			</p>
+		{{/if}}
+		<h5>Comments</h5>
+		<textarea name="${areaId}" id="${areaId}" class="required helperText">Enter comments here</textarea>
+		<p class="buttons">
+			<button id="${cancelButtonId}" class="button_basic" type="button">Cancel</button>
+			<button id="${confirmButtonId}" class="action_call" type="submit">Confirm</button>
+		</p>
+	</form>
+</script>

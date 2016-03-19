@@ -1,0 +1,1369 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding: 0;
+  margin-left: 0;
+  .cam-main-header {
+    width: 1024px;
+  }
+  .cam-body {
+    width: 1024px;
+  }
+  .cam-footer {
+    width: 1024px;
+    margin-top: 10px;
+    border-top: 1px solid #d8d8d8;
+    p {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      font-size: 13px;
+      color: #58666c;
+      text-align: center;
+    }
+  }
+}
+
+.cam-header {
+  a {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.form-control[disabled] {
+  background-color: #eeeeee;
+  opacity: 0.6;
+}
+
+.cam-navbar {
+  li {
+    width: 140px;
+    font-weight: bold;
+  }
+}
+
+.cam-navbar-right {
+  margin-right: 0;
+}
+
+.ca-logo {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.non-active {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #999999 !important;
+  opacity: 0.6;
+}
+
+.click-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  height: 13px;
+  color: #57595B
+}
+
+input::-webkit-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  height: 13px;
+  color: #57595B
+}
+
+input:-ms-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  height: 13px;
+  color: #57595B
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Make the masthead heading the same height as the navigation */
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+.breadcrumb {
+  margin-left: 10px;
+  //border: 1px solid plum;
+  height: 40px;
+}
+
+.mainGridtable {
+  margin-left: 0;
+  padding-left: 0;
+  width: 1024px;
+
+}
+
+.mainGridChild {
+  margin-left: 10px;
+  margin-top: 0;
+  width: 819px;
+}
+
+.cam-engine-list-header {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 20px;
+  color: #22465e;
+}
+
+.cam-engine-list-info-text {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #333333;
+  margin-top: 7px;
+  float: right;
+
+}
+
+.cam-engine-list-button {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #22465e;
+  border-radius: 4px;
+  height: 30px;
+  width: 84px;
+}
+
+.cam-engine-list-header-column {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.engine-grid-style {
+  border: 1px solid rgb(212, 212, 212);
+  width: 819px;
+  height: 468px;
+}
+
+.cam-engine-list-cell-text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+.cam-engine-list-cell-name-text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.cam-engine-list-alert {
+  color: #FF0000;
+}
+
+.cam-engine-list-header-column .ngHeaderText {
+  text-overflow: clip;
+  white-space: normal;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.cam-engine-list-connection {
+  height: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.panel {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.panel-footer {
+  width: 819px;
+}
+
+.errorIcon {
+  margin-top: 5px;
+  padding: 0;
+}
+
+.popover {
+  background-color: #edf8fb;
+  height: 42px;
+  width: 80px;
+  border: none;
+  font-size: 11px;
+  color: #444444;
+  box-shadow: 2px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding: 0;
+  .popover-inner {
+    .popover-title {
+      padding: 0;
+    }
+  }
+  .popover-content {
+    margin: 0;
+    padding: 12px 16px;
+  }
+}
+
+.popover > .arrow, .popover > .arrow:after {
+  display: none;
+}
+
+.camPortField {
+  padding-right: 12px;
+}
+
+.camSslLabel {
+  position: relative;
+  top: -16px;
+}
+
+.cam-label-col-adjustment {
+  width: 17.5%;
+}
+
+/* CAM add engine form validation css -- Start */
+
+.ng-dirty {
+  border: 1px solid #a01d2d;
+}
+
+.form-control-feedback {
+  line-height: 26px;
+  z-index: 0;
+}
+
+.camFormErrorMsg {
+  color: #a01d2d;
+}
+
+.dropdown-adjust {
+  border-radius: 0;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  .dropdown-header {
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.428;
+    color: #22465e;
+    font-weight: bold;
+  }
+  li {
+    a {
+      font-family: Arial, sans-serif !important;
+      font-size: 13px !important;
+      font-weight: bold;
+      padding: 10px 15px 0 15px;
+      line-height: 1.428;
+    }
+  }
+}
+
+/* CAM add engine form validation css -- End */
+
+.form-control-feedback {
+  line-height: 26px;
+}
+
+.ng-modal-close {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #22465e;
+}
+
+.ng-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.alert-box-adjust {
+  width: 400px;
+  left: 218px;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  border: 1px solid #22465e;
+  background-color: #edf8fb;
+  border-radius: 4px;
+  height: auto;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.clsAlert {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #22465e;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin: 0;
+  opacity: 1;
+}
+
+.alertTitle {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #22465e;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.successDivider {
+  margin: 10px;
+  color: #d8d8d8;
+  box-shadow: #ffffff;
+  top: 50%
+}
+
+.alertContent {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #22465e;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  height: 50%;
+}
+
+.camDisableLabel {
+  opacity: 0.6;
+}
+
+.camDisabledBorder {
+  border: 1px solid #eeeeee;
+  color: #999999;
+}
+
+.camRemoveDisabledText {
+  color: #999999;
+}
+
+.cam-engine-list-header-column.port-header {
+  text-align: right;
+}
+
+.placeholderSelect {
+  opacity: 0.7;
+}
+
+.ng-valid {
+  border: 1px solid #cccccc;
+}
+
+//modal box adjustment starts here
+
+.cam-modal-content-adjustment {
+  background-color: #f4f4f4;
+  padding: 0;
+  border-radius: 4px;
+  .form-control {
+    font-size: 13px;
+  }
+}
+
+.camFormNoBorder {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.camModalHeader {
+  padding: 40px 50px 0 50px;
+  position: relative;
+  border-bottom: none;
+}
+
+.cam-row-main {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.camColpadding {
+  padding: 0;
+}
+
+.titleFont {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #22465e;
+}
+
+.cam-close-btn-adjustment {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.closeX {
+  font-family: 'CA-Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #918e8b;
+}
+
+.camHiddenValue {
+  height: 28px;
+  margin: 11px 0 11px 0;
+}
+
+.camDialogDivider {
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+}
+
+.camModalBody {
+  padding: 18px 50px 18px 50px;
+}
+
+.cam-row-required {
+  padding: 0 0 18px 0;
+  height: auto;
+  margin: 0;
+}
+
+.label-adjustment {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.cam-engine-list-required:after {
+  content: ' *';
+  color: #A11D2E;
+}
+
+.cam-row-input {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.addressRow-adjust {
+  position: relative;
+}
+
+.cam-row-input-last {
+  padding: 0;
+  margin: 0;
+}
+
+.camModalFooter {
+  margin: 0;
+  border-top: none;
+  padding: 0;
+  .footer-divider {
+    border-top: 1px solid #d8d8d8;
+    margin: 0 50px;
+  }
+  .btn-block {
+    padding: 22px 50px 50px 50px;
+    .btn {
+      width: 78px;
+    }
+  }
+}
+
+.camModalFooter .btn + .btn {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.camSuccessIcon {
+  color: #22465e;
+  padding: 5px 5px 5px 30px;
+  background: url('../images/Verified.png') no-repeat 0 center;
+}
+
+.camErrorIcon {
+  color: #a01d2d;
+  padding: 5px 5px 5px 30px;
+  background: url('../images/Failed.png') no-repeat 0 center;
+}
+
+.camColLabeladjustment {
+  padding: 6px 5px;
+  width: 15.4%;
+}
+
+.has-error {
+  border: 1px solid #a01d2d;
+}
+
+.camErrorHint {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.camAddField {
+  padding-left: 1px;
+}
+
+.camUpdatedRow {
+  background-color: #ffffcc;
+}
+
+.addressError-icon-adjust {
+  position: absolute;
+  right: -7px;
+  top: 1px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-adjust {
+  margin-top: 6px;
+}
+
+.radio-enabled-btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #999999 !important;
+}
+
+.camAddProtocol {
+  width: 95px !important;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.protocol-adjust {
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+.btn[disabled] {
+  color: #999999;
+}
+
+.camAddField {
+  padding-right: 0;
+  width: 301px;
+}
+
+.cam-wrap-adjust {
+  padding-right: 0;
+  margin-right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cam-agent-status-column-image {
+  width: 30px;
+  height: 30px;
+}
+
+.table-striped {
+  .cam-agent-status-column-image-up {
+    content: '';
+    display: inline-block;
+    background: url(../images/up.svg) no-repeat;
+  }
+  .cam-agent-status-column-image-down {
+    content: '';
+    display: inline-block;
+    background: url(../images/down.svg) no-repeat;
+  }
+  .cam-agent-status-column-image-quiesced {
+    content: '';
+    display: inline-block;
+    background: url(../images/quiesced.svg) no-repeat;
+  }
+  .cam-agent-status-column-image-unknown {
+    content: '';
+    display: inline-block;
+    background: url(../images/questionMark.svg) no-repeat;
+  }
+}
+
+.cam-agent-row-agent-down {
+  color: #FF0000;
+}
+
+.navbar-default .navbar-brand:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover {
+  background-color: #00132b;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:hover {
+  background-color: #00132b;
+}
+
+.cam-agents-list-utility-bar {
+  background: #F4F4F4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  .btn-group {
+    margin-left: 0;
+    .btn {
+      width: 100px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .dropdown-menu {
+      width: 215px;
+    }
+    .cam-search-input {
+      height: 30px;
+      width: 500px;
+      border-radius: 4px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .btn-last {
+      width: 100px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.cam-engine-list-utility-bar {
+  background: #F4F4F4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  .btn-group {
+    margin-left: 0;
+    .btn {
+      width: 100px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .dropdown-menu {
+      margin-left: 15px;
+      width: 140px;
+    }
+    .cam-search-input {
+      height: 30px;
+      width: 310px;
+      border-radius: 4px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .btn-last {
+      width: 100px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.table-striped {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  font-size: 13px;
+  font-weight: normal;
+
+  thead {
+    tr {
+      th {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .cam-total-agent {
+        border-bottom: none;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .cam-total-per-status {
+        text-align: center;
+        border-bottom: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .agents-home-btn {
+        text-align: right;
+        padding-right: 2px;
+        padding-bottom: 26px;
+        a {
+          color: #333333;
+          text-decoration: none;
+        }
+      }
+      .header-name {
+        max-width: 100px;
+        min-width: 100px;
+        padding-left: 36px;
+        padding-right: 0;
+        text-align: left;
+      }
+      .header-count {
+        max-width: 65px;
+        min-width: 65px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+      .header-up {
+        max-width: 65px;
+        min-width: 65px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .header-down {
+        max-width: 65px;
+        min-width: 65px;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .header-quiesced {
+        max-width: 58px;
+        min-width: 58px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+      .header-other {
+        max-width: 58px;
+        min-width: 58px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+      .header-plugin {
+        max-width: 50px;
+        min-width: 50px;
+        padding-left: 0;
+        padding-right: 5px;
+        text-align: center;
+      }
+      .header-version {
+        max-width: 73px;
+        min-width: 73px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+      .header-hostName {
+        max-width: 108px;
+        min-width: 108px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+      }
+      .header-host {
+        max-width: 40px;
+        min-width: 40px;
+        padding-left: 0;
+        padding-right: 20px;
+        text-align: left;
+      }
+      .header-sch {
+        max-width: 80px;
+        min-width: 80px;
+        padding-left: 0;
+        padding-right: 20px;
+        text-align: left;
+      }
+      .header-inst {
+        max-width: 75px;
+        min-width: 75px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+      }
+      .header-type {
+        max-width: 55px;
+        min-width: 55px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+    .row-header {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  tbody {
+    .cam-agent-column-name {
+      max-width: 97px;
+      min-width: 97px;
+      padding-left: 36px;
+      padding-right: 3px;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .cam-agent-column-count {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 65px;
+      min-width: 65px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    .cam-agent-column-up {
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 65px;
+      min-width: 65px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    .cam-agent-column-down {
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 65px;
+      min-width: 65px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    .cam-agent-column-quiesced {
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 58px;
+      min-width: 58px;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .cam-agent-column-other {
+      font-size: 16px;
+      font-weight: bold;
+      max-width: 58px;
+      min-width: 58px;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: center;
+    }
+    .cam-agent-column-plugin {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 52px;
+      min-width: 52px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: center;
+    }
+    .cam-agent-column-version {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 70px;
+      min-width: 70px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: center;
+    }
+    .cam-agent-column-hostName {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 105px;
+      min-width: 105px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: left;
+    }
+    .cam-agent-column-host {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 57px;
+      min-width: 57px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: left;
+    }
+    .cam-agent-column-sch {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 97px;
+      min-width: 97px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: left;
+    }
+    .cam-agent-column-inst {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 72px;
+      min-width: 72px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: left;
+    }
+    .cam-agent-column-type {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 52px;
+      min-width: 52px;
+      padding-left: 0;
+      padding-right: 3px;
+      text-align: center;
+    }
+  }
+}
+
+table.dataTable thead .sorting {
+  background: none;
+}
+
+.cam-agents-expand-bar {
+  background: url('../images/Expand_Bar.svg') no-repeat fixed left;
+  width: 10px;
+  height: 500px;
+  position: absolute;
+  bottom: 50px;
+  background-position-x: -281px;
+  background-position-y: 78px;
+  background-size: 570px 688px;
+  z-index: 1;
+}
+
+.dataTables_scrollBody {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 350px;
+  max-height: 350px;
+}
+
+table.dataTable {
+  margin-left: 0 !important;
+}
+
+.agent-chart rect {
+  fill: steelblue;
+}
+
+.agent-chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.scheduler-chart rect {
+  fill: steelblue;
+}
+
+.scheduler-chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.cam-agent-status-hidden-bar {
+  display: none !important;
+}
+
+.landing-page-view {
+  .header-status {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 0;
+    font-weight: bold;
+  }
+  .landing-page-content {
+    margin-left: 10px;
+    margin-top: 33px;
+    .row-adjust {
+      margin: 0;
+      .col-xs-9 {
+        width: 730px;
+        padding: 0;
+        height: 100%;
+        .row-chart {
+          margin-left: 10px;
+          margin-right: 0;
+          border: 3px solid #797979;
+          height: 270px;
+          margin-bottom: 26px;
+          .col-xs-12 {
+            padding-right: 0;
+            padding-left: 0;
+            .panel {
+              border: none;
+              .panel-heading {
+                height: 24px;
+                padding: 0;
+                border-bottom: 1px solid #E6E6E6;
+                .chart-title {
+                  padding-left: 10px;
+                  font-family: 'CA-Sans', sans-serif;
+                  font-size: 20px;
+                  color: #22465e;
+                  font-weight: bold;
+                  line-height: 1;
+                  text-decoration: none;
+                }
+                .close {
+                  padding: 5px;
+                  font-size: 28px;
+                  font-family: arial, sans-serif;
+                  color: #22465e;
+                  line-height: 12px;
+                }
+              }
+              .panel-body {
+                height: 240px;
+                padding: 0;
+                .row {
+                  margin: 0;
+                  .sch-area-hidden {
+                    visibility:hidden;
+                  }
+                  .col-xs-3 {
+                    margin-right: 9px;
+                    margin-left: 9px;
+                    margin-top: 7px;
+                    width: 160px;
+                    height: 195px;
+                    background-color: #cccccc;
+                    font-size: 20px;
+                    font-family: arial, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #000000;
+                    .sch-name-row {
+                      color: #000000;
+                      text-decoration: none;
+                      height: 24px;
+                    }
+                    .sch-chart-row {
+                      height: 170px;
+                    }
+                    .row {
+                      .sch-header {
+                        line-height: 1;
+                      }
+                      .col-xs-3 {
+                        height: 100%;
+                        padding: 142px 0 0 0;
+                        margin: 0;
+                        width: 40px;
+                        a {
+                          color: #333333;
+                          text-decoration: none;
+                        }
+                      }
+                      .col-xs-6 {
+                        padding: 0;
+                        margin: 0;
+                        width: 80px;
+                      }
+                      .cam-landing-scheduler-right-align {
+                        text-align: right !important;
+                        padding-right: 1px !important;
+                      }
+
+                      .cam-landing-scheduler-left-align {
+                        text-align: left !important;
+                        padding-left: 1px !important;
+                      }
+                    }
+                    a.scheduler-title-link {
+                      text-decoration: none;
+                    }
+                  }
+                }
+                .agent-graph {
+                  height: 100%;
+                  svg g.nv-barsWrap g.nv-bar rect[width="1"] {
+                    display: none !important;
+                  }
+                  .cam-agent-count-label-container:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .col-xs-3 {
+        height: 592px;
+        padding: 0;
+        .reserved {
+          height: 514px;
+        }
+      }
+      #schedulerPanelContainer svg.cam-scheduler-graph-adjustment g.nv-bar rect[height='1'] {
+        display: none !important;
+      }
+    }
+  }
+
+  .nv-x {
+    .nv-axis line {
+      display: none;
+    }
+  }
+  .nv-y {
+    .nv-axis path {
+      display: none;
+    }
+  }
+
+  .cam-agent-status-ratio-text {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    fill: rgba(0, 0, 0, 1);
+    stroke: rgba(0, 0, 0, 0);
+  }
+
+  .cam-agent-count-label-text {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .cam-scheduler-label-text {
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .cam-scheduler-graph-adjustment {
+    margin-top: 21px;
+  }
+}
+
+.last-refresh {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #333333;
+  padding-top: 4px;
+}
+
+.nv-barsWrap {
+  .nv-multibarHorizontal {
+    .nv-groups {
+      .nv-group {
+        .nav-bar {
+          rect {
+          }
+        }
+      }
+    }
+  }
+}
+
+.chart-icons {
+  .img1 {
+    width: 30px;
+    height: 30px;
+    top: 34px;
+    left: 10px;
+  }
+  .img2 {
+    width: 30px;
+    height: 30px;
+    top: 82px;
+    left: 10px;
+  }
+  .img3 {
+    width: 30px;
+    height: 30px;
+    top: 130px;
+    left: 10px;
+  }
+  .img4 {
+    width: 30px;
+    height: 30px;
+    top: 178px;
+    left: 10px;
+  }
+}
+
+.panel-body {
+  .sch-icon {
+    height: 30px;
+    width: 30px;
+    top: 5px;
+  }
+  .zero-up {
+    left: 52px;
+  }
+  .zero-down {
+    left: 96px;
+  }
+  .one-up {
+    left: 229px;
+  }
+  .one-down {
+    left: 273px;
+  }
+  .two-up {
+    left: 408px;
+  }
+  .two-down {
+    left: 452px;
+  }
+  .three-up {
+    left: 586px;
+  }
+  .three-down {
+    left: 630px;
+  }
+}
+
+
+.filter-bar-panel {
+  padding-top: 10px;
+  .ng-valid {
+    border: none;
+    .host {
+      .tags {
+        background-color: #fcf0d5;
+        .input {
+          background-color: #fcf0d5;
+        }
+        .tag-list {
+          .tag-item {
+            background: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.sch-no-display-row {
+  margin-right: 0;
+  margin-left: 0;
+  height: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333333;
+  .col-xs-6 {
+    padding-right: 0;
+    padding-left: 0;
+    .filter-img {
+      padding-left: 2px;
+      color: #2e6688;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .sch-home-btn {
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #333333;
+    }
+  }
+}
+
+.dropdown-submenu{
+  position:relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top:0;
+  left:100%;
+  margin-top:-6px;
+  margin-left:-1px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display:block;
+}
+
+.dropdown-submenu>a:after {
+  display:block;content:" ";
+  float:right;
+  width:0;
+  height:0;
+  margin-top:5px;
+  margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+
+}
+
+.dropdown-submenu.pull-left{
+  float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu{
+  left:-100%;
+  margin-left:10px;
+}

@@ -1,0 +1,66 @@
+#myAppsTeamEmpty {
+	width:90%;
+	text-align:center;
+}
+
+#myAppsPage {
+	padding: 0 0 10px 0;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid #999;
+}
+
+#MyAppsTeamMembers .rows {
+	margin: 10px;
+}
+
+
+#MyAppsTeamMembers .alignRight {
+	align:right;
+}
+
+#MyAppsTeamMembers .rowBorder {
+	border-top: 1px solid #999999;
+	line-height: 1px;
+	width:80%;
+}
+
+#MyAppsTeamMembers .disabledText {
+	color: #666666;
+	font-family: Helvetica;
+	font-size: 11px;
+	margin: 5px 0 0 0;
+	vertical-align: middle;
+}
+
+#MyAppsTeamMembers .tableCell {
+	padding-right: 3px;
+	height: 32px;
+}
+#tblMember>tbody>tr:first-child>.rowBorder {
+	border:0;
+}
+
+#MyAppsTeamMembers #myAppsTable {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+#MyAppsTeamMembers #tableTitle {
+	font-size: 18px;
+	margin: 0 5px 0 0;
+}
+
+
+
+#myAppsHeader {
+
+}
+
+#teamMembersHeader{
+	color: #002663;
+	font-weight: bold;
+	font-size: 16px;
+	
+}

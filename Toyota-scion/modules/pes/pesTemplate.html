@@ -1,0 +1,20 @@
+<div ng-if="isStandaloneReady">
+
+	<a ng-if="(isModalView && showModalButton)" class="customize-payments-trigger info-text" ng-controller="CommonController" ng-click="customizePaymentsModal()">
+		<i class="icon-settings"></i>
+		<span>Estimate<br>Payments</span>
+	</a>
+
+	<div ng-if="!isModalView" ng-include="'../modules/pes/partials/customizePaymentsTemplate.html'" class="customize-payments"></div>
+
+	<div ng-if="isModalView" ng-include="'../modules/pes/partials/customizeModalTemplate.html'" class="customize-payments"></div>
+
+	<div ng-if="utils.isPesApp()" ng-include="'../modules/pes/partials/zipcodeModalTemplate.html'"></div>
+
+	<div ng-if="utils.isPesApp()" ng-include="'../modules/pes/partials/leaseCalculatedModalTemplate.html'"></div>
+
+	<div ng-if="utils.isPesApp()" ng-include="'../modules/pes/partials/purchaseCalculatedModalTemplate.html'"></div>
+
+	<div ng-if="utils.isPesApp()" ng-include="'../modules/pes/partials/selectModalTemplate.html'"></div>
+
+</div>

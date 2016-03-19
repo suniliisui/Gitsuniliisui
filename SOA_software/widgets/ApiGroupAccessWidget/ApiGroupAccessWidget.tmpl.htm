@@ -1,0 +1,191 @@
+<script id="ApiGroupHeaderAccessTemplate" type="text/x-jQuery-tmpl">
+<div class="resourceHeaderPanel">
+<table width=100% cellspacing=0 cellpadding=0>
+	<tr>
+		<td valign=top>
+			<h1 class='headerPadding' id="apiTitleDiv">${Name}</h1>
+		</td>
+		<td style="padding-top:6px;padding-bottom:6px;margin-right:0;">
+			{{if admin}} 
+				<button class="button_basic button_basic_height" name="" id="createagroup">Create a Group</button>
+			{{/if}}
+		</td>
+	</tr>
+</table>
+</div>
+<div class="divider"></div>
+</script>
+
+<script id="ApiGroupAccessListWidgetTemplate" type="text/x-jQuery-tmpl">
+{{if groups.length == 0}}
+	<div class="contentBody">
+		<div id="apigroupaccessdiv_nogroup">
+			<div class="groupdiv">
+				<h4>This API does not have any groups.</h4>
+			</div>
+		</div>
+	</div>
+{{else}}
+	{{each(index0, group) groups}}
+		{{if isAdmin}}
+			{{tmpl(group) "#ApiGroupAccessWidgetAdminTemplate"}}
+		{{else}}
+			{{tmpl(group) "#ApiGroupAccessWidgetTemplate"}}
+		{{/if}}
+	{{/each}}
+{{/if}}
+</script>
+
+<script id="ApiGroupAccessWidgetAdminTemplate" type="text/x-jQuery-tmpl">
+	<div>${admin}</div>
+		<div id="apigroupaccessdiv_group" class="contentBody">
+			<div class="groupdiv">
+				<div class="groupdiv_title clearthis">
+					<span id="groupname_${guid.value.replace(/\./gi, '_')}"><h4>${title}</h4></span>
+					<button name="" guid="${guid.value}" id="inviteGroupMemberBtn">Invite</button>
+				</div>
+				<div class="groupdiv_edit">
+					<a href="#" id="editGroupInfo" class="editGroupInfo" groupId="${guid.value}">Edit Group Details</a>
+				</div>
+				<div class="groupdiv_content" id="group_${guid.value.replace(/\./gi, '_')}">
+				</div>
+			</div>
+		</div>
+</script>
+
+<script id="ApiGroupAccessWidgetTemplate" type="text/x-jQuery-tmpl">
+	<div>${admin}</div>
+		<div id="apigroupaccessdiv_group" class="contentBody">
+			<div class="groupdiv">
+				<div class="groupdiv_title clearthis">
+					<span id="groupname_${guid.value.replace(/\./gi, '_')}"><h4>${title}</h4></span>
+					<button name="" guid="${guid.value}" id="inviteGroupMemberBtn">Invite</button>
+				</div>
+				<div class="groupdiv_content" id="group_${guid.value.replace(/\./gi, '_')}">
+				</div>
+			</div>
+		</div>
+</script>
+
+
+<script id="ApiGroupViewWidgetTemplate" type="text/x-jQuery-tmpl">
+<div class="contentBody">
+		<div id="apigroupaccessdiv_group">
+			<div class="groupdiv">
+				<div class="groupdiv_title">
+					<span id="groupname_${guid.value.replace(/\./gi, '_')}">${title}</span>
+				</div>
+				<div class="groupdiv_edit">
+					<span id="groupdesc_${guid.value.replace(/\./gi, '_')}">${description}</span>
+				</div>
+				<div class="groupdiv_content" id="group_${guid.value.replace(/\./gi, '_')}">
+			</div>
+		</div>
+</div>
+</script>
+
+<script id="ApiGroupAccessWidgetMembersTemplate" type="text/x-jQuery-tmpl">
+			{{if tmpldata.members.length == 0}}
+			<div class="groupdiv_nomember">
+				This Group does not have any members.
+			</div>
+			{{else}}
+				<table  class="gentbl">
+					{{each tmpldata.members}}
+						<tr>
+							<td class="ga_avatar"><img src="${Image.Url}" alt=""/></td>
+							<td class="ga_name"><span>${name}</span></td>
+							<td class="ga_leader">
+								{{if role == 'com.soa.group.membership.role.leader'}}
+									<button id="toggleRole" userId="${userId}" userName="${name}" emailId="${email}" class="button action_call apitogglerole" currentRole=${role} groupId="${groupId}">Leader</button>
+								{{/if}}
+								{{if role == 'com.soa.group.membership.role.member'}}
+									<button id="toggleRole" userId="${userId}" userName="${name}" emailId="${email}" class="button_basic apitogglerole" currentRole=${role} groupId="${groupId}">Leader</button>
+								{{/if}}
+								{{if role == 'com.soa.group.membership.role.admin'}}
+									<button id="toggleRole" userId="${userId}" class="button_basic apitogglerole" currentRole=${role} groupId="${groupId}">Admin</button>
+								{{/if}}
+							</td>
+							<td class="ga_email word-wrap-email">${email}</td>
+							<td class="ga_status">
+								{{if status == 'com.soa.group.membership.state.disapproved'}}
+										<span class="ga_status ga_decline">&nbsp;DECLINED</span>
+								{{/if}}
+								{{if status == 'com.soa.group.membership.state.pending'}}
+									<span class="ga_status ga_pending">&nbsp;PENDING</span>
+								{{/if}}
+								{{if status == 'com.soa.group.membership.state.cancelled'}}
+									<span class="ga_status ga_pending">&nbsp;</span>
+								{{/if}}
+								{{if status == 'com.soa.group.membership.state.approved'}}
+									<span class="ga_status ga_pending">&nbsp;ACTIVE</span>
+								{{/if}}
+							</td>
+							<td class="ga_resend">
+								{{if status == 'com.soa.group.membership.state.pending' || status == 'com.soa.group.membership.state.disapproved'}}
+									<button id="resendInvitation" class="resend_invite" emailId="${email}" groupId="${groupId}">RESEND</button>
+								{{/if}}
+							</td>
+							<td class="ga_remove">
+								<button class="remove_api_member" id="executeRemoveMember" userId="${userId}" userName="${name}" currentRole=${role} groupId="${groupId}">REMOVE</button>
+							</td>
+						</tr>
+					{{/each}}
+				</table>
+			{{/if}}
+</script>		
+
+<script id="ApiGroupViewWidgetMembersTemplate" type="text/x-jQuery-tmpl">
+			{{if tmpldata.members.length == 0}}
+			<div class="groupdiv_nomember">
+				This Group does not have any members.
+			</div>
+			{{else}}
+				<table class="gentbl">
+					{{each tmpldata.members}}
+						<tr>
+							<td class="ga_avatar"><img src="${Image.Url}"/></td>
+							<td class="ga_name">${name}</td>
+							<td class="ga_leader">
+								{{if role == 'com.soa.group.membership.role.leader'}}
+									<button disabled="disabled" id="toggleRole" userId="${userId}" userName="${name}" class="button" currentRole=${role} groupId="${groupId}">Leader</button>
+								{{/if}}
+							</td>
+							<td class="ga_email">${email}</td>
+							<td class="ga_status">
+								{{if status == 'com.soa.group.membership.state.disapproved'}}
+									<span class="ga_status ga_declined"> 
+										<a href="#" id="resendInvite" class="resend_invite" emailId="${email}" groupId="${groupId}">RESEND</a>
+									</span>
+								{{/if}}
+								{{if status == 'com.soa.group.membership.state.pending'}}
+									<span class="ga_status ga_pending">&nbsp;</span>
+								{{/if}}
+								{{if status == 'com.soa.group.membership.state.cancelled'}}
+									<span class="ga_status ga_pending">&nbsp;</span>
+								{{/if}}
+							</td>
+							<td class="ga_remove"></td>
+						</tr>
+					{{/each}}
+				</table>
+			{{/if}}
+</script>		
+
+<script id="RemoveTeammemberTemplate" type="text/x-jQuery-tmpl">
+	<h1 class="headerPanel headerBottomBorder headerPadding">${title}</h1>
+	<form id="commentForm" class="executeActionForm">
+		<h5>${message}</h5>
+		{{if optional}}
+			<p>
+				${optional}
+			</p>
+		{{/if}}
+		<h5>Comments</h5>
+		<textarea name="${areaId}" id="${areaId}" class="required helperText">Enter comments here</textarea>
+		<p class="buttons">
+			<button type="button" id="${cancelButtonId}" class="button_basic">Cancel</button>
+			<button id="${confirmButtonId}" class="action_call" type="submit">Confirm</button>
+		</p>
+	</form>
+</script>	

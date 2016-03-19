@@ -1,0 +1,121 @@
+<div class="modal-content cam-modal-content-adjustment">
+  <form name="engineConfigForm" class="camFormNoBorder">
+    <div class="modal-header camModalHeader">
+      <div class="row cam-row-main">
+        <div class="col-xs-11 camColpadding">
+          <h4 class="modal-title titleFont" id="actionLabel">
+            REMOVE Scheduler
+          </h4>
+        </div>
+        <div class="col-xs-1 camColpadding cam-close-btn-adjustment pull-right">
+          <button type="button" class="close closeX" data-dismiss="modal" ng-click="cancel()">
+            <span aria-hidden="true">
+              &times;
+            </span>
+            <span class="sr-only">
+              {{'enginesList.configDialog.closeButtonLabel' | i18next}}
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="row cam-row-main">
+        <div ng-hide="camHiddenValue" class="ng-hide camHiddenValue">
+          <p ng-if="showSuccessMessage === true && showErrorMessage === false" id="camSuccessIcon"><i class="camSuccessIcon"></i>{{successMessage}}</p>
+          <p ng-if="showErrorMessage === true && showSuccessMessage === false" id="camErrorIcon"><i class="camErrorIcon"></i> {{errorMessage}}</p>
+        </div>
+      </div>
+      <hr class="camDialogDivider"/>
+    </div>
+
+    <div class="modal-body camModalBody">
+      <div class="row">
+        <div class="col-xs-12 camColpadding label-adjustment">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.nameLabel' |
+            i18next}}
+            </label>
+        </div>
+        <div class="col-xs-9 remove-adjust cam-wrap-adjust">
+          {{engine.name | i18next}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.typeLabel' | i18next}}
+          </label>
+        </div>
+        <div class="col-xs-4 remove-adjust">
+          {{engine.type | i18next}}
+        </div>
+      </div>
+
+<div class="row cam-row-input addressRow-adjust">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.addressLabel' | i18next}}</label>
+        </div>
+        <div class="col-xs-9 cam-wrap-adjust remove-adjust">
+          {{engine.protocol}}://{{engine.address | i18next}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.portLabel' | i18next}}</label>
+        </div>
+        <div class="col-xs-5 camPortField remove-adjust">
+          {{engine.port}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment" ng-class="{'cam-engine-list-required' : false, 'camDisableLabel' : engine.type == 'dSeries' || engine.type == 'ESP' || engine.type == 'Select Type'}">{{'enginesList.configDialog.instanceLabel' | i18next}}
+          </label>
+        </div>
+        <div class="col-xs-4 remove-adjust">
+          {{engine.instance | i18next}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.userIdLabel' | i18next}}</label>
+        </div>
+        <div class="col-xs-9 remove-adjust cam-wrap-adjust">
+         {{engine.userid | i18next}}
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment">{{'enginesList.configDialog.passwordLabel' | i18next}}</label>
+        </div>
+        <div class="col-xs-8 remove-adjust">
+          &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;
+        </div>
+      </div>
+      <div class="row cam-row-input">
+        <div class="col-xs-2 camColLabeladjustment">
+          <label class="label-adjustment camSslLabel" ng-class="{'cam-engine-list-required' : false, 'camDisableLabel' : engine.protocol == 'http'}">{{'enginesList.configDialog.certOptionLabel' | i18next}}</label>
+        </div>
+        <div class="col-xs-8 remove-adjust" ng-class="{'camRemoveDisabledText': engine.protocol == 'http'}">
+          {{engine.securityOption | i18next}}
+      </div>
+    </div>
+      </div>
+
+
+    <div class="modal-footer camModalFooter">
+      <hr class="footer-divider"/>
+      <div class="btn-block">
+        <button id="camConfigEngineRemoveButton" type="button" class="btn btn-light" ng-click="deleteScheduler(engine)">
+          {{'enginesList.camActionRemoveMenuLabel' | i18next}}
+        </button>
+        <button id="camConfigEngineCancelButton" type="button" class="btn btn-primary" cam-auto-focus="camModalFocus" data-dismiss="modal" ng-click="cancel()">
+          {{'enginesList.configDialog.cancelButtonLabel' | i18next}}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

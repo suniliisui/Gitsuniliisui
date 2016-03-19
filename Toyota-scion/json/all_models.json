@@ -1,0 +1,230 @@
+{
+   "xb":{
+      "title":"xB",
+      "seriesCode":"xb",
+      "startingMSRP":"$17,915",
+      "startingMSRPDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary.",
+      "models":[
+         {
+            "year":"2015",
+            "transmission":"Manual",
+            "modelCode":"6203",
+            "description":"description",
+            "msrp":"$17,915",
+            "defaultColorCode":"04V0",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Automatic",
+            "modelCode":"6202",
+            "description":"description",
+            "msrp":"$18,865",
+            "defaultColorCode":"04V0",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Automatic",
+            "modelCode":"6208",
+            "description":"description",
+            "msrp":"$20,480",
+            "specialTitle":"686 Parklan Edition",
+            "defaultColorCode":"01F7",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         }
+      ],
+      "specials":{
+         "xb-special-edition-686-at":{
+            "title":"686 Parklan Edition",
+            "seriesCode":"xb686",
+            "modelCode":"6208",
+            "transmission":"Automatic"
+         }
+      }
+   },
+   "im":{
+      "title":"iM",
+      "seriesCode":"im",
+      "startingMSRP":"$19,255",
+      "startingMSRPDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary.",
+      "models":[
+         {
+            "year":"2016",
+            "transmission":"Manual",
+            "modelCode":"6273",
+            "description":"description",
+            "msrp":"$19,255",
+            "defaultColorCode":"0209",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+                  {
+            "year":"2016",
+            "transmission":"CVT",
+            "modelCode":"6272",
+            "description":"description",
+            "msrp":"$19,995",
+            "defaultColorCode":"0209",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         }
+      ],
+      "specials":{
+      }
+   },
+   "tc":{
+      "title":"tC",
+      "seriesCode":"tc",
+      "startingMSRP":"$20,005",
+      "startingMSRPDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary.",
+      "models":[
+         {
+            "year":"2016",
+            "transmission":"Manual",
+            "modelCode":"6223",
+            "description":"description",
+            "msrp":"$20,180",
+            "defaultColorCode":"08T7",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2016",
+            "transmission":"Automatic",
+            "modelCode":"6222",
+            "description":"description",
+            "msrp":"$21,330",
+            "defaultColorCode":"08T7",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Manual",
+            "modelCode":"6223",
+            "description":"description",
+            "msrp":"$20,005",
+            "defaultColorCode":"01G3",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Automatic",
+            "modelCode":"6222",
+            "description":"description",
+            "msrp":"$21,155",
+            "defaultColorCode":"01G3",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Manual",
+            "modelCode":"6229",
+            "specialTitle":"RS 9.0",
+            "description":"description",
+            "msrp":"$23,985",
+            "defaultColorCode":[
+               "02MM"
+            ],
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Automatic",
+            "modelCode":"6228",
+            "specialTitle":"RS 9.0",
+            "description":"description",
+            "msrp":"$25,135",
+            "defaultColorCode":[
+               "02MM"
+            ],
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         }
+      ],
+      "specials":{
+         "tC-release-series-9.0-at":{
+            "title":"RS 9.0",
+            "seriesCode":"tcrs",
+            "modelCode":"6228",
+            "transmission":"Automatic"
+         },
+         "tC-release-series-9.0-mt":{
+            "title":"RS 9.0",
+            "seriesCode":"tcrs",
+            "modelCode":"6229",
+            "transmission":"Manual"
+         }
+      }
+   },
+   "ia":{
+      "title":"iA",
+      "seriesCode":"ia",
+      "startingMSRP":"$16,495",
+      "startingMSRPDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary.",
+      "models":[
+         {
+            "year":"2016",
+            "transmission":"Manual",
+            "modelCode":"6263",
+            "description":"description",
+            "msrp":"$16,495",
+            "defaultColorCode":"038P",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2016",
+            "transmission":"Automatic",
+            "modelCode":"6262",
+            "description":"description",
+            "msrp":"$17,595",
+            "defaultColorCode":"038P",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         }
+      ],
+      "specials":{
+      }
+   },
+   "frs":{
+      "title":"FR-S",
+      "seriesCode":"frs",
+      "startingMSRP":"$25,695",
+      "startingMSRPDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary.",
+      "models":[
+         {
+            "year":"2016",
+            "transmission":"Manual",
+            "modelCode":"6253",
+            "description":"description",
+            "msrp":"$26,100",
+            "defaultColorCode":"0M7Y",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2016",
+            "transmission":"Automatic",
+            "modelCode":"6252",
+            "description":"description",
+            "msrp":"$27,200",
+            "defaultColorCode":"0M7Y",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Manual",
+            "modelCode":"6253",
+            "description":"description",
+            "msrp":"$25,695",
+            "defaultColorCode":"0K1X",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         },
+         {
+            "year":"2015",
+            "transmission":"Automatic",
+            "modelCode":"6252",
+            "description":"description",
+            "msrp":"$26,795",
+            "defaultColorCode":"0K1X",
+            "msrpDisclaimer":"MSRP includes the Delivery, Processing and Handling Fee. (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Scion's charge for these services is called the \"Delivery, Processing and Handling Fee\" and is based on the value of the processing, handling and delivery services Scion provides as well as Scion's overall pricing structure. Scion may make a profit on the Delivery, Processing and Handling Fee.). The Delivery, Processing and Handling Fee in AL, FL, GA, NC, SC, AR, LA, MS, OK and TX will be higher. Excludes taxes, license, title and accessories or other optional equipment. Dealer price will vary."
+         }
+      ],
+      "specials":{
+      }
+   }
+}

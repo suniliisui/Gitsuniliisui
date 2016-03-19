@@ -1,0 +1,58 @@
+{
+	"loginViewLinks" : {
+							"links" : [
+								{
+									"displayName" : "APIs",
+									"objectType" : "home",
+									"viewName" : "apis",
+									"href" : "/apis"
+								},
+								{
+									"displayName" : "Support",
+									"objectType" : "support",
+									"viewName" : "support",
+									"href" : "/home/support"
+								}, 
+								{
+									"displayName" : "Gallery",
+									"objectType" : "gallery",
+									"viewName" : "gallery",
+									"href" : "/home/gallery"
+								}, 
+								{
+									"displayName" : "Community",
+									"objectType" : "forum",
+									"viewName" : "index",
+									"href" : "/forum/home"
+								}
+							]
+						},
+	"anonymousViewLinks" : {
+							"links" : [
+								{
+									"displayName" : "APIs",
+									"objectType" : "home",
+									"viewName" : "apis",
+									"href" : "/apis"
+								}, 
+								{
+									"displayName" : "Support",
+									"objectType" : "support",
+									"viewName" : "support",
+									"href" : "/home/support"
+								}, 
+								{
+									"displayName" : "Gallery",
+									"objectType" : "gallery",
+									"viewName" : "gallery",
+									"href" : "/home/gallery"
+								}, 
+								{
+									"displayName" : "Community",
+									"objectType" : "forum",
+									"viewName" : "index",
+									"href" : "/forum/home"
+								}
+							]
+						}
+}

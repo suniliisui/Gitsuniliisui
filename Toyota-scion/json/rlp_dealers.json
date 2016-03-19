@@ -1,0 +1,2812 @@
+[
+	{
+		"dealerCode":"23050",
+		"dealerName":"Estabrook Scion",
+		"dealerUrl":"NO SCION SITE",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"-",
+		"siteHost":"-",
+		"inventoryUrl":""
+	},
+	{
+		"dealerCode":"42326",
+		"dealerName":"Patterson Scion",
+		"dealerUrl":"NO SCION SITE",
+		"region":"GST",
+		"district":"13",
+		"siteSkin":"-",
+		"siteHost":"-",
+		"inventoryUrl":""
+	},
+	{
+		"dealerCode":"1019",
+		"dealerName":"Scott Crump Scion",
+		"dealerUrl":"http://www.scottcrumpscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"AutoOne",
+		"inventoryUrl":"http://www.scottcrumpscion.com/new-cars/"
+	},
+	{
+		"dealerCode":"9156",
+		"dealerName":"Ed Morse Delray Scion",
+		"dealerUrl":"http://www.delrayscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://www.delrayscion.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"9196",
+		"dealerName":"AutoNation Scion Pinellas Park",
+		"dealerUrl":"http://www.autonationscionpinellaspark.com/",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://www.autonationscionpinellaspark.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"9206",
+		"dealerName":"Autonation Scion Weston",
+		"dealerUrl":"http://www.autonationscionweston.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://www.autonationscionweston.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"9210",
+		"dealerName":"AutoNation Scion of Winter Park",
+		"dealerUrl":"http://www.autonationscionwinterpark.com/",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://www.autonationscionwinterpark.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"9229",
+		"dealerName":"AutoNation Scion Fort Myers",
+		"dealerUrl":"http://autonationscionfortmyers.com/",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://www.autonationscionfortmyers.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"10104",
+		"dealerName":"AutoNation Scion Thornton Road",
+		"dealerUrl":"http://autonationscionthorntonroad.com/",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationscionthorntonroad.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"10124",
+		"dealerName":"AutoNation Scion Mall of Georgia",
+		"dealerUrl":"http://autonationscionmallofgeorgia.com/",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationscionmallofgeorgia.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"42262",
+		"dealerName":"AutoNation Scion South Austin",
+		"dealerUrl":"http://autonationscionsouthaustin.com/",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationscionsouthaustin.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"42271",
+		"dealerName":"AutoNation Scion Gulf Freeway",
+		"dealerUrl":"http://autonationsciongulffreeway.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationsciongulffreeway.comVehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"42283",
+		"dealerName":"AutoNation Scion Corpus Christi",
+		"dealerUrl":"http://autonationscioncorpuschristi.com/",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationscioncorpuschristi.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"42319",
+		"dealerName":"AutoNation Scion North Arlington",
+		"dealerUrl":"http://autonationscionnortharlington.com/",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Cobalt",
+		"siteHost":"Cobalt",
+		"inventoryUrl":"http://autonationscionnortharlington.com/VehicleSearchResults?search=new"
+	},
+	{
+		"dealerCode":"10123",
+		"dealerName":"Scion of McDonough",
+		"dealerUrl":"http://www.scionofmcdonough.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"Dealer eProcess",
+		"inventoryUrl":"http://www.scionofmcdonough.com/search/new-scion/tp-mk57/"
+	},
+	{
+		"dealerCode":"32015",
+		"dealerName":"Cox Scion",
+		"dealerUrl":"http://www.coxscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"Dealer eProcess",
+		"inventoryUrl":"http://www.coxscion.com/new-scion-burlington-nc"
+	},
+	{
+		"dealerCode":"1007",
+		"dealerName":"Bill Penney Scion",
+		"dealerUrl":"http://www.billpenneyscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.billpenneyscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"1086",
+		"dealerName":"TeamOne Scion of Gadsden",
+		"dealerUrl":"http://www.teamonescion.com/",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.teamonescion.com//new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"1087",
+		"dealerName":"University Scion",
+		"dealerUrl":"http://www.tuscumbiascion.com/index.htm",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.tuscumbiascion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"3061",
+		"dealerName":"North Point Scion",
+		"dealerUrl":"http://www.northpointscion.com",
+		"region":"GST",
+		"district":"12",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.northpointscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"3068",
+		"dealerName":"Caldwell Scion (AR)",
+		"dealerUrl":"http://www.caldwellscion.com",
+		"region":"GST",
+		"district":"12",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.caldwellscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9107",
+		"dealerName":"Scion of Hollywood",
+		"dealerUrl":"http://www.scionofhollywood.com/index.htm",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofhollywood.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9126",
+		"dealerName":"Village Scion",
+		"dealerUrl":"http://www.villagescion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.villagescion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9154",
+		"dealerName":"Stadium Scion",
+		"dealerUrl":"http://www.stadiumscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.stadiumscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9163",
+		"dealerName":"Headquarter Scion",
+		"dealerUrl":"http://www.headquarterscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.headquarterscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9183",
+		"dealerName":"Scion of Orlando",
+		"dealerUrl":"http://www.scionoforlando.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionoforlando.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9198",
+		"dealerName":"Clearwater Scion",
+		"dealerUrl":"http://www.clearwaterscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.clearwaterscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9200",
+		"dealerName":"Courtesy Scion of Tampa",
+		"dealerUrl":"http://www.courtesyscionoftampa.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.courtesyscionoftampa.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9203",
+		"dealerName":"Alan Jay Scion",
+		"dealerUrl":"http://www.alanjayscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.alanjayscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9204",
+		"dealerName":"Kendall Scion",
+		"dealerUrl":"http://www.kendallscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.kendallscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9207",
+		"dealerName":"Germain Scion of Sarasota",
+		"dealerUrl":"http://www.scionofsarasota.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofsarasota.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9208",
+		"dealerName":"Coggin Scion",
+		"dealerUrl":"http://www.cogginscion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.cogginscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9209",
+		"dealerName":"David Maus Scion",
+		"dealerUrl":"http://www.davidmausscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.davidmausscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9215",
+		"dealerName":"Miracle Scion",
+		"dealerUrl":"http://www.scionofwinterhaven.com/index.htm",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofwinterhaven.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9216",
+		"dealerName":"West Kendall Scion",
+		"dealerUrl":"http://www.westkendallscion.com/",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.westkendallscion.com//new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9217",
+		"dealerName":"Scion of Tampa Bay",
+		"dealerUrl":"http://www.scionoftampabay.com/index.htm",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionoftampabay.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9226",
+		"dealerName":"South Dade Scion",
+		"dealerUrl":"http://www.southdadescion.com/index.htm",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.southdadescion.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9227",
+		"dealerName":"Scion of Deerfield Beach",
+		"dealerUrl":"http://www.scionofdeerfieldbeach.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofdeerfieldbeach.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"9233",
+		"dealerName":"Scion of Fort Walton Beach",
+		"dealerUrl":"http://www.scionfwb.com/index.htm",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionfwb.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10032",
+		"dealerName":"Marietta Scion",
+		"dealerUrl":"http://www.mariettascion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.mariettascion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10039",
+		"dealerName":"Franklin Scion",
+		"dealerUrl":"http://www.franklinscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.franklinscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10087",
+		"dealerName":"Heyward Allen Scion",
+		"dealerUrl":"http://www.heywardallenscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.heywardallenscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10106",
+		"dealerName":"World Scion",
+		"dealerUrl":"http://www.worldscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.worldscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10111",
+		"dealerName":"Stone Mountain Scion",
+		"dealerUrl":"http://www.stonemountainscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.stonemountainscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10118",
+		"dealerName":"Nalley Scion of Roswell",
+		"dealerUrl":"http://www.scionofroswell.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofroswell.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10119",
+		"dealerName":"Scion of Albany",
+		"dealerUrl":"http://www.scion-albany.com/index.htm",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scion-albany.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10126",
+		"dealerName":"Nalley Scion of Stonecrest",
+		"dealerUrl":"http://www.stonecrestscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.stonecrestscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"10127",
+		"dealerName":"Rivertown Scion",
+		"dealerUrl":"http://www.rivertownscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.rivertownscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17023",
+		"dealerName":"Yokem Scion",
+		"dealerUrl":"http://www.yokemscion.com",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.yokemscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17041",
+		"dealerName":"Musson-Patout Scion",
+		"dealerUrl":"http://www.mussonpatoutscion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.mussonpatoutscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17050",
+		"dealerName":"Lakeside Scion",
+		"dealerUrl":"http://www.lakesidescion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.lakesidescion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17055",
+		"dealerName":"Team Scion Baton Rouge",
+		"dealerUrl":"http://www.teamscionofbatonrouge.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.teamscionofbatonrouge.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17061",
+		"dealerName":"Scion of Slidell",
+		"dealerUrl":"http://www.scionofslidell.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofslidell.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17062",
+		"dealerName":"Bohn Brothers Scion",
+		"dealerUrl":"http://www.bohnbrothersscion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.bohnbrothersscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17066",
+		"dealerName":"Northshore Scion",
+		"dealerUrl":"http://www.northshorescion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.northshorescion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17075",
+		"dealerName":"Walker Scion",
+		"dealerUrl":"http://www.walker-scion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.walker-scion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"23063",
+		"dealerName":"Gray-Daniels Scion",
+		"dealerUrl":"http://www.graydanielsscion.com",
+		"region":"GST",
+		"district":"13",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.graydanielsscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32097",
+		"dealerName":"Fred Anderson Scion",
+		"dealerUrl":"http://www.fredandersonscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.fredandersonscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32118",
+		"dealerName":"Scion of Greenville (NC)",
+		"dealerUrl":"http://www.scionofgreenville.com/",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofgreenville.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32126",
+		"dealerName":"Town & Country Toyota - Scion",
+		"dealerUrl":"http://www.townandcountryscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.townandcountryscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32129",
+		"dealerName":"Mike Johnson's Hickory Scion",
+		"dealerUrl":"http://www.hickoryscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.hickoryscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32131",
+		"dealerName":"Pecheles Scion",
+		"dealerUrl":"http://www.pechelesscion.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.pechelesscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32133",
+		"dealerName":"Fred Anderson Scion of Sanford",
+		"dealerUrl":"http://www.scionofsanford.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofsanford.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32135",
+		"dealerName":"Victory Scion (NC)",
+		"dealerUrl":"http://www.victoryscionnc.com",
+		"region":"SET",
+		"district":"13",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.victoryscionnc.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32137",
+		"dealerName":"Scion of North Charlotte",
+		"dealerUrl":"http://www.scionofnorthcharlotte.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofnorthcharlotte.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32143",
+		"dealerName":"Flow Scion of Statesville",
+		"dealerUrl":"http://www.flowscionofstatesville.com/index.htm",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.flowscionofstatesville.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"32144",
+		"dealerName":"Mount Airy Scion",
+		"dealerUrl":"http://mountairyscion.com/default.aspx",
+		"region":"SET",
+		"district":"13",
+		"siteSkin":"Dealer.Com",
+		"siteHost":"Dealer.Com",
+		"inventoryUrl":"http://mountairyscion.com/default.aspx/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"35054",
+		"dealerName":"Hudiburg Scion",
+		"dealerUrl":"http://www.hudiburgscion.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.hudiburgscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"35055",
+		"dealerName":"Bob Howard Scion",
+		"dealerUrl":"http://www.bobhowardscion.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.bobhowardscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"35066",
+		"dealerName":"Putnam Scion Altus",
+		"dealerUrl":"http://www.putnamscionaltus.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.putnamscionaltus.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"39003",
+		"dealerName":"Ralph Hayes Scion",
+		"dealerUrl":"http://www.ralphhayesscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.ralphhayesscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"39054",
+		"dealerName":"Scion Center",
+		"dealerUrl":"http://www.scioncenter.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scioncenter.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"39058",
+		"dealerName":"Scion of Rock Hill",
+		"dealerUrl":"http://www.scionofrockhill.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofrockhill.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"39059",
+		"dealerName":"Fred Anderson Scion of Charleston",
+		"dealerUrl":"http://www.scionofcharleston.com/",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofcharleston.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"39061",
+		"dealerName":"Scion of Greenville",
+		"dealerUrl":"http://www.scionofgreenville.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofgreenville.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42073",
+		"dealerName":"Sterling McCall Scion",
+		"dealerUrl":"http://www.smccallscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.smccallscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42116",
+		"dealerName":"Alamo Scion",
+		"dealerUrl":"http://www.alamoscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.alamoscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42150",
+		"dealerName":"Dick Poe Scion",
+		"dealerUrl":"http://www.dickpoescion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.dickpoescion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42161",
+		"dealerName":"Street Scion",
+		"dealerUrl":"http://www.streetscion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.streetscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42186",
+		"dealerName":"Cavender Scion",
+		"dealerUrl":"http://www.cavenderscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.cavenderscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42196",
+		"dealerName":"Don Ringler Scion",
+		"dealerUrl":"http://www.donringlerscion.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.donringlerscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42201",
+		"dealerName":"Red McCombs Scion",
+		"dealerUrl":"http://www.redmccombsscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.redmccombsscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42202",
+		"dealerName":"Scion of Richardson",
+		"dealerUrl":"http://www.scionofrichardson.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofrichardson.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42220",
+		"dealerName":"Scion of Longview",
+		"dealerUrl":"http://www.scionoflongview.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionoflongview.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42221",
+		"dealerName":"Scion of Plano",
+		"dealerUrl":"http://www.scionofplano.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofplano.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42228",
+		"dealerName":"Scion of Killeen",
+		"dealerUrl":"http://www.scionofkilleen.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofkilleen.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42236",
+		"dealerName":"Charles Maund Scion",
+		"dealerUrl":"http://www.charlesmaundscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.charlesmaundscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42241",
+		"dealerName":"Universal Scion",
+		"dealerUrl":"http://www.universalscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.universalscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42242",
+		"dealerName":"Classic Scion of Tyler (TX)",
+		"dealerUrl":"http://www.classicscionoftyler.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.classicscionoftyler.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42253",
+		"dealerName":"Freeman Scion of Hurst",
+		"dealerUrl":"http://www.freemanscionofhurst.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.freemanscionofhurst.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42264",
+		"dealerName":"Gene Messer Scion",
+		"dealerUrl":"http://www.genemesserscion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.genemesserscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42266",
+		"dealerName":"Durant Scion",
+		"dealerUrl":"http://www.durantscion.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.durantscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42267",
+		"dealerName":"Demontrond Scion",
+		"dealerUrl":"http://www.demontrondscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.demontrondscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42268",
+		"dealerName":"Texas Scion of Grapevine",
+		"dealerUrl":"http://www.texasscionofgrapevine.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.texasscionofgrapevine.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42270",
+		"dealerName":"Joe Myers Scion",
+		"dealerUrl":"http://www.joemyersscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.joemyersscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42272",
+		"dealerName":"San Marcos Scion",
+		"dealerUrl":"http://www.sanmarcosscion.com/index.htm",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.sanmarcosscion.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42273",
+		"dealerName":"Fort Bend Scion",
+		"dealerUrl":"http://www.fortbendscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.fortbendscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42275",
+		"dealerName":"Philpott Scion",
+		"dealerUrl":"http://www.philpottscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.philpottscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42276",
+		"dealerName":"Scion of Fort Worth",
+		"dealerUrl":"http://www.scionoffortworth.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionoffortworth.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42278",
+		"dealerName":"Scion of Dallas",
+		"dealerUrl":"http://www.scionofdallas.com/index.htm",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofdallas.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42286",
+		"dealerName":"Vandergriff Scion",
+		"dealerUrl":"http://www.vandergriffscion.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.vandergriffscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42290",
+		"dealerName":"Lithia Scion of Odessa",
+		"dealerUrl":"http://www.odessascion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.odessascion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42292",
+		"dealerName":"Lithia Scion of Abilene",
+		"dealerUrl":"http://www.abilenescion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.abilenescion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42295",
+		"dealerName":"Pat Lobb Scion of McKinney",
+		"dealerUrl":"http://www.scionofmckinney.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofmckinney.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42296",
+		"dealerName":"Cowboy Scion",
+		"dealerUrl":"http://www.cowboy-scion.com/",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.cowboy-scion.com//new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42302",
+		"dealerName":"Scion of Rockwall",
+		"dealerUrl":"http://www.scionofrockwall.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofrockwall.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42304",
+		"dealerName":"Mike Shaw Scion",
+		"dealerUrl":"http://www.mikeshawscion.com",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.mikeshawscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42305",
+		"dealerName":"Scion of Boerne",
+		"dealerUrl":"http://www.scionofboerne.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofboerne.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42306",
+		"dealerName":"North Park Scion of San Antonio",
+		"dealerUrl":"http://www.northparkscion.com",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.northparkscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42308",
+		"dealerName":"Red River Scion",
+		"dealerUrl":"http://www.redriverscion.com",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.redriverscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42313",
+		"dealerName":"Scion of Victoria",
+		"dealerUrl":"http://scionofvictoria.com/",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://scionofvictoria.com//new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42320",
+		"dealerName":"Scion of Lewisville",
+		"dealerUrl":"http://www.scionoflewisville.com/index.htm",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionoflewisville.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42321",
+		"dealerName":"Scion of Alvin",
+		"dealerUrl":"http://www.scionofalvin.com/",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.scionofalvin.com//new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42324",
+		"dealerName":"Bert Ogden Scion of Harlingen",
+		"dealerUrl":"http://www.bertogdenscion.com/index.htm",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.bertogdenscion.com/index.htm/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17014",
+		"dealerName":"Price Leblanc Scion",
+		"dealerUrl":"http://www.priceleblancscion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.priceleblancscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"1080",
+		"dealerName":"Bondy's Scion",
+		"dealerUrl":"http://www.bondysscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"DealerFire",
+		"siteHost":"DealerFire",
+		"inventoryUrl":"http://www.bondysscion.com/new-sion-enterprise-al"
+	},
+	{
+		"dealerCode":"32001",
+		"dealerName":"Rice Scion",
+		"dealerUrl":"http://www.ricescion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"DealerFire",
+		"siteHost":"DealerFire",
+		"inventoryUrl":"http://www.ricescion.com/new-scion-greensboro-nc"
+	},
+	{
+		"dealerCode":"32136",
+		"dealerName":"Hubert Vester Scion of Wilson",
+		"dealerUrl":"http://www.scionofwilson.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"DealerFire",
+		"siteHost":"DealerFire",
+		"inventoryUrl":"http://www.hubertvesterscion.com/new-scion-wilson-nc"
+	},
+	{
+		"dealerCode":"35049",
+		"dealerName":"Jim Norton Scion of Tulsa",
+		"dealerUrl":"http://www.jimnortonscion.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"DealerFire",
+		"siteHost":"DealerFire",
+		"inventoryUrl":"http://www.jimnortonscion.com/new-scion-tulsa-ok"
+	},
+	{
+		"dealerCode":"3050",
+		"dealerName":"J. Pauley Scion",
+		"dealerUrl":"http://www.jpauleyscion.com",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"DealerFire",
+		"siteHost":"DealerFire",
+		"inventoryUrl":"http://www.jpauleyscion.com/newscion-fort-smith-ar"
+	},
+	{
+		"dealerCode":"1084",
+		"dealerName":"Eastern Shore Scion",
+		"dealerUrl":"http://www.easternshorescion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.easternshorescion.com/searchnew.aspx"
+	},
+	{
+		"dealerCode":"9043",
+		"dealerName":"Scion of South Florida",
+		"dealerUrl":"http://www.scionofsouthflorida.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.scionofsouthflorida.com/searchnew.aspx"
+	},
+	{
+		"dealerCode":"9095",
+		"dealerName":"De Luca Scion",
+		"dealerUrl":"http://www.delucascion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"DealerOn",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.delucascion.com/searchnewv.aspx"
+	},
+	{
+		"dealerCode":"10098",
+		"dealerName":"Chatham Parkway Scion",
+		"dealerUrl":"http://www.chathamparkwayscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.chathamparkwayscion.com/searchnewv.aspx"
+	},
+	{
+		"dealerCode":"10114",
+		"dealerName":"Scion South (GA)",
+		"dealerUrl":"http://www.scionsouth.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.scionsouth.com/searchnewv.aspx"
+	},
+	{
+		"dealerCode":"32121",
+		"dealerName":"Leith Scion",
+		"dealerUrl":"http://www.leithscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"DealerOn",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.leithscion.com/searchnewv.aspx"
+	},
+	{
+		"dealerCode":"32138",
+		"dealerName":"Scion of Elizabeth City",
+		"dealerUrl":"http://www.scionofelizabethcity.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"Dealeron",
+		"inventoryUrl":"http://www.scionofelizabethcity.com/searchnewv.aspx"
+	},
+	{
+		"dealerCode":"42323",
+		"dealerName":"Scion of Denton",
+		"dealerUrl":"http://www.scionofdenton.com/",
+		"region":"GST",
+		"district":"4",
+		"siteSkin":"DealerOn",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.scionofdenton.com//searchnewv.aspx"
+	},
+	{
+		"dealerCode":"9112",
+		"dealerName":"Germain Scion of Naples",
+		"dealerUrl":"http://www.scionofnaples.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.scionofnaples.com/searchnew.aspx"
+	},
+	{
+		"dealerCode":"9194",
+		"dealerName":"Phillips Scion",
+		"dealerUrl":"http://www.phillipsscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"DealerOn",
+		"siteHost":"DealerOn",
+		"inventoryUrl":"http://www.phillipsscion.com/searchnew.aspx"
+	},
+	{
+		"dealerCode":"42291",
+		"dealerName":"Community Scion",
+		"dealerUrl":"http://www.communityscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"Driving Force",
+		"siteHost":"Driving Force",
+		"inventoryUrl":"http://www.communityscion.com/new/search?dpt=1"
+	},
+	{
+		"dealerCode":"9199",
+		"dealerName":"Central Florida Scion",
+		"dealerUrl":"http://www.centralflscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.centralflscion.com/new-scion-cars.aspx"
+	},
+	{
+		"dealerCode":"3066",
+		"dealerName":"Scion of Fayetteville",
+		"dealerUrl":"http://www.scionoffayetteville.com",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.scionoffayetteville.com/new-cars.aspx"
+	},
+	{
+		"dealerCode":"9193",
+		"dealerName":"Palm Beach Scion",
+		"dealerUrl":"http://www.palmbeachscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.palmbeachscion.com/new-scion-inventory.aspx"
+	},
+	{
+		"dealerCode":"32106",
+		"dealerName":"Hendrick Scion of Concord",
+		"dealerUrl":"http://www.hendrickscionconcord.com/",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.hendrickscionconcord.com/new-cars.aspx"
+	},
+	{
+		"dealerCode":"9223",
+		"dealerName":"Royal Palm Scion",
+		"dealerUrl":"http://www.royalpalmbeachscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.royalpalmbeachscion.com/search-scion-inventory.aspx"
+	},
+	{
+		"dealerCode":"10094",
+		"dealerName":"Atlanta Scion",
+		"dealerUrl":"http://www.atlantascion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.atlantascion.com/new-scion-cars.aspx"
+	},
+	{
+		"dealerCode":"1033",
+		"dealerName":"McKinnon Scion",
+		"dealerUrl":"http://www.mckinnonscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.mckinnonscion.com/inventory.cfm?type=new"
+	},
+	{
+		"dealerCode":"1061",
+		"dealerName":"Limbaugh Scion",
+		"dealerUrl":"http://www.limbaughscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.limbaughscion.com/inventory.cfm?type=new&year=&make=&model="
+	},
+	{
+		"dealerCode":"42298",
+		"dealerName":"Round Rock Scion",
+		"dealerUrl":"http://round-rock-scion.ebizautos.com/",
+		"region":"GST",
+		"district":"8",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.roundrockscion.com/scion.aspx"
+	},
+	{
+		"dealerCode":"42322",
+		"dealerName":"Scion of Pharr",
+		"dealerUrl":"http://www.scionofpharr.com/",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"eBizAutos",
+		"siteHost":"eBizAutos",
+		"inventoryUrl":"http://www.scionofpharr.com/scion.aspx"
+	},
+	{
+		"dealerCode":"9079",
+		"dealerName":"Lakeland Scion",
+		"dealerUrl":"http://www.lakelandscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.lakelandscion.com/inventory.cfm?type=new"
+	},
+	{
+		"dealerCode":"9158",
+		"dealerName":"Lipton Scion",
+		"dealerUrl":"http://www.liptonscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.liptonscion.com/inventory.cfm?type=new&year=&make=&model="
+	},
+	{
+		"dealerCode":"9231",
+		"dealerName":"Beaver Scion St. Augustine",
+		"dealerUrl":"http://www.beaverscionstaugustine.com/",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.beaverscionstaugustine.com/inventory.cfm?type=new&year=&make=&model="
+	},
+	{
+		"dealerCode":"10078",
+		"dealerName":"Savannah Scion",
+		"dealerUrl":"http://www.savannahscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.savannahscion.com/inventory.cfm?type=new&year=&make=&model="
+	},
+	{
+		"dealerCode":"10107",
+		"dealerName":"Thomasville Scion",
+		"dealerUrl":"http://www.thomasvillescion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"FusionZone",
+		"siteHost":"FusionZone",
+		"inventoryUrl":"http://www.thomasvillescion.com/inventory.cfm?type=new"
+	},
+	{
+		"dealerCode":"3067",
+		"dealerName":"Central Scion",
+		"dealerUrl":"http://www.centralscion.com",
+		"region":"GST",
+		"district":"12",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://centralscion.com/Jonesboro-arkansas/for-sale-new/"
+	},
+	{
+		"dealerCode":"3071",
+		"dealerName":"Scion of Northwest Arkansas",
+		"dealerUrl":"http://scionofnorthwestarkansas.com/",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionofnorthwestarkansas.com/Rogers-arkansas/for-sale/new/"
+	},
+	{
+		"dealerCode":"3072",
+		"dealerName":"Steve Landers Scion",
+		"dealerUrl":"http://www.landersscion.com",
+		"region":"GST",
+		"district":"12",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://landersscion.com/Little-rock-ar/for-sale/new/"
+	},
+	{
+		"dealerCode":"17017",
+		"dealerName":"Courvelle Scion",
+		"dealerUrl":"http://www.courvellescion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://courvellescion.com/Opelousas-louisiana/for-sale/new/"
+	},
+	{
+		"dealerCode":"17057",
+		"dealerName":"John Harvey Scion",
+		"dealerUrl":"http://www.johnharveyscion.com",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.johnharveyscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"17058",
+		"dealerName":"Scion of New Orleans",
+		"dealerUrl":"http://www.scionofneworleans.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionofneworleans.com/New-orleans-la/for-sale/new/"
+	},
+	{
+		"dealerCode":"17060",
+		"dealerName":"Lake Charles Scion",
+		"dealerUrl":"http://www.lakecharlesscion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://lakecharlesscion.com/Lake-charles-la/for-sale/new/"
+	},
+	{
+		"dealerCode":"17065",
+		"dealerName":"Hampton Scion",
+		"dealerUrl":"http://www.hamptonscion.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://hamptonscion.com/Lafayette-louisiana/for-sale/new/"
+	},
+	{
+		"dealerCode":"17067",
+		"dealerName":"Ray Brandt Scion",
+		"dealerUrl":"http://www.raybrandtscion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://raybrandtscion.com/Kenner-Louisiana/For-Sale/New/"
+	},
+	{
+		"dealerCode":"17071",
+		"dealerName":"Supreme Scion of Hammond",
+		"dealerUrl":"http://www.supremescion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://supremescion.com/Hammond-Louisiana/For-Sale/New/"
+	},
+	{
+		"dealerCode":"23037",
+		"dealerName":"Herrin-Gear Scion",
+		"dealerUrl":"http://www.herrin-gearscion.com",
+		"region":"GST",
+		"district":"13",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://herrin-gearscion.com/Jackson-Mississippi/For-Sale/New/"
+	},
+	{
+		"dealerCode":"23052",
+		"dealerName":"Allen Scion",
+		"dealerUrl":"http://www.allenscion.com",
+		"region":"GST",
+		"district":"6",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://allenscion.com/Gulfport-MS/For-Sale/New/"
+	},
+	{
+		"dealerCode":"23069",
+		"dealerName":"Carlock Scion of Tupelo",
+		"dealerUrl":"http://www.carlockscion.com",
+		"region":"GST",
+		"district":"13",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://carlockscion.com/Saltillo-MS/Dealer/New/Research/"
+	},
+	{
+		"dealerCode":"35025",
+		"dealerName":"Fowler Scion (OK)",
+		"dealerUrl":"http://www.fowlerscion.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://fowlerscion.com/Norman-Oklahoma/For-Sale/New/"
+	},
+	{
+		"dealerCode":"35052",
+		"dealerName":"Janzen Scion",
+		"dealerUrl":"http://www.janzenscion.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://janzenscion.com/Stillwater-OK/For-Sale/New/"
+	},
+	{
+		"dealerCode":"35071",
+		"dealerName":"Fowler Scion of Tulsa",
+		"dealerUrl":"http://www.fowlerscionintulsa.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://fowlersciontulsa.com/Tulsa-OK/For-Sale/New/"
+	},
+	{
+		"dealerCode":"35072",
+		"dealerName":"Jim Norton Scion of Oklahoma City",
+		"dealerUrl":"http://www.jimnortonscionokc.com",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://jimnortonscionokc.com/Oklahoma-City/For-Sale/New/"
+	},
+	{
+		"dealerCode":"35073",
+		"dealerName":"Scion of Lawton",
+		"dealerUrl":"http://lawtonscion.com/",
+		"region":"GST",
+		"district":"10",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://lawtonscion.com/Lawton-Oklahoma/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42025",
+		"dealerName":"Scion of Laredo",
+		"dealerUrl":"http://www.scionoflaredo.com",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionoflaredo.com/Laredo-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42026",
+		"dealerName":"Robbins Scion",
+		"dealerUrl":"http://www.robbinsscion.com",
+		"region":"GST",
+		"district":"14",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://robbinsscion.com/Texarkana-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42057",
+		"dealerName":"Scion of Irving",
+		"dealerUrl":"http://www.scionofirving.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionofirving.com/Irving-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42087",
+		"dealerName":"Don McGill Scion",
+		"dealerUrl":"http://www.donmcgillscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://donmcgillscion.com/Houston-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42095",
+		"dealerName":"Fred Haas Scion World",
+		"dealerUrl":"http://www.fredhaasscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://fredhaasscion.com/Spring-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42119",
+		"dealerName":"Tejas Scion",
+		"dealerUrl":"http://www.tejasscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://tejasscion.com/Humble-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42138",
+		"dealerName":"Mike Calvert Scion",
+		"dealerUrl":"http://www.mikecalvertscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://mikecalvertscion.com/Houston-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42182",
+		"dealerName":"Kinsel Scion",
+		"dealerUrl":"http://www.kinselscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://kinselscion.com/Beaumont-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42190",
+		"dealerName":"Star Scion",
+		"dealerUrl":"http://www.starscionofleaguecity.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://starscionofleaguecity.com/League-City-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42206",
+		"dealerName":"Tegeler Scion",
+		"dealerUrl":"http://www.tegelerscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://tegelerscion.com/Brenham-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42209",
+		"dealerName":"Scion of Paris",
+		"dealerUrl":"http://www.scionofparis.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionofparis.com/Paris-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42216",
+		"dealerName":"Jeff Hunter Scion",
+		"dealerUrl":"http://www.jeffhunterscion.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"Dealer.com",
+		"siteHost":"Dealer.com",
+		"inventoryUrl":"http://www.jeffhunterscion.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42219",
+		"dealerName":"Hoy-Fox Scion",
+		"dealerUrl":"http://www.hoyfoxscion.com",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://hoyfoxscion.com/El-Paso-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42234",
+		"dealerName":"Gullo Scion of Conroe",
+		"dealerUrl":"http://www.gulloscion.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://gulloscion.com/Conroe-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42249",
+		"dealerName":"John Eagle Sport City Scion",
+		"dealerUrl":"http://www.johneaglesportcityscion.com",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://sportcityscion.com/Dallas-TX/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42250",
+		"dealerName":"Gulf Coast Scion",
+		"dealerUrl":"http://www.gulfcoastscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://gulfcoastscion.com/Angleton-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42254",
+		"dealerName":"Ram Country Scion",
+		"dealerUrl":"http://www.ramcountryscion.com",
+		"region":"GST",
+		"district":"9",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://scionofdelrio.com/Del-Rio-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42255",
+		"dealerName":"Silsbee Scion",
+		"dealerUrl":"http://www.silsbeescion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://silsbeescion.com/Silsbee-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42259",
+		"dealerName":"Loving Scion",
+		"dealerUrl":"http://www.lovingscion.com",
+		"region":"GST",
+		"district":"5",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://lovingscion.com/Lufkin-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42282",
+		"dealerName":"Fred Haas Scion Country",
+		"dealerUrl":"http://www.fredhaasscioncountry.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://fredhaasscioncountry.com/Houston-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42284",
+		"dealerName":"Don McGill Scion of Katy",
+		"dealerUrl":"http://www.donmcgillscionkaty.com",
+		"region":"GST",
+		"district":"1",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://donmcgillscionkaty.com/IFrame.aspx?IFrameId=2009#404"
+	},
+	{
+		"dealerCode":"42309",
+		"dealerName":"Scion of Midland",
+		"dealerUrl":"http://scionofmidland.com/",
+		"region":"GST",
+		"district":"11",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://www.scionofmidland.com/new-inventory/index.htm"
+	},
+	{
+		"dealerCode":"42311",
+		"dealerName":"Classic Scion Galveston",
+		"dealerUrl":"http://www.classicsciongalveston.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://classicsciongalveston.com/Houston/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42315",
+		"dealerName":"Atkinson Scion",
+		"dealerUrl":"http://www.atkinsonscion.com",
+		"region":"GST",
+		"district":"2",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://atkinsonscion.com/Bryan-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"42329",
+		"dealerName":"Atkin Scion South Dallas",
+		"dealerUrl":"http://orrscion.net/",
+		"region":"GST",
+		"district":"3",
+		"siteSkin":"GSMarketing",
+		"siteHost":"GSMarketing",
+		"inventoryUrl":"http://atkinsonscionsouthdallas.com/Dallas-Texas/For-Sale/New/"
+	},
+	{
+		"dealerCode":"1013",
+		"dealerName":"Reinhardt Scion",
+		"dealerUrl":"http://www.reinhardtscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.reinhardtscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1053",
+		"dealerName":"Scion of Dothan",
+		"dealerUrl":"http://www.scionofdothan.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofdothan.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1059",
+		"dealerName":"Serra Scion (AL)",
+		"dealerUrl":"http://www.serrascion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.serrascion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1064",
+		"dealerName":"Sunny King Scion",
+		"dealerUrl":"http://www.sunnykingscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.sunnykingscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1071",
+		"dealerName":"Serra Scion of Decatur",
+		"dealerUrl":"http://www.serrascionofdecatur.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.serrascionofdecatur.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1073",
+		"dealerName":"Palmer's Airport Scion",
+		"dealerUrl":"http://www.palmersscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.palmersscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1077",
+		"dealerName":"Springhill Scion",
+		"dealerUrl":"http://www.springhillscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.springhillscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1078",
+		"dealerName":"Hoover Scion",
+		"dealerUrl":"http://www.hooverscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.hooverscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1079",
+		"dealerName":"High Country Scion",
+		"dealerUrl":"http://www.highcountryscion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.highcountryscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1081",
+		"dealerName":"Scion of Sylacauga",
+		"dealerUrl":"http://scionofsylacauga.com/",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://scionofsylacauga.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1082",
+		"dealerName":"Lynch Scion of Auburn",
+		"dealerUrl":"http://www.lynchscionofauburn.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.lynchscionofauburn.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1083",
+		"dealerName":"Sand Mountain Scion",
+		"dealerUrl":"http://www.sandmountainscion.com/",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.sandmountainscion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"1085",
+		"dealerName":"Tuscaloosa Scion",
+		"dealerUrl":"http://www.tuscaloosascion.com",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.tuscaloosascion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9059",
+		"dealerName":"Key West Scion",
+		"dealerUrl":"http://www.keywestscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.keywestscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9076",
+		"dealerName":"Earl Stewart Scion of North Palm Beach",
+		"dealerUrl":"http://www.earlstewartscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.earlstewartscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9094",
+		"dealerName":"Sun Scion",
+		"dealerUrl":"http://www.sunscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.sunscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9096",
+		"dealerName":"Arlington Scion (FL)",
+		"dealerUrl":"http://home.arlingtonscion.com/",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://home.arlingtonscion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9113",
+		"dealerName":"Ernie Palmer Scion",
+		"dealerUrl":"http://www.erniepalmerscion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.erniepalmerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9117",
+		"dealerName":"Rountree-Moore Scion",
+		"dealerUrl":"http://www.rountreescion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.rountreescion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9140",
+		"dealerName":"Scion of Vero Beach",
+		"dealerUrl":"http://www.scionofverobeach.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofverobeach.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9159",
+		"dealerName":"Al Hendrickson Scion",
+		"dealerUrl":"http://www.alhendricksonscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.alhendricksonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9162",
+		"dealerName":"Cramer Scion of Venice",
+		"dealerUrl":"http://www.cramerscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.cramerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9165",
+		"dealerName":"Palm Scion",
+		"dealerUrl":"http://www.palmscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.palmscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9174",
+		"dealerName":"Panama City Scion",
+		"dealerUrl":"http://www.panamacityscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.panamacityscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9175",
+		"dealerName":"Bev Smith Scion",
+		"dealerUrl":"http://www.bevsmithscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.bevsmithscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9178",
+		"dealerName":"Deland Scion",
+		"dealerUrl":"http://www.delandscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.delandscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9189",
+		"dealerName":"Bob Tyler Scion",
+		"dealerUrl":"http://www.bobtylerscion.com",
+		"region":"SET",
+		"district":"5",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.bobtylerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9190",
+		"dealerName":"Daytona Scion",
+		"dealerUrl":"http://www.daytonascion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.daytonascion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9202",
+		"dealerName":"Mike Erdman Scion",
+		"dealerUrl":"http://www.mikeerdmanscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.mikeerdmanscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9205",
+		"dealerName":"Keith Pierson Scion",
+		"dealerUrl":"http://www.keithpiersonscion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.keithpiersonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9212",
+		"dealerName":"Legacy Scion of Tallahassee",
+		"dealerUrl":"http://www.scionoftallahassee.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionoftallahassee.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9214",
+		"dealerName":"Scion of North Miami",
+		"dealerUrl":"http://www.lehmanscion.com",
+		"region":"SET",
+		"district":"1",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofnorthmiami.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9218",
+		"dealerName":"Scion of Melbourne",
+		"dealerUrl":"http://www.scionofmelbourne.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofmelbourne.com/New-inventory.aspc"
+	},
+	{
+		"dealerCode":"9224",
+		"dealerName":"Wesley Chapel Scion",
+		"dealerUrl":"http://www.wesleychapelscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.wesleychapelscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9228",
+		"dealerName":"Treasure Coast Scion of Stuart",
+		"dealerUrl":"http://www.treasurecoastscionofstuart.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.treasurecoastscionofstuart.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9232",
+		"dealerName":"Scion of Clermont",
+		"dealerUrl":"http://www.scionofclermont.com/",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofclermont.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10015",
+		"dealerName":"Milton Martin Scion",
+		"dealerUrl":"http://www.miltonmartinscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.miltonmartinscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10017",
+		"dealerName":"Butler Scion (GA)",
+		"dealerUrl":"http://home.butlerscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://home.butlerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10041",
+		"dealerName":"La Grange Scion",
+		"dealerUrl":"http://www.lagrangescion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.lagrangescion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10044",
+		"dealerName":"Pitts Scion, Inc.",
+		"dealerUrl":"http://www.pittsscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.pittsscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10046",
+		"dealerName":"Riverside Scion",
+		"dealerUrl":"http://home.riversidescion.com/",
+		"region":"SET",
+		"district":"6",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://home.riversidescion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10090",
+		"dealerName":"Cobb County Scion",
+		"dealerUrl":"http://www.cobbcountyscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.cobbcountyscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10096",
+		"dealerName":"Lowe Scion of Warner Robins",
+		"dealerUrl":"http://lowescion.com/",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://lowescion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10099",
+		"dealerName":"Walker Jones Scion",
+		"dealerUrl":"http://www.walkerjonesscion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.walkerjonesscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10108",
+		"dealerName":"Cherokee County Scion",
+		"dealerUrl":"http://www.cherokeecountyscion.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.cherokeecountyscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10112",
+		"dealerName":"I-95 Scion of Brunswick",
+		"dealerUrl":"http://www.i95scion.com/",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.i95scion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10115",
+		"dealerName":"Scion of Newnan",
+		"dealerUrl":"http://www.scionofnewnan.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofnewnan.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10117",
+		"dealerName":"Valdosta Scion",
+		"dealerUrl":"http://www.valdostascion.com",
+		"region":"SET",
+		"district":"4",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.valdostascion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10121",
+		"dealerName":"Milton Ruben Scion of Augusta",
+		"dealerUrl":"http://www.scionofaugusta.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofaugusta.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10122",
+		"dealerName":"Louie Herron Scion of Milledgeville",
+		"dealerUrl":"http://www.scionofmilledgeville.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofmilledgeville.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10125",
+		"dealerName":"Scion of Union City",
+		"dealerUrl":"http://www.scionofunioncity.com",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofunioncity.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10128",
+		"dealerName":"Five Star Scion of Milledgeville",
+		"dealerUrl":"http://www.fivestarscionofmilledgeville.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.fivestarscionofmilledgeville.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"10129",
+		"dealerName":"Sandy Springs Scion",
+		"dealerUrl":"http://www.rickhendrickscionsandysprings.com/",
+		"region":"SET",
+		"district":"8",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.rickhendrickscionsandysprings.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"17068",
+		"dealerName":"All Star Scion of Baton Rouge",
+		"dealerUrl":"http://www.allstarscionofbatonrouge.com",
+		"region":"GST",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://allstarscionofbatonrouge.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32024",
+		"dealerName":"Massey Toyota-Scion",
+		"dealerUrl":"http://www.masseyscion.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.masseyscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32069",
+		"dealerName":"Peterson Scion (NC)",
+		"dealerUrl":"http://www.petersonscion.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.petersonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32076",
+		"dealerName":"Rick Hendrick Scion",
+		"dealerUrl":"http://www.rickhendrickscion.com",
+		"region":"SET",
+		"district":"14",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.rickhendrickscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32082",
+		"dealerName":"Vann York Scion",
+		"dealerUrl":"http://www.vannyorkscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.vannyorkscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32085",
+		"dealerName":"Jim Barkley Scion of Asheville",
+		"dealerUrl":"http://www.jimbarkleyscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.jimbarkleyscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32096",
+		"dealerName":"Scott Clark's Toyota City/Scion",
+		"dealerUrl":"http://www.scottclarksscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scottclarksscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32107",
+		"dealerName":"Scion of Henderson",
+		"dealerUrl":"http://www.scionofhenderson.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofhenderson.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32110",
+		"dealerName":"Cloninger Scion",
+		"dealerUrl":"http://cloningerscion.com/",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://cloningerscion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32111",
+		"dealerName":"Modern Scion",
+		"dealerUrl":"http://www.modernscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.modernscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32113",
+		"dealerName":"Bryan Easler Scion",
+		"dealerUrl":"http://www.bryaneaslerscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.bryaneaslerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32115",
+		"dealerName":"Griffin Scion",
+		"dealerUrl":"http://www.griffinscion.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.griffinscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32125",
+		"dealerName":"Pinehurst Scion",
+		"dealerUrl":"http://www.pinehurstscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.pinehurstscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32127",
+		"dealerName":"Mark Jacobson Scion",
+		"dealerUrl":"http://www.markjacobsonscion.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.markjacobsonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32130",
+		"dealerName":"Hendrick Toyota Scion Wilmington",
+		"dealerUrl":"http://www.hendrickscionwilmington.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.hendrickscionwilmington.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32132",
+		"dealerName":"Stevenson Scion",
+		"dealerUrl":"http://www.stevensonscion.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.stevensonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32134",
+		"dealerName":"Scion of Newbern",
+		"dealerUrl":"http://www.scionofnewbern.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofnewbern.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32139",
+		"dealerName":"Scion of Gastonia",
+		"dealerUrl":"http://www.scionofgastonia.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofgastonia.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32140",
+		"dealerName":"Scion of Goldsboro",
+		"dealerUrl":"http://www.scionofgoldsboro.com",
+		"region":"SET",
+		"district":"12",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofgoldsboro.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32141",
+		"dealerName":"Modern Toyota Scion of Boone",
+		"dealerUrl":"http://www.scionofboone.com",
+		"region":"SET",
+		"district":"10",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofboone.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"32142",
+		"dealerName":"Hendrick Toyota Scion Apex",
+		"dealerUrl":"http://www.hendrickscionapex.com",
+		"region":"SET",
+		"district":"11",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.hendrickscionapex.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39007",
+		"dealerName":"Dick Dyer Scion",
+		"dealerUrl":"http://www.dickdyerscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.dickdyerscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39028",
+		"dealerName":"Scion of Easley",
+		"dealerUrl":"http://www.scionofeasley.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofeasley.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39031",
+		"dealerName":"Sparks Scion",
+		"dealerUrl":"http://www.sparksscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.sparksscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39032",
+		"dealerName":"Dave Edwards Scion",
+		"dealerUrl":"http://www.daveedwardsscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.daveedwardsscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39040",
+		"dealerName":"Stokes Brown Scion of Beaufort",
+		"dealerUrl":"http://beaufort.stokesbrownscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://beaufort.stokesbrownscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39042",
+		"dealerName":"Ballentine Scion",
+		"dealerUrl":"http://www.ballentinescion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.ballentinescion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39046",
+		"dealerName":"Florence Scion",
+		"dealerUrl":"http://www.florencescion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.florencescion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39049",
+		"dealerName":"Lugoff Scion",
+		"dealerUrl":"http://www.lugoffscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.lugoffscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39051",
+		"dealerName":"Scion of Greer",
+		"dealerUrl":"http://www.scionofgreer.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scionofgreer.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39052",
+		"dealerName":"Jim Hudson Scion",
+		"dealerUrl":"http://www.jimhudsonscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.jimhudsonscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39055",
+		"dealerName":"Stokes Brown Scion of Hilton Head",
+		"dealerUrl":"http://hiltonhead.stokesbrownscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://hiltonhead.stokesbrownscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39056",
+		"dealerName":"Scott Will Scion of Sumter",
+		"dealerUrl":"http://www.scottwillscion.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.scottwillscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39057",
+		"dealerName":"Bob Richards Scion of North Augusta",
+		"dealerUrl":"http://www.bobrichardsscion.com",
+		"region":"SET",
+		"district":"7",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.bobrichardsscion.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39060",
+		"dealerName":"Hendrick Toyota Scion North Charleston",
+		"dealerUrl":"http://www.Hendrickscionnorthcharleston.com",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.Hendrickscionnorthcharleston.com/New-inventory.aspx"
+	},
+	{
+		"dealerCode":"39063",
+		"dealerName":"Jimmy Jones Scion of Orangeburg",
+		"dealerUrl":"http://www.jimmyjonesscion.com/",
+		"region":"SET",
+		"district":"9",
+		"siteSkin":"NLM",
+		"siteHost":"NLM",
+		"inventoryUrl":"http://www.jimmyjonesscion.com//New-inventory.aspx"
+	},
+	{
+		"dealerCode":"9168",
+		"dealerName":"Gettel Scion",
+		"dealerUrl":"http://www.gettelscion.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"VINSolutions",
+		"inventoryUrl":"http://gettelscion.com/inventory/newsearch/New/Make/Scion/"
+	},
+	{
+		"dealerCode":"9182",
+		"dealerName":"Gatorland Scion",
+		"dealerUrl":"http://www.gatorlandscion.com",
+		"region":"SET",
+		"district":"3",
+		"siteSkin":"NLM",
+		"siteHost":"VINSolutions",
+		"inventoryUrl":"http://gatorlandscion.com/inventory/newsearch/New/Make/Scion/"
+	},
+	{
+		"dealerCode":"9230",
+		"dealerName":"Scion of Lakewood",
+		"dealerUrl":"http://www.scionoflakewood.com",
+		"region":"SET",
+		"district":"2",
+		"siteSkin":"NLM",
+		"siteHost":"VINSolutions",
+		"inventoryUrl":"http://www.scionoflakewood.com/inventory/newsearch/New/Make/Scion/"
+	}
+]

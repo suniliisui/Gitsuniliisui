@@ -1,0 +1,151 @@
+﻿<div xmlns="http://www.w3.org/1999/html" class="container">
+  <div class="mainGridtable">
+    <div class="mainGridChild">
+
+      <div>
+        <ol class="breadcrumb"></ol>
+      </div>
+
+      <div class="row">
+        <div class="cam-engine-list-header col-xs-6 text-left">
+          {{engineCount | number}} {{'enginesList.schedulersLabel' | i18next}}
+        </div>
+        <div class="cam-engine-list-info-text col-xs-6 text-right">
+          {{'enginesList.lastRefreshed' | i18next }} {{lastRefreshedTime | date : 'short'}}
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="cam-engine-list-utility-bar panel-heading">
+          <div class="row">
+            <div class="btn-group">
+                <button id="camActionsButton" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  {{'enginesList.camActionsButtonLabel' | i18next}}
+                    <span class="caret">
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-adjust" role="menu">
+                  <li ng-repeat="action in actions" ng-init="">
+                    <a href="#engineConfigDialog" id="camActions_{{$index}}" ng-click="camAction($event, $index, action)" data-toggle="modal" ng-class="{'radio-enabled-btn':(!camSchedulerData && (action == 'enginesList.camActionEditMenuLabel'|| action == 'enginesList.camActionRemoveMenuLabel'))}">
+                      {{action | i18next}}
+                    </a>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+              <button id="cam-engine-filter-button" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                {{'enginesList.camFiltersButtonLabel' | i18next}}
+                 <span class="caret">
+                 </span>
+              </button>
+              <ul class="dropdown-menu dropdown-adjust" role="menu">
+                <li class="dropdown-header">FILTER TAGs</li>
+                <li><a href="#" ng-click="showme=false" ng-class="{'non-active':!showme}">HIDE</a></li>
+                <li><a href="#" ng-click="showme=true" ng-class="{'non-active': (showme || tags.length === 0)}">UN-HIDE</a></li>
+                <li><a href="#" ng-click="clearFilter()" ng-class="{'non-active':(!showme || tags.length === 0)}">CLEAR ALL</a></li>
+                <li><a href="#">HELP</a></li>
+                <li role="presentation" class="divider"></li>
+                <li class="dropdown-header">SCHEDULER Filters</li>
+                <li><a href="#">ADDRESS</a></li>
+                <li><a href="#">AGENT COUNT</a></li>
+                <li><a href="#">CONNECTION</a></li>
+                <li><a href="#">INSTANCE</a></li>
+                <li><a href="#">NAME</a></li>
+                <li><a href="#">PORT</a></li>
+                <li><a href="#">TYPE</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group">
+                <button id="camMoreButton" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-disabled="true">
+                  {{'enginesList.camMoreButtonLabel' | i18next}}
+                  <span class="caret">
+                  </span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                </ul>
+            </div>
+
+            <div class="btn-group">
+              <input id="camSearchField" type="text" class="cam-search-input form-control" ng-change="doSchedulerSearch()" ng-model="schedulerSearchText" placeholder="{{'enginesList.camSearchLabel' | i18next}}">
+              <span id="searchIcon" class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true">
+                </span>
+            </div>
+
+
+            <div class="btn-group">
+                <button id="camRefreshButton" type="button" class="btn btn-light" ng-click="refreshEnginesList()">
+                  {{'enginesList.camRefreshButtonLabel' | i18next }}
+                </button>
+            </div>
+
+            <div id="filterBar" ng-show="showme" class="filter-bar-panel">
+              <tags-input ng-model="tags" on-tag-removed="filterRemoved($tag)"></tags-input>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row sch-no-display-row">
+        <div class="col-xs-6">
+          <img src="../images/Filter blue.svg" ng-hide="showme || (tags.length == 0)" class="filter-img"/>Total Schedulers Displayed - {{enginesListOptions.ngGrid.filteredRows.length}}
+        </div>
+
+        <div class="col-xs-6 sch-home-btn">
+          <a href="{{BaseURL}}/#/" class="pull-right">Home</a>
+        </div>
+      </div>
+
+      <div id="enginesList" ng-grid="enginesListOptions" class="gridStyle engine-grid-style">
+      </div>
+      <div class="panel-footer">
+        <nav>
+          <ul class="pagination">
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade" ng-show="addedScheduler === true" ng-click="hideAlert()" style="z-index: 999;"></div>
+<div class="alert alert-info alert-box-adjust" ng-if="addedScheduler === true" style="z-index: 1000;">
+  <a class="close clsAlert pull-right" data-dismiss="alert">
+    X
+  </a>
+  <h2 class="alertTitle">
+    Scheduler Added
+  </h2>
+  <hr class="successDivider">
+  <p class="alertContent">
+    A scheduler was added. It is displayed below in the highlighted row.
+  </p>
+</div>
+<div class="modal-backdrop fade" ng-show="editedScheduler===true" ng-click="hideAlert()" style="z-index: 999;"></div>
+<div class="alert alert-info alert-box-adjust" ng-if="editedScheduler === true" style="z-index: 1000;">
+  <a class="close clsAlert pull-right" data-dismiss="alert">
+    X
+  </a>
+  <h2 class="alertTitle">
+    Scheduler updated
+  </h2>
+  <hr class="successDivider">
+  <p class="alertContent">
+    A scheduler was updated. It is displayed below in the highlighted row.
+  </p>
+</div>
+<div class="modal-backdrop fade" ng-show="removedScheduler===true" ng-click="hideAlert()" style="z-index: 999;"></div>
+<div class="alert alert-info alert-box-adjust" ng-if="removedScheduler === true" style="z-index: 1000;">
+  <a class="close clsAlert pull-right" data-dismiss="alert">
+    X
+  </a>
+  <h2 class="alertTitle">
+    Scheduler Removed
+  </h2>
+  <hr class="successDivider">
+  <p class="alertContent">
+    The designated scheduler has been removed.
+  </p>
+</div>
+

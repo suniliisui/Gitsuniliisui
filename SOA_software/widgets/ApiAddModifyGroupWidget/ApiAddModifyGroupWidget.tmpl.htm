@@ -1,0 +1,35 @@
+<script id="ApiAddModifyGroupWidgetTemplate" type="text/x-jQuery-tmpl">
+<div class="contentHeader">
+	<h1>Create Group Info</h1>
+</div>
+<form id="apiAddModifyGroupForm" class="contentBody gridForm">
+	<div class="section"><!-- wanted to use "fieldset" instead of "div", but browser assigned improper width and padding -->
+		<div class="clearthis">
+			<p>
+				<label for="apiAddModifyGroupName">Group Name<span class="required">*</span></label>
+				<input type="text" name="Name" id="apiAddModifyGroupName" class="required apiAddModifyGroupName helperText" value="Enter the group name" />
+			</p>
+		</div>
+		<div class="clearthis">
+			<p>
+				<label for="apiAddModifyGroupFedmember">Fedmember<span class="required">*</span></label>
+ 				<select class="optionsSelect selectBorder required" name="fedmember" id="apiAddModifyGroupFedmember"></select>
+ 				<div align=right><div class="selerror fedmemberList_errorMessage" id=fedmemberList_errorMessage><img src="/resources/static/images/silkicons/cross12.png" width=12 hspace=1 align=absmiddle>Fedmember is required...</div></div>
+			</p>
+		</div>
+			<p>
+				<label for="apiAddModifyGroupDescription">Description</label>
+				<textarea name="Description" id="apiAddModifyGroupDescription" class="apiAddModifyGroupDescription required helperText">Write a brief, informative description for Group members.</textarea>
+			</p>
+			<ul class="buttons">
+				<li><button type="button" id="apiAddModifyGroupCancelBtn" class="button_basic">Cancel</button></li>
+				<li><button class="action_call" id="myAppEditInfoSubmitForm" type="submit">Confirm Info</button></li>
+			</ul>
+	</div>
+</form>
+</script>
+<script id="FedmemberOptionsTemplate" type="text/x-jquery-tmpl">
+	{{each(index1, fedmember) fedmembers}}
+		<option value="${fedmember}">${fedmember}</option>
+	{{/each}}
+</script> 

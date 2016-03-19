@@ -1,0 +1,143 @@
+<script id="AddModifyConnectionTemplate" type="text/x-jQuery-tmpl">
+	
+<form class="addModifyConnectionForm" id="${data.formName}" method="POST" action="${data.formURL}">
+	<input type="hidden" id="apiVersionId" name="apiVersionId" value="${data.apiVersion.attributes.APIVersionID}"/>
+	<input type="hidden" id="apiId" name="apiId" value="${data.apiVersion.attributes.APIID}"/>
+	<div id="addModifyConnectionPageOne" class="wizardPageContent" tabIndex="0">
+		{{tmpl({data : data}) '#AddModifyConnectionTemplateApps'}}
+	</div>
+
+	<div id="addModifyConnectionPageTwo" class="wizardPageContent" tabIndex="1">
+		{{tmpl({data : data}) '#AddModifyConnectionTemplateEnvironment'}}
+	</div>
+
+	{{if hasPolicies}}
+		<div id="addModifyConnectionPageThree" class="wizardPageContent" tabIndex="2">
+			{{tmpl({data : data}) '#AddModifyConnectionTemplatePolicies'}}
+		</div>
+		{{if hasLegals}}
+		<div id="addModifyConnectionPageFour" class="wizardPageContent" tabIndex="3">
+			{{tmpl({data : data}) '#AddModifyConnectionTemplateLegals'}}
+		</div>
+		{{/if}}
+	{{else}}
+		{{if hasLegals}}
+		<div id="addModifyConnectionPageFour" class="wizardPageContent" tabIndex="2">
+			{{tmpl({data : data}) '#AddModifyConnectionTemplateLegals'}}
+		</div>
+		{{/if}}
+
+	{{/if}}
+</form>
+
+</script>
+
+<script id="AddModifyConnectionTemplateApps" type="text/x-jQuery-tmpl">
+		<div class="addModifyConnectionContent">
+			<h2 class="gentitle" id="selectAppTitle">Select App:</h2>
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtbl" id="selectConnectionTable">
+				<tr class="trHeader">
+					<th>Application Name<span class="sort"></span></th>
+                    <th class="app_version">Version</th>
+                    <th class="app_date">Date<span class="sort"></span></th>
+					<th class="app_add centered">Add</th>
+				</tr>
+
+			{{each data.appData.models}}
+				<tr index="${$index}">
+					<td>${$value.attributes.Name}</td>
+                    <td class="app_version">
+                        <select id="appVersionSel_${$index}" class="versionSelector">
+                            {{each $value.versions.models}}
+                                <option value="${$value.attributes.APPVersionID}">${$value.attributes.Name}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+					<td class="app_date">
+                        ${getOnlyDate($value.attributes.Created)}
+                    </td>
+					<td class="app_add centered">
+						<div id="appContracted_${$index}" style="display:none">Contracted</div>
+						<div id="appNotContracted_${$index}"><input type="radio" id="appGuid_${$index}" name="appGuid" value="${$value.versions.models[0].attributes.APPVersionID}"></div>
+					</td>
+				</tr>
+				</tr>
+			{{/each}}
+
+			</table>
+		</div>
+</script>
+
+<script id="AddModifyConnectionTemplateEnvironment" type="text/x-jQuery-tmpl">
+<div class="addModifyConnection_environment">
+<h2 class="gentitle">Environment:</h2>	
+<table class="optionsTbl" cellpadding="0" cellspacing="0" border="0" id="endpointConnectionTable">
+{{each data.apiVersion.attributes.Endpoints.Endpoint}}
+		<tr index="${$index}">
+			{{if data.apiVersion.attributes.Endpoints.Endpoint.length == 1 || $value.Category == 'Sandbox' }}
+				<td class="active"><label><input type="radio" id="Environment" name="Environment" value="${$value.Category}" checked="checked"> ${$value.Category}</label></td>
+			{{else}}
+				<td><label><input type="radio" id="Environment" name="Environment" value="${$value.Category}"> ${$value.Category}</label></td>
+			{{/if}}
+		</tr>
+{{/each}}
+</table>
+</div>
+
+</script>
+
+<script id="AddModifyConnectionTemplatePolicies" type="text/x-jQuery-tmpl">
+		<div class="addModifyConnectionContent">
+			<div class="addModifyConnectionTitle"><h2 class="gentitle">Select Policy:</h2></div>	
+			<table cellpadding="2" cellspacing="2" border="0" id="endpointConnectionTable" class="stdtbl">
+
+			<tr class="trHeader">
+				<th>Policy Name</th>
+				<th>Description</th>
+				<th width="10%">Select</th>
+			</tr>
+			{{each data.policies}}
+					<tr index="${$index}">
+						<td>${$value.attributes.Name}</td>
+						<td>${$value.attributes.Description}</td>
+						<td>
+							<input name="policy" value="${$value.attributes.PolicyKey}" type="checkbox"/>
+						</td>
+					</tr>
+			{{/each}}
+			</table>
+		</div>
+</script>
+
+<script id="AddModifyConnectionTemplateLegals" type="text/x-jQuery-tmpl">
+		<div class="addModifyConnectionContent">
+			<div class="addModifyConnectionTitle">Legal:</div>
+			<div id="legalHeaderTitles">
+
+{{each data.legalData}}
+	{{if $index == 0}}
+				<div class="legalTitle legalTitleOn" legalDocumentId="${$value.documentId}" legalIndex="${$index}">${$value.heading}</div>
+	{{else}}
+				<div class="legalTitle" legalDocumentId="${$value.documentId}" legalIndex="${$index}">${$value.heading}</div>
+	{{/if}}
+{{/each}}
+
+			</div>
+			<div id="legalContentPages">
+
+{{each data.legalData}}
+	{{if $index == 0}}
+				<div class="legalContent legalContentOn" legalIndex="${$index}">{{html $value.content }}</div>
+	{{else}}
+				<div class="legalContent" legalIndex="${$index}">{{html $value.content }}</div>
+	{{/if}}
+{{/each}}
+
+			</div>
+			<div id="legalButtons">
+				<input class='legalAccept'  type='button' value='Accept'  />
+				<input class='legalDecline' type='button' value='Decline' />
+			</div>
+		</div>
+</script>
+
