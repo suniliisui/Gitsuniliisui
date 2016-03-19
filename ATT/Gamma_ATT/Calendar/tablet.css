@@ -1,0 +1,218 @@
+/* Gamma Ebizcare IPAD CSS START*/
+
+@CHARSET "UTF-8";
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+body{font:12px ClvATTBook !important;}
+#main-content-header {height: 150px ;left: 10% !important;right: 0;}
+#content-header div{left: 8% !important;}
+#content-body{left: 9% !important;}
+/* Safari CSS */
+.cb-loc-hdr-col0, .cb-loc-hdr-col1{float:left !important;}
+.cb-loc-hdr-col1, .cb-loc-hdr-col2{top: 22px !important;margin: 0 20px !important;}
+.manage-block .manage-button{top:0px !important;display:block !important;margin-left:0px!important;}
+.manage-dropdown{top:25px !important;}
+footer{height:auto !important;}
+#container {overflow:hidden !important;}
+#top, #bottom { width:100%!important;}
+#pagination { width:850px!important;}
+/* #views span.viewFont{left:11% !important; width:21% !important; float:left;} */ 
+.cb-loc-hdr-col0{width:3% !important; display:inline-block !important; float:left;}
+.cb-loc-hdr-col1{width:19% !important; display:inline-block !important; float:left;}
+.cb-loc-hdr-col2{width:19% !important;flex-grow: 0 !important; display:inline-block !important; float:left;}
+.cb-loc-right-column{float: left;width: 50% !important;}
+.manage-block .manage-button{display:block !important;position:relative;top:20px !important;border: 1px solid #888888;}
+.manage-dropdown{position:relative;top:15px !important;left:39% !important;}
+#header-line-1-col {width: 97% !important;position: absolute !important;top: 3% !important;left: 1px !important;margin: 5px !important;}
+#hl2-cust-breadcrumb {float: right !important;right: 105px !important;}
+#hl2-nav {float: left !important;left: 10% !important;position: relative !important;width:25% !important;}
+.selected-page-item {border-radius: 10px !important;-webkit-border-radius: 8px !important;-moz-border-radius: 6px !important;margin: 0 8px !important;background: none repeat scroll 0 0 #067AB4!important;}
+.pages-list-item:hover {background-color: #BBB;padding: 6px 6px;border-radius: 8px;cursor: pointer;-webkit-border-radius: 10px !important;-moz-border-radius: 8px !important;}
+.pages-list-item:active {padding: 6px 7px;border-radius: 8px;cursor: pointer;-webkit-border-radius: 7px !important;-moz-border-radius: 8px !important;}
+.nav-center{bottom:0 !important;background:none !important;}
+.pages-list-item > a:link{background:none !important;}
+.pages-list-item:hover{background:none !important;}
+.next,.next:hover{background-color:none !important;	}
+.prev,.prev:hover{background-color:none !important;	}
+.cb-loc-header{display:-moz-flex;display:-webkit-flex;display:flex;}
+
+.select-style > ul {
+    display: none !important;
+}
+/* Inventory IPAD CSS END*/
+
+/* Ad Port CSS START*/
+#header_steptracker {border-spacing: 0 !important;width: 80%;background-color: #FFFFFF;border-bottom: 4px solid #7C7C7C;margin-top: 20px;margin: 20px 3px 3px 7px !important;}
+#dropdown_column1{width: 28% !important;}
+.row{width: 80% !important;}
+.switchFont{font-size:17px !important;margin: 0 6px !important;}
+.dropdown_column1-subtext{font-size: 12px !important;margin: 0 8px !important;width: 80% !important;}
+.fontOmnes{margin: 0 2px !important;}
+/* Ad Port CSS END*/
+
+/* ADD EVC Page */
+
+.widget_1, .widget_2, .widget_3 { width:175px!important;}
+.content-block { width: 730px!important;}
+.size2of5 { width:25%}
+.lastUnit { width:55%;}
+.unitRight { float:none;}
+.ipad-right{ margin-left:370px;}
+.ipad-portrait-row hr { width:700px; margin-right:35px;}
+.block-save-cancel hr { width:440px;margin-right:100px;}
+slider span.bar {width:85%;}
+.check_button {margin-left:0;}
+.full {width:91%;}
+/* Inventory Order History Page */
+.recent-order-block { width:75%;}
+.ipad-profile-icon { float:left;}
+.ipad-recent-order{ margin-top:20px;width:73%;  margin-left: 0px;}
+.unitRight { float:right;}
+.ipad-recent-order-second { width:75%;}
+.schedule { width:80px!important;}
+
+/* Review Order */
+.ipad-review-content { width:75%!important;margin-left:10px;}
+.schedule_for { width:30%;}
+.service_id{ width:25%;}
+.service_txt{ width:20%;}
+.ipad-back-inventbtn { float:left;}
+.greyBtnL{width:100%;}
+/* order history page */
+.ipad-order-hist { width:75%;}
+.submitted { width:30%!important;}
+.date{ width:20%!important;}
+.schedule { width:29%!important;}
+
+/* checkout confirmation */
+.ipad-checkout { float:left;width:25%!important; }
+.ipad-value { font-size: 16px!important; }
+.ipad-checkout-charge { width:40%!important;}
+.ipad-checkout-charge  .size2of5 {width:45%}
+
+/* Order history page */
+.border.white.unit.size1of3.ipad-invent-order-block > img { float:left;}
+.ipad-invent-order-block {
+    width: 70%;
+}
+.ipad-order-history-block-right { width:70%; margin-left: 0px!important;margin-top:20px;}
+.bands{ width:100px!important;}
+.progress  { text-indent: -9999px; padding: 7px 10px;width:2%;}
+.borderOrange > span {display:block; float:left;}
+.borderGreen > span {display:block; float:left;}
+.borderBlue > span {display:block; float:left;}
+
+}
+
+/* IPAD PORTRAIT MODE STYLING */
+@media (min-width: 768px) and (max-width: 980px) and (orientation : portrait) {
+#main-content-header {height: 150px ;left: 10% !important;right: 0;}
+#content-header div{left: 7% !important;padding-right:0px !important;}
+#content-body{left: 9% !important;}
+/* Safari CSS */
+.cb-loc-hdr-col0, .cb-loc-hdr-col1{float:left !important;}
+.cb-loc-hdr-col1, .cb-loc-hdr-col2{top: 22px !important;margin: 0 20px !important;}
+.manage-block .manage-button{top:0px !important;display:block !important;margin-left:0px!important;}
+.manage-dropdown{top:25px !important;z-index:5px;}
+footer{height:auto !important;}
+#container {overflow:hidden !important;}
+#top, #bottom { width:100%!important;}
+#pagination { width:850px!important;}
+#views span.viewFont{left:11% !important; width:21% !important; float:left;}
+.cb-loc-hdr-col0{width:3% !important; display:inline-block !important; float:left;}
+.cb-loc-hdr-col1{width:19% !important; display:inline-block !important; float:left;}
+.cb-loc-hdr-col2{width:19% !important;flex-grow: 0 !important; display:inline-block !important; float:left;}
+.cb-loc-right-column{float: left;width: 50% !important;}
+.manage-block .manage-button{display:block !important;position:relative;top:20px !important;border: 1px solid #888888;}
+.manage-dropdown{position:relative;top:15px !important;left:39% !important;}
+#header-line-1-col {width: 97% !important;position: absolute !important;top: 3% !important;left: 1px !important;margin: 5px !important;}
+#hl2-cust-breadcrumb {float: right !important;right: 105px !important;}
+#hl2-nav {float: left !important;left: 10% !important;position: relative !important;width:25% !important;}
+.selected-page-item {border-radius: 10px !important;-webkit-border-radius: 8px !important;-moz-border-radius: 6px !important;margin: 0 8px !important;background: none repeat scroll 0 0 #067AB4!important;}
+.pages-list-item:hover {background-color: #BBB;padding: 6px 6px;border-radius: 8px;cursor: pointer;-webkit-border-radius: 10px !important;-moz-border-radius: 8px !important;}
+.pages-list-item:active {padding: 6px 7px;border-radius: 8px;cursor: pointer;-webkit-border-radius: 7px !important;-moz-border-radius: 8px !important;}
+.nav-center{bottom:0 !important;background:none !important;}
+.pages-list-item > a:link{background:none !important;}
+.pages-list-item:hover{background:none !important;}
+.next,.next:hover{background-color:none !important;	}
+.prev,.prev:hover{background-color:none !important;	}
+.cb-loc-header{display:-webkit-flex;display:flex;align-items: flex-start!important;}
+
+.select-style > ul {
+    display: none !important;
+}
+/* Inventory IPAD CSS END*/
+
+/* Ad Port CSS START*/
+#header_steptracker {border-spacing: 0 !important;width: 80%;background-color: #FFFFFF;border-bottom: 4px solid #7C7C7C;margin-top: 20px;margin: 20px 3px 3px 7px !important;}
+#dropdown_column1{width: 28% !important;}
+.row{width: 80% !important;}
+.switchFont{font-size:17px !important;margin: 0 6px !important;}
+.dropdown_column1-subtext{font-size: 12px !important;margin: 0 8px !important;width: 80% !important;}
+.fontOmnes{margin: 0 2px !important;}
+/* Ad Port CSS END*/
+
+
+/* ADD EVC Page */
+
+.widget_1, .widget_2, .widget_3 { width:175px!important;}
+.content-block { width: 730px!important;}
+.size2of5 { width:25%}
+.lastUnit { width:55%;}
+.unitRight { float:none;}
+.ipad-right{ margin-left:370px;}
+.ipad-portrait-row hr { width:700px; margin-right:35px;}
+.block-save-cancel hr { width:440px;margin-right:100px;}
+slider span.bar {width:85%;}
+.check_button {margin-left:0;}
+.full {width:91%;}
+/* Recent order */
+.recent-order-block { width:75%;}
+.ipad-profile-icon { float:left;}
+.ipad-recent-order{ margin-top:20px;width:73%;  margin-left: 0px;}
+.unitRight { float:right;}
+.ipad-recent-order-second { width:75%;}
+.schedule { width:80px!important;}
+.page-recent { float:left;}
+
+/* Review Order */
+.ipad-review-content { width:75%!important;margin-left:10px;}
+.schedule_for { width:30%;}
+.service_id{ width:25%;}
+.service_txt{ width:20%;}
+.greyBtnL{width:100%;}
+.fullWidth{width:90%;} 
+/* order history page */
+.ipad-order-hist { width:75%;}
+.submitted { width:30%!important;}
+.date{ width:20%!important;}
+.schedule { width:29%!important;}
+.lastUnit{width:auto;}
+
+/* checkout confirmation */
+.ipad-checkout { float:left;width:25%!important; }
+.ipad-value { font-size: 16px!important; }
+.ipad-checkout-charge { width:40%!important;}
+.ipad-checkout-charge  .size2of5 {width:45%}
+
+/* Order history page */
+.border.white.unit.size1of3.ipad-invent-order-block > img { float:left;}
+.ipad-invent-order-block {
+    width: 70%;
+}
+.ipad-order-history-block-right { width:70%; margin-left: 0px!important;margin-top:20px;}
+.bands{ width:100px!important;}
+.progress  { text-indent: -9999px; padding: 7px 10px;width:2%;}
+.borderOrange > span {display:block; float:left;}
+.borderGreen > span {display:block; float:left;}
+.borderBlue > span {display:block; float:left;}
+
+.widget_2 .arrow-up, .widget_3 .arrow-up { left:65px;}
+
+}
+
+/* Gamma Ebizcare IPAD CSS END*/
