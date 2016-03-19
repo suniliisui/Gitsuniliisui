@@ -1,0 +1,66 @@
+<%@ taglib uri="/dspTaglib" prefix="dsp" %>
+<dsp:importbean bean="/com/att/b2b/common/Environment" />
+<dsp:importbean bean="/atg/dynamo/droplet/Format" />
+
+<dsp:page>
+	
+	<table width="90%" style="color: #656565; font: normal Verdana; text-align: center; margin-left: 20px">
+		<tbody>
+			<tr style="text-align: center">
+				<td style="padding: 5px">
+					<dsp:droplet name="Format">
+						<dsp:param name="format" value="{host}{context}{url}"/>
+						<dsp:param bean="Environment.wwwURL" name="host"/>
+						<dsp:param value="/businessoffers" name="context"/>
+						<dsp:param value="/web/common/images/common/email/1.png" name="url"/> 
+						<dsp:oparam name="output">
+							<dsp:getvalueof id="imgResult" param="message" idtype="java.lang.String">
+								<img src="<%=imgResult%>" alt="Order Submitted"/>
+							</dsp:getvalueof>										
+						</dsp:oparam>
+					</dsp:droplet>
+				</td>
+				<td style="padding: 5px">
+					<dsp:droplet name="Format">
+						<dsp:param name="format" value="{host}{context}{url}"/>
+						<dsp:param bean="Environment.wwwURL" name="host"/>
+						<dsp:param value="/businessoffers" name="context"/>
+						<dsp:param value="/web/common/images/common/email/2.png" name="url"/> 
+						<dsp:oparam name="output">
+							<dsp:getvalueof id="imgResult" param="message" idtype="java.lang.String">
+								<img src="<%=imgResult%>" alt="Product Shipment"/>
+							</dsp:getvalueof>										
+						</dsp:oparam>
+					</dsp:droplet>
+				</td>
+				<td style="padding: 5px">
+					<dsp:droplet name="Format">
+						<dsp:param name="format" value="{host}{context}{url}"/>
+						<dsp:param bean="Environment.wwwURL" name="host"/>
+						<dsp:param value="/businessoffers" name="context"/>
+						<dsp:param value="/web/common/images/common/email/4.png" name="url"/> 
+						<dsp:oparam name="output">
+							<dsp:getvalueof id="imgResult" param="message" idtype="java.lang.String">
+								<img src="<%=imgResult%>" alt="Reward Yourself"/>
+							</dsp:getvalueof>										
+						</dsp:oparam>
+					</dsp:droplet>
+				</td>
+			</tr>
+			<tr valign="top" style="text-align: center">
+				<td style="padding: 5px; font: normal 16px Verdana; width:30%">1.
+					Order</td>
+				<td style="padding: 5px; font: normal 16px Verdana; width:30%">2.
+					Ship</td>
+				<td style="padding: 5px; font: normal 16px Verdana; width:30%">3.
+					Start Profiting</td>
+			</tr>
+			<tr valign="top" style="text-align: center">
+				<td style="padding: 5px; font: normal 12px Verdana; width:30%">Order submitted</td>
+				<td style="padding: 5px; font: normal 12px Verdana; width:30%">We&#39;ll arrange shipment of your new products and email you tracking details.</td>
+				<td style="padding: 5px; font: normal 12px Verdana; width:30%">Start working more efficiently with your new products and services.</td>
+			</tr>
+		</tbody>
+	</table>
+
+</dsp:page>

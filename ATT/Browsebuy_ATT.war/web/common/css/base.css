@@ -1,0 +1,5544 @@
+/*
+ * CSS RESETS
+ *      Using the normaliize.css:
+ *      1) Reset the element of dom
+ *      2) Make elements compatible with all browsers
+ */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none;
+}
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**********************************************************************
+  File: margin.less
+      This file defines all common magin css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*************************
+    GENERIC MARGIN RELATED
+**************************/
+/* margin all */
+.bui-m-all-5 {
+  margin: 5px;
+}
+.bui-m-all-10 {
+  margin: 10px;
+}
+.bui-m-all-15 {
+  margin: 15px;
+}
+.bui-m-all-20 {
+  margin: 20px;
+}
+.bui-m-all-25 {
+  margin: 25px;
+}
+.bui-m-all-30 {
+  margin: 30px;
+}
+.bui-m-all-35 {
+  margin: 35px;
+}
+.bui-m-all-40 {
+  margin: 40px;
+}
+.bui-m-all-45 {
+  margin: 5px;
+}
+.bui-m-all-50 {
+  margin: 50px;
+}
+.bui-m-all-55 {
+  margin: 55px;
+}
+.bui-m-all-60 {
+  margin: 60px;
+}
+.bui-m-all-65 {
+  margin: 65px;
+}
+.bui-m-all-70 {
+  margin: 70px;
+}
+.bui-m-all-75 {
+  margin: 75px;
+}
+.bui-m-all-80 {
+  margin: 80px;
+}
+.bui-m-all-85 {
+  margin: 85px;
+}
+.bui-m-all-90 {
+  margin: 90px;
+}
+.bui-m-all-95 {
+  margin: 95px;
+}
+.bui-m-all-100 {
+  margin: 100px;
+}
+/* Margin top-bottom */
+.bui-m-tb-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bui-m-tb-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bui-m-tb-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.bui-m-tb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bui-m-tb-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.bui-m-tb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bui-m-tb-35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.bui-m-tb-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.bui-m-tb-45 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.bui-m-tb-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bui-m-tb-55 {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.bui-m-tb-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.bui-m-tb-65 {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+.bui-m-tb-70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.bui-m-tb-75 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.bui-m-tb-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.bui-m-tb-85 {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+.bui-m-tb-90 {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.bui-m-tb-95 {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.bui-m-tb-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* margin left-right */
+.bui-m-lr-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.bui-m-lr-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.bui-m-lr-15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bui-m-lr-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bui-m-lr-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.bui-m-lr-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.bui-m-lr-35 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.bui-m-lr-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.bui-m-lr-45 {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.bui-m-lr-50 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.bui-m-lr-55 {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.bui-m-lr-60 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.bui-m-lr-65 {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.bui-m-lr-70 {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.bui-m-lr-75 {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.bui-m-lr-80 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.bui-m-lr-85 {
+  margin-left: 85px;
+  margin-right: 85px;
+}
+.bui-m-lr-90 {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.bui-m-lr-95 {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.bui-m-lr-100 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* margin top */
+.bui-m-t-5 {
+  margin-top: 5px;
+}
+.bui-m-t-10 {
+  margin-top: 10px;
+}
+.bui-m-t-15 {
+  margin-top: 15px;
+}
+.bui-m-t-20 {
+  margin-top: 20px;
+}
+.bui-m-t-25 {
+  margin-top: 25px;
+}
+.bui-m-t-30 {
+  margin-top: 30px;
+}
+.bui-m-t-35 {
+  margin-top: 35px;
+}
+.bui-m-t-40 {
+  margin-top: 40px;
+}
+.bui-m-t-45 {
+  margin-top: 45px;
+}
+.bui-m-t-50 {
+  margin-top: 50px;
+}
+.bui-m-t-55 {
+  margin-top: 55px;
+}
+.bui-m-t-60 {
+  margin-top: 60px;
+}
+.bui-m-t-65 {
+  margin-top: 65px;
+}
+.bui-m-t-70 {
+  margin-top: 70px;
+}
+.bui-m-t-75 {
+  margin-top: 75px;
+}
+.bui-m-t-80 {
+  margin-top: 80px;
+}
+.bui-m-t-85 {
+  margin-top: 85px;
+}
+.bui-m-t-90 {
+  margin-top: 90px;
+}
+.bui-m-t-95 {
+  margin-top: 95px;
+}
+.bui-m-t-100 {
+  margin-top: 100px;
+}
+.bui-m-t-105 {
+  margin-top: 105px;
+}
+.bui-m-t-130 {
+  margin-top: 130px;
+}
+/* margin bottom */
+.bui-m-b-5 {
+  margin-bottom: 5px;
+}
+.bui-m-b-10 {
+  margin-bottom: 10px;
+}
+.bui-m-b-15 {
+  margin-bottom: 15px;
+}
+.bui-m-b-20 {
+  margin-bottom: 20px;
+}
+.bui-m-b-25 {
+  margin-bottom: 25px;
+}
+.bui-m-b-30 {
+  margin-bottom: 30px;
+}
+.bui-m-b-35 {
+  margin-bottom: 35px;
+}
+.bui-m-b-40 {
+  margin-bottom: 40px;
+}
+.bui-m-b-45 {
+  margin-bottom: 45px;
+}
+.bui-m-b-50 {
+  margin-bottom: 50px;
+}
+.bui-m-b-55 {
+  margin-bottom: 55px;
+}
+.bui-m-b-60 {
+  margin-bottom: 60px;
+}
+.bui-m-b-65 {
+  margin-bottom: 65px;
+}
+.bui-m-b-70 {
+  margin-bottom: 70px;
+}
+.bui-m-b-75 {
+  margin-bottom: 75px;
+}
+.bui-m-b-80 {
+  margin-bottom: 80px;
+}
+.bui-m-b-85 {
+  margin-bottom: 85px;
+}
+.bui-m-b-90 {
+  margin-bottom: 90px;
+}
+.bui-m-b-95 {
+  margin-bottom: 95px;
+}
+.bui-m-b-100 {
+  margin-bottom: 100px;
+}
+/* margin left */
+.bui-m-l-5 {
+  margin-left: 5px;
+}
+.bui-m-l-10 {
+  margin-left: 10px;
+}
+.bui-m-l-15 {
+  margin-left: 15px;
+}
+.bui-m-l-20 {
+  margin-left: 20px;
+}
+.bui-m-l-25 {
+  margin-left: 25px;
+}
+.bui-m-l-30 {
+  margin-left: 30px;
+}
+.bui-m-l-35 {
+  margin-left: 35px;
+}
+.bui-m-l-40 {
+  margin-left: 40px;
+}
+.bui-m-l-45 {
+  margin-left: 45px;
+}
+.bui-m-l-50 {
+  margin-left: 50px;
+}
+.bui-m-l-55 {
+  margin-left: 55px;
+}
+.bui-m-l-60 {
+  margin-left: 60px;
+}
+.bui-m-l-65 {
+  margin-left: 65px;
+}
+.bui-m-l-70 {
+  margin-left: 70px;
+}
+.bui-m-l-75 {
+  margin-left: 75px;
+}
+.bui-m-l-80 {
+  margin-left: 80px;
+}
+.bui-m-l-85 {
+  margin-left: 85px;
+}
+.bui-m-l-90 {
+  margin-left: 90px;
+}
+.bui-m-l-95 {
+  margin-left: 95px;
+}
+.bui-m-l-100 {
+  margin-left: 100px;
+}
+/* margin right */
+.bui-m-r-5 {
+  margin-right: 5px;
+}
+.bui-m-r-10 {
+  margin-right: 10px;
+}
+.bui-m-r-15 {
+  margin-right: 15px;
+}
+.bui-m-r-20 {
+  margin-right: 20px;
+}
+.bui-m-r-25 {
+  margin-right: 25px;
+}
+.bui-m-r-30 {
+  margin-right: 30px;
+}
+.bui-m-r-35 {
+  margin-right: 35px;
+}
+.bui-m-r-40 {
+  margin-right: 40px;
+}
+.bui-m-r-45 {
+  margin-right: 45px;
+}
+.bui-m-r-50 {
+  margin-right: 50px;
+}
+.bui-m-r-55 {
+  margin-right: 55px;
+}
+.bui-m-r-60 {
+  margin-right: 60px;
+}
+.bui-m-r-65 {
+  margin-right: 65px;
+}
+.bui-m-r-70 {
+  margin-right: 70px;
+}
+.bui-m-r-75 {
+  margin-right: 75px;
+}
+.bui-m-r-80 {
+  margin-right: 80px;
+}
+.bui-m-r-85 {
+  margin-right: 85px;
+}
+.bui-m-r-90 {
+  margin-right: 90px;
+}
+.bui-m-r-95 {
+  margin-right: 95px;
+}
+.bui-m-r-100 {
+  margin-right: 100px;
+}
+/**********************************************************************
+  File: padding.less
+      This file defines all common padding css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*************************
+    GENERIC PADDING RELATED
+**************************/
+.bui-p-all-5 {
+  padding: 5px;
+}
+.bui-p-all-10 {
+  padding: 10px;
+}
+.bui-p-all-15 {
+  padding: 15px;
+}
+.bui-p-all-20 {
+  padding: 20px;
+}
+.bui-p-all-25 {
+  padding: 25px;
+}
+.bui-p-all-30 {
+  padding: 30px;
+}
+.bui-p-all-35 {
+  padding: 35px;
+}
+.bui-p-all-40 {
+  padding: 40px;
+}
+.bui-p-all-45 {
+  padding: 45px;
+}
+.bui-p-all-50 {
+  padding: 50px;
+}
+.bui-p-all-55 {
+  padding: 55px;
+}
+.bui-p-all-60 {
+  padding: 60px;
+}
+.bui-p-all-65 {
+  padding: 65px;
+}
+.bui-p-all-70 {
+  padding: 70px;
+}
+.bui-p-all-75 {
+  padding: 75px;
+}
+.bui-p-all-80 {
+  padding: 80px;
+}
+.bui-p-all-85 {
+  padding: 85px;
+}
+.bui-p-all-90 {
+  padding: 90px;
+}
+.bui-p-all-95 {
+  padding: 95px;
+}
+.bui-p-all-100 {
+  padding: 100px;
+}
+/* padding top-bottom */
+.bui-p-tb-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.bui-p-tb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bui-p-tb-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.bui-p-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bui-p-tb-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.bui-p-tb-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.bui-p-tb-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.bui-p-tb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bui-p-tb-45 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.bui-p-tb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bui-p-tb-55 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.bui-p-tb-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bui-p-tb-65 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.bui-p-tb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bui-p-tb-75 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.bui-p-tb-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.bui-p-tb-85 {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.bui-p-tb-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.bui-p-tb-95 {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.bui-p-tb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* padding left-right */
+.bui-p-lr-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.bui-p-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bui-p-lr-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bui-p-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bui-p-lr-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.bui-p-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.bui-p-lr-35 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.bui-p-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.bui-p-lr-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.bui-p-lr-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bui-p-lr-55 {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.bui-p-lr-60 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.bui-p-lr-65 {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.bui-p-lr-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.bui-p-lr-75 {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.bui-p-lr-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.bui-p-lr-85 {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.bui-p-lr-90 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.bui-p-lr-95 {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+.bui-p-lr-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* padding top */
+.bui-p-t-5 {
+  padding-top: 5px;
+}
+.bui-p-t-10 {
+  padding-top: 10px;
+}
+.bui-p-t-15 {
+  padding-top: 15px;
+}
+.bui-p-t-20 {
+  padding-top: 20px;
+}
+.bui-p-t-25 {
+  padding-top: 25px;
+}
+.bui-p-t-30 {
+  padding-top: 30px;
+}
+.bui-p-t-35 {
+  padding-top: 35px;
+}
+.bui-p-t-40 {
+  padding-top: 40px;
+}
+.bui-p-t-45 {
+  padding-top: 45px;
+}
+.bui-p-t-50 {
+  padding-top: 50px;
+}
+.bui-p-t-55 {
+  padding-top: 55px;
+}
+.bui-p-t-60 {
+  padding-top: 60px;
+}
+.bui-p-t-65 {
+  padding-top: 65px;
+}
+.bui-p-t-70 {
+  padding-top: 70px;
+}
+.bui-p-t-75 {
+  padding-top: 75px;
+}
+.bui-p-t-80 {
+  padding-top: 80px;
+}
+.bui-p-t-85 {
+  padding-top: 85px;
+}
+.bui-p-t-90 {
+  padding-top: 90px;
+}
+.bui-p-t-95 {
+  padding-top: 95px;
+}
+.bui-p-t-100 {
+  padding-top: 100px;
+}
+/* padding bottom */
+.bui-p-b-5 {
+  padding-bottom: 5px;
+}
+.bui-p-b-10 {
+  padding-bottom: 10px;
+}
+.bui-p-b-11 {
+  padding-bottom: 11px;
+}
+.bui-p-b-12 {
+  padding-bottom: 12px;
+}
+.bui-p-b-13 {
+  padding-bottom: 13px;
+}
+.bui-p-b-14 {
+  padding-bottom: 14px;
+}
+.bui-p-b-15 {
+  padding-bottom: 15px;
+}
+.bui-p-b-20 {
+  padding-bottom: 20px;
+}
+.bui-p-b-25 {
+  padding-bottom: 25px;
+}
+.bui-p-b-30 {
+  padding-bottom: 30px;
+}
+.bui-p-b-35 {
+  padding-bottom: 35px;
+}
+.bui-p-b-40 {
+  padding-bottom: 40px;
+}
+.bui-p-b-45 {
+  padding-bottom: 45px;
+}
+.bui-p-b-50 {
+  padding-bottom: 50px;
+}
+.bui-p-b-55 {
+  padding-bottom: 55px;
+}
+.bui-p-b-60 {
+  padding-bottom: 60px;
+}
+.bui-p-b-65 {
+  padding-bottom: 65px;
+}
+.bui-p-b-70 {
+  padding-bottom: 70px;
+}
+.bui-p-b-75 {
+  padding-bottom: 75px;
+}
+.bui-p-b-80 {
+  padding-bottom: 80px;
+}
+.bui-p-b-85 {
+  padding-bottom: 85px;
+}
+.bui-p-b-90 {
+  padding-bottom: 90px;
+}
+.bui-p-b-95 {
+  padding-bottom: 95px;
+}
+.bui-p-b-100 {
+  padding-bottom: 100px;
+}
+/* padding left */
+.bui-p-l-5 {
+  padding-left: 5px;
+}
+.bui-p-l-10 {
+  padding-left: 10px;
+}
+.bui-p-l-15 {
+  padding-left: 15px;
+}
+.bui-p-l-20 {
+  padding-left: 20px;
+}
+.bui-p-l-25 {
+  padding-left: 25px;
+}
+.bui-p-l-30 {
+  padding-left: 30px;
+}
+.bui-p-l-35 {
+  padding-left: 35px;
+}
+.bui-p-l-40 {
+  padding-left: 40px;
+}
+.bui-p-l-45 {
+  padding-left: 45px;
+}
+.bui-p-l-50 {
+  padding-left: 50px;
+}
+.bui-p-l-55 {
+  padding-left: 55px;
+}
+.bui-p-l-60 {
+  padding-left: 60px;
+}
+.bui-p-l-65 {
+  padding-left: 65px;
+}
+.bui-p-l-70 {
+  padding-left: 70px;
+}
+.bui-p-l-75 {
+  padding-left: 75px;
+}
+.bui-p-l-80 {
+  padding-left: 80px;
+}
+.bui-p-l-85 {
+  padding-left: 85px;
+}
+.bui-p-l-90 {
+  padding-left: 90px;
+}
+.bui-p-l-95 {
+  padding-left: 95px;
+}
+.bui-p-l-100 {
+  padding-left: 100px;
+}
+/* padding right */
+.bui-p-r-5 {
+  padding-right: 5px;
+}
+.bui-p-r-10 {
+  padding-right: 10px;
+}
+.bui-p-r-15 {
+  padding-right: 15px;
+}
+.bui-p-r-20 {
+  padding-right: 20px;
+}
+.bui-p-r-25 {
+  padding-right: 25px;
+}
+.bui-p-r-30 {
+  padding-right: 30px;
+}
+.bui-p-r-35 {
+  padding-right: 35px;
+}
+.bui-p-r-40 {
+  padding-right: 40px;
+}
+.bui-p-r-45 {
+  padding-right: 45px;
+}
+.bui-p-r-50 {
+  padding-right: 50px;
+}
+.bui-p-r-55 {
+  padding-right: 55px;
+}
+.bui-p-r-60 {
+  padding-right: 60px;
+}
+.bui-p-r-65 {
+  padding-right: 65px;
+}
+.bui-p-r-70 {
+  padding-right: 70px;
+}
+.bui-p-r-75 {
+  padding-right: 75px;
+}
+.bui-p-r-80 {
+  padding-right: 80px;
+}
+.bui-p-r-85 {
+  padding-right: 85px;
+}
+.bui-p-r-90 {
+  padding-right: 90px;
+}
+.bui-p-r-95 {
+  padding-right: 95px;
+}
+.bui-p-r-100 {
+  padding-right: 100px;
+}
+/**********************************************************************
+  File: width.less
+      This file defines all common width css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*************************
+    GENERIC WIDTH RELATED
+**************************/
+.bui-w-5-percent {
+  width: 5% !important;
+}
+.bui-w-10-percent {
+  width: 10% !important;
+}
+.bui-w-11-percent {
+  width: 11% !important;
+}
+.bui-w-12-percent {
+  width: 12% !important;
+}
+.bui-w-13-percent {
+  width: 13% !important;
+}
+.bui-w-14-percent {
+  width: 14% !important;
+}
+.bui-w-15-percent {
+  width: 15% !important;
+}
+.bui-w-20-percent {
+  width: 20% !important;
+}
+.bui-w-21-percent {
+  width: 21% !important;
+}
+.bui-w-22-percent {
+  width: 22% !important;
+}
+.bui-w-23-percent {
+  width: 23% !important;
+}
+.bui-w-24-percent {
+  width: 24% !important;
+}
+.bui-w-25-percent {
+  width: 25% !important;
+}
+.bui-w-30-percent {
+  width: 30% !important;
+}
+.bui-w-31-percent {
+  width: 31% !important;
+}
+.bui-w-32-percent {
+  width: 32% !important;
+}
+.bui-w-33-percent {
+  width: 33% !important;
+}
+.bui-w-34-percent {
+  width: 34% !important;
+}
+.bui-w-35-percent {
+  width: 35% !important;
+}
+.bui-w-40-percent {
+  width: 40% !important;
+}
+.bui-w-45-percent {
+  width: 45% !important;
+}
+.bui-w-50-percent {
+  width: 50% !important;
+}
+.bui-w-51-percent {
+  width: 51% !important;
+}
+.bui-w-52-percent {
+  width: 52% !important;
+}
+.bui-w-53-percent {
+  width: 53% !important;
+}
+.bui-w-54-percent {
+  width: 54% !important;
+}
+.bui-w-55-percent {
+  width: 55% !important;
+}
+.bui-w-56-percent {
+  width: 56% !important;
+}
+.bui-w-57-percent {
+  width: 57% !important;
+}
+.bui-w-58-percent {
+  width: 58% !important;
+}
+.bui-w-59-percent {
+  width: 59% !important;
+}
+.bui-w-60-percent {
+  width: 60% !important;
+}
+.bui-w-65-percent {
+  width: 65% !important;
+}
+.bui-w-70-percent {
+  width: 70% !important;
+}
+.bui-w-75-percent {
+  width: 75% !important;
+}
+.bui-w-80-percent {
+  width: 80% !important;
+}
+.bui-w-85-percent {
+  width: 85% !important;
+}
+.bui-w-90-percent {
+  width: 90% !important;
+}
+.bui-w-95-percent {
+  width: 95% !important;
+}
+.bui-w-100-percent {
+  width: 100% !important;
+}
+/**********************************************************************
+  File: table.less
+      This file defines all common table (using other tags except table tags) css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Rakesh Meesala
+**********************************************************************/
+/*************************
+    GENERIC TABLE RELATED
+**************************/
+.bui-table {
+  display: table;
+}
+.bui-table-row {
+  display: table-row;
+}
+.bui-table-cell {
+  display: table-cell;
+}
+.bui-table-column {
+  display: table-column;
+}
+.bui-table-colgroup {
+  display: table-colgroup;
+}
+.bui-table-hdr-grp {
+  display: table-header-group;
+}
+.bui-table-row-grp {
+  display: table-row-group;
+}
+.bui-table-footer-grp {
+  display: table-footer-group;
+}
+.bui-table-caption {
+  display: table-caption;
+}
+/**********************************************************************
+  File: sprite-icons.less
+      This file defines all sprite icons that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*
+  Icon sprite image definition
+*/
+.bui-icon-sprite-18 {
+  background-image: url(../images/icons-18-spritesheet-and-hover.png);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  /*  background-attachment:fixed;*/
+}
+.bui-icon-plus {
+  background-position: 0 0;
+}
+.bui-icon-plus-hover {
+  background-position: 0 -18px;
+}
+.bui-icon-minus {
+  background-position: -36px 0;
+}
+.bui-icon-minus-hover {
+  background-position: -36px -18px;
+}
+.bui-icon-delete {
+  background-position: -72px 0;
+}
+.bui-icon-delete-hover {
+  background-position: -72px -18px;
+}
+.bui-icon-arrow-r {
+  background-position: -108px 0;
+}
+.bui-icon-arrow-r-hover {
+  background-position: -108px -18px;
+}
+.bui-icon-arrow-l {
+  background-position: -144px 0;
+}
+.bui-icon-arrow-l-hover {
+  background-position: -144px -18px;
+}
+.bui-icon-arrow-u {
+  background-position: -180px 0;
+}
+.bui-icon-arrow-u-hover {
+  background-position: -180px -18px;
+}
+.bui-icon-arrow-d {
+  background-position: -216px 0;
+}
+.bui-icon-arrow-d-hover {
+  background-position: -216px -18px;
+}
+.bui-icon-check {
+  background-position: -252px 0;
+}
+.bui-icon-check-hover {
+  background-position: -252px -18px;
+}
+.bui-icon-gear {
+  background-position: -288px 0;
+}
+.bui-icon-gear-hover {
+  background-position: -288px -18px;
+}
+.bui-icon-refresh {
+  background-position: -324px 0;
+}
+.bui-icon-refresh-hover {
+  background-position: -324px -18px;
+}
+.bui-icon-forward {
+  background-position: -360px 0;
+}
+.bui-icon-forward-hover {
+  background-position: -360px -18px;
+}
+.bui-icon-back {
+  background-position: -396px 0;
+}
+.bui-icon-back-hover {
+  background-position: -396px -18px;
+}
+.bui-icon-grid {
+  background-position: -432px 0;
+}
+.bui-icon-grid-hover {
+  background-position: -432px -18px;
+}
+.bui-icon-star {
+  background-position: -468px 0;
+}
+.bui-icon-star-hover {
+  background-position: -468px -18px;
+}
+.bui-icon-alert {
+  background-position: -504px 0;
+}
+.bui-icon-alert {
+  background-position: -504px -18px;
+}
+.bui-icon-info {
+  background-position: -540px 0;
+}
+.bui-icon-info-hover {
+  background-position: -540px -18px;
+}
+.bui-icon-home {
+  background-position: -576px 0;
+}
+.bui-icon-home-hover {
+  background-position: -576px -18px;
+}
+.bui-icon-search,
+.bui-icon-searchfield:after {
+  background-position: -612px 0;
+}
+.bui-icon-search-hover,
+.bui-icon-searchfield:after {
+  background-position: -612px -18px;
+}
+.bui-icon-checkbox-off {
+  background-position: -684px 0;
+}
+.bui-icon-checkbox-off-hover {
+  background-position: -684px -18px;
+}
+.bui-icon-checkbox-on {
+  background-position: -648px 0;
+}
+.bui-icon-checkbox-on-hover {
+  background-position: -648px -18px;
+}
+.bui-icon-radio-off {
+  background-position: -756px 0;
+}
+.bui-icon-radio-off-hover {
+  background-position: -756px -18px;
+}
+.bui-icon-radio-on {
+  background-position: -720px 0;
+}
+.bui-icon-radio-on-hover {
+  background-position: -720px -18px;
+}
+.bui-icon-activity {
+  background-position: -792px 0;
+}
+.bui-icon-activity-hover {
+  background-position: -792px -18px;
+}
+.bui-icon-notification {
+  background-position: -828px 0;
+}
+.bui-icon-notification-hover {
+  background-position: -828px -18px;
+}
+.bui-icon-order {
+  background-position: -859px 0;
+}
+.bui-icon-order-hover {
+  background-position: -859px -18px;
+}
+/*
+  Wireless Summary: Icon sprite image definition
+*/
+/***********************************************************************************
+  25 pixel icons:
+  image: icons_spritesheet_25.png.
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-25 {
+  background-image: url(../images/icons_spritesheet_25.png);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* wireless icons */
+.bui-icon-arrow-up-green {
+  background-position: 0 0;
+}
+.bui-icon-question-yellow {
+  background-position: -26px 0;
+}
+.bui-icon-exclaimation-pink {
+  background-position: -52px 0;
+}
+/* bullet point */
+.bui-icon-bullet-point {
+  background-position: -78px 0;
+}
+.bui-icon-ok-status {
+  background-position: -104px 0;
+}
+/* Activity feeds */
+.bui-icon-circle {
+  background-position: -130px 0;
+}
+.bui-icon-circle-hover {
+  background-position: -130px -26px;
+}
+.bui-icon-number {
+  background-position: -156px 0;
+}
+.bui-icon-number-hover {
+  background-position: -156px -26px;
+}
+.bui-icon-ticket {
+  background-position: -182px 0;
+}
+.bui-icon-ticket-hover {
+  background-position: -182px -26px;
+}
+.bui-icon-maintenance {
+  background-position: -208px 0;
+}
+.bui-icon-maintenance-hover {
+  background-position: -208px -26px;
+}
+.bui-icon-outage {
+  background-position: -234px 0;
+}
+.bui-icon-outage-hover {
+  background-position: -234px -26px;
+}
+.bui-icon-profile {
+  background-position: -260px 0;
+}
+.bui-icon-profile-hover {
+  background-position: -260px -26px;
+}
+.bui-icon-ticket-green {
+  background-position: -286px 0;
+}
+.bui-icon-maintenance-green {
+  background-position: -312px 0;
+}
+.bui-icon-outage-red {
+  background-position: -338px 0;
+}
+.bui-icon-solid-arrow-down {
+  background-position: -650px 0;
+}
+.bui-icon-solid-arrow-up {
+  background-position: -650px -26px;
+}
+/***********************************************************************************
+  Dashboard submenu icons
+  image: sprite_dashboard_2nd_nav_35x35.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-db-menu {
+  background-image: url(../images/sprite_dashboard_2nd_nav_35x35.png);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-dashboard {
+  background-position: 0 0;
+}
+.bui-icon-service {
+  background-position: -36px 0;
+}
+.bui-icon-account {
+  background-position: -72px 0;
+}
+.bui-icon-billing {
+  background-position: -108px 0;
+}
+.bui-icon-b-tool {
+  background-position: -144px 0;
+}
+.bui-icon-help {
+  background-position: -180px 0;
+}
+/***********************************************************************************
+  Dashboard overview widget icons
+  image: sprite_dashboard_overview_widget_14x14.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-overview {
+  background-image: url(../images/sprite_dashboard_overview_widget_14x14.png);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-alarm-critical {
+  background-position: 0 0;
+}
+.bui-icon-alarm-congestion {
+  background-position: -15px 0;
+}
+.bui-icon-alarm-ack {
+  background-position: -30px 0;
+}
+.bui-icon-alarm-clear {
+  background-position: -45px 0;
+}
+.bui-icon-ticket-normal {
+  background-position: -60px 0;
+}
+.bui-icon-ticket-clear {
+  background-position: -75px 0;
+}
+/***********************************************************************************
+  Dashboard wireless icons
+  image: sprite_dashboard_wireless_widget_30x30.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-wireless {
+  background-image: url(../images/sprite_dashboard_wireless_widget_30x30.png);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-wireless-upgrade {
+  background-position: 0 0;
+}
+.bui-icon-wireless-overage {
+  background-position: -31px 0;
+}
+.bui-icon-wireless-request {
+  background-position: -62px 0;
+}
+/***********************************************************************************
+  Social icons
+  image: sprite_social_icons_17x17.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-social-media {
+  background-image: url(../images/sprite_social_icons_17x17.png);
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-sm-fb {
+  background-position: 0 0;
+}
+.bui-icon-sm-twitter {
+  background-position: -18px 0;
+}
+.bui-icon-sm-linkedin {
+  background-position: -36px 0;
+}
+.bui-icon-sm-rss {
+  background-position: -54px 0;
+}
+.bui-icon-sm-share {
+  background-position: -72px 0;
+}
+.bui-icon-sm-netvibe {
+  background-position: -90px 0;
+}
+/***********************************************************************************
+  Top Nav icons
+  image: sprite_topnav_icons_27x27.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-top-nav {
+  background-image: url(../images/sprite_topnav_icons_27x27.png);
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-top-chat {
+  background-position: 0 0;
+}
+.bui-icon-top-email {
+  background-position: -28px 0;
+}
+.bui-icon-top-cart {
+  background-position: -56px 0;
+}
+.bui-icon-top-account {
+  background-position: -84px 0;
+}
+/***********************************************************************************
+  Network view icons icons
+  image: sprites_network_icons_19x19.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-network {
+  background-image: url(../images/sprites_network_icons_19x19.png);
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-network-fullscreen {
+  background-position: 0 0;
+}
+.bui-icon-network-mapview {
+  background-position: -20px 0;
+}
+.bui-icon-network-tabview {
+  background-position: -40px 0;
+}
+.bui-icon-network-listview {
+  background-position: -60px 0;
+}
+/***********************************************************************************
+  Activity feed type icons
+  image: sprites_activity_feed_type_icons_18x18.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-af-type {
+  background-image: url(../images/sprites_activity_feed_type_icons_18x18.png);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-af-type-order {
+  background-position: 0 0;
+}
+.bui-icon-af-type-notification {
+  background-position: -19px 0;
+}
+.bui-icon-af-type-maintenance {
+  background-position: -38px 0;
+}
+.bui-icon-af-type-account {
+  background-position: -57px 0;
+}
+/***********************************************************************************
+  Activity status icons
+  image: sprites_activity_status_icons_31x31.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-activity-status {
+  background-image: url(../images/sprites_activity_status_icons_31x31.png);
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-activity-status-all {
+  background-position: 0 0;
+}
+.bui-icon-activity-status-alarm {
+  background-position: -32px 0;
+}
+.bui-icon-activity-status-order {
+  background-position: -64px 0;
+}
+.bui-icon-activity-status-maintenance {
+  background-position: -96px 0;
+}
+.bui-icon-activity-status-account {
+  background-position: -128px 0;
+}
+.bui-icon-activity-status-notification {
+  background-position: -160px 0;
+}
+/***********************************************************************************
+  25 pixel icons
+  image: sprites_icons_20x20.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-20 {
+  background-image: url(../images/sprite_20px.png);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Arrows using for accordion*/
+.bui-icon-arrow-d {
+  background-position: 0 0;
+}
+.bui-icon-arrow-u {
+  background-position: -21px 0;
+}
+.bui-icon-arrow-r {
+  background-position: -42px 0;
+}
+/* social icons */
+.bui-icon-social-f {
+  background-position: -63px 0;
+}
+.bui-icon-social-t {
+  background-position: -84px 0;
+}
+.bui-icon-social-in {
+  background-position: -105px 0;
+}
+.bui-icon-social-in {
+  background-position: -126px 0;
+}
+.bui-icon-social-rss {
+  background-position: -147px 0;
+}
+.bui-icon-social-share {
+  background-position: -168px 0;
+}
+.bui-icon-social-netvibe {
+  background-position: -189px 0;
+}
+/* Activity feed type icons */
+.bui-icon-af-order {
+  background-position: -210px 0;
+}
+.bui-icon-af-notification {
+  background-position: -231px 0;
+}
+.bui-icon-af-maintenance {
+  background-position: -252px 0;
+}
+.bui-icon-af-account {
+  background-position: -273px 0;
+}
+/* view icons */
+.bui-icon-view-full-screen {
+  background-position: -294px 0;
+}
+.bui-icon-view-map {
+  background-position: -315px 0;
+}
+.bui-icon-view-tab {
+  background-position: -336px 0;
+}
+.bui-icon-view-list {
+  background-position: -357px 0;
+}
+.bui-icon-view-list-detail {
+  background-position: -378px 0;
+}
+/***********************************************************************************
+  50 pixel icons
+  image: sprites_icons_20x20.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-50 {
+  background-image: url(../images/sprite_db_sub_menu_50x50.png);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* dashboard submenu */
+.bui-icon-db-home {
+  background-position: 0 0;
+}
+.bui-icon-db-home-hover {
+  background-position: 0 -51px;
+}
+.bui-icon-db-mobility {
+  background-position: -51px 0;
+}
+.bui-icon-db-mobility-hover {
+  background-position: -51px -51px;
+}
+.bui-icon-db-ebilling {
+  background-position: -102px 0;
+}
+.bui-icon-db-ebilling-hover {
+  background-position: -102px -51px;
+}
+.bui-icon-db-network {
+  background-position: -153px 0;
+}
+.bui-icon-db-network-hover {
+  background-position: -153px -51px;
+}
+.bui-icon-db-activity {
+  background-position: -204px 0;
+}
+.bui-icon-db-activity-hover {
+  background-position: -204px -51px;
+}
+.bui-icon-db-map {
+  background-position: -255px 0;
+}
+.bui-icon-db-map-hover {
+  background-position: -255px -51px;
+}
+.bui-icon-db-analytic {
+  background-position: -306px 0;
+}
+.bui-icon-db-analytic-hover {
+  background-position: -306px -51px;
+}
+.bui-icon-db-more-app {
+  background-position: -357px 0;
+}
+.bui-icon-db-more-app-hover {
+  background-position: -357px -51px;
+}
+.bui-icon-sprite-14 {
+  background-image: url(../images/icons/att_login_icon.png);
+  width: 14px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-acct-mgmt {
+  background-position: 0 0;
+}
+/* this icon is used for the mega-menu of the the sb landing page */
+.bui-icon-sprite-mega-menu-item {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-mega-menu-item {
+  background-position: 0 0;
+}
+.bui-icon-mega-menu-item-hover {
+  background-position: 0 -66px;
+}
+.bui-icon-sprite-8 {
+  background-image: url(../images/icons/arrow_icon_sprite.png);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-sprite-8-delete {
+  background-position: 0 0;
+}
+.bui-icon-sprite-8-arrow-d {
+  background-position: 0 -9px;
+}
+.bui-icon-sprite-8-arrow-r {
+  background-position: 0 -18px;
+}
+.bui-icon-sprite-8-arrow-white-d {
+  background-position: 0 -27px;
+}
+.bui-icon-sprite-8-arrow-white-r {
+  background-position: 0 -36px;
+}
+.voice-plan-sprite {
+  background: transparent url(../images/icons/voice_plan_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 52px;
+  height: 40px;
+  vertical-align: middle;
+}
+.voice-plan-sprite-anyminute {
+  background-position: 0 0;
+}
+.voice-plan-sprite-rollover {
+  background-position: -53px 0;
+}
+.voice-plan-sprite-m2m {
+  background-position: -106px 0;
+}
+.voice-plan-sprite-night-n-weekend {
+  background-position: -159px 0;
+}
+.voice-plan-sprite-add-min {
+  background-position: -212px 0;
+}
+.data-plan-sprite {
+  background: transparent url(../images/icons/data_plan_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 52px;
+  height: 40px;
+  vertical-align: middle;
+}
+.data-plan-sprite-data {
+  background-position: 0 0;
+}
+.data-plan-sprite-addln-data {
+  background-position: -53px 0;
+}
+.data-plan-sprite-canadian-data {
+  background-position: -106px 0;
+}
+.data-plan-sprite-intl-data {
+  background-position: -159px 0;
+}
+.data-plan-sprite-enterp-lvl {
+  background-position: -212px 0;
+}
+.form-element-sprite {
+  background: transparent url(../images/icons/form_element_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+.form-element-sprite-radio {
+  background-position: 0 -29px;
+}
+.form-element-sprite-radio-on {
+  background-position: 0 0;
+}
+.form-element-sprite-checkbox {
+  background-position: -29px 0;
+}
+.form-element-sprite-checkbox-on {
+  background-position: -29px -29px;
+}
+/***********************************************************************************
+  15 pixel icons
+  image: shopping_cart_15x15.png
+  Separator: 1px
+************************************************************************************/
+.shopping-cart-sprite {
+  background: transparent url(../images/icons/shopping_cart_15x15.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.sc-device {
+  background-position: 0 0;
+}
+.sc-voice {
+  background-position: -16px 0;
+}
+.sc-data {
+  background-position: -32px 0;
+}
+.sc-add-on {
+  background-position: -48px 0;
+}
+.sc-accessory {
+  background-position: -64px 0;
+}
+.sc-remove {
+  background-position: -80px 0;
+}
+/***********************************************************************************
+  10 pixel icons
+  image: basic_sprite_10x10.png
+  Separator: 1px
+************************************************************************************/
+.basic-sprite {
+  background: transparent url(../images/icons/basic_sprite_10x10.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.basic-arrow-u {
+  background-position: 0 0;
+}
+.basic-arrow-d {
+  background-position: 0 -11px;
+}
+/***********************************************************************************
+  52*32 pixel icons
+  image: card_types_sprite.png
+  Separator: 1px
+************************************************************************************/
+.card-types-sprite {
+  background: transparent url(../images/icons/card_types_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 51px;
+  height: 32px;
+  vertical-align: middle;
+}
+.visa {
+  background-position: 0 -32px;
+}
+.visa.active {
+  background-position: 0 0;
+}
+.visa-active {
+  background-position: 0 0;
+}
+.master-card {
+  background-position: -52px -32px;
+}
+.master-card.active {
+  background-position: -52px 0;
+}
+.master-card-active {
+  background-position: -52px 0;
+}
+.discover {
+  background-position: -156px -32px;
+}
+.discover.active {
+  background-position: -156px 0;
+}
+.discover-active {
+  background-position: -156px 0;
+}
+.amex-active {
+  background-position: -104px 0;
+}
+.amex {
+  background-position: -104px -32px;
+}
+.amex.active {
+  background-position: -104px 0;
+}
+/***********************************************************************************
+  30*30 pixel icons
+  image: services_sprite_30x30.png
+  Separator: 1px
+************************************************************************************/
+.services-sprite {
+  background: transparent url(../images/icons/services_sprite_30x30.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 31px;
+  height: 30px;
+  vertical-align: middle;
+}
+.close-icon {
+  background-position: 0 -32px;
+}
+.wireless-icon {
+  background-position: -31px -32px;
+}
+.internet-icon {
+  background-position: -62px -32px;
+  height: 31px;
+}
+.device-features-sprite {
+  background: url("../images/icons/feature_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 13px;
+  vertical-align: middle;
+  width: 18px;
+}
+.device-display-icon {
+  background-position: -1px -4px;
+}
+.device-processor-icon {
+  background-position: -39px -3px;
+}
+.device-cam-icon {
+  background-position: -19px -4px;
+}
+.device-4g-icon {
+  background-position: -58px -3px;
+}
+/***********************************************************************************
+  29*23 pixel icons
+  image: services_sprite_29x23.png
+  Separator: 1px
+************************************************************************************/
+.print-icon {
+  background: transparent url(../images/icons/print-sprite_29x23.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 29px;
+  height: 23px;
+  vertical-align: middle;
+}
+.print-icon:hover {
+  background-position: 0 -23px;
+}
+/***********************************************************************************
+  24*23 pixel icons
+  image: feedback-sprite_24x23.png
+  Separator: 1px
+************************************************************************************/
+.feedback-sprite {
+  background: transparent url(../images/icons/feedback-sprite_24x23.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.feedback-sprite.error {
+  background-position: -2px -58px;
+}
+.feedback-sprite.success {
+  background-position: -2px -19px;
+}
+.feedback-sprite.warning {
+  background-position: -2px -39px;
+}
+.feedback-sprite.info {
+  background-position: -2px 0px;
+}
+.feedback-sprite.close {
+  background-position: -2px -76px;
+}
+.feedback-sprite.close:hover {
+  background-position: -2px -95px;
+}
+/**********************************************************************
+  File: grid.less
+      This file defines all common grid css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/* bui-grid definition
+  ================================
+   There are 5 bui-grid:
+   1) bui-grid-a: 2 columns
+   2) bui-grid-b: 3 columns
+   3) bui-grid-c: 4 columns
+   4) bui-grid-d: 5 columns
+   There are 5 bui-block(s) can be used with the bui-grid(s).
+   These are: bui-block-a, bui-block-b, bui-block-c, bui-block-d,
+   and bui-block-e
+
+*/
+.bui-grid-a,
+.bui-grid-b,
+.bui-grid-c,
+.bui-grid-d,
+.bui-grid-e {
+  /*  overflow: hidden;*/
+}
+.bui-block-a,
+.bui-block-b,
+.bui-block-c,
+.bui-block-d,
+.bui-block-e {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bui-block-1,
+.bui-block-2,
+.bui-block-3,
+.bui-block-4,
+.bui-block-5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* bui-grid-a definition */
+.bui-grid-a .bui-block-a,
+.bui-grid-2 .bui-block-a {
+  width: 50%;
+  clear: left;
+}
+.bui-grid-a .bui-block-b,
+.bui-grid-2 .bui-block-b {
+  width: 50%;
+}
+.bui-grid-a .bui-block-1,
+.bui-grid-2 .bui-block-1 {
+  width: 50%;
+  clear: left;
+}
+.bui-grid-a .bui-block-2,
+.bui-grid-2 .bui-block-2 {
+  width: 50%;
+}
+.bui-grid-a .bui-column,
+.bui-grid-2 .bui-column {
+  width: 50%;
+}
+/*.bui-grid-a >:nth-child(n) {
+  width: 50%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-b definition */
+.bui-grid-b .bui-block-a,
+.bui-grid-3 .bui-block-a {
+  width: 33.333%;
+  clear: left;
+}
+.bui-grid-b .bui-block-b,
+.bui-grid-3 .bui-block-b {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-c,
+.bui-grid-3 .bui-block-c {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-1,
+.bui-grid-3 .bui-block-1 {
+  width: 33.333%;
+  clear: left;
+}
+.bui-grid-b .bui-block-2,
+.bui-grid-3 .bui-block-2 {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-3,
+.bui-grid-3 .bui-block-3 {
+  width: 33.333%;
+}
+.bui-grid-b .bui-column,
+.bui-grid-3 .bui-column {
+  width: 33.333%;
+}
+/*.bui-grid-b >:nth-child(n) {
+  width: 33.333%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-c definition */
+.bui-grid-c .bui-block-a,
+.bui-grid-4 .bui-block-a {
+  width: 25%;
+  clear: left;
+}
+.bui-grid-c .bui-block-b,
+.bui-grid-4 .bui-block-b {
+  width: 25%;
+}
+.bui-grid-c .bui-block-c,
+.bui-grid-4 .bui-block-c {
+  width: 25%;
+}
+.bui-grid-c .bui-block-d,
+.bui-grid-4 .bui-block-d {
+  width: 25%;
+}
+.bui-grid-c .bui-block-1,
+.bui-grid-4 .bui-block-1 {
+  width: 25%;
+  clear: left;
+}
+.bui-grid-c .bui-block-2,
+.bui-grid-4 .bui-block-2 {
+  width: 25%;
+}
+.bui-grid-c .bui-block-3,
+.bui-grid-4 .bui-block-3 {
+  width: 25%;
+}
+.bui-grid-c .bui-block-4,
+.bui-grid-4 .bui-block-4 {
+  width: 25%;
+}
+.bui-grid-c .bui-column,
+.bui-grid-4 .bui-column {
+  width: 25%;
+}
+/*.bui-grid-c >:nth-child(n) {
+  width: 25%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-d definition */
+.bui-grid-d .bui-block-a,
+.bui-grid-5 .bui-block-a {
+  width: 20%;
+  clear: left;
+}
+.bui-grid-d .bui-block-b,
+.bui-grid-5 .bui-block-b {
+  width: 20%;
+}
+.bui-grid-d .bui-block-c,
+.bui-grid-5 .bui-block-c {
+  width: 20%;
+}
+.bui-grid-d .bui-block-d,
+.bui-grid-5 .bui-block-d {
+  width: 20%;
+}
+.bui-grid-d .bui-block-e,
+.bui-grid-5 .bui-block-e {
+  width: 20%;
+}
+.bui-grid-d .bui-block-1,
+.bui-grid-5 .bui-block-1 {
+  width: 20%;
+  clear: left;
+}
+.bui-grid-d .bui-block-2,
+.bui-grid-5 .bui-block-2 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-3,
+.bui-grid-5 .bui-block-3 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-4,
+.bui-grid-5 .bui-block-4 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-5,
+.bui-grid-5 .bui-block-5 {
+  width: 20%;
+}
+.bui-grid-d .bui-column,
+.bui-grid-5 .bui-column {
+  width: 20%;
+}
+/*.bui-grid-d >:nth-child(n) {
+  width: 20%;
+}*/
+/**********************************************************************
+  File: common.less
+      This file defines all common css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+/* base-ui full width and height */
+.bui-full-width {
+  width: 100%;
+}
+.bui-full-height {
+  height: 100%;
+}
+/* no display */
+.bui-display-none {
+  display: none;
+}
+@font-face {
+  font-family: 'clearviewatt';
+  src: url('../common/css/webfonts/clvatt-book-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-book-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-book-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-book-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-book-webfont.svg#clearviewattregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'clearviewatt';
+  src: url('../common/css/webfonts/clvatt-book_ital-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-book_ital-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-book_ital-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-book_ital-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-book_ital-webfont.svg#clearviewattitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'clearviewatt_lt';
+  src: url('../common/css/webfonts/clvatt-light-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-light-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-light-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-light-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-light-webfont.svg#clearviewatt_ltregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'clearviewatt_lt';
+  src: url('../common/css/webfonts/clvatt-light_ital-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-light_ital-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-light_ital-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-light_ital-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-light_ital-webfont.svg#clearviewatt_ltitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'clearviewatt_ltbold';
+  src: url('../common/css/webfonts/clvatt-bold-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-bold-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-bold-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-bold-webfont.svg#clearviewatt_ltbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'clearviewatt';
+  src: url('../common/css/webfonts/clvatt-bold_ital-webfont.eot');
+  src: url('../common/css/webfonts/clvatt-bold_ital-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/clvatt-bold_ital-webfont.woff') format('woff'), url('../common/css/webfonts/clvatt-bold_ital-webfont.ttf') format('truetype'), url('../common/css/webfonts/clvatt-bold_ital-webfont.svg#clearviewatt_ltbold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'omnes_attlight';
+  src: url('../common/css/webfonts/omnesatt-light-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-light-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-light-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-light-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-light-webfont.svg#omnes_attlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'omnes_attlight';
+  src: url('../common/css/webfonts/omnesatt-lightitalic-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-lightitalic-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-lightitalic-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-lightitalic-webfont.svg#omnes_attlight_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'omnes_attmedium';
+  src: url('../common/css/webfonts/omnesatt-medium-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-medium-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-medium-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-medium-webfont.svg#omnes_attmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'omnes_attmedium';
+  src: url('../common/css/webfonts/omnesatt-mediumitalic-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-mediumitalic-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-mediumitalic-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-mediumitalic-webfont.svg#omnes_attmedium_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'omnes_attregular';
+  src: url('../common/css/webfonts/omnesatt-regular-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-regular-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-regular-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-regular-webfont.svg#omnes_att_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'omnes_attregular';
+  src: url('../common/css/webfonts/omnesatt-regularitalic-webfont.eot');
+  src: url('../common/css/webfonts/omnesatt-regularitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../common/css/webfonts/omnesatt-regularitalic-webfont.woff') format('woff'), url('../common/css/webfonts/omnesatt-regularitalic-webfont.ttf') format('truetype'), url('../common/css/webfonts/omnesatt-regularitalic-webfont.svg#omnes_attregular_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+/* Icons */
+@font-face {
+  font-family: 'atticons';
+  src: url(../common/css/webfonts/atticons.eot);
+  src: url(../common/css/webfonts/atticons.eot?#iefix) format('embedded-opentype'), url(../common/css/webfonts/atticons.woff) format('woff'), url(../common/css/webfonts/atticons.ttf) format('truetype'), url(../common/css/webfonts/atticons.svg#atticons) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'atticons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'atticons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-wireless-outline:before {
+  content: "\e600";
+}
+.icon-wireless-dashboard:before {
+  content: "\e601";
+}
+.icon-website-hosting-outline:before {
+  content: "\e602";
+}
+.icon-volume-up:before {
+  content: "\e603";
+}
+.icon-volume-mute:before {
+  content: "\e604";
+}
+.icon-volume-down:before {
+  content: "\e605";
+}
+.icon-video:before {
+  content: "\e606";
+}
+.icon-video-tutorials:before {
+  content: "\e607";
+}
+.icon-video-tutorials-outline:before {
+  content: "\e608";
+}
+.icon-video-outline:before {
+  content: "\e609";
+}
+.icon-user:before {
+  content: "\e60a";
+}
+.icon-user-small:before {
+  content: "\e60b";
+}
+.icon-user-outline:before {
+  content: "\e60c";
+}
+.icon-user-large-outline:before {
+  content: "\e60d";
+}
+.icon-upgrades:before {
+  content: "\e60e";
+}
+.icon-upgrades-outline:before {
+  content: "\e60f";
+}
+.icon-unlimited-nights-weekends-outline:before {
+  content: "\e610";
+}
+.icon-unlimited-minutes-outline:before {
+  content: "\e611";
+}
+.icon-unlimited-messaging-outline:before {
+  content: "\e612";
+}
+.icon-unlimited-m2m-outline:before {
+  content: "\e613";
+}
+.icon-unlimited-calling:before {
+  content: "\e614";
+}
+.icon-tv-packages-outline:before {
+  content: "\e615";
+}
+.icon-travel-minutes-outline:before {
+  content: "\e616";
+}
+.icon-trash:before {
+  content: "\e617";
+}
+.icon-tollfree-outline:before {
+  content: "\e618";
+}
+.icon-tiles:before {
+  content: "\e619";
+}
+.icon-tiles-small:before {
+  content: "\e61a";
+}
+.icon-tickets:before {
+  content: "\e61b";
+}
+.icon-tickets-returned:before {
+  content: "\e61c";
+}
+.icon-tickets-referred:before {
+  content: "\e61d";
+}
+.icon-tickets-outline:before {
+  content: "\e61e";
+}
+.icon-tickets-open:before {
+  content: "\e61f";
+}
+.icon-tickets-escalate:before {
+  content: "\e620";
+}
+.icon-tickets-contested:before {
+  content: "\e621";
+}
+.icon-tickets-closed:before {
+  content: "\e622";
+}
+.icon-tickets-cleared:before {
+  content: "\e623";
+}
+.icon-tickets-arquived:before {
+  content: "\e624";
+}
+.icon-tickets-active:before {
+  content: "\e625";
+}
+.icon-technical-specifications:before {
+  content: "\e626";
+}
+.icon-tech-support:before {
+  content: "\e627";
+}
+.icon-tech-support-outline:before {
+  content: "\e628";
+}
+.icon-tablet:before {
+  content: "\e629";
+}
+.icon-tablet-outline:before {
+  content: "\e62a";
+}
+.icon-support:before {
+  content: "\e62b";
+}
+.icon-support-outline:before {
+  content: "\e62c";
+}
+.icon-star:before {
+  content: "\e62d";
+}
+.icon-sort:before {
+  content: "\e62e";
+}
+.icon-social-outline:before {
+  content: "\e62f";
+}
+.icon-smartphone:before {
+  content: "\e630";
+}
+.icon-smartphone-outline:before {
+  content: "\e631";
+}
+.icon-signout-outline:before {
+  content: "\e632";
+}
+.icon-sign-out:before {
+  content: "\e633";
+}
+.icon-shop:before {
+  content: "\e634";
+}
+.icon-shop-outline:before {
+  content: "\e635";
+}
+.icon-shared-outline:before {
+  content: "\e636";
+}
+.icon-shared-minutes-outline:before {
+  content: "\e637";
+}
+.icon-share:before {
+  content: "\e638";
+}
+.icon-settings:before {
+  content: "\e639";
+}
+.icon-send-invoice-outline:before {
+  content: "\e63a";
+}
+.icon-see-more:before {
+  content: "\e63b";
+}
+.icon-see-less:before {
+  content: "\e63c";
+}
+.icon-search:before {
+  content: "\e63d";
+}
+.icon-search-small:before {
+  content: "\e63e";
+}
+.icon-screen-calls-outline:before {
+  content: "\e63f";
+}
+.icon-save-time-outline:before {
+  content: "\e640";
+}
+.icon-saas-enablement-outline:before {
+  content: "\e641";
+}
+.icon-s-beam:before {
+  content: "\e642";
+}
+.icon-s-beam-outline:before {
+  content: "\e643";
+}
+.icon-rollover-outline:before {
+  content: "\e644";
+}
+.icon-rollover-minutes:before {
+  content: "\e645";
+}
+.icon-reviews-outline:before {
+  content: "\e646";
+}
+.icon-reports:before {
+  content: "\e647";
+}
+.icon-reports-outline:before {
+  content: "\e648";
+}
+.icon-recommendation-tool:before {
+  content: "\e649";
+}
+.icon-receivers-outline:before {
+  content: "\e64a";
+}
+.icon-productivity-outline:before {
+  content: "\e64b";
+}
+.icon-print:before {
+  content: "\e64c";
+}
+.icon-plus:before {
+  content: "\e64d";
+}
+.icon-plus-outline:before {
+  content: "\e64e";
+}
+.icon-play:before {
+  content: "\e64f";
+}
+.icon-platform-as-service-outline:before {
+  content: "\e650";
+}
+.icon-plans:before {
+  content: "\e651";
+}
+.icon-plans-outline:before {
+  content: "\e652";
+}
+.icon-pie-chart:before {
+  content: "\e653";
+}
+.icon-photos:before {
+  content: "\e654";
+}
+.icon-photos-outline:before {
+  content: "\e655";
+}
+.icon-phone-data-outline:before {
+  content: "\e656";
+}
+.icon-payments:before {
+  content: "\e657";
+}
+.icon-payments-outline:before {
+  content: "\e658";
+}
+.icon-pause:before {
+  content: "\e659";
+}
+.icon-password:before {
+  content: "\e65a";
+}
+.icon-password-outline:before {
+  content: "\e65b";
+}
+.icon-overview:before {
+  content: "\e65c";
+}
+.icon-overview-small:before {
+  content: "\e65d";
+}
+.icon-overages:before {
+  content: "\e65e";
+}
+.icon-overages-outline:before {
+  content: "\e65f";
+}
+.icon-outage-outline:before {
+  content: "\e660";
+}
+.icon-orders:before {
+  content: "\e661";
+}
+.icon-orders-outline:before {
+  content: "\e662";
+}
+.icon-optional-applications-outline:before {
+  content: "\e663";
+}
+.icon-office-at-hand-outline:before {
+  content: "\e664";
+}
+.icon-offers:before {
+  content: "\e665";
+}
+.icon-offers-outline:before {
+  content: "\e666";
+}
+.icon-notifications:before {
+  content: "\e667";
+}
+.icon-notifications-outline:before {
+  content: "\e668";
+}
+.icon-normal-screen:before {
+  content: "\e669";
+}
+.icon-nights-weekends-outline:before {
+  content: "\e66a";
+}
+.icon-new-requests-outline:before {
+  content: "\e66b";
+}
+.icon-network:before {
+  content: "\e66c";
+}
+.icon-network-dashboard:before {
+  content: "\e66d";
+}
+.icon-netbook:before {
+  content: "\e66e";
+}
+.icon-netbook-outline:before {
+  content: "\e66f";
+}
+.icon-music:before {
+  content: "\e670";
+}
+.icon-music-video:before {
+  content: "\e671";
+}
+.icon-music-video-outline:before {
+  content: "\e672";
+}
+.icon-music-outline:before {
+  content: "\e673";
+}
+.icon-modem:before {
+  content: "\e674";
+}
+.icon-modem-outline:before {
+  content: "\e675";
+}
+.icon-mobile-insurance:before {
+  content: "\e676";
+}
+.icon-mobile-insurance-outline:before {
+  content: "\e677";
+}
+.icon-mobile-2-mobile-outline:before {
+  content: "\e678";
+}
+.icon-missed-calls-outline:before {
+  content: "\e679";
+}
+.icon-minutes:before {
+  content: "\e67a";
+}
+.icon-minutes-outline:before {
+  content: "\e67b";
+}
+.icon-messaging:before {
+  content: "\e67c";
+}
+.icon-messaging-toolkit-outline:before {
+  content: "\e67d";
+}
+.icon-messaging-outline:before {
+  content: "\e67e";
+}
+.icon-messaging-email:before {
+  content: "\e67f";
+}
+.icon-messaging-email-outline:before {
+  content: "\e680";
+}
+.icon-message-small:before {
+  content: "\e681";
+}
+.icon-maintenance:before {
+  content: "\e682";
+}
+.icon-location-pin:before {
+  content: "\e683";
+}
+.icon-location-pin-small:before {
+  content: "\e684";
+}
+.icon-local-search:before {
+  content: "\e685";
+}
+.icon-local-long-distance-outline:before {
+  content: "\e686";
+}
+.icon-list:before {
+  content: "\e687";
+}
+.icon-learn:before {
+  content: "\e688";
+}
+.icon-learn-outline:before {
+  content: "\e689";
+}
+.icon-laptop:before {
+  content: "\e68a";
+}
+.icon-landline:before {
+  content: "\e68b";
+}
+.icon-landline-outline:before {
+  content: "\e68c";
+}
+.icon-invoices:before {
+  content: "\e68d";
+}
+.icon-invoices-outline:before {
+  content: "\e68e";
+}
+.icon-inventory:before {
+  content: "\e68f";
+}
+.icon-intranet-outline:before {
+  content: "\e690";
+}
+.icon-interpreter:before {
+  content: "\e691";
+}
+.icon-interpreter-outline:before {
+  content: "\e692";
+}
+.icon-internet:before {
+  content: "\e693";
+}
+.icon-internet-outline:before {
+  content: "\e694";
+}
+.icon-internet-24-outline:before {
+  content: "\e695";
+}
+.icon-internet-18-outline:before {
+  content: "\e696";
+}
+.icon-international-outline:before {
+  content: "\e697";
+}
+.icon-international-long-distance-outline:before {
+  content: "\e698";
+}
+.icon-international-data-outline:before {
+  content: "\e699";
+}
+.icon-installation-outline:before {
+  content: "\e69a";
+}
+.icon-information:before {
+  content: "\e69b";
+}
+.icon-info-success:before {
+  content: "\e69c";
+}
+.icon-info-alert:before {
+  content: "\e69d";
+}
+.icon-info-alert-outline:before {
+  content: "\e69e";
+}
+.icon-included-checkmark:before {
+  content: "\e69f";
+}
+.icon-included-checkmark-outline:before {
+  content: "\e6a0";
+}
+.icon-hotspot:before {
+  content: "\e6a1";
+}
+.icon-hotspot-outline:before {
+  content: "\e6a2";
+}
+.icon-hotspot-access-outline:before {
+  content: "\e6a3";
+}
+.icon-home:before {
+  content: "\e6a4";
+}
+.icon-help:before {
+  content: "\e6a5";
+}
+.icon-help-outline:before {
+  content: "\e6a6";
+}
+.icon-hd:before {
+  content: "\e6a7";
+}
+.icon-hd-outline:before {
+  content: "\e6a8";
+}
+.icon-hamburger:before {
+  content: "\e6a9";
+}
+.icon-group-outline:before {
+  content: "\e6aa";
+}
+.icon-gps:before {
+  content: "\e6ab";
+}
+.icon-gps-outline:before {
+  content: "\e6ac";
+}
+.icon-go-paperless-email-outline:before {
+  content: "\e6ad";
+}
+.icon-global-messaging-outline:before {
+  content: "\e6ae";
+}
+.icon-gamepad-outline:before {
+  content: "\e6af";
+}
+.icon-game-devices:before {
+  content: "\e6b0";
+}
+.icon-full-screen:before {
+  content: "\e6b1";
+}
+.icon-forward-calls-outline:before {
+  content: "\e6b2";
+}
+.icon-forum:before {
+  content: "\e6b3";
+}
+.icon-forum-outline:before {
+  content: "\e6b4";
+}
+.icon-filter:before {
+  content: "\e6b5";
+}
+.icon-extras:before {
+  content: "\e6b6";
+}
+.icon-extras-outline:before {
+  content: "\e6b7";
+}
+.icon-erase:before {
+  content: "\e6b8";
+}
+.icon-envelope:before {
+  content: "\e6b9";
+}
+.icon-envelope-outline:before {
+  content: "\e6ba";
+}
+.icon-enterprise-messaging-outline:before {
+  content: "\e6bb";
+}
+.icon-edit:before {
+  content: "\e6bc";
+}
+.icon-duplicate:before {
+  content: "\e6bd";
+}
+.icon-dropdown-up:before {
+  content: "\e6be";
+}
+.icon-dropdown-down:before {
+  content: "\e6bf";
+}
+.icon-download:before {
+  content: "\e6c0";
+}
+.icon-download-outline:before {
+  content: "\e6c1";
+}
+.icon-disputes:before {
+  content: "\e6c2";
+}
+.icon-detailed-billing:before {
+  content: "\e6c3";
+}
+.icon-detailed-billing-outline:before {
+  content: "\e6c4";
+}
+.icon-desktop-outline:before {
+  content: "\e6c5";
+}
+.icon-data:before {
+  content: "\e6c6";
+}
+.icon-data-outline:before {
+  content: "\e6c7";
+}
+.icon-data-additional-outline:before {
+  content: "\e6c8";
+}
+.icon-compare:before {
+  content: "\e6c9";
+}
+.icon-cloud-storage-outline:before {
+  content: "\e6ca";
+}
+.icon-cloud-outline:before {
+  content: "\e6cb";
+}
+.icon-cloud-computing-outline:before {
+  content: "\e6cc";
+}
+.icon-cloud-backup:before {
+  content: "\e6cd";
+}
+.icon-cloud-backup-outline:before {
+  content: "\e6ce";
+}
+.icon-circle-information-outline:before {
+  content: "\e6cf";
+}
+.icon-circle-action-remove:before {
+  content: "\e6d0";
+}
+.icon-circle-action-plus-outline:before {
+  content: "\e6d1";
+}
+.icon-circle-action-minus-outline:before {
+  content: "\e6d2";
+}
+.icon-circle-action-empty:before {
+  content: "\e6d3";
+}
+.icon-circle-action-delete-outline:before {
+  content: "\e6d4";
+}
+.icon-circle-action-close:before {
+  content: "\e6d5";
+}
+.icon-circle-action-check-outline:before {
+  content: "\e6d6";
+}
+.icon-circle-action-add:before {
+  content: "\e6d7";
+}
+.icon-chip-outline:before {
+  content: "\e6d8";
+}
+.icon-chevron-up:before {
+  content: "\e6d9";
+}
+.icon-chevron-right:before {
+  content: "\e6da";
+}
+.icon-chevron-left:before {
+  content: "\e6db";
+}
+.icon-chevron-down:before {
+  content: "\e6dc";
+}
+.icon-checkbox-checkmark:before {
+  content: "\e6dd";
+}
+.icon-chat:before {
+  content: "\e6de";
+}
+.icon-chat-small:before {
+  content: "\e6df";
+}
+.icon-case-studies:before {
+  content: "\e6e0";
+}
+.icon-cart:before {
+  content: "\e6e1";
+}
+.icon-cart-small:before {
+  content: "\e6e2";
+}
+.icon-camera:before {
+  content: "\e6e3";
+}
+.icon-camera-outline:before {
+  content: "\e6e4";
+}
+.icon-calendar-outline:before {
+  content: "\e6e5";
+}
+.icon-business:before {
+  content: "\e6e6";
+}
+.icon-business-tv:before {
+  content: "\e6e7";
+}
+.icon-business-tv-outline:before {
+  content: "\e6e8";
+}
+.icon-business-tv-additional-packs-outline:before {
+  content: "\e6e9";
+}
+.icon-business-outline:before {
+  content: "\e6ea";
+}
+.icon-business-center:before {
+  content: "\e6eb";
+}
+.icon-business-center-outline:before {
+  content: "\e6ec";
+}
+.icon-bundles:before {
+  content: "\e6ed";
+}
+.icon-bundles-outline:before {
+  content: "\e6ee";
+}
+.icon-billing:before {
+  content: "\e6ef";
+}
+.icon-billing-history-outline:before {
+  content: "\e6f0";
+}
+.icon-billing-dashboard:before {
+  content: "\e6f1";
+}
+.icon-bd-maps:before {
+  content: "\e6f2";
+}
+.icon-basicphone:before {
+  content: "\e6f3";
+}
+.icon-basicphone-outline:before {
+  content: "\e6f4";
+}
+.icon-barcode-outline:before {
+  content: "\e6f5";
+}
+.icon-bar-chart-vertical:before {
+  content: "\e6f6";
+}
+.icon-bar-chart-horizontal:before {
+  content: "\e6f7";
+}
+.icon-arrow-up:before {
+  content: "\e6f8";
+}
+.icon-arrow-up-right:before {
+  content: "\e6f9";
+}
+.icon-arrow-up-left:before {
+  content: "\e6fa";
+}
+.icon-arrow-up-circle:before {
+  content: "\e6fb";
+}
+.icon-arrow-right:before {
+  content: "\e6fc";
+}
+.icon-arrow-right-circle:before {
+  content: "\e6fd";
+}
+.icon-arrow-left:before {
+  content: "\e6fe";
+}
+.icon-arrow-left-circle:before {
+  content: "\e6ff";
+}
+.icon-arrow-down:before {
+  content: "\e700";
+}
+.icon-arrow-down-right:before {
+  content: "\e701";
+}
+.icon-arrow-down-left:before {
+  content: "\e702";
+}
+.icon-arrow-down-circle:before {
+  content: "\e703";
+}
+.icon-arrow-double-right:before {
+  content: "\e704";
+}
+.icon-arrow-double-left:before {
+  content: "\e705";
+}
+.icon-apps-media:before {
+  content: "\e706";
+}
+.icon-apps-media-outline:before {
+  content: "\e707";
+}
+.icon-apps-marketplace:before {
+  content: "\e708";
+}
+.icon-apps-marketplace-outline:before {
+  content: "\e709";
+}
+.icon-analytics:before {
+  content: "\e70a";
+}
+.icon-alt-media-subscription-outline:before {
+  content: "\e70b";
+}
+.icon-all-locations:before {
+  content: "\e70c";
+}
+.icon-all-devices:before {
+  content: "\e70d";
+}
+.icon-all-devices-outline:before {
+  content: "\e70e";
+}
+.icon-alarms:before {
+  content: "\e70f";
+}
+.icon-alarms-outline:before {
+  content: "\e710";
+}
+.icon-address-ip-outline:before {
+  content: "\e711";
+}
+.icon-addons:before {
+  content: "\e712";
+}
+.icon-addons-outline:before {
+  content: "\e713";
+}
+.icon-additional-services:before {
+  content: "\e714";
+}
+.icon-additional-minutes-outline:before {
+  content: "\e715";
+}
+.icon-add:before {
+  content: "\e716";
+}
+.icon-add-widget:before {
+  content: "\e717";
+}
+.icon-activity-feed:before {
+  content: "\e718";
+}
+.icon-accessories:before {
+  content: "\e719";
+}
+.icon-accessories-outline:before {
+  content: "\e71a";
+}
+.icon-move:before {
+  content: "\e71b";
+}
+.icon-keyboard:before {
+  content: "\e71c";
+}
+.icon-add-widget:before {
+  content: "\e716";
+}
+.icon-activity-feed:before {
+  content: "\e717";
+}
+.icon-accessories:before {
+  content: "\e718";
+}
+.icon-accessories-outline:before {
+  content: "\e719";
+}
+.icon-foundation-account:before {
+  content: "\e71a";
+}
+.icon-social-business-community:before {
+  content: "\e71d";
+}
+.icon-social-facebook:before {
+  content: "\e71e";
+}
+.icon-social-feed:before {
+  content: "\e71f";
+}
+.icon-social-google-plus:before {
+  content: "\e720";
+}
+.icon-social-linkedin:before {
+  content: "\e721";
+}
+.icon-social-network-exchange:before {
+  content: "\e722";
+}
+.icon-social-twitter-bird:before {
+  content: "\e723";
+}
+.icon-social-twitter:before {
+  content: "\e724";
+}
+.icon-social-youtube:before {
+  content: "\e725";
+}
+.icon-billing-account:before {
+  content: "\e71b";
+}
+/**********************************************************************
+  File: sb-variables.less
+      This file defines all variable properties that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*
+ * Global definition
+ *   1) These values will be used through the website. It make the UI elements consistent.
+ *   These values will be referenced cross the site. Any changes from here will affect the
+ *   whole website theme.
+ *   2) You may override these values when needed in your css file...
+ */
+/* font-family definition */
+/* Omnes font-family definition */
+/* font-weight navigation */
+/*@GLOBAL_DEFAULT_FONT_WEIGHT_NAV: 500;*/
+/* link definition */
+/* generic input definition */
+/* generic border definition */
+/* generic margin, padding definition */
+/* default button definition */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);*/
+/* grey button */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_SHADOW: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 20%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 40%);*/
+/* Icon definition */
+/* header default font-size definition */
+/* header default color definition
+    h1,h2,h3.h4.h5.h6
+*/
+/* CHOSEN :custom default CHOSEN select tag definition */
+/* DROPKICK :custom select tag definition */
+/* form */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.bui-form-horizontal .control-group {
+  /*        margin-bottom: @baseLineHeight/2;*/
+  margin-bottom: 0;
+  *zoom: 1;
+}
+.bui-form-horizontal .control-group:before,
+.bui-form-horizontal .control-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bui-form-horizontal .control-group:after {
+  clear: both;
+}
+.bui-form-horizontal .control-group .control-label {
+  float: left;
+  width: 30%;
+  display: inline-block;
+  padding-top: 5px;
+  text-align: left !important;
+}
+.bui-form-horizontal .control-group .controls {
+  *display: inline-block;
+  /*        *padding-left: 20px;*/
+  *padding-left: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  width: 65%;
+}
+.bui-form-horizontal .control-group .controls:first-child {
+  *padding-left: 100px;
+}
+.bui-form-horizontal .help-block {
+  margin-bottom: 0;
+}
+.bui-form-horizontal input + .help-block,
+.bui-form-horizontal select + .help-block,
+.bui-form-horizontal textarea + .help-block,
+.bui-form-horizontal .uneditable-input + .help-block,
+.bui-form-horizontal .input-prepend + .help-block,
+.bui-form-horizontal .input-append + .help-block {
+  margin-top: 10px;
+}
+.bui-form-horizontal .form-actions {
+  padding-left: 100px;
+}
+/* Generic form definition
+*  Than Le
+*/
+/* Form generic definition */
+form.form-generic .form-row-wpr {
+  margin-bottom: 20px;
+}
+form.form-generic .form-row-wpr .form-row label.form-label {
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+/* End of form generic definition */
+.popbox {
+  margin: 0px auto;
+  /*    text-align:center;*/
+  position: relative;
+}
+.popbox .collapse {
+  position: relative;
+}
+.popbox .collapse .box {
+  display: none;
+  background: #FFF;
+  border: solid 1px #BBBBBB;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #999;
+  position: absolute;
+}
+.popbox .collapse .box a.close {
+  color: red;
+  font-size: 12px;
+  font-family: arial;
+  text-decoration: underline;
+}
+.popbox .collapse .box .arrow {
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #FFF;
+  position: absolute;
+  left: 1px;
+  top: -10px;
+  z-index: 1001;
+}
+.popbox .collapse .box .arrow-border {
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #BBBBBB;
+  position: absolute;
+  top: -12px;
+  z-index: 1000;
+}
+.popbox .open {
+  /*        background:#DDD;
+        border:solid 1px #FFF;
+        border-radius:5px;
+        box-shadow: 0px 0px 5px #CCC;
+        background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+        background:-moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+        background:linear-gradient(top,#f4f4f4,#e8e8e8);
+        padding:8px;*/
+}
+/*
+ * Based styles: defaults
+ *  1) These are default values the whole website..
+ *  2) You may override these values when needed.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  color: #444444;
+}
+body {
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #067ab4;
+  text-shadow: none;
+  color: #FFFFFF !important;
+}
+::selection {
+  background: #067ab4;
+  text-shadow: none;
+  color: #FFFFFF !important;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3e3e3;
+  margin: 10px 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 2px 0;
+  background: #f2f2f2;
+  color: #444444;
+  padding: 2px 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-size: 12px;
+  line-height: 1.4;
+  background: #f2f2f2 repeat scroll 0 0;
+  color: #444444;
+  font-family: 'clearviewatt';
+  border: 0 none;
+  font-weight: normal;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+  white-space: normal;
+}
+p {
+  margin-bottom: 15px;
+}
+a {
+  color: #067ab4;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+}
+a:hover {
+  color: #199ddf;
+  text-decoration: none;
+  outline: 0 0;
+}
+a:active {
+  color: #7cc6ff;
+  text-decoration: none;
+  outline: 0 0;
+}
+a:focus {
+  outline: 0 0;
+  text-decoration: none;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.6em;
+  vertical-align: baseline;
+  font-family: inherit;
+  color: inherit;
+}
+img {
+  vertical-align: middle;
+}
+/*
+strong,
+    b {
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: normal;
+    color: inherit;
+}
+
+em,
+i {
+    font-style: @GLOBAL_DEFAULT_FONT_FAMILY_ITALIC;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+*/
+span {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+/*a.bui-btn-wpr:focus,
+a.bui-btn-wpr * {
+  outline: 0;
+  text-decoration: none;
+}*/
+/*a:focus,
+a:active,
+a * {
+    outline: 0;
+    text-decoration: none;
+}*/
+/*
+ * Generic text, active text, and highlighted text color
+ */
+.bui-text-color {
+  color: #444444;
+}
+.bui-active-text-color {
+  color: #067ab4;
+}
+.bui-highlight-text-color {
+  color: #808080;
+}
+.bui-link-text-color {
+  color: #067ab4;
+}
+.bui-promotion-text-color {
+  color: #fe8907;
+}
+/* bold definition */
+.bui-bold {
+  font-weight: bold;
+  font-family: 'clearviewatt';
+}
+/* italic definition */
+.bui-italic {
+  font-style: italic;
+  font-family: 'clearviewatt';
+}
+/* italic definition */
+.bui-bold-italic {
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'clearviewatt';
+}
+.bui-light {
+  font-weight: normal;
+  font-family: 'clearviewatt_lt';
+}
+.bui-light-italic {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'clearviewatt_lt';
+}
+/*BeginOf: 'OMNES' font family type rules*/
+/* Omnes font-family definition */
+.bui-omnes-light {
+  font-weight: normal;
+  font-family: 'omnes_attlight';
+}
+.bui-omnes-light-italic {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'omnes_attlight';
+}
+.bui-omnes-med {
+  font-weight: normal;
+  font-family: 'omnes_attmedium';
+}
+.bui-omnes-med-italic {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'omnes_attmedium';
+}
+.bui-omnes-reg {
+  font-weight: normal;
+  font-family: 'omnes_attregular';
+}
+.bui-omnes-reg-italic {
+  font-weight: normal;
+  font-style: italic;
+  font-family: 'omnes_attregular';
+}
+/*EndOf: 'OMNES' font family type rules*/
+/* Background color */
+.bui-default-background-color {
+  background-color: #f2f2f2;
+}
+.bui-content-background-color {
+  background-color: #ffffff;
+}
+/* generic header definition */
+.bui-font-title {
+  font-family: 'clearviewatt';
+  font-weight: bold;
+}
+.bui-font-subtitle {
+  font-family: 'clearviewatt';
+  font-weight: bold;
+}
+.bui-letter-space {
+  letter-spacing: 3px !important;
+}
+/*
+ * Generic h1..h6 size
+ */
+.bui-h1-size {
+  font-size: 42px;
+}
+.bui-h2-size {
+  font-size: 30px;
+}
+.bui-h3-size {
+  font-size: 21px;
+}
+.bui-h4-size {
+  font-size: 15px;
+}
+.bui-h5-size {
+  font-size: 13px;
+}
+.bui-h6-size {
+  font-size: 11px;
+}
+.bui-f10-size {
+  font-size: 10px;
+}
+.bui-f11-size {
+  font-size: 11px;
+}
+.bui-f12-size {
+  font-size: 12px;
+}
+.bui-f14-size {
+  font-size: 14px;
+}
+.bui-f16-size {
+  font-size: 16px;
+}
+.bui-f18-size {
+  font-size: 18px;
+}
+.bui-f20-size {
+  font-size: 20px;
+}
+.bui-f26-size {
+  font-size: 26px;
+}
+.bui-f32-size {
+  font-size: 32px;
+}
+.bui-f36-size {
+  font-size: 36px;
+}
+.bui-f50-size {
+  font-size: 50px;
+}
+.bui-f60-size {
+  font-size: 60px;
+}
+/*
+ * Generic line-heights
+ */
+.bui-lh-5 {
+  line-height: 5px;
+}
+.bui-lh-10 {
+  line-height: 10px;
+}
+.bui-lh-15 {
+  line-height: 15px;
+}
+.bui-lh-20 {
+  line-height: 20px;
+}
+.bui-lh-25 {
+  line-height: 25px;
+}
+.bui-lh-30 {
+  line-height: 30px;
+}
+.bui-lh-35 {
+  line-height: 35px;
+}
+.bui-lh-40 {
+  line-height: 40px;
+}
+.bui-lh-45 {
+  line-height: 45px;
+}
+.bui-lh-50 {
+  line-height: 50px;
+}
+.bui-lh-55 {
+  line-height: 55px;
+}
+.bui-lh-60 {
+  line-height: 60px;
+}
+.bui-lh-65 {
+  line-height: 65px;
+}
+.bui-lh-70 {
+  line-height: 70px;
+}
+.bui-lh-75 {
+  line-height: 75px;
+}
+.bui-lh-80 {
+  line-height: 80px;
+}
+.bui-lh-85 {
+  line-height: 85px;
+}
+.bui-lh-90 {
+  line-height: 90px;
+}
+.bui-lh-95 {
+  line-height: 95px;
+}
+.bui-lh-100 {
+  line-height: 100px;
+}
+/*
+ * Generic h1..h6 definitions
+ */
+h1,
+.bui-h1 {
+  font-size: 42px;
+  margin: 0;
+}
+h2,
+.bui-h2 {
+  font-size: 30px;
+}
+h3,
+.bui-h3 {
+  font-size: 21px;
+}
+h4,
+.bui-h4 {
+  font-size: 15px;
+}
+h5,
+.bui-h5 {
+  font-size: 13px;
+}
+h6,
+.bui-h6 {
+  font-size: 11px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ui-base-h1,
+.ui-base-h2,
+.bui-h3,
+.bui-h4,
+.bui-h5,
+.bui-h6 {
+  line-height: 1.4;
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  color: #444444;
+  margin: 0;
+}
+/*
+ * generic function definition ( used for button and select )
+ * rounded corner function
+ */
+/*
+ * right rounded corner function
+ */
+/*
+ * left rounded corner function
+ */
+/*
+ * gradient background color function
+ */
+/*
+ * button shadow function
+ */
+/*
+ * Generic shadow function
+ */
+/*
+ * Generic background-image gradient function
+ */
+/*
+ * Generic background-clip function
+ */
+/*
+ * Generic input function
+ */
+/* input[text|textarea|password|file definition */
+/*input,
+textarea {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+}
+*/
+textarea:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder {
+  color: #bbbbbb;
+}
+textarea::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder {
+  color: #bbbbbb;
+}
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+textarea::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+label {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  height: 18px;
+  line-height: 18px;
+  /*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+  background: none repeat scroll 0 0 #efeeee;
+  padding: 4px 4px 4px 5px;
+  vertical-align: middle;
+  margin: 1px 0;
+  border: 1px solid #e7e6e6;
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+}
+input[type="search"] {
+  height: 18px;
+  line-height: 18px;
+  /*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+  background: none repeat scroll 0 0 #efeeee;
+  padding: 4px 4px 4px 5px;
+  vertical-align: middle;
+  margin: 1px 0;
+  border: 1px solid #e7e6e6;
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  background: #efeeee url('../images/chosen-sprite.png') no-repeat 100% -22px;
+  border: 1px solid #aaaaaa;
+}
+input[type="checkbox"]:focus {
+  outline: 0;
+  text-decoration: none;
+}
+input[type="checkbox"] {
+  height: 18px;
+  line-height: 18px;
+  /*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+  background: none repeat scroll 0 0 #efeeee;
+  padding: 4px 4px 4px 5px;
+  vertical-align: middle;
+  margin: 1px 0;
+  border: 1px solid #e7e6e6;
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  border: none;
+  min-width: 15px;
+}
+input[type="radio"] {
+  height: 18px;
+  line-height: 18px;
+  /*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+  background: none repeat scroll 0 0 #efeeee;
+  padding: 4px 4px 4px 5px;
+  vertical-align: middle;
+  margin: 1px 0;
+  border: 1px solid #e7e6e6;
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  border: none;
+  min-width: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+}
+.bui-input-search-top {
+  height: 18px;
+  line-height: 18px;
+  /*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+  background: none repeat scroll 0 0 #efeeee;
+  padding: 4px 4px 4px 5px;
+  vertical-align: middle;
+  margin: 1px 0;
+  border: 1px solid #e7e6e6;
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'clearviewatt';
+  font-size: 12px;
+  color: #444444;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  color: #ffffff !important;
+  background: #067ab4 url('../images/chosen-sprite-white.png') no-repeat 100% -22px !important;
+  border: 1px solid #aaaaaa !important;
+}
+/*
+ * Name:           Chosen select drop down plugin
+ * Description:    Customize chosen select stylesheet.
+ *                 This is applying thru the whole website
+ */
+/* Group base */
+.chzn-container {
+  font-size: 12px;
+}
+.chzn-container .chzn-drop {
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  /*        .bui-box-shadow-fn(@GLOBAL_DEFAULT_CHOSEN_SELECT_H_SHADOW,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_V_SHADOW,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_BLUR,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_SHADOW_COLOR);*/
+  z-index: 1010;
+}
+.chzn-container .chzn-results .highlighted,
+.chzn-container .chzn-results .result-selected {
+  background-color: #067ab4;
+  /* .bui-background-image-gradient-fn( @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR,
+                                                    @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR); */
+  color: #ffffff;
+}
+.chzn-container .chzn-results:hover .result-selected {
+  background: none;
+  color: #444444 !important;
+}
+.chzn-container .chzn-results:hover .highlighted {
+  background-color: #067ab4;
+  /* .bui-background-image-gradient-fn( @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR,
+                                                    @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR) !important; */
+  color: #ffffff !important;
+}
+/*
+ * group Single Chosen
+ */
+.chzn-container-single .chzn-single {
+  background-color: #ffffff;
+  /*    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = @startColorstr, endColorstr = @endColorstr, GradientType = 0);*/
+  background-image: -webkit-gradient(ease-in-out, 0 0, 0 100%, color-stop(20%, #ffffff), color-stop(50%, #ffffff), color-stop(52%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-ease-in-out-gradient(top, #ffffff 20%, #ffffff 50%, #ffffff 52%, #ffffff 100%);
+  background-image: -moz-ease-in-out-gradient(top, #ffffff 20%, #ffffff 50%, #ffffff 52%, #ffffff 100%);
+  background-image: -o-ease-in-out-gradient(top, #ffffff 20%, #ffffff 50%, #ffffff 52%, #ffffff 100%);
+  background-image: ease-in-out-gradient(#ffffff 20%, #ffffff 50%, #ffffff 52%, #ffffff 100%);
+  /*test Add for IE7-8*/
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(left, #ffffff, #ffffff);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #aaaaaa;
+  /*        .bui-box-shadow-fn(@GLOBAL_DEFAULT_CHOSEN_SELECT_H_SHADOW,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_V_SHADOW,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_BLUR,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_SHADOW_COLOR);*/
+  height: 26px;
+  line-height: 26px;
+  color: #444444;
+}
+.chzn-container-single .chzn-default {
+  color: #444444;
+}
+.chzn-container-single .chzn-search input {
+  height: 18px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+/* Need to overwrite more css from : chosen.css*/
+.chzn-container-multi .chzn-choices {
+  background-color: #ffffff;
+}
+/* new chosen */
+.chosen-container-single .chosen-search input[type="text"] {
+  padding: 4px 20px 4px 5px !important;
+  width: 100% !important;
+}
+.chosen-container {
+  border-radius: 4px;
+}
+/*
+   Select tag: use the dropkick plug in
+   How to use:
+   1) define the custom theme below
+   2) Make sure jquery is included.
+        <link rel="stylesheet" href="css/dropkick.css">
+        <script src="js/vendor/jquery.dropkick-1.0.0.js"></script>
+        <select name="somename" tabindex="1" class="att-dropdown">
+            <option value="">Choose a reaction</option>
+            <option value="amazed">Amazed</option>
+            <option value="bored">Bored</option>
+            <option value="surprised">Surprised</option>
+        </select>
+        <script type="text/javascript">
+             $('.att-dropdown').dropkick({
+             theme: 'att-dropdown'
+             });
+        </script>
+*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * default button definition
+ */
+/*
+ * default button definition
+ */
+.bui-button {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+*/
+  padding: 8px 20px;
+}
+.bui-button:hover {
+  background-color: #3e91ba;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button:focus {
+  background-color: #4cc8f3;
+}
+.bui-button:active {
+  background-color: #199ddf;
+  outline: none;
+}
+.bui-button-grey {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  background: #a3a3a3;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#a3a3a3), to(#a3a3a3));
+  background: -webkit-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -moz-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -ms-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -o-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  padding: 8px 20px;
+}
+.bui-button-disable {
+  min-width: 60px;
+  cursor: default;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  background: #a3a3a3;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#a3a3a3), to(#a3a3a3));
+  background: -webkit-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -moz-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -ms-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -o-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  padding: 8px 20px;
+}
+.bui-button-small {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+*/
+  padding: 8px 20px;
+}
+.bui-button-small:hover {
+  background-color: #3e91ba;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button-small:focus {
+  background-color: #4cc8f3;
+}
+.bui-button-small:active {
+  background-color: #199ddf;
+  outline: none;
+}
+.bui-button-small-disable {
+  min-width: 60px;
+  cursor: default;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  background: #a3a3a3;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#a3a3a3), to(#a3a3a3));
+  background: -webkit-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -moz-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -ms-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -o-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  padding: 8px 20px;
+}
+.bui-button-large {
+  min-width: 100px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+*/
+  padding: 11px 30px;
+}
+.bui-button-large:hover {
+  background-color: #3e91ba;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button-large:focus {
+  background-color: #4cc8f3;
+}
+.bui-button-large:active {
+  background-color: #199ddf;
+  outline: none;
+}
+.bui-button-large-disable {
+  min-width: 100px;
+  cursor: default;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  background: #a3a3a3;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#a3a3a3), to(#a3a3a3));
+  background: -webkit-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -moz-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -ms-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  background: -o-ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #a3a3a3, #a3a3a3);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  padding: 11px 30px;
+}
+.bui-button-orange-small {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #ef6f00;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+  padding: 8px 20px;
+}
+.bui-button-orange-small:hover {
+  background-color: #fcb314;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button-orange-small:focus {
+  background-color: #fcb314;
+}
+.bui-button-orange-small:active {
+  background-color: #fcb314;
+  outline: none;
+}
+.bui-button-orange {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #ef6f00;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+  padding: 8px 20px;
+}
+.bui-button-orange:hover {
+  background-color: #fcb314;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button-orange:focus {
+  background-color: #fcb314;
+}
+.bui-button-orange:active {
+  background-color: #fcb314;
+  outline: none;
+}
+.bui-button-orange-large {
+  min-width: 100px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #ef6f00;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+  padding: 11px 30px;
+}
+.bui-button-orange-large:hover {
+  background-color: #fcb314;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-button-orange-large:focus {
+  background-color: #fcb314;
+}
+.bui-button-orange-large:active {
+  background-color: #fcb314;
+  outline: none;
+}
+.bui-button-orange-rectangle {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 12px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #ef6f00;
+  border: 0;
+  outline: none;
+  /*
+    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+}
+.bui-button-orange-rectangle:hover {
+  color: #fcb314;
+  outline: none;
+}
+.bui-button-orange-rectangle:active {
+  color: #fcb314;
+  outline: none;
+}
+.bui-disabled-button-rectangle {
+  min-width: 60px;
+  cursor: default;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 12px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #a3a3a3;
+  border: 0;
+  outline: none;
+}
+.bui-btn-fixed {
+  min-width: 60px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'clearviewatt';
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #067ab4;
+  border: 0;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  /*
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+*/
+  padding: 2px 20px;
+}
+.bui-btn-fixed:hover {
+  background-color: #3e91ba;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+.bui-btn-fixed:focus {
+  background-color: #4cc8f3;
+}
+.bui-btn-fixed:active {
+  background-color: #199ddf;
+  outline: none;
+}
+/* Rectangle button */
+.bui-button-rectangle {
+  min-width: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  /*This will ensure that shadow is showing*/
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 4px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background: #067ab4;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#199ddf), to(#067ab4));
+  background: -webkit-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -moz-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -ms-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -o-ease-in-out-gradient(top, #199ddf, #067ab4);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #199ddf, #067ab4);
+  position: relative;
+  /*    .bui-rounded-corners-fn;*/
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 1px 1px #199ddf;
+  -moz-box-shadow: 1px 1px 1px #199ddf;
+  box-shadow: 1px 1px 1px #199ddf;
+  /* IE6-8*/
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+}
+.bui-button-rectangle:hover {
+  background: #3e91ba;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#3e91ba), to(#3e91ba));
+  background: -webkit-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -moz-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -ms-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -o-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+}
+/* right-rounded-corner button */
+.bui-button-right-rounded-corner {
+  min-width: 60px;
+  /*  min-width*/
+  /*\**/
+  /*: 76px\9;*/
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 3px 0;
+  /*This will ensure that shadow is showing*/
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 1.4;
+  padding: 2px 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background: #067ab4;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#199ddf), to(#067ab4));
+  background: -webkit-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -moz-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -ms-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -o-ease-in-out-gradient(top, #199ddf, #067ab4);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #199ddf, #067ab4);
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  /* IE6-8 */
+  position: relative;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 1px 1px #199ddf;
+  -moz-box-shadow: 1px 1px 1px #199ddf;
+  box-shadow: 1px 1px 1px #199ddf;
+  /* IE6-8*/
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+}
+.bui-button-right-rounded-corner:hover {
+  background: #3e91ba;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#3e91ba), to(#3e91ba));
+  background: -webkit-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -moz-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -ms-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -o-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+}
+/*
+ * left-rounded-corner button
+ */
+.bui-button-left-rounded-corner {
+  min-width: 60px;
+  /*  min-width*/
+  /*\**/
+  /*: 76px\9;*/
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 3px 0;
+  /*This will ensure that shadow is showing*/
+  font-family: 'clearviewatt';
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 1.4;
+  padding: 2px 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background: #067ab4;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#199ddf), to(#067ab4));
+  background: -webkit-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -moz-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -ms-ease-in-out-gradient(top, #199ddf, #067ab4);
+  background: -o-ease-in-out-gradient(top, #199ddf, #067ab4);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #199ddf, #067ab4);
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+  /* IE6-8 */
+  position: relative;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 1px 1px #199ddf;
+  -moz-box-shadow: 1px 1px 1px #199ddf;
+  box-shadow: 1px 1px 1px #199ddf;
+  /* IE6-8*/
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+}
+.bui-button-left-rounded-corner:hover {
+  background: #3e91ba;
+  background: -webkit-gradient(ease-in-out, left top, left bottom, from(#3e91ba), to(#3e91ba));
+  background: -webkit-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -moz-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -ms-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  background: -o-ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  /* IE6-8*/
+  -pie-background: ease-in-out-gradient(top, #3e91ba, #3e91ba);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+}
+/*
+ * background icon size definition. Sprite images
+ */
+/*
+ * Icon definition: This icon has the background surround it.
+ * example: <span class="bui-icon-18 bui-icon-arrow-l">&nbsp;</span>
+*/
+.bui-icon-18 {
+  background-image: url(../images/icons-18-spritesheet-and-hover.png);
+  -moz-background-size: 891px 36px;
+  -o-background-size: 891px 36px;
+  -webkit-background-size: 891px 36px;
+  background-size: 891px 36px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  /* IE6-8 */
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 1px;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background-color: #f8f8f8;
+}
+/*
+ * BASE STYLES (generic/reusable/common CSS class)
+ */
+.bui-float-right {
+  float: right;
+}
+.bui-float-left {
+  float: left;
+}
+.bui-clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bui-force-float-left {
+  float: left !important;
+}
+.bui-force-float-right {
+  float: right !important;
+}
+.bui-force-display-block {
+  display: block !important;
+}
+.bui-force-display-inline {
+  display: inline !important;
+}
+.bui-text-align-left {
+  text-align: left;
+}
+.bui-text-align-center {
+  text-align: center;
+}
+.bui-text-align-right {
+  text-align: right;
+}
+.bui-vertical-align-top {
+  vertical-align: top;
+}
+.bui-vertical-align-middle {
+  vertical-align: middle;
+}
+.bui-vertical-align-bottom {
+  vertical-align: bottom;
+}
+.bui-display-block {
+  display: block;
+}
+.bui-display-inline-block {
+  display: inline-block;
+}
+/************************************************************
+    PAGE CONTENT SECTION RELATED - COMMON STYLE FOR ALL PAGES
+*************************************************************/
+form label {
+  color: #444444;
+  font-size: 12px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*******************************************************************
+    Media queries that control the width of the pages
+ *******************************************************************/
+/*.bui-screen-width {
+    width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+}*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+  }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+  }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+    margin: 0 auto !important;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+    margin: 0 auto !important;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+    margin: 0 auto !important;
+  }
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  .bui-screen-width {
+    width: 980px;
+    margin: 0 auto !important;
+  }
+}
+/* Print page CSS */

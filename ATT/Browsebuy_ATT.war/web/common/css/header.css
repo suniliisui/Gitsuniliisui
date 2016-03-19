@@ -1,0 +1,306 @@
+/**********************************************************************
+  File: sb-variables.less
+      This file defines all variable properties that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*
+ * Global definition
+ *   1) These values will be used through the website. It make the UI elements consistent.
+ *   These values will be referenced cross the site. Any changes from here will affect the
+ *   whole website theme.
+ *   2) You may override these values when needed in your css file...
+ */
+/* font-family definition */
+/* Omnes font-family definition */
+/* font-weight navigation */
+/*@GLOBAL_DEFAULT_FONT_WEIGHT_NAV: 500;*/
+/* link definition */
+/* generic input definition */
+/* generic border definition */
+/* generic margin, padding definition */
+/* default button definition */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);*/
+/* grey button */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_SHADOW: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 20%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 40%);*/
+/* Icon definition */
+/* header default font-size definition */
+/* header default color definition
+    h1,h2,h3.h4.h5.h6
+*/
+/* CHOSEN :custom default CHOSEN select tag definition */
+/* DROPKICK :custom select tag definition */
+/* form */
+/*
+ * HEADER
+ * They are included in every pages
+ */
+#att-header {
+  height: 50px;
+  width: 100%;
+  top: 0px;
+  z-index: 9999;
+  position: fixed;
+  color: #ffffff;
+  background-color: #067ab4;
+  /*Need to be removed*/
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: center;
+}
+#att-header .wrapper-header {
+  margin: 0 auto;
+  /*
+    Overrite choosen background color
+    */
+  /* StartOf: Navigation bar related */
+  /*Global navigation header*/
+  /* Endof Global navigation header */
+  /* EndOf: Navigation bar related */
+}
+#att-header .wrapper-header .placeholder-img {
+  vertical-align: top;
+}
+#att-header .wrapper-header .chzn-container .chzn-results-scroll-down span {
+  background: url('../images/chosen-sprite-white.png') no-repeat -4px -3px;
+}
+#att-header .wrapper-header .chzn-container .chzn-results-scroll-up span {
+  background: url('../images/chosen-sprite-white.png') no-repeat -22px -3px;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-single abbr {
+  background: url('../images/chosen-sprite-white.png') right top no-repeat;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-single div b {
+  background: url('../images/chosen-sprite-white.png') no-repeat 0 0;
+}
+#att-header .wrapper-header .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+  background: url('../images/chosen-sprite-white.png') right top no-repeat;
+}
+#att-header .wrapper-header .chzn-rtl .chzn-search input {
+  background: url('../images/chosen-sprite-white.png') no-repeat -38px -22px;
+}
+#att-header .wrapper-header .chzn-container-active .chzn-single-with-drop div b {
+  background: url('../images/chosen-sprite-white.png') no-repeat -18px 1px;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-single {
+  background-color: #067ab4;
+  /*    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = @startColorstr, endColorstr = @endColorstr, GradientType = 0);*/
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #067ab4), color-stop(50%, #067ab4), color-stop(52%, #067ab4), color-stop(100%, #067ab4));
+  background-image: -webkit-linear-gradient(top, #067ab4 20%, #067ab4 50%, #067ab4 52%, #067ab4 100%);
+  background-image: -moz-linear-gradient(top, #067ab4 20%, #067ab4 50%, #067ab4 52%, #067ab4 100%);
+  background-image: -o-linear-gradient(top, #067ab4 20%, #067ab4 50%, #067ab4 52%, #067ab4 100%);
+  background-image: linear-gradient(#067ab4 20%, #067ab4 50%, #067ab4 52%, #067ab4 100%);
+  /*test Add for IE7-8*/
+  /* IE6-8*/
+  -pie-background: linear-gradient(left, #067ab4, #067ab4);
+  behavior: url(/businessoffers/web/css/pie/PIE.htc );
+  position: relative;
+  border: 1px solid #067ab4;
+  color: #ffffff;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-default {
+  color: #ffffff;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-search input {
+  background-color: #067ab4;
+  background: url('../images/chosen-sprite-white.png') no-repeat 100% -22px;
+}
+#att-header .wrapper-header .chzn-container-single .chzn-drop {
+  border: 1px solid #067ab4;
+}
+#att-header .wrapper-header .chzn-container-multi .chzn-choices {
+  background-color: #067ab4;
+}
+#att-header .wrapper-header .header .header-left .logo-top {
+  line-height: 50px;
+}
+#att-header .wrapper-header .header .header-left .business-dropdown {
+  padding-top: 11px;
+  /*                    padding-bottom: 11px;*/
+}
+#att-header .wrapper-header .header .header-right {
+  line-height: 50px;
+}
+#att-header .wrapper-header .header .header-right .top-menu .menu-item {
+  float: left;
+  text-align: center;
+  width: 50px;
+  line-height: 50px;
+}
+#att-header .wrapper-header .header .header-right .top-menu .chat {
+  background-color: #248abd;
+}
+#att-header .wrapper-header .header .header-right .top-menu .email {
+  background-color: #3392c2;
+}
+#att-header .wrapper-header .header .header-right .top-menu .cart {
+  background-color: #429ac6;
+}
+#att-header .wrapper-header .header .header-right .top-menu .account {
+  background-color: #51a2cb;
+}
+#att-header .wrapper-header .header .header-right .top-menu .search-item {
+  float: right;
+  line-height: 50px;
+}
+#att-header .wrapper-header .site-logo-wpr {
+  display: inline-block;
+  float: left;
+}
+#att-header .wrapper-header .site-logo-wpr .site-logo {
+  padding: 0 10px 0 0;
+}
+#att-header .wrapper-header .site-logo-wpr .site-logo img {
+  width: 51px;
+}
+#att-header .wrapper-header .site-logo-wpr .Shop-header {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-left: 30px;
+}
+#att-header .wrapper-header .site-logo-wpr .Shop-header:hover {
+  color: #BFE7FB;
+  position: relative;
+  top: -2px;
+}
+#att-header .wrapper-header .site-logo-wpr .shop-tab {
+  position: relative;
+  top: -50px;
+  left: 60px;
+}
+#att-header .wrapper-header .shop-menu-dropback {
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 1040;
+}
+#att-header .wrapper-header .shop-menu-dropback .fade {
+  opacity: 0.0;
+  filter: alpha(opacity=20);
+  /* For IE8 and earlier */
+}
+#att-header .wrapper-header .shop-menu-bg {
+  background: none repeat scroll 0 0 #FFFFFF;
+  width: auto;
+  left: 0;
+  right: 0;
+  height: 50px;
+  margin-top: 50px;
+  position: absolute;
+  border-bottom: 0.5px solid #E7E6E6;
+}
+#att-header .wrapper-header .shop-menu-wpr {
+  background: none repeat scroll 0 0 #FFFFFF;
+  width: 980px;
+  height: 50px;
+  margin-top: 50px;
+  position: absolute;
+  border-bottom: 0.5px solid #E7E6E6;
+}
+#att-header .wrapper-header .shop-menu-wpr .wireless-header {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  margin: 0px 30px;
+}
+#att-header .wrapper-header .shop-menu-wpr .wireless-header a {
+  color: #444444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  text-decoration: none;
+}
+#att-header .wrapper-header .shop-menu-wpr .wireless-header a:hover {
+  background-image: url('../common/images/common/header/blue-bar.png');
+  width: auto;
+}
+#att-header .wrapper-header .shop-menu-wpr .internet-header {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  margin: 0px 30px;
+}
+#att-header .wrapper-header .shop-menu-wpr .internet-header a {
+  color: #444444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  text-decoration: none;
+}
+#att-header .wrapper-header .shop-menu-wpr .internet-header a:hover {
+  background-image: url('../common/images/common/header/blue-bar.png');
+  width: auto;
+}
+#att-header .wrapper-header .shop-menu-wpr .check-mark-wpr {
+  border-right: 1px solid #E7E6E6;
+  display: inline-block;
+  float: left;
+  height: 20px;
+  position: relative;
+  top: 15px;
+}
+#att-header .wrapper-header .shop-menu-wpr .selectedOptionIndicator {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #ffffff transparent;
+  margin-top: -7px;
+  position: absolute;
+}
+#att-header .wrapper-header .site-operation-icons {
+  display: inline-block;
+  float: right;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr {
+  display: inline-block;
+  float: right;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr .hidden-content {
+  background-color: transparent;
+  border: 0 none;
+  color: transparent;
+  height: 0;
+  width: 0;
+  font: 0px/0 a;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr .site-operation-icon {
+  background-image: url("../common/images/common/header/header_sprite.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 52px;
+  height: 50px;
+  overflow: hidden;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr .site-operation-icon:hover,
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr .site-operation-icon.active {
+  background-color: none;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #location-icon {
+  background-position: 0 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #location-icon:hover {
+  background-position: -51px 0;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #cart-icon {
+  background-position: 0 -100px;
+  background-color: transparent;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #cart-icon:hover {
+  background-position: -51px -100px;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #cart-icon.item-exists {
+  background-position: 0 -50px;
+}
+#att-header .wrapper-header .site-operation-icons .site-operation-icon-wpr #cart-icon.item-exists:hover {
+  background-position: -51px -50px;
+}

@@ -1,0 +1,226 @@
+/* Please include base.less file to make this header work*/
+/*font family*/
+/*color*/
+.headerContainer {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #067ab4;
+  line-height: 50px;
+  color: #ffffff;
+}
+.headerContentContainer {
+  width: 980px;
+  margin: auto;
+  height: 50px;
+}
+.headerContentContainer .primaryMenuContainer {
+  font-family: clearviewattregular;
+  font-size: 18px;
+}
+.headerContentContainer .primaryMenuContainer .linkToRegistration {
+  color: #ffffff;
+  float: right;
+}
+.headerContentContainer .primaryMenuContainer .ATTLogo {
+  background: url("../common/images/common/header/attLogo.png") no-repeat scroll -10px -10px transparent;
+  width: 36px;
+  height: 36px;
+  margin-right: 35px;
+  margin-left: 29px;
+  margin-top: 7px;
+  float: left;
+}
+.headerContentContainer .primaryMenuContainer .attHomeContainer {
+  float: left;
+  cursor: pointer;
+}
+.headerContentContainer .primaryMenuContainer .attHomeContainer .businessCenterR {
+  float: left;
+  margin-left: 2px;
+  margin-right: 4px;
+  font-family: clearviewatt_ltbold;
+}
+.headerContentContainer .primaryMenuContainer .attHomeContainer .businessCenterR:hover {
+  color: #BFE7FB;
+  margin-top: -2px;
+}
+.headerContentContainer .primaryMenuContainer .attHomeContainer .businessCenterR:active {
+  color: #BFE7FB;
+  margin-top: -2px;
+}
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .primaryMenuOptionLink,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .primaryMenuOptionLink,
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .pageName,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .pageName {
+  cursor: pointer;
+  float: left;
+  margin-left: 30px;
+  font-family: clearviewattregular;
+  font-size: 18px;
+  color: #ffffff;
+}
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .primaryMenuOptionLink:hover,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .primaryMenuOptionLink:hover,
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .pageName:hover,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .pageName:hover {
+  color: #BFE7FB;
+  margin-top: -2px;
+}
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .primaryMenuOptionLink:active,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .primaryMenuOptionLink:active,
+.headerContentContainer .primaryMenuContainer .primaryMenuOptionsContainer .pageName:active,
+.headerContentContainer .primaryMenuContainer .pageNameContainer .pageName:active {
+  color: #BFE7FB;
+  margin-top: -2px;
+}
+.headerContentContainer .primaryMenuContainer .selectedOptionIndicator {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #ffffff transparent;
+  margin-top: 43px;
+  position: absolute;
+}
+.headerContentContainer .primaryMenuContainer .loginIcon {
+  float: right;
+  margin-right: 10px;
+  position: relative;
+  line-height: 50px;
+  margin-top: -2px;
+  cursor: pointer;
+  background-position: -1000px center;
+}
+.headerContentContainer .primaryMenuContainer .loginIcon:hover {
+  margin-top: -4px;
+  color: #BFE7FB;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer {
+  float: right;
+  height: 50px;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer .loginName {
+  float: right;
+  font-family: clearviewattregular;
+  font-size: 12px;
+  margin-right: 31px;
+  position: relative;
+  line-height: 50px;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer .chatIcon {
+  float: right;
+  margin-right: 32px;
+  position: relative;
+  line-height: 50px;
+  cursor: pointer;
+  background-position: -1000px center;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer .chatIcon:hover {
+  margin-top: -2px;
+  color: #BFE7FB;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer .searchIcon {
+  float: right;
+  margin-right: 31px;
+  position: relative;
+  line-height: 50px;
+  cursor: pointer;
+  background-position: -1000px center;
+}
+.headerContentContainer .primaryMenuContainer .headerIconContainer .searchIcon:hover {
+  margin-top: -2px;
+  color: #BFE7FB;
+}
+.selectedPrimaryMenuOption {
+  color: #ffffff;
+  font-family: clearviewatt_ltbold !important;
+}
+.secondaryMenuContainer {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  font-family: clearviewattregular;
+  font-size: 16px;
+  color: #666666;
+  float: left;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.secondaryMenuContainer .secondaryMenuContentContainer {
+  width: 980px;
+  margin: auto;
+}
+.secondaryMenuContainer .secondaryMenuContentContainer .secondaryMenuOption {
+  float: left;
+  padding-left: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.secondaryMenuContainer .secondaryMenuContentContainer .secondaryMenuOption .selectionDiv {
+  height: 4px;
+  background-color: #067ab4;
+  position: relative;
+  top: -4px;
+}
+.secondaryMenuContainer .secondaryMenuContentContainer .secondaryMenuOption .secondaryMenuOptionLink {
+  color: #666666;
+}
+.secondaryMenuContainer .secondaryMenuContentContainer .secondaryMenuOption .secondaryMenuOptionLink:hover {
+  font-family: clearviewatt_ltbold;
+  font-size: 16px;
+}
+.selectedSecondaryMenuOption {
+  font-family: clearviewatt_ltbold;
+  font-size: 16px;
+}
+.megaMenuContainer {
+  width: 100%;
+  min-height: 140px;
+  background-color: #ffffff;
+  /* If you don't use this order, IE8-as-IE7 doesn't apply the opacity, although IE8 and a pure IE7 do.*/
+  /* http://www.quirksmode.org/css/opacity.html*/
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  /* IE 8 */
+  filter: alpha(opacity=90);
+  /* IE 5-7 */
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1000;
+  margin-top: 101px;
+}
+.megaMenuContentContainer {
+  width: 980px;
+  margin: auto;
+}
+.megaMenuContentContainer .categoryContainer {
+  margin-bottom: 32px;
+  float: left;
+}
+.megaMenuContentContainer .categoryContainer .categoryTitle {
+  margin-top: 36px;
+  font-family: clearviewatt_ltbold;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 22px;
+}
+.megaMenuContentContainer .categoryContainer .categoryOptionLink {
+  font-family: clearviewattregular;
+  font-size: 12px;
+  color: #444444;
+  margin-bottom: 13px;
+}
+.megaMenuContentContainer .categoryContainer .categoryOptionLink:hover {
+  color: #199ddf;
+}
+.megaMenuContentContainer .categoryContainer .categoryOptionLink:active {
+  color: #199ddf;
+}
+.addMargin {
+  margin-top: 50px;
+}
+.contents {
+  padding-top: 100px;
+}

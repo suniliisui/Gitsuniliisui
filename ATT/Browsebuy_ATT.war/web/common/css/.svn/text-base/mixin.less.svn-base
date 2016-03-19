@@ -1,0 +1,82 @@
+
+/* common margin */
+@ATT_COMMON_MARGIN: 10px;
+@ATT_VERTICAL_COMMON_MARGIN: 1%;
+/* 10px */
+.att-common-margin-b {
+    margin-bottom: @ATT_COMMON_MARGIN;
+}
+
+.att-common-margin-t {
+    margin-top: @ATT_COMMON_MARGIN;
+}
+
+.att-common-margin-l {
+    margin-left: @ATT_COMMON_MARGIN;
+}
+
+.att-common-margin-r {
+    margin-right: @ATT_COMMON_MARGIN;
+}
+
+.att-common-margin-tb {
+    margin: @ATT_COMMON_MARGIN 0;
+}
+
+.att-common-margin-lr {
+    margin: 0 @ATT_COMMON_MARGIN;
+}
+
+.att-common-margin-all {
+    margin: @ATT_COMMON_MARGIN;
+}
+
+/* common padding */
+@ATT_COMMON_PADDING: 15px;
+.att-common-padding-l {
+    padding-left: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-r {
+    padding-right: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-t {
+    padding-top: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-b {
+    padding-bottom: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-tb {
+    padding-top: @ATT_COMMON_PADDING;
+    padding-bottom: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-lr {
+    padding-left: @ATT_COMMON_PADDING;
+    padding-right: @ATT_COMMON_PADDING;
+}
+
+.att-common-padding-all {
+    padding: @ATT_COMMON_PADDING;
+}
+
+/* divider */
+@ATT_DEFAULT_DIVIDER_COLOR: #D7D7D7;
+.att-divider-fn() {
+    border-bottom: 1px solid @ATT_DEFAULT_DIVIDER_COLOR;
+}
+
+.att-divider {
+    .att-divider-fn;
+}
+
+.att-vertical-divider-fn() {
+    border-right: 1px solid @ATT_DEFAULT_DIVIDER_COLOR;
+}
+
+.att-vertical-divider {
+    .att-vertical-divider-fn;
+}

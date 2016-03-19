@@ -1,0 +1,37 @@
+/**********************************************************************
+  File: table.less
+      This file defines all common table (using other tags except table tags) css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Rakesh Meesala
+**********************************************************************/
+/*************************
+    GENERIC TABLE RELATED
+**************************/
+.bui-table {
+  display: table;
+}
+.bui-table-row {
+  display: table-row;
+}
+.bui-table-cell {
+  display: table-cell;
+}
+.bui-table-column {
+  display: table-column;
+}
+.bui-table-colgroup {
+  display: table-colgroup;
+}
+.bui-table-hdr-grp {
+  display: table-header-group;
+}
+.bui-table-row-grp {
+  display: table-row-group;
+}
+.bui-table-footer-grp {
+  display: table-footer-group;
+}
+.bui-table-caption {
+  display: table-caption;
+}

@@ -1,0 +1,901 @@
+/**********************************************************************
+  File: sprite-icons.less
+      This file defines all sprite icons that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*
+  Icon sprite image definition
+*/
+.bui-icon-sprite-18 {
+  background-image: url(../images/icons-18-spritesheet-and-hover.png);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  /*  background-attachment:fixed;*/
+}
+.bui-icon-plus {
+  background-position: 0 0;
+}
+.bui-icon-plus-hover {
+  background-position: 0 -18px;
+}
+.bui-icon-minus {
+  background-position: -36px 0;
+}
+.bui-icon-minus-hover {
+  background-position: -36px -18px;
+}
+.bui-icon-delete {
+  background-position: -72px 0;
+}
+.bui-icon-delete-hover {
+  background-position: -72px -18px;
+}
+.bui-icon-arrow-r {
+  background-position: -108px 0;
+}
+.bui-icon-arrow-r-hover {
+  background-position: -108px -18px;
+}
+.bui-icon-arrow-l {
+  background-position: -144px 0;
+}
+.bui-icon-arrow-l-hover {
+  background-position: -144px -18px;
+}
+.bui-icon-arrow-u {
+  background-position: -180px 0;
+}
+.bui-icon-arrow-u-hover {
+  background-position: -180px -18px;
+}
+.bui-icon-arrow-d {
+  background-position: -216px 0;
+}
+.bui-icon-arrow-d-hover {
+  background-position: -216px -18px;
+}
+.bui-icon-check {
+  background-position: -252px 0;
+}
+.bui-icon-check-hover {
+  background-position: -252px -18px;
+}
+.bui-icon-gear {
+  background-position: -288px 0;
+}
+.bui-icon-gear-hover {
+  background-position: -288px -18px;
+}
+.bui-icon-refresh {
+  background-position: -324px 0;
+}
+.bui-icon-refresh-hover {
+  background-position: -324px -18px;
+}
+.bui-icon-forward {
+  background-position: -360px 0;
+}
+.bui-icon-forward-hover {
+  background-position: -360px -18px;
+}
+.bui-icon-back {
+  background-position: -396px 0;
+}
+.bui-icon-back-hover {
+  background-position: -396px -18px;
+}
+.bui-icon-grid {
+  background-position: -432px 0;
+}
+.bui-icon-grid-hover {
+  background-position: -432px -18px;
+}
+.bui-icon-star {
+  background-position: -468px 0;
+}
+.bui-icon-star-hover {
+  background-position: -468px -18px;
+}
+.bui-icon-alert {
+  background-position: -504px 0;
+}
+.bui-icon-alert {
+  background-position: -504px -18px;
+}
+.bui-icon-info {
+  background-position: -540px 0;
+}
+.bui-icon-info-hover {
+  background-position: -540px -18px;
+}
+.bui-icon-home {
+  background-position: -576px 0;
+}
+.bui-icon-home-hover {
+  background-position: -576px -18px;
+}
+.bui-icon-search,
+.bui-icon-searchfield:after {
+  background-position: -612px 0;
+}
+.bui-icon-search-hover,
+.bui-icon-searchfield:after {
+  background-position: -612px -18px;
+}
+.bui-icon-checkbox-off {
+  background-position: -684px 0;
+}
+.bui-icon-checkbox-off-hover {
+  background-position: -684px -18px;
+}
+.bui-icon-checkbox-on {
+  background-position: -648px 0;
+}
+.bui-icon-checkbox-on-hover {
+  background-position: -648px -18px;
+}
+.bui-icon-radio-off {
+  background-position: -756px 0;
+}
+.bui-icon-radio-off-hover {
+  background-position: -756px -18px;
+}
+.bui-icon-radio-on {
+  background-position: -720px 0;
+}
+.bui-icon-radio-on-hover {
+  background-position: -720px -18px;
+}
+.bui-icon-activity {
+  background-position: -792px 0;
+}
+.bui-icon-activity-hover {
+  background-position: -792px -18px;
+}
+.bui-icon-notification {
+  background-position: -828px 0;
+}
+.bui-icon-notification-hover {
+  background-position: -828px -18px;
+}
+.bui-icon-order {
+  background-position: -859px 0;
+}
+.bui-icon-order-hover {
+  background-position: -859px -18px;
+}
+/*
+  Wireless Summary: Icon sprite image definition
+*/
+/***********************************************************************************
+  25 pixel icons:
+  image: icons_spritesheet_25.png.
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-25 {
+  background-image: url(../images/icons_spritesheet_25.png);
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* wireless icons */
+.bui-icon-arrow-up-green {
+  background-position: 0 0;
+}
+.bui-icon-question-yellow {
+  background-position: -26px 0;
+}
+.bui-icon-exclaimation-pink {
+  background-position: -52px 0;
+}
+/* bullet point */
+.bui-icon-bullet-point {
+  background-position: -78px 0;
+}
+.bui-icon-ok-status {
+  background-position: -104px 0;
+}
+/* Activity feeds */
+.bui-icon-circle {
+  background-position: -130px 0;
+}
+.bui-icon-circle-hover {
+  background-position: -130px -26px;
+}
+.bui-icon-number {
+  background-position: -156px 0;
+}
+.bui-icon-number-hover {
+  background-position: -156px -26px;
+}
+.bui-icon-ticket {
+  background-position: -182px 0;
+}
+.bui-icon-ticket-hover {
+  background-position: -182px -26px;
+}
+.bui-icon-maintenance {
+  background-position: -208px 0;
+}
+.bui-icon-maintenance-hover {
+  background-position: -208px -26px;
+}
+.bui-icon-outage {
+  background-position: -234px 0;
+}
+.bui-icon-outage-hover {
+  background-position: -234px -26px;
+}
+.bui-icon-profile {
+  background-position: -260px 0;
+}
+.bui-icon-profile-hover {
+  background-position: -260px -26px;
+}
+.bui-icon-ticket-green {
+  background-position: -286px 0;
+}
+.bui-icon-maintenance-green {
+  background-position: -312px 0;
+}
+.bui-icon-outage-red {
+  background-position: -338px 0;
+}
+.bui-icon-solid-arrow-down {
+  background-position: -650px 0;
+}
+.bui-icon-solid-arrow-up {
+  background-position: -650px -26px;
+}
+/***********************************************************************************
+  Dashboard submenu icons
+  image: sprite_dashboard_2nd_nav_35x35.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-db-menu {
+  background-image: url(../images/sprite_dashboard_2nd_nav_35x35.png);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-dashboard {
+  background-position: 0 0;
+}
+.bui-icon-service {
+  background-position: -36px 0;
+}
+.bui-icon-account {
+  background-position: -72px 0;
+}
+.bui-icon-billing {
+  background-position: -108px 0;
+}
+.bui-icon-b-tool {
+  background-position: -144px 0;
+}
+.bui-icon-help {
+  background-position: -180px 0;
+}
+/***********************************************************************************
+  Dashboard overview widget icons
+  image: sprite_dashboard_overview_widget_14x14.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-overview {
+  background-image: url(../images/sprite_dashboard_overview_widget_14x14.png);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-alarm-critical {
+  background-position: 0 0;
+}
+.bui-icon-alarm-congestion {
+  background-position: -15px 0;
+}
+.bui-icon-alarm-ack {
+  background-position: -30px 0;
+}
+.bui-icon-alarm-clear {
+  background-position: -45px 0;
+}
+.bui-icon-ticket-normal {
+  background-position: -60px 0;
+}
+.bui-icon-ticket-clear {
+  background-position: -75px 0;
+}
+/***********************************************************************************
+  Dashboard wireless icons
+  image: sprite_dashboard_wireless_widget_30x30.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-wireless {
+  background-image: url(../images/sprite_dashboard_wireless_widget_30x30.png);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-wireless-upgrade {
+  background-position: 0 0;
+}
+.bui-icon-wireless-overage {
+  background-position: -31px 0;
+}
+.bui-icon-wireless-request {
+  background-position: -62px 0;
+}
+/***********************************************************************************
+  Social icons
+  image: sprite_social_icons_17x17.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-social-media {
+  background-image: url(../images/sprite_social_icons_17x17.png);
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-sm-fb {
+  background-position: 0 0;
+}
+.bui-icon-sm-twitter {
+  background-position: -18px 0;
+}
+.bui-icon-sm-linkedin {
+  background-position: -36px 0;
+}
+.bui-icon-sm-rss {
+  background-position: -54px 0;
+}
+.bui-icon-sm-share {
+  background-position: -72px 0;
+}
+.bui-icon-sm-netvibe {
+  background-position: -90px 0;
+}
+/***********************************************************************************
+  Top Nav icons
+  image: sprite_topnav_icons_27x27.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-top-nav {
+  background-image: url(../images/sprite_topnav_icons_27x27.png);
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-top-chat {
+  background-position: 0 0;
+}
+.bui-icon-top-email {
+  background-position: -28px 0;
+}
+.bui-icon-top-cart {
+  background-position: -56px 0;
+}
+.bui-icon-top-account {
+  background-position: -84px 0;
+}
+/***********************************************************************************
+  Network view icons icons
+  image: sprites_network_icons_19x19.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-network {
+  background-image: url(../images/sprites_network_icons_19x19.png);
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-network-fullscreen {
+  background-position: 0 0;
+}
+.bui-icon-network-mapview {
+  background-position: -20px 0;
+}
+.bui-icon-network-tabview {
+  background-position: -40px 0;
+}
+.bui-icon-network-listview {
+  background-position: -60px 0;
+}
+/***********************************************************************************
+  Activity feed type icons
+  image: sprites_activity_feed_type_icons_18x18.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-af-type {
+  background-image: url(../images/sprites_activity_feed_type_icons_18x18.png);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-af-type-order {
+  background-position: 0 0;
+}
+.bui-icon-af-type-notification {
+  background-position: -19px 0;
+}
+.bui-icon-af-type-maintenance {
+  background-position: -38px 0;
+}
+.bui-icon-af-type-account {
+  background-position: -57px 0;
+}
+/***********************************************************************************
+  Activity status icons
+  image: sprites_activity_status_icons_31x31.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-activity-status {
+  background-image: url(../images/sprites_activity_status_icons_31x31.png);
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-activity-status-all {
+  background-position: 0 0;
+}
+.bui-icon-activity-status-alarm {
+  background-position: -32px 0;
+}
+.bui-icon-activity-status-order {
+  background-position: -64px 0;
+}
+.bui-icon-activity-status-maintenance {
+  background-position: -96px 0;
+}
+.bui-icon-activity-status-account {
+  background-position: -128px 0;
+}
+.bui-icon-activity-status-notification {
+  background-position: -160px 0;
+}
+/***********************************************************************************
+  25 pixel icons
+  image: sprites_icons_20x20.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-20 {
+  background-image: url(../images/sprite_20px.png);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Arrows using for accordion*/
+.bui-icon-arrow-d {
+  background-position: 0 0;
+}
+.bui-icon-arrow-u {
+  background-position: -21px 0;
+}
+.bui-icon-arrow-r {
+  background-position: -42px 0;
+}
+/* social icons */
+.bui-icon-social-f {
+  background-position: -63px 0;
+}
+.bui-icon-social-t {
+  background-position: -84px 0;
+}
+.bui-icon-social-in {
+  background-position: -105px 0;
+}
+.bui-icon-social-in {
+  background-position: -126px 0;
+}
+.bui-icon-social-rss {
+  background-position: -147px 0;
+}
+.bui-icon-social-share {
+  background-position: -168px 0;
+}
+.bui-icon-social-netvibe {
+  background-position: -189px 0;
+}
+/* Activity feed type icons */
+.bui-icon-af-order {
+  background-position: -210px 0;
+}
+.bui-icon-af-notification {
+  background-position: -231px 0;
+}
+.bui-icon-af-maintenance {
+  background-position: -252px 0;
+}
+.bui-icon-af-account {
+  background-position: -273px 0;
+}
+/* view icons */
+.bui-icon-view-full-screen {
+  background-position: -294px 0;
+}
+.bui-icon-view-map {
+  background-position: -315px 0;
+}
+.bui-icon-view-tab {
+  background-position: -336px 0;
+}
+.bui-icon-view-list {
+  background-position: -357px 0;
+}
+.bui-icon-view-list-detail {
+  background-position: -378px 0;
+}
+/***********************************************************************************
+  50 pixel icons
+  image: sprites_icons_20x20.png
+  Separator: 1px
+************************************************************************************/
+.bui-icon-sprite-50 {
+  background-image: url(../images/sprite_db_sub_menu_50x50.png);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* dashboard submenu */
+.bui-icon-db-home {
+  background-position: 0 0;
+}
+.bui-icon-db-home-hover {
+  background-position: 0 -51px;
+}
+.bui-icon-db-mobility {
+  background-position: -51px 0;
+}
+.bui-icon-db-mobility-hover {
+  background-position: -51px -51px;
+}
+.bui-icon-db-ebilling {
+  background-position: -102px 0;
+}
+.bui-icon-db-ebilling-hover {
+  background-position: -102px -51px;
+}
+.bui-icon-db-network {
+  background-position: -153px 0;
+}
+.bui-icon-db-network-hover {
+  background-position: -153px -51px;
+}
+.bui-icon-db-activity {
+  background-position: -204px 0;
+}
+.bui-icon-db-activity-hover {
+  background-position: -204px -51px;
+}
+.bui-icon-db-map {
+  background-position: -255px 0;
+}
+.bui-icon-db-map-hover {
+  background-position: -255px -51px;
+}
+.bui-icon-db-analytic {
+  background-position: -306px 0;
+}
+.bui-icon-db-analytic-hover {
+  background-position: -306px -51px;
+}
+.bui-icon-db-more-app {
+  background-position: -357px 0;
+}
+.bui-icon-db-more-app-hover {
+  background-position: -357px -51px;
+}
+.bui-icon-sprite-14 {
+  background-image: url(../images/icons/att_login_icon.png);
+  width: 14px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-acct-mgmt {
+  background-position: 0 0;
+}
+/* this icon is used for the mega-menu of the the sb landing page */
+.bui-icon-sprite-mega-menu-item {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-mega-menu-item {
+  background-position: 0 0;
+}
+.bui-icon-mega-menu-item-hover {
+  background-position: 0 -66px;
+}
+.bui-icon-sprite-8 {
+  background-image: url(../images/icons/arrow_icon_sprite.png);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bui-icon-sprite-8-delete {
+  background-position: 0 0;
+}
+.bui-icon-sprite-8-arrow-d {
+  background-position: 0 -9px;
+}
+.bui-icon-sprite-8-arrow-r {
+  background-position: 0 -18px;
+}
+.bui-icon-sprite-8-arrow-white-d {
+  background-position: 0 -27px;
+}
+.bui-icon-sprite-8-arrow-white-r {
+  background-position: 0 -36px;
+}
+.voice-plan-sprite {
+  background: transparent url(../images/icons/voice_plan_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 52px;
+  height: 40px;
+  vertical-align: middle;
+}
+.voice-plan-sprite-anyminute {
+  background-position: 0 0;
+}
+.voice-plan-sprite-rollover {
+  background-position: -53px 0;
+}
+.voice-plan-sprite-m2m {
+  background-position: -106px 0;
+}
+.voice-plan-sprite-night-n-weekend {
+  background-position: -159px 0;
+}
+.voice-plan-sprite-add-min {
+  background-position: -212px 0;
+}
+.data-plan-sprite {
+  background: transparent url(../images/icons/data_plan_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 52px;
+  height: 40px;
+  vertical-align: middle;
+}
+.data-plan-sprite-data {
+  background-position: 0 0;
+}
+.data-plan-sprite-addln-data {
+  background-position: -53px 0;
+}
+.data-plan-sprite-canadian-data {
+  background-position: -106px 0;
+}
+.data-plan-sprite-intl-data {
+  background-position: -159px 0;
+}
+.data-plan-sprite-enterp-lvl {
+  background-position: -212px 0;
+}
+.form-element-sprite {
+  background: transparent url(../images/icons/form_element_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+.form-element-sprite-radio {
+  background-position: 0 -29px;
+}
+.form-element-sprite-radio-on {
+  background-position: 0 0;
+}
+.form-element-sprite-checkbox {
+  background-position: -29px 0;
+}
+.form-element-sprite-checkbox-on {
+  background-position: -29px -29px;
+}
+/***********************************************************************************
+  15 pixel icons
+  image: shopping_cart_15x15.png
+  Separator: 1px
+************************************************************************************/
+.shopping-cart-sprite {
+  background: transparent url(../images/icons/shopping_cart_15x15.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.sc-device {
+  background-position: 0 0;
+}
+.sc-voice {
+  background-position: -16px 0;
+}
+.sc-data {
+  background-position: -32px 0;
+}
+.sc-add-on {
+  background-position: -48px 0;
+}
+.sc-accessory {
+  background-position: -64px 0;
+}
+.sc-remove {
+  background-position: -80px 0;
+}
+/***********************************************************************************
+  10 pixel icons
+  image: basic_sprite_10x10.png
+  Separator: 1px
+************************************************************************************/
+.basic-sprite {
+  background: transparent url(../images/icons/basic_sprite_10x10.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.basic-arrow-u {
+  background-position: 0 0;
+}
+.basic-arrow-d {
+  background-position: 0 -11px;
+}
+/***********************************************************************************
+  52*32 pixel icons
+  image: card_types_sprite.png
+  Separator: 1px
+************************************************************************************/
+.card-types-sprite {
+  background: transparent url(../images/icons/card_types_sprite.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 51px;
+  height: 32px;
+  vertical-align: middle;
+}
+.visa {
+  background-position: 0 -32px;
+}
+.visa.active {
+  background-position: 0 0;
+}
+.visa-active {
+  background-position: 0 0;
+}
+.master-card {
+  background-position: -52px -32px;
+}
+.master-card.active {
+  background-position: -52px 0;
+}
+.master-card-active {
+  background-position: -52px 0;
+}
+.discover {
+  background-position: -156px -32px;
+}
+.discover.active {
+  background-position: -156px 0;
+}
+.discover-active {
+  background-position: -156px 0;
+}
+.amex-active {
+  background-position: -104px 0;
+}
+.amex {
+  background-position: -104px -32px;
+}
+.amex.active {
+  background-position: -104px 0;
+}
+/***********************************************************************************
+  30*30 pixel icons
+  image: services_sprite_30x30.png
+  Separator: 1px
+************************************************************************************/
+.services-sprite {
+  background: transparent url(../images/icons/services_sprite_30x30.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 31px;
+  height: 30px;
+  vertical-align: middle;
+}
+.close-icon {
+  background-position: 0 -32px;
+}
+.wireless-icon {
+  background-position: -31px -32px;
+}
+.internet-icon {
+  background-position: -62px -32px;
+  height: 31px;
+}
+.device-features-sprite {
+  background: url("../images/icons/feature_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 13px;
+  vertical-align: middle;
+  width: 18px;
+}
+.device-display-icon {
+  background-position: -1px -4px;
+}
+.device-processor-icon {
+  background-position: -39px -3px;
+}
+.device-cam-icon {
+  background-position: -19px -4px;
+}
+.device-4g-icon {
+  background-position: -58px -3px;
+}
+/***********************************************************************************
+  29*23 pixel icons
+  image: services_sprite_29x23.png
+  Separator: 1px
+************************************************************************************/
+.print-icon {
+  background: transparent url(../images/icons/print-sprite_29x23.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 29px;
+  height: 23px;
+  vertical-align: middle;
+}
+.print-icon:hover {
+  background-position: 0 -23px;
+}
+/***********************************************************************************
+  24*23 pixel icons
+  image: feedback-sprite_24x23.png
+  Separator: 1px
+************************************************************************************/
+.feedback-sprite {
+  background: transparent url(../images/icons/feedback-sprite_24x23.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.feedback-sprite.error {
+  background-position: -2px -58px;
+}
+.feedback-sprite.success {
+  background-position: -2px -19px;
+}
+.feedback-sprite.warning {
+  background-position: -2px -39px;
+}
+.feedback-sprite.info {
+  background-position: -2px 0px;
+}
+.feedback-sprite.close {
+  background-position: -2px -76px;
+}
+.feedback-sprite.close:hover {
+  background-position: -2px -95px;
+}

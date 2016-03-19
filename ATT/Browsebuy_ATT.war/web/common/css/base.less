@@ -1,0 +1,1483 @@
+/*
+ * CSS RESETS
+ *      Using the normaliize.css:
+ *      1) Reset the element of dom
+ *      2) Make elements compatible with all browsers
+ */
+@import 'normalize.less';
+@import 'margin.less';
+@import 'padding.less';
+@import 'width.less';
+@import 'table.less';
+@import 'sprite-icons.less';
+@import 'grid.less';
+@import 'common.less';
+@import 'global-fonts.less';
+@import 'sb-variables.less';
+@import 'form.less';
+@import 'att-pop-box.less';
+
+/*
+ * Based styles: defaults
+ *  1) These are default values the whole website..
+ *  2) You may override these values when needed.
+ */
+html,
+button,
+input,
+select,
+textarea {
+    color: @GLOBAL_DEFAULT_TEXT_COLOR;
+}
+
+body {
+    font-size: @GLOBAL_DEFAULT_FONT_SIZE;
+    line-height: @GLOBAL_DEFAULT_LINE_HEIGHT;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: @GLOBAL_DEFAULT_TEXT_ACTIVE_COLOR;
+    text-shadow: none;
+    color: #FFFFFF !important;
+}
+
+::selection {
+    background: @GLOBAL_DEFAULT_TEXT_ACTIVE_COLOR;
+    text-shadow: none;
+    color: #FFFFFF !important;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_HR_COLOR;
+    margin: @GLOBAL_DEFAULT_MARGIN 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 2px 0;
+    background: @GLOBAL_DEFAULT_BACKGROUND_COLOR;
+    color: @GLOBAL_DEFAULT_TEXT_COLOR;
+    padding: 2px 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-size: @GLOBAL_DEFAULT_FONT_SIZE;
+    line-height: @GLOBAL_DEFAULT_LINE_HEIGHT;
+
+    background: @GLOBAL_DEFAULT_BACKGROUND_COLOR repeat scroll 0 0;
+    color: @GLOBAL_DEFAULT_TEXT_COLOR;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+    border: 0 none;
+    font-weight: normal;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline;
+    white-space: normal;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: @GLOBAL_DEFAULT_LINK_COLOR;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    &:hover {
+        color: @GLOBAL_DEFAULT_LINK_HOVER_COLOR;
+        text-decoration: none;
+        outline: 0 0;
+    }
+    &:active {
+        color: @GLOBAL_DEFAULT_LINK_ACTIVE_COLOR;
+        text-decoration: none;
+        outline: 0 0;
+    }
+    &:focus {
+        outline: 0 0;
+        text-decoration: none;
+    }
+}
+
+sup {
+    position: relative;
+    top: -0.4em;
+    font-size: 0.6em;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+/*
+strong,
+    b {
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: normal;
+    color: inherit;
+}
+
+em,
+i {
+    font-style: @GLOBAL_DEFAULT_FONT_FAMILY_ITALIC;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+*/
+span {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/*a.bui-btn-wpr:focus,
+a.bui-btn-wpr * {
+  outline: 0;
+  text-decoration: none;
+}*/
+
+/*a:focus,
+a:active,
+a * {
+    outline: 0;
+    text-decoration: none;
+}*/
+
+/*
+ * Generic text, active text, and highlighted text color
+ */
+
+//AT&T Global Typography Mix-in (to render font-color, font-size & font-family)..
+.att-typography-styles-fn(@fontfamily: @GLOBAL_DEFAULT_FONT_FAMILY; @fontsize: @GLOBAL_DEFAULT_FONT_SIZE; @fontcolor: @GLOBAL_DEFAULT_TEXT_COLOR) {
+	font-family: @fontfamily;
+	font-size: @fontsize;
+	color: @fontcolor;
+}
+
+.bui-text-color {
+    color: @GLOBAL_DEFAULT_TEXT_COLOR;
+}
+
+.bui-active-text-color {
+    color: @GLOBAL_DEFAULT_TEXT_ACTIVE_COLOR;
+}
+
+.bui-highlight-text-color {
+    color: @GLOBAL_DEFAULT_HIGHLIGHT_COLOR;
+}
+
+.bui-link-text-color {
+    color: @GLOBAL_DEFAULT_LINK_COLOR;
+}
+
+.bui-promotion-text-color {
+    color: @GLOBAL_PROMOTION_TEXT_COLOR;
+}
+/* bold definition */
+.bui-bold-fn() {
+    font-weight: bold;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+}
+
+.bui-bold {
+    .bui-bold-fn();
+}
+
+/* italic definition */
+.bui-italic-fn() {
+    font-style: italic;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_ITALIC;
+}
+
+.bui-italic {
+    .bui-italic-fn;
+}
+
+.bui-bold-italic-fn() {
+    font-style: italic;
+    font-weight: bold;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD_ITALIC;
+}
+
+/* italic definition */
+.bui-bold-italic {
+    .bui-bold-italic-fn();
+}
+
+.bui-light{
+	font-weight: normal;
+	font-family: @GLOBAL_DEFAULT_LIGHT_FONT_FAMILY;
+}
+
+.bui-light-italic{
+	font-weight: normal;
+	font-style: italic;
+	font-family: @GLOBAL_DEFAULT_LIGHT_FONT_FAMILY_ITALIC;
+}
+
+/*BeginOf: 'OMNES' font family type rules*/
+/* Omnes font-family definition */
+.bui-omnes-light {
+	font-weight: normal;
+	font-family: @GLOBAL_OMNES_LIGHT_FONT_FAMILY;
+}
+
+.bui-omnes-light-italic {
+	font-weight: normal;
+	font-style: italic;
+	font-family: @GLOBAL_OMNES_LIGHT_FONT_FAMILY_ITALIC;
+}
+
+.bui-omnes-med {
+	font-weight: normal;
+	font-family: @GLOBAL_OMNES_MEDIUM_FONT_FAMILY;
+}
+
+.bui-omnes-med-italic {
+	font-weight: normal;
+	font-style: italic;
+	font-family: @GLOBAL_OMNES_MEDIUM_FONT_FAMILY_ITALIC;
+}
+
+.bui-omnes-reg {
+	font-weight: normal;
+	font-family: @GLOBAL_OMNES_REGULAR_FONT_FAMILY;
+}
+
+.bui-omnes-reg-italic {
+	font-weight: normal;
+	font-style: italic;
+	font-family: @GLOBAL_OMNES_REGULAR_FONT_FAMILY_ITALIC;
+}
+/*EndOf: 'OMNES' font family type rules*/
+
+/* Background color */
+.bui-default-background-color {
+    background-color: @GLOBAL_DEFAULT_BACKGROUND_COLOR;
+}
+
+.bui-content-background-color {
+    background-color: @GLOBAL_DEFAULT_CONTENT_BACKGROUND_COLOR;
+}
+
+/* generic header definition */
+.bui-font-title {
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+}
+
+.bui-font-subtitle {
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+}
+
+.bui-letter-space {
+    letter-spacing: 3px !important;
+}
+
+/*
+ * Generic h1..h6 size
+ */
+.bui-h1-size {
+    font-size: @GLOBAL_DEFAULT_H1_FONT_SIZE;
+}
+
+.bui-h2-size {
+    font-size: @GLOBAL_DEFAULT_H2_FONT_SIZE;
+}
+
+.bui-h3-size {
+    font-size: @GLOBAL_DEFAULT_H3_FONT_SIZE;
+}
+
+.bui-h4-size {
+    font-size: @GLOBAL_DEFAULT_H4_FONT_SIZE;
+}
+
+.bui-h5-size {
+    font-size: @GLOBAL_DEFAULT_H5_FONT_SIZE;
+}
+
+.bui-h6-size {
+    font-size: @GLOBAL_DEFAULT_H6_FONT_SIZE;
+}
+
+.bui-f10-size {
+    font-size: 10px;
+}
+
+.bui-f11-size {
+    font-size: 11px;
+}
+
+.bui-f12-size {
+    font-size: 12px;
+}
+
+.bui-f14-size {
+    font-size: 14px;
+}
+
+.bui-f16-size {
+    font-size: 16px;
+}
+
+.bui-f18-size {
+    font-size: 18px;
+}
+
+.bui-f20-size {
+    font-size: 20px;
+}
+
+.bui-f26-size {
+    font-size: 26px;
+}
+
+.bui-f32-size {
+    font-size: 32px;
+}
+
+.bui-f36-size {
+    font-size: 36px;
+}
+
+.bui-f50-size {
+    font-size: 50px;
+}
+
+.bui-f60-size {
+    font-size: 60px;
+}
+
+/*
+ * Generic line-heights
+ */
+.bui-lh-5 {
+	line-height: 5px;
+}
+.bui-lh-10 {
+	line-height: 10px;
+}
+.bui-lh-15 {
+	line-height: 15px;
+}
+.bui-lh-20 {
+	line-height: 20px;
+}
+.bui-lh-25 {
+	line-height: 25px;
+}
+.bui-lh-30 {
+	line-height: 30px;
+}
+.bui-lh-35 {
+	line-height: 35px;
+}
+.bui-lh-40 {
+	line-height: 40px;
+}
+.bui-lh-45 {
+	line-height: 45px;
+}
+.bui-lh-50 {
+	line-height: 50px;
+}
+.bui-lh-55 {
+	line-height: 55px;
+}
+.bui-lh-60 {
+	line-height: 60px;
+}
+.bui-lh-65 {
+	line-height: 65px;
+}
+.bui-lh-70 {
+	line-height: 70px;
+}
+.bui-lh-75 {
+	line-height: 75px;
+}
+.bui-lh-80 {
+	line-height: 80px;
+}
+.bui-lh-85 {
+	line-height: 85px;
+}
+.bui-lh-90 {
+	line-height: 90px;
+}
+.bui-lh-95 {
+	line-height: 95px;
+}
+.bui-lh-100 {
+	line-height: 100px;
+}
+/*
+ * Generic h1..h6 definitions
+ */
+
+h1,
+.bui-h1 {
+    font-size: @GLOBAL_DEFAULT_H1_FONT_SIZE;
+    margin: 0;
+}
+
+h2,
+.bui-h2 {
+    font-size: @GLOBAL_DEFAULT_H2_FONT_SIZE;
+}
+
+h3,
+.bui-h3 {
+    font-size: @GLOBAL_DEFAULT_H3_FONT_SIZE;
+}
+
+h4,
+.bui-h4 {
+    font-size: @GLOBAL_DEFAULT_H4_FONT_SIZE;
+}
+
+h5,
+.bui-h5 {
+    font-size: @GLOBAL_DEFAULT_H5_FONT_SIZE;
+}
+
+h6,
+.bui-h6 {
+    font-size: @GLOBAL_DEFAULT_H6_FONT_SIZE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ui-base-h1,
+.ui-base-h2,
+.bui-h3,
+.bui-h4,
+.bui-h5,
+.bui-h6 {
+    line-height: @GLOBAL_DEFAULT_LINE_HEIGHT;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    color: @GLOBAL_DEFAULT_HEADER_COLOR;
+    margin: 0;
+}
+
+/*
+ * generic function definition ( used for button and select )
+ * rounded corner function
+ */
+.bui-rounded-corners-fn(@radius: @GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+
+    /* IE6-8 */
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+/*
+ * right rounded corner function
+ */
+.bui-right-rounded-corners-fn(@radius: @GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS) {
+    -webkit-border-radius: 0 @radius @radius 0;
+    -moz-border-radius: 0 @radius @radius 0;
+    -ms-border-radius: 0 @radius @radius 0;
+    -o-border-radius: 0 @radius @radius 0;
+    border-radius: 0 @radius @radius 0;
+
+    /* IE6-8 */
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+/*
+ * left rounded corner function
+ */
+.bui-left-rounded-corners-fn(@radius: @GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS) {
+    -webkit-border-radius: @radius 0 0 @radius;
+    -moz-border-radius: @radius 0 0 @radius;
+    -ms-border-radius: @radius 0 0 @radius;
+    -o-border-radius: @radius 0 0 @radius;
+    border-radius: @radius 0 0 @radius;
+
+    /* IE6-8 */
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+/*
+ * gradient background color function
+ */
+.bui-background-from-top-fn(@begin-color, @end-color) {
+    background: @end-color;
+    background: -webkit-gradient(ease-in-out, left top, left bottom, from(@begin-color), to(@end-color));
+    background: -webkit-ease-in-out-gradient(top, @begin-color, @end-color);
+    background: -moz-ease-in-out-gradient(top, @begin-color, @end-color);
+    background: -ms-ease-in-out-gradient(top, @begin-color, @end-color);
+    background: -o-ease-in-out-gradient(top, @begin-color, @end-color);
+
+    /* IE6-8*/
+    -pie-background: ease-in-out-gradient(top, @begin-color, @end-color);
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+.bui-background-from-left-fn(@begin-color, @end-color) {
+    background: @end-color;
+    background: -webkit-gradient(ease-in-out, left top, left bottom, from(@begin-color), to(@end-color));
+    background: -webkit-ease-in-out-gradient(left, @begin-color, @end-color);
+    background: -moz-ease-in-out-gradient(left, @begin-color, @end-color);
+    background: -ms-ease-in-out-gradient(left, @begin-color, @end-color);
+    background: -o-ease-in-out-gradient(left, @begin-color, @end-color);
+
+    /* IE6-8*/
+    -pie-background: ease-in-out-gradient(left, @begin-color, @end-color);
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+/*
+ * button shadow function
+ */
+.bui-btn-shadow-fn(@shadow-pixel, @shadow-color) {
+    -webkit-box-shadow: @shadow-pixel @shadow-pixel @shadow-pixel @shadow-color;
+    -moz-box-shadow: @shadow-pixel @shadow-pixel @shadow-pixel @shadow-color;
+    box-shadow: @shadow-pixel @shadow-pixel @shadow-pixel @shadow-color;
+
+    /* IE6-8*/
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+}
+
+/*
+ * Generic shadow function
+ */
+.bui-box-shadow-fn(@h-shadow-pixel, @v-shadow-pixel, @blur-shadow-pixel, @shadow-color) {
+    -webkit-box-shadow: @h-shadow-pixel @v-shadow-pixel @blur-shadow-pixel @shadow-color;
+    -moz-box-shadow: @h-shadow-pixel @v-shadow-pixel @blur-shadow-pixel @shadow-color;
+    box-shadow: @h-shadow-pixel @v-shadow-pixel @blur-shadow-pixel @shadow-color;
+
+    /* IE6-8*/
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+}
+
+/*
+ * Generic background-image gradient function
+ */
+.bui-background-image-gradient-fn(@startColorstr, @endColorstr) {
+/*    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = @startColorstr, endColorstr = @endColorstr, GradientType = 0);*/
+    background-image: -webkit-gradient(ease-in-out, 0 0, 0 100%, color-stop(20%, @startColorstr), color-stop(50%, @startColorstr), color-stop(52%, @endColorstr), color-stop(100%, @endColorstr));
+    background-image: -webkit-ease-in-out-gradient(top, @startColorstr 20%, @startColorstr 50%, @endColorstr 52%, @endColorstr 100%);
+    background-image: -moz-ease-in-out-gradient(top, @startColorstr 20%, @startColorstr 50%, @endColorstr 52%, @endColorstr 100%);
+    background-image: -o-ease-in-out-gradient(top, @startColorstr 20%, @startColorstr 50%, @endColorstr 52%, @endColorstr 100%);
+    background-image: ease-in-out-gradient(@startColorstr 20%, @startColorstr 50%, @endColorstr 52%, @endColorstr 100%);
+
+    /*test Add for IE7-8*/
+/* IE6-8*/
+    -pie-background: ease-in-out-gradient(left, @startColorstr, @endColorstr);
+    behavior: url( /businessoffers/web/css/pie/PIE.htc );
+    position: relative;
+}
+
+/*
+ * Generic background-clip function
+ */
+.bui-background-clip-fn(@background-clip: padding-box) {
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+/*
+ * Generic input function
+ */
+.bui-input-fn(@background-color) {
+    //font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+    height: @GLOBAL_DEFAULT_INPUT_HEIGHT;
+    line-height: @GLOBAL_DEFAULT_INPUT_HEIGHT;
+    //font-size: @GLOBAL_DEFAULT_FONT_SIZE;
+/*    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);*/
+
+    //color: @GLOBAL_DEFAULT_TEXT_COLOR;
+    background: none repeat scroll 0 0 @background-color;
+    //border: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_SELECT_INPUT_BORDER_COLOR;
+
+    padding: 4px 4px 4px 5px;
+    vertical-align: middle;
+    margin: 1px 0;
+    
+    border: 1px solid @GLOBAL_DEFAULT_BORDER_COLOR;
+	width: 100%;
+	display: block;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+	.att-typography-styles-fn(@GLOBAL_DEFAULT_FONT_FAMILY; @GLOBAL_DEFAULT_FONT_SIZE; @GLOBAL_DEFAULT_TEXT_COLOR);
+}
+
+/* input[text|textarea|password|file definition */
+
+/*input,
+textarea {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+}
+*/
+
+.placeholder(@color: @GLOBAL_DEFAULT_PLACEHOLDER_TEXT) {
+    textarea:-moz-placeholder, 
+	input[type="text"]:-moz-placeholder, 
+	input[type="password"]:-moz-placeholder,  
+	input[type="email"]:-moz-placeholder, 
+	input[type="search"]:-moz-placeholder {
+        color: @color;
+    }
+    textarea::-moz-placeholder, 
+	input[type="text"]::-moz-placeholder, 
+	input[type="password"]::-moz-placeholder,  
+	input[type="email"]::-moz-placeholder, 
+	input[type="search"]::-moz-placeholder {
+        color: @color;
+    }
+    textarea:-ms-input-placeholder, 
+	input[type="text"]:-ms-input-placeholder, 
+	input[type="password"]:-ms-input-placeholder,  
+	input[type="email"]:-ms-input-placeholder, 
+	input[type="search"]:-ms-input-placeholder {
+        color: @color;
+    }
+    textarea::-webkit-input-placeholder, 
+	input[type="text"]::-webkit-input-placeholder, 
+	input[type="password"]::-webkit-input-placeholder,  
+	input[type="email"]::-webkit-input-placeholder, 
+	input[type="search"]::-webkit-input-placeholder {
+        color: @color;
+    }
+}
+
+.placeholder();
+
+label{
+	width: 100%;
+	display: block;
+
+	font-weight: bold;
+	.att-typography-styles-fn(@GLOBAL_DEFAULT_FONT_FAMILY; @GLOBAL_DEFAULT_FONT_SIZE; @GLOBAL_DEFAULT_TEXT_COLOR);
+}
+	
+input[type="text"], input[type="email"], input[type="password"], select, textarea{
+	.bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+}
+	
+input[type="search"] {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+    background: @GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR url('../images/chosen-sprite.png') no-repeat 100% -22px;
+    border: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_SELECT_INPUT_BORDER_COLOR;
+}
+
+input[type="checkbox"]:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    border: none;
+    min-width: 15px;
+}
+
+input[type="radio"] {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    border: none;
+    min-width: 10px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+
+.bui-input-search-top {
+    .bui-input-fn(@GLOBAL_DEFAULT_INPUT_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+    color: @GLOBAL_DEFAULT_HEADER_FOOTER_COLOR !important;
+    background: @GLOBAL_DEFAULT_HEADER_FOOTER_BACKGROUND url('../images/chosen-sprite-white.png') no-repeat 100% -22px !important;
+    border: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_SELECT_INPUT_BORDER_COLOR !important;
+}
+
+
+/*
+ * Name:           Chosen select drop down plugin
+ * Description:    Customize chosen select stylesheet.
+ *                 This is applying thru the whole website
+ */
+
+/* Group base */
+.chzn-container {
+    font-size: @GLOBAL_DEFAULT_FONT_SIZE;
+    .chzn-drop {
+        background: @GLOBAL_DEFAULT_CHOSEN_SELECT_BACKGROUND_COLOR;
+        border: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_CHOSEN_SELECT_BORDER_COLOR;
+/*        .bui-box-shadow-fn(@GLOBAL_DEFAULT_CHOSEN_SELECT_H_SHADOW,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_V_SHADOW,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_BLUR,
+                            @GLOBAL_DEFAULT_CHOSEN_SELECT_SHADOW_COLOR);*/
+        z-index: @GLOBAL_DEFAULT_CHOSEN_SELECT_Z_INDEX ;
+    }
+    .chzn-results {
+        .highlighted,
+        .result-selected{
+            background-color: @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR;
+            /* .bui-background-image-gradient-fn( @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR,
+                                                    @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR); */
+            color: @GLOBAL_DEFAULT_CHOSEN_SELECT_LINK_COLOR;
+        }
+        &:hover {
+        	.result-selected{
+        		background: none;
+        		color: @GLOBAL_DEFAULT_CHOSEN_SELECT_TEXT_COLOR !important;
+        	}
+        	.highlighted{
+        		background-color: @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR;
+            /* .bui-background-image-gradient-fn( @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR,
+                                                    @GLOBAL_DEFAULT_CHOSEN_SELECT_HOVER_BACKGROUND_COLOR) !important; */
+            	color: @GLOBAL_DEFAULT_CHOSEN_SELECT_LINK_COLOR !important;
+        	}
+        }
+    }
+}
+
+/*
+ * group Single Chosen
+ */
+.chzn-container-single {
+    .chzn-single {
+        background-color: @GLOBAL_DEFAULT_CHOSEN_SELECT_BACKGROUND_COLOR;
+        .bui-background-image-gradient-fn( @GLOBAL_DEFAULT_CHOSEN_SELECT_BACKGROUND_COLOR,
+                                                @GLOBAL_DEFAULT_CHOSEN_SELECT_GRADIENT_BG_END);
+        .bui-rounded-corners-fn(@GLOBAL_DEFAULT_INPUT_ROUNDED_CORNER);
+        .bui-background-clip-fn();
+        border: @GLOBAL_DEFAULT_BORDER_WIDTH solid @GLOBAL_DEFAULT_CHOSEN_SELECT_BORDER_COLOR;
+/*        .bui-box-shadow-fn(@GLOBAL_DEFAULT_CHOSEN_SELECT_H_SHADOW,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_V_SHADOW,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_BLUR,
+                        @GLOBAL_DEFAULT_CHOSEN_SELECT_SHADOW_COLOR);*/
+        height: @GLOBAL_DEFAULT_CHOSEN_SELECT_HEIGHT;
+        line-height: @GLOBAL_DEFAULT_CHOSEN_SELECT_HEIGHT;
+        color: @GLOBAL_DEFAULT_CHOSEN_SELECT_TEXT_COLOR;
+    }
+    .chzn-default {
+        color: @GLOBAL_DEFAULT_CHOSEN_SELECT_TEXT_COLOR;
+    }
+    .chzn-search {
+        input {
+            height: @GLOBAL_DEFAULT_INPUT_HEIGHT;
+            line-height: @GLOBAL_DEFAULT_INPUT_HEIGHT;
+            background-color: @GLOBAL_DEFAULT_CHOSEN_SELECT_BACKGROUND_COLOR;
+        }
+    }
+    .chzn-drop {
+    }
+}
+
+/* Need to overwrite more css from : chosen.css*/
+.chzn-container-multi {
+    .chzn-choices {
+        background-color: @GLOBAL_DEFAULT_CHOSEN_SELECT_BACKGROUND_COLOR;
+    }
+}
+
+/* new chosen */
+.chosen-container-single {
+    .chosen-search {
+        input[type="text"] {
+            padding: 4px 20px 4px 5px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+.chosen-container {
+    border-radius: 4px;
+}
+
+/*
+   Select tag: use the dropkick plug in
+   How to use:
+   1) define the custom theme below
+   2) Make sure jquery is included.
+        <link rel="stylesheet" href="css/dropkick.css">
+        <script src="js/vendor/jquery.dropkick-1.0.0.js"></script>
+        <select name="somename" tabindex="1" class="att-dropdown">
+            <option value="">Choose a reaction</option>
+            <option value="amazed">Amazed</option>
+            <option value="bored">Bored</option>
+            <option value="surprised">Surprised</option>
+        </select>
+        <script type="text/javascript">
+             $('.att-dropdown').dropkick({
+             theme: 'att-dropdown'
+             });
+        </script>
+*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * default button definition
+ */
+
+.button-fn(@min-width, @font-size) {
+    min-width: @min-width;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+
+    font-size: @font-size;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+ //   font-weight: bold;
+    line-height: 1;
+ //   padding: 4px 12px 3px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR;
+    border:0;
+    outline: none;
+
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+  //  .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+/*
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+*/
+
+    &:hover {
+        background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER;
+         -moz-transition: background-color .3s ease-in-out;
+       -webkit-transition: background-color .3s ease-in-out;
+       -o-transition: opacity .3s ease-in-out;
+    	-ms-transition: opacity .3s ease-in-out;
+    	transition: background-color .3s ease-in-out;
+        outline: none;
+    }
+     &:focus {
+	//	background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER;
+	background-color: rgba(76, 200, 243, 1);
+    }
+    &:active {
+        background-color: @GLOBAL_DEFAULT_LINK_HOVER_COLOR;
+        outline: none;
+    }
+}
+
+.disable-button-fn(@min-width, @font-size) {
+    min-width: @min-width;
+    cursor: default;
+    vertical-align: middle;
+    margin: 0;
+
+    font-size: @font-size;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+  //  font-weight: bold;
+    line-height: 1;
+ //   padding: 4px 12px 3px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR;
+    border:0;
+    outline: none;
+
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY);
+}
+
+.grey-button-fn(@min-width, @font-size) {
+	 min-width: @min-width;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+
+    font-size: @font-size;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+    line-height: 1;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR;
+    border:0;
+    outline: none;
+
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY);
+}
+
+/*
+ * default button definition
+ */
+.button-orange-fn(@min-width, @font-size) {
+    min-width: @min-width;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+
+    font-size: @font-size;
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY;
+//    font-weight: bold;
+    line-height: 1;
+ //   padding: 4px 12px 3px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_ORANGE_BTN_BACKGROUND_COLOR;
+    border:0;
+    outline: none;
+
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+//	.bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+
+/*    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+
+    &:hover {
+       background-color: @GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_HOVER;
+       -moz-transition: background-color .3s ease-in-out;
+       -webkit-transition: background-color .3s ease-in-out;
+       -o-transition: opacity .3s ease-in-out;
+    	-ms-transition: opacity .3s ease-in-out;
+    	transition: background-color .3s ease-in-out;
+       outline: none;
+    }
+    &:focus {
+    	background-color: @GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_HOVER;
+    }
+    &:active {
+        background-color: @GLOBAL_ORANGE_BTN_TEXT_COLOR_HOVER;
+        outline: none;
+    }
+}
+
+.button-orange-rectangle-fn() {
+    min-width: @GLOBAL_DEFAULT_BTN_MIN_WIDTH;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 12px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_ORANGE_BTN_BACKGROUND_COLOR;
+    border:0;
+    outline: none;
+	/*
+    .bui-background-from-top-fn(@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_ORANGE_BTN_BACKGROUND_COLOR);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ROUNDED_CORNER_RADIUS);
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_ORANGE_BTN_SHADOW_COLOR);*/
+
+    &:hover {
+        color: @GLOBAL_ORANGE_BTN_TEXT_COLOR_HOVER;
+        outline: none;
+    }
+    &:active {
+        color: @GLOBAL_ORANGE_BTN_TEXT_COLOR_HOVER;
+        outline: none;
+    }
+}
+
+.button-disabled-rectangle-fn() {
+    min-width: @GLOBAL_DEFAULT_BTN_MIN_WIDTH;
+    cursor: default;
+    vertical-align: middle;
+    margin: 0;
+
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 12px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: @GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY;
+    border:0;
+    outline: none;
+}
+
+//button,
+.bui-button {
+    .button-fn(@GLOBAL_DEFAULT_BTN_MIN_WIDTH, @GLOBAL_DEFAULT_BTN_FONT_SIZE);
+     padding: 8px 20px;
+}
+
+.bui-button-grey {
+	.grey-button-fn(@GLOBAL_DEFAULT_BTN_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+}
+
+.bui-button-disable {
+    .disable-button-fn(@GLOBAL_DEFAULT_BTN_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+}
+
+.bui-button-small {
+    .button-fn(@GLOBAL_BTN_SMALL_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+ //   text-transform: uppercase;
+}
+
+.bui-button-small-disable {
+    .disable-button-fn(@GLOBAL_BTN_SMALL_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+ //   text-transform: uppercase;
+}
+
+.bui-button-large {
+    .button-fn(@GLOBAL_BTN_LARGE_MIN_WIDTH, @GLOBAL_BTN_LARGE_FONT_SIZE);
+    padding: 11px 30px;
+}
+
+.bui-button-large-disable {
+    .disable-button-fn(@GLOBAL_BTN_LARGE_MIN_WIDTH, @GLOBAL_BTN_LARGE_FONT_SIZE);
+    padding: 11px 30px;
+}
+
+.bui-button-orange-small {
+    .button-orange-fn(@GLOBAL_BTN_SMALL_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+}
+
+.bui-button-orange {
+    .button-orange-fn(@GLOBAL_BTN_SMALL_MIN_WIDTH, @GLOBAL_BTN_SMALL_FONT_SIZE);
+    padding: 8px 20px;
+}
+
+.bui-button-orange-large {
+    .button-orange-fn(@GLOBAL_BTN_LARGE_MIN_WIDTH, @GLOBAL_BTN_LARGE_FONT_SIZE);
+    padding: 11px 30px;
+}
+
+.bui-button-orange-rectangle {
+    .button-orange-rectangle-fn();
+}
+
+.bui-disabled-button-rectangle{
+	.button-disabled-rectangle-fn();
+}
+
+.bui-btn-fixed {
+    .button-fn(@GLOBAL_DEFAULT_BTN_MIN_WIDTH, @GLOBAL_DEFAULT_BTN_FONT_SIZE);
+    padding: 2px 20px;
+}
+
+/* Rectangle button */
+.bui-button-rectangle {
+    min-width: @GLOBAL_DEFAULT_BTN_RECTANGLE_MIN_WIDTH;
+    cursor: pointer;
+    vertical-align: middle;
+
+    margin: 0; /*This will ensure that shadow is showing*/
+
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 4px 12px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+/*    .bui-rounded-corners-fn;*/
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+
+    &:hover {
+        .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN);
+    }
+}
+
+/* right-rounded-corner button */
+.bui-button-right-rounded-corner {
+    min-width: @GLOBAL_BTN_SMALL_MIN_WIDTH;
+/*  min-width*//*\**//*: 76px\9;*/
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 3px 0; /*This will ensure that shadow is showing*/
+
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    font-size: @GLOBAL_DEFAULT_SMAIL_FONT_SIZE;
+    line-height: 1.4;
+    padding: 2px 8px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-right-rounded-corners-fn;
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+
+    &:hover {
+        .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN);
+    }
+}
+
+/*
+ * left-rounded-corner button
+ */
+.bui-button-left-rounded-corner {
+    min-width: @GLOBAL_BTN_SMALL_MIN_WIDTH;
+/*  min-width*//*\**//*: 76px\9;*/
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 3px 0; /*This will ensure that shadow is showing*/
+
+    font-family: @GLOBAL_DEFAULT_FONT_FAMILY_BOLD;
+    font-weight: bold;
+    font-size: @GLOBAL_DEFAULT_SMAIL_FONT_SIZE;
+    line-height: 1.4;
+    padding: 2px 8px;
+    color: @GLOBAL_DEFAULT_BTN_TEXT_COLOR;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR);
+    .bui-left-rounded-corners-fn;
+    .bui-background-clip-fn;
+    .bui-btn-shadow-fn(@GLOBAL_DEFAULT_BTN_SHADOW_LENGTH,@GLOBAL_DEFAULT_BTN_SHADOW_COLOR);
+
+    &:hover {
+        .bui-background-from-top-fn(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER,@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN);
+    }
+}
+
+/*
+ * background icon size definition. Sprite images
+ */
+.bui-background-icon-size(@width, @height) {
+    -moz-background-size: @width @height;
+    -o-background-size: @width @height;
+    -webkit-background-size: @width @height;
+    background-size: @width @height;
+}
+
+/*
+ * Icon definition: This icon has the background surround it.
+ * example: <span class="bui-icon-18 bui-icon-arrow-l">&nbsp;</span>
+*/
+
+.bui-icon-18 {
+    background-image: url(../images/icons-18-spritesheet-and-hover.png);
+    .bui-background-icon-size(@GLOBAL_DEFAULT_SMALL_SPRITE_IMAGE_WIDTH, @GLOBAL_DEFAULT_SMALL_SPRITE_IMAGE_HEIGHT);
+    .bui-rounded-corners-fn(@GLOBAL_DEFAULT_ICON_BORDER_RADIUS);
+
+    display: inline-block;
+    margin: 0;
+    padding: 1px;
+    vertical-align: middle;
+    width: @GLOBAL_DEFAULT_SMALL_ICON_IMAGE_WIDTH;
+    height: @GLOBAL_DEFAULT_SMALL_ICON_IMAGE_HEIGHT;
+    background-color: @GLOBAL_DEFAULT_BACKGROUND_ICON_COLOR;
+}
+
+/*
+ * BASE STYLES (generic/reusable/common CSS class)
+ */
+
+.bui-float-right {
+    float: right;
+}
+
+.bui-float-left {
+    float: left;
+}
+
+.bui-clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bui-force-float-left {
+    float: left !important;
+}
+
+.bui-force-float-right {
+    float: right !important;
+}
+
+.bui-force-display-block {
+    display: block !important;
+}
+
+.bui-force-display-inline {
+    display: inline !important;
+}
+
+.bui-text-align-left {
+    text-align: left;
+}
+
+.bui-text-align-center {
+    text-align: center;
+}
+
+.bui-text-align-right {
+    text-align: right;
+}
+
+.bui-vertical-align-top {
+    vertical-align: top;
+}
+
+.bui-vertical-align-middle {
+    vertical-align: middle;
+}
+
+.bui-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.bui-display-block {
+    display: block;
+}
+
+.bui-display-inline-block {
+    display: inline-block;
+}
+
+/************************************************************
+    PAGE CONTENT SECTION RELATED - COMMON STYLE FOR ALL PAGES
+*************************************************************/
+form label {
+    color: @GLOBAL_DEFAULT_FORM_LABEL_COLOR;
+    font-size: @GLOBAL_DEFAULT_FONT_SIZE;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*******************************************************************
+    Media queries that control the width of the pages
+ *******************************************************************/
+
+/*.bui-screen-width {
+    width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+}*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_FULL;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_FULL;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_FULL;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+	.bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_FULL;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+        margin: 0 auto !important; 
+    }    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_FULL;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+        margin: 0 auto !important; 
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+        margin: 0 auto !important; 
+    }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+    .bui-screen-width {
+        width: @GLOBAL_SCREEN_WIDTH_STANDARD;
+        margin: 0 auto !important; 
+    }
+}
+
+/* Print page CSS */
+.print-content-styles(){
+
+	.print-area{
+		display: none;
+	}
+
+	@media only print {
+		.no-print{
+			display: none;
+		}
+		
+		a:link { 
+			font-weight: bold; 
+			text-decoration: underline; 
+			color: #06c;
+			
+			&:after { 
+				content: " (" attr(href) ") "; 
+			} 
+		}
+		
+		.print-area{
+			font-family: Georgia, "Times New Roman", serif;
+			display: block !important;
+			padding: 20px 20px;
+		}
+		
+	}
+}

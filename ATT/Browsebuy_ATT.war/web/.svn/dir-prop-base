@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 104
+common svn://scm.it.att.com:13121/eBiz/branches/business_ebiz_1403_beta1_br/COMMON/j2ee-apps/assets/web
+
+END

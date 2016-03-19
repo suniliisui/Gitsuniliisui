@@ -1,0 +1,22 @@
+/**
+ * CSS File for attcheckbox jQuery Plugin
+ *
+ **/
+
+.att-hide {
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+
+.att-checkbox {
+    background: transparent url('../images/att_checkbox_sprite.png') 0 0 no-repeat;
+    display:inline-block;
+    *display: inline;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.att-checkbox-active {
+    background-position: 0 -21px;
+}

@@ -1,0 +1,130 @@
+10
+
+dir
+275374
+svn://scm.it.att.com:13121/eBiz/branches/business_ebiz_1403_beta1_br/COMMON/j2ee-apps/assets/web/js/vendor
+svn://scm.it.att.com:13121
+
+
+
+2014-03-07T06:17:50.263072Z
+269735
+rx085b
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+179006d3-ff12-0410-9a99-8e57e8af8bb3
+
+HTML5-placeholder-polyfill-master
+dir
+
+antiscroll-master
+dir
+
+backbone
+dir
+
+backbone-relational-master
+dir
+
+backbone.layoutmanager-master
+dir
+
+bootstrap
+dir
+
+bootstrap-3.1.0
+dir
+
+chartjs
+dir
+
+chosen
+dir
+
+handlebars
+dir
+
+jQuery-Validation-Engine-master
+dir
+
+jqfactory
+dir
+
+jqtree
+dir
+
+jquery-1.10.2
+dir
+
+jquery-1.8.2
+dir
+
+jquery-carousel
+dir
+
+jquery-custom-scrollbars
+dir
+
+jquery-data-input-masking
+dir
+
+jquery-datatables
+dir
+
+jquery-easing
+dir
+
+jquery-ellipsis
+dir
+
+jquery-lazyload
+dir
+
+jquery-mega-drop-down-menu
+dir
+
+jquery-serialize
+dir
+
+jquery-ui
+dir
+
+jquery-ui-1.10.4.custom
+dir
+
+jquery-ui-1.9.2.custom
+dir
+
+jscrollpane
+dir
+
+modernizr-2.6.2
+dir
+
+requirejs
+dir
+
+respond-master
+dir
+
+underscore
+dir
+
+video-js
+dir
+
+visualNav
+dir
+

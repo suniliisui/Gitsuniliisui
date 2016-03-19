@@ -1,0 +1,211 @@
+/**********************************************************************
+  File: grid.less
+      This file defines all common grid css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/* bui-grid definition
+  ================================
+   There are 5 bui-grid:
+   1) bui-grid-a: 2 columns
+   2) bui-grid-b: 3 columns
+   3) bui-grid-c: 4 columns
+   4) bui-grid-d: 5 columns
+   There are 5 bui-block(s) can be used with the bui-grid(s).
+   These are: bui-block-a, bui-block-b, bui-block-c, bui-block-d,
+   and bui-block-e
+
+*/
+.bui-grid-a,
+.bui-grid-b,
+.bui-grid-c,
+.bui-grid-d,
+.bui-grid-e {
+  /*  overflow: hidden;*/
+}
+.bui-block-a,
+.bui-block-b,
+.bui-block-c,
+.bui-block-d,
+.bui-block-e {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bui-block-1,
+.bui-block-2,
+.bui-block-3,
+.bui-block-4,
+.bui-block-5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* bui-grid-a definition */
+.bui-grid-a .bui-block-a,
+.bui-grid-2 .bui-block-a {
+  width: 50%;
+  clear: left;
+}
+.bui-grid-a .bui-block-b,
+.bui-grid-2 .bui-block-b {
+  width: 50%;
+}
+.bui-grid-a .bui-block-1,
+.bui-grid-2 .bui-block-1 {
+  width: 50%;
+  clear: left;
+}
+.bui-grid-a .bui-block-2,
+.bui-grid-2 .bui-block-2 {
+  width: 50%;
+}
+.bui-grid-a .bui-column,
+.bui-grid-2 .bui-column {
+  width: 50%;
+}
+/*.bui-grid-a >:nth-child(n) {
+  width: 50%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-b definition */
+.bui-grid-b .bui-block-a,
+.bui-grid-3 .bui-block-a {
+  width: 33.333%;
+  clear: left;
+}
+.bui-grid-b .bui-block-b,
+.bui-grid-3 .bui-block-b {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-c,
+.bui-grid-3 .bui-block-c {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-1,
+.bui-grid-3 .bui-block-1 {
+  width: 33.333%;
+  clear: left;
+}
+.bui-grid-b .bui-block-2,
+.bui-grid-3 .bui-block-2 {
+  width: 33.333%;
+}
+.bui-grid-b .bui-block-3,
+.bui-grid-3 .bui-block-3 {
+  width: 33.333%;
+}
+.bui-grid-b .bui-column,
+.bui-grid-3 .bui-column {
+  width: 33.333%;
+}
+/*.bui-grid-b >:nth-child(n) {
+  width: 33.333%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-c definition */
+.bui-grid-c .bui-block-a,
+.bui-grid-4 .bui-block-a {
+  width: 25%;
+  clear: left;
+}
+.bui-grid-c .bui-block-b,
+.bui-grid-4 .bui-block-b {
+  width: 25%;
+}
+.bui-grid-c .bui-block-c,
+.bui-grid-4 .bui-block-c {
+  width: 25%;
+}
+.bui-grid-c .bui-block-d,
+.bui-grid-4 .bui-block-d {
+  width: 25%;
+}
+.bui-grid-c .bui-block-1,
+.bui-grid-4 .bui-block-1 {
+  width: 25%;
+  clear: left;
+}
+.bui-grid-c .bui-block-2,
+.bui-grid-4 .bui-block-2 {
+  width: 25%;
+}
+.bui-grid-c .bui-block-3,
+.bui-grid-4 .bui-block-3 {
+  width: 25%;
+}
+.bui-grid-c .bui-block-4,
+.bui-grid-4 .bui-block-4 {
+  width: 25%;
+}
+.bui-grid-c .bui-column,
+.bui-grid-4 .bui-column {
+  width: 25%;
+}
+/*.bui-grid-c >:nth-child(n) {
+  width: 25%;
+  margin-right: -.5%;
+}*/
+/* bui-grid-d definition */
+.bui-grid-d .bui-block-a,
+.bui-grid-5 .bui-block-a {
+  width: 20%;
+  clear: left;
+}
+.bui-grid-d .bui-block-b,
+.bui-grid-5 .bui-block-b {
+  width: 20%;
+}
+.bui-grid-d .bui-block-c,
+.bui-grid-5 .bui-block-c {
+  width: 20%;
+}
+.bui-grid-d .bui-block-d,
+.bui-grid-5 .bui-block-d {
+  width: 20%;
+}
+.bui-grid-d .bui-block-e,
+.bui-grid-5 .bui-block-e {
+  width: 20%;
+}
+.bui-grid-d .bui-block-1,
+.bui-grid-5 .bui-block-1 {
+  width: 20%;
+  clear: left;
+}
+.bui-grid-d .bui-block-2,
+.bui-grid-5 .bui-block-2 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-3,
+.bui-grid-5 .bui-block-3 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-4,
+.bui-grid-5 .bui-block-4 {
+  width: 20%;
+}
+.bui-grid-d .bui-block-5,
+.bui-grid-5 .bui-block-5 {
+  width: 20%;
+}
+.bui-grid-d .bui-column,
+.bui-grid-5 .bui-column {
+  width: 20%;
+}
+/*.bui-grid-d >:nth-child(n) {
+  width: 20%;
+}*/

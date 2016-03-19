@@ -1,0 +1,26 @@
+<div id="legal-content" class="bui-screen-width clearfix">
+	<div class="bui-w-100-percent clearfix">
+		<div class="clearfix bui-p-lr-30">
+			<p class=" bui-p-t-10"><strong>&#42;4G LTE not available everywhere. LTE is a trademark of ETSI. Learn more at <a href="http://www.att.com/network" target="_blank">att.com/network.</a></a></strong></p>
+			<p><strong>Pricing effective 2/15/2014.</strong> Requires a new 2-yr wireless agreement with data (min $14.99/mo.) plan or Mobile Share plan. If you buy a new tablet you will save $100 off of the non-commitment price. Subject to change at any time. 2 tablet purchase limit per account. Equipment price & avail may vary by mrkt & may not be available from independent retailers. Subject to Wireless Customer Agrmt. Credit approval req'd. Activ/upgrade fee $36/line. Geographic, usage and other terms, conditions and restrictions apply, and may result in svc termination. Coverage and svcs not avail everywhere. Taxes and other charges apply. Data (att.com/dataplans): If usage exceeds your monthly data allowance, you will automatically be charged overage for additional data provided. Early Termination Fee (att.com/equipmentETF): After 14 days, ETF up to $150. <strong>Restocking fee:</strong> may be up to 10% of the sales price. <strong>Other Monthly Charges/line</strong> may include a Regulatory Cost Recovery Charge (up to $1.25), a gross receipts surcharge, federal and state universal svc charges, fees and charges for other gov't assessments. These are not taxes or gov't req'd charges. <strong>Visit a store or <a href="http://www.att.com/network" target="_blank">att.com/network</a> to learn more about wireless devices and services from AT&T.</strong></p>
+			
+			<div class="clearfix">
+				<ol><li>Cellular data service is available only on Wi-Fi + Cellular models. Data plan required. LTE is available in select markets and through select carriers. Speeds will vary based on site conditions. For details on LTE support, contact your carrier and see <a href="http://www.apple.com/ipad/LTE" target="_blank"> www.apple.com/ipad/LTE.</a></li>
+					<li>Battery life varies by use and configuration. See <a href="http://www.apple.com/batteries" target="_blank">www.apple.com/batteries</a> for more information.</li>
+					<li>Refers to the total number worldwide. Not all content is available in all countries.</li>
+					<li>Compared with iPad (4th generation).</li>
+					<li>FaceTime calling requires a FaceTime-enabled device for the caller and recipient and a Wi-Fi connection. Availability over a cellular network depends on carrier policies; data charges may apply.</li>					
+					<li>GarageBand is free on the App Store for all iOS 7 compatible devices; additional GarageBand instruments and sounds are available with an in-app purchase. iPhoto, iMovie, Pages, Numbers, and Keynote are free on the App Store for qualifying iOS 7 compatible devices activated on or after September 1, 2013. See <a href="http://www.apple.com/ios/whats-new/" target="_blank" >www.apple.com/ios/whats-new/</a> for iOS 7 compatible devices. Downloading apps requires an Apple ID.</li>
+					<li>Siri may not be available in all languages or in all areas, and features may vary by area. Internet access required. Cellular data charges may apply.</li>
+					<li>Testing conducted by Apple in October 2013 using preproduction iPad Air units and software. Testing consisted of full battery discharge while performing each of the following tasks: video playback, audio playback, and Internet browsing using Wi‑Fi or cellular data network. Video content was a repeated 2-hour 23-minute movie purchased from the iTunes Store. Audio content was a playlist of 358 unique audio tracks purchased from the iTunes Store. Internet over Wi‑Fi and cellular data network tests were conducted using dedicated web and mail servers, browsing snapshot versions of 20 popular web pages, and receiving mail once an hour. All settings were default except: Wi‑Fi was associated with a network (except for Internet browsing over cellular data network); the Wi‑Fi feature Ask to Join Networks and Auto-Brightness were turned off; Brightness was set to 50%; and WPA2 encryption was enabled. Battery life depends on device settings, usage, and many other factors. Battery tests are conducted using specific iPad units; actual results may vary.</li>
+					<li>1GB = 1 billion bytes; actual formatted capacity less.</li>
+					<li>Cellular data plan is sold separately. The model you purchase is configured to work with a particular cellular network technology. Check with your carrier for compatibility and cellular data plan availability.</li>
+				</ol>
+			</div>
+			<p>Apple, iPad, Retina, iSight, FaceTime, iTunes, Safari, App Store, iBooks, iTunes Store, Siri, Photo Booth, iPhoto, GarageBand, Pages, Numbers, Keynote, iTunes U, Lightning, and Multi-Touch are trademarks or service marks of Apple Inc., registered in the U.S. and other countries. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</p>
+			<p>All marks contained herein are the property of their respective owners.</p>
+			<p>TM and &copy; 2014 Apple Inc. All rights reserved.</p>
+			<p>Service provided by AT&T Mobility.</p>
+		</div>
+	</div>
+</div>

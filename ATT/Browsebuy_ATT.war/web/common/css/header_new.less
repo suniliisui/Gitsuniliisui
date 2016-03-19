@@ -1,0 +1,284 @@
+
+/* Please include base.less file to make this header work*/
+
+/*font family*/
+@boldFont : clearviewatt_ltbold;
+@lightFont : clearviewatt_lt;
+@regularFont : clearviewattregular;
+@omnesAttLt : omnes_attlight;
+@omnesAttRegular : omnes_attregular;
+
+/*color*/
+@normalGray :#444444;
+@hoverGray:#bbbbbb;
+@activeGray:#777777;
+@whiteColor:#ffffff;
+@errorMessageColor:#F3E6E5;
+@errorMessageColorMobility:#F2DEDE;
+
+.setFont(@fontFamily, @fontSize){
+	font-family: @fontFamily;
+	font-size: @fontSize;
+}
+
+.opacity(@opacity) {
+	@ieOpacity: @opacity * 100;
+	/* If you don't use this order, IE8-as-IE7 doesn't apply the opacity, although IE8 and a pure IE7 do.*/
+	/* http://www.quirksmode.org/css/opacity.html*/
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})"; /* IE 8 */
+	filter: ~"alpha(opacity=@{ieOpacity})"; /* IE 5-7 */
+	opacity: @opacity;
+}
+
+@headerHight: 50px;
+@headerItemWidth: 50px;
+
+.header {
+}
+.headerContainer {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #067ab4;
+	line-height:50px;
+	color: @whiteColor;
+}
+
+.headerContentContainer{
+	width: 980px;
+	margin:auto;
+	height: @headerHight;
+
+	.primaryMenuContainer{
+		.linkToRegistration{
+			color:@whiteColor;
+			float: right;
+		}	
+		.setFont(@regularFont, 18px);
+
+		.ATTLogo{
+
+				background: url("../common/images/common/header/attLogo.png") no-repeat scroll -10px -10px transparent;
+				width:36px;
+				height:36px;
+				margin-right:35px;
+				margin-left:29px;
+				margin-top: 7px;
+				float:left;
+			}
+
+		.attHomeContainer{
+
+			float: left;
+			cursor: pointer;
+
+			.businessCenterR{
+
+				float: left;
+				margin-left:2px;
+				margin-right: 4px;
+				font-family:@boldFont;
+
+				&:hover{
+					color: #BFE7FB;
+					margin-top:-2px;
+				}
+				&:active{
+					color: #BFE7FB;
+					margin-top:-2px;
+				}
+			}
+		}
+
+		.primaryMenuOptionsContainer, .pageNameContainer{
+
+			.primaryMenuOptionLink, .pageName{
+
+				cursor: pointer;
+				float: left;
+				margin-left: 30px;
+				.setFont(@regularFont, 18px);
+				color: #ffffff;
+
+				&:hover{
+					color: #BFE7FB;
+					margin-top: -2px;
+				}
+				&:active{
+					color: #BFE7FB;
+					margin-top: -2px;
+				}
+
+			}
+		}
+
+		.selectedOptionIndicator{
+
+			width: 0px;
+			height: 0px;
+			border-style:solid;
+			border-width:0 8px 8px 8px;
+			border-color:transparent transparent #ffffff transparent;
+			margin-top: 43px;
+    		position: absolute;
+		}
+
+		.loginIcon{
+			float: right;
+			margin-right: 10px;
+			position: relative;
+			line-height: 50px;
+			margin-top: -2px;
+			cursor: pointer;
+			background-position: -1000px center;
+			&:hover{
+				margin-top:-4px;
+				color: #BFE7FB;
+			}
+		}
+		.headerIconContainer{
+			float: right;
+			height:50px;
+			.loginName{
+				float: right;
+				.setFont(@regularFont, 12px);
+				margin-right: 31px;
+				position: relative;
+				line-height: 50px;
+			}
+
+			.chatIcon{
+				float: right;
+				margin-right: 32px;
+				position: relative;
+				line-height: 50px;
+				cursor: pointer;
+				background-position: -1000px center;
+
+				&:hover{
+					margin-top:-2px;
+					color: #BFE7FB;
+				}
+			}
+
+			.searchIcon{
+				float: right;
+				margin-right: 31px;
+				position: relative;
+				line-height: 50px;
+				cursor: pointer;
+				background-position: -1000px center;
+
+				&:hover{
+					margin-top:-2px;
+					color: #BFE7FB;
+				}
+			}
+		}
+
+	}
+}
+
+.selectedPrimaryMenuOption{
+	
+	color: #ffffff;
+	font-family:@boldFont !important;
+}
+
+.secondaryMenuContainer{
+	
+	background-color: @whiteColor;
+	border-bottom: 1px solid #dddddd;
+	.setFont(@regularFont, 16px); 
+	color: #666666;
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height:50px;
+
+	.secondaryMenuContentContainer{
+		width: 980px;
+		margin:auto;
+
+		.secondaryMenuOption{
+			float: left;
+			padding-left: 30px;
+			cursor: pointer;
+			overflow: hidden;
+			.selectionDiv{
+				height:4px;
+				background-color:#067ab4;
+				position:relative;
+				top:-4px;
+			}
+			.secondaryMenuOptionLink{
+				color: #666666;	
+
+				&:hover{
+					.setFont(@boldFont, 16px);
+				}
+			}
+		}
+	}
+	
+}
+
+.selectedSecondaryMenuOption{
+	
+	.setFont(@boldFont, 16px);
+}
+
+.megaMenuContainer{
+	
+	width: 100%;
+	min-height: 140px;
+	background-color: #ffffff;
+	.opacity(0.9);
+	position:fixed;
+	z-index:1000;
+	margin-top:101px;
+}
+
+.megaMenuContentContainer{
+
+	width: 980px;
+	margin:auto;
+
+	.categoryContainer{
+	
+		margin-bottom: 32px;
+		float: left;
+
+		.categoryTitle{
+
+			margin-top: 36px;
+			.setFont(@boldFont, 14px);
+			color: @normalGray;
+			margin-bottom:22px;
+		}
+
+		.categoryOptionLink{
+
+			.setFont(@regularFont, 12px);
+			color: @normalGray;
+			margin-bottom:13px;
+
+			&:hover{
+				color: #199ddf;
+			}
+			&:active{
+				color: #199ddf;
+			}
+		}
+
+
+	}
+}
+.addMargin{
+	margin-top: 50px;
+}
+.contents{
+	padding-top:100px;
+}

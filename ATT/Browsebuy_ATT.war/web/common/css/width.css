@@ -1,0 +1,130 @@
+/**********************************************************************
+  File: width.less
+      This file defines all common width css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*************************
+    GENERIC WIDTH RELATED
+**************************/
+.bui-w-5-percent {
+  width: 5% !important;
+}
+.bui-w-10-percent {
+  width: 10% !important;
+}
+.bui-w-11-percent {
+  width: 11% !important;
+}
+.bui-w-12-percent {
+  width: 12% !important;
+}
+.bui-w-13-percent {
+  width: 13% !important;
+}
+.bui-w-14-percent {
+  width: 14% !important;
+}
+.bui-w-15-percent {
+  width: 15% !important;
+}
+.bui-w-20-percent {
+  width: 20% !important;
+}
+.bui-w-21-percent {
+  width: 21% !important;
+}
+.bui-w-22-percent {
+  width: 22% !important;
+}
+.bui-w-23-percent {
+  width: 23% !important;
+}
+.bui-w-24-percent {
+  width: 24% !important;
+}
+.bui-w-25-percent {
+  width: 25% !important;
+}
+.bui-w-30-percent {
+  width: 30% !important;
+}
+.bui-w-31-percent {
+  width: 31% !important;
+}
+.bui-w-32-percent {
+  width: 32% !important;
+}
+.bui-w-33-percent {
+  width: 33% !important;
+}
+.bui-w-34-percent {
+  width: 34% !important;
+}
+.bui-w-35-percent {
+  width: 35% !important;
+}
+.bui-w-40-percent {
+  width: 40% !important;
+}
+.bui-w-45-percent {
+  width: 45% !important;
+}
+.bui-w-50-percent {
+  width: 50% !important;
+}
+.bui-w-51-percent {
+  width: 51% !important;
+}
+.bui-w-52-percent {
+  width: 52% !important;
+}
+.bui-w-53-percent {
+  width: 53% !important;
+}
+.bui-w-54-percent {
+  width: 54% !important;
+}
+.bui-w-55-percent {
+  width: 55% !important;
+}
+.bui-w-56-percent {
+  width: 56% !important;
+}
+.bui-w-57-percent {
+  width: 57% !important;
+}
+.bui-w-58-percent {
+  width: 58% !important;
+}
+.bui-w-59-percent {
+  width: 59% !important;
+}
+.bui-w-60-percent {
+  width: 60% !important;
+}
+.bui-w-65-percent {
+  width: 65% !important;
+}
+.bui-w-70-percent {
+  width: 70% !important;
+}
+.bui-w-75-percent {
+  width: 75% !important;
+}
+.bui-w-80-percent {
+  width: 80% !important;
+}
+.bui-w-85-percent {
+  width: 85% !important;
+}
+.bui-w-90-percent {
+  width: 90% !important;
+}
+.bui-w-95-percent {
+  width: 95% !important;
+}
+.bui-w-100-percent {
+  width: 100% !important;
+}

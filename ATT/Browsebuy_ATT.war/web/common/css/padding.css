@@ -1,0 +1,488 @@
+/**********************************************************************
+  File: padding.less
+      This file defines all common padding css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*************************
+    GENERIC PADDING RELATED
+**************************/
+.bui-p-all-5 {
+  padding: 5px;
+}
+.bui-p-all-10 {
+  padding: 10px;
+}
+.bui-p-all-15 {
+  padding: 15px;
+}
+.bui-p-all-20 {
+  padding: 20px;
+}
+.bui-p-all-25 {
+  padding: 25px;
+}
+.bui-p-all-30 {
+  padding: 30px;
+}
+.bui-p-all-35 {
+  padding: 35px;
+}
+.bui-p-all-40 {
+  padding: 40px;
+}
+.bui-p-all-45 {
+  padding: 45px;
+}
+.bui-p-all-50 {
+  padding: 50px;
+}
+.bui-p-all-55 {
+  padding: 55px;
+}
+.bui-p-all-60 {
+  padding: 60px;
+}
+.bui-p-all-65 {
+  padding: 65px;
+}
+.bui-p-all-70 {
+  padding: 70px;
+}
+.bui-p-all-75 {
+  padding: 75px;
+}
+.bui-p-all-80 {
+  padding: 80px;
+}
+.bui-p-all-85 {
+  padding: 85px;
+}
+.bui-p-all-90 {
+  padding: 90px;
+}
+.bui-p-all-95 {
+  padding: 95px;
+}
+.bui-p-all-100 {
+  padding: 100px;
+}
+/* padding top-bottom */
+.bui-p-tb-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.bui-p-tb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bui-p-tb-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.bui-p-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bui-p-tb-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.bui-p-tb-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.bui-p-tb-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.bui-p-tb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bui-p-tb-45 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.bui-p-tb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bui-p-tb-55 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.bui-p-tb-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bui-p-tb-65 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.bui-p-tb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bui-p-tb-75 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.bui-p-tb-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.bui-p-tb-85 {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.bui-p-tb-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.bui-p-tb-95 {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.bui-p-tb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* padding left-right */
+.bui-p-lr-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.bui-p-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bui-p-lr-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bui-p-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bui-p-lr-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.bui-p-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.bui-p-lr-35 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.bui-p-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.bui-p-lr-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.bui-p-lr-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bui-p-lr-55 {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.bui-p-lr-60 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.bui-p-lr-65 {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.bui-p-lr-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.bui-p-lr-75 {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.bui-p-lr-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.bui-p-lr-85 {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.bui-p-lr-90 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.bui-p-lr-95 {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+.bui-p-lr-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* padding top */
+.bui-p-t-5 {
+  padding-top: 5px;
+}
+.bui-p-t-10 {
+  padding-top: 10px;
+}
+.bui-p-t-15 {
+  padding-top: 15px;
+}
+.bui-p-t-20 {
+  padding-top: 20px;
+}
+.bui-p-t-25 {
+  padding-top: 25px;
+}
+.bui-p-t-30 {
+  padding-top: 30px;
+}
+.bui-p-t-35 {
+  padding-top: 35px;
+}
+.bui-p-t-40 {
+  padding-top: 40px;
+}
+.bui-p-t-45 {
+  padding-top: 45px;
+}
+.bui-p-t-50 {
+  padding-top: 50px;
+}
+.bui-p-t-55 {
+  padding-top: 55px;
+}
+.bui-p-t-60 {
+  padding-top: 60px;
+}
+.bui-p-t-65 {
+  padding-top: 65px;
+}
+.bui-p-t-70 {
+  padding-top: 70px;
+}
+.bui-p-t-75 {
+  padding-top: 75px;
+}
+.bui-p-t-80 {
+  padding-top: 80px;
+}
+.bui-p-t-85 {
+  padding-top: 85px;
+}
+.bui-p-t-90 {
+  padding-top: 90px;
+}
+.bui-p-t-95 {
+  padding-top: 95px;
+}
+.bui-p-t-100 {
+  padding-top: 100px;
+}
+/* padding bottom */
+.bui-p-b-5 {
+  padding-bottom: 5px;
+}
+.bui-p-b-10 {
+  padding-bottom: 10px;
+}
+.bui-p-b-11 {
+  padding-bottom: 11px;
+}
+.bui-p-b-12 {
+  padding-bottom: 12px;
+}
+.bui-p-b-13 {
+  padding-bottom: 13px;
+}
+.bui-p-b-14 {
+  padding-bottom: 14px;
+}
+.bui-p-b-15 {
+  padding-bottom: 15px;
+}
+.bui-p-b-20 {
+  padding-bottom: 20px;
+}
+.bui-p-b-25 {
+  padding-bottom: 25px;
+}
+.bui-p-b-30 {
+  padding-bottom: 30px;
+}
+.bui-p-b-35 {
+  padding-bottom: 35px;
+}
+.bui-p-b-40 {
+  padding-bottom: 40px;
+}
+.bui-p-b-45 {
+  padding-bottom: 45px;
+}
+.bui-p-b-50 {
+  padding-bottom: 50px;
+}
+.bui-p-b-55 {
+  padding-bottom: 55px;
+}
+.bui-p-b-60 {
+  padding-bottom: 60px;
+}
+.bui-p-b-65 {
+  padding-bottom: 65px;
+}
+.bui-p-b-70 {
+  padding-bottom: 70px;
+}
+.bui-p-b-75 {
+  padding-bottom: 75px;
+}
+.bui-p-b-80 {
+  padding-bottom: 80px;
+}
+.bui-p-b-85 {
+  padding-bottom: 85px;
+}
+.bui-p-b-90 {
+  padding-bottom: 90px;
+}
+.bui-p-b-95 {
+  padding-bottom: 95px;
+}
+.bui-p-b-100 {
+  padding-bottom: 100px;
+}
+/* padding left */
+.bui-p-l-5 {
+  padding-left: 5px;
+}
+.bui-p-l-10 {
+  padding-left: 10px;
+}
+.bui-p-l-15 {
+  padding-left: 15px;
+}
+.bui-p-l-20 {
+  padding-left: 20px;
+}
+.bui-p-l-25 {
+  padding-left: 25px;
+}
+.bui-p-l-30 {
+  padding-left: 30px;
+}
+.bui-p-l-35 {
+  padding-left: 35px;
+}
+.bui-p-l-40 {
+  padding-left: 40px;
+}
+.bui-p-l-45 {
+  padding-left: 45px;
+}
+.bui-p-l-50 {
+  padding-left: 50px;
+}
+.bui-p-l-55 {
+  padding-left: 55px;
+}
+.bui-p-l-60 {
+  padding-left: 60px;
+}
+.bui-p-l-65 {
+  padding-left: 65px;
+}
+.bui-p-l-70 {
+  padding-left: 70px;
+}
+.bui-p-l-75 {
+  padding-left: 75px;
+}
+.bui-p-l-80 {
+  padding-left: 80px;
+}
+.bui-p-l-85 {
+  padding-left: 85px;
+}
+.bui-p-l-90 {
+  padding-left: 90px;
+}
+.bui-p-l-95 {
+  padding-left: 95px;
+}
+.bui-p-l-100 {
+  padding-left: 100px;
+}
+/* padding right */
+.bui-p-r-5 {
+  padding-right: 5px;
+}
+.bui-p-r-10 {
+  padding-right: 10px;
+}
+.bui-p-r-15 {
+  padding-right: 15px;
+}
+.bui-p-r-20 {
+  padding-right: 20px;
+}
+.bui-p-r-25 {
+  padding-right: 25px;
+}
+.bui-p-r-30 {
+  padding-right: 30px;
+}
+.bui-p-r-35 {
+  padding-right: 35px;
+}
+.bui-p-r-40 {
+  padding-right: 40px;
+}
+.bui-p-r-45 {
+  padding-right: 45px;
+}
+.bui-p-r-50 {
+  padding-right: 50px;
+}
+.bui-p-r-55 {
+  padding-right: 55px;
+}
+.bui-p-r-60 {
+  padding-right: 60px;
+}
+.bui-p-r-65 {
+  padding-right: 65px;
+}
+.bui-p-r-70 {
+  padding-right: 70px;
+}
+.bui-p-r-75 {
+  padding-right: 75px;
+}
+.bui-p-r-80 {
+  padding-right: 80px;
+}
+.bui-p-r-85 {
+  padding-right: 85px;
+}
+.bui-p-r-90 {
+  padding-right: 90px;
+}
+.bui-p-r-95 {
+  padding-right: 95px;
+}
+.bui-p-r-100 {
+  padding-right: 100px;
+}

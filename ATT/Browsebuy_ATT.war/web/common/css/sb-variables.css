@@ -1,0 +1,36 @@
+/**********************************************************************
+  File: sb-variables.less
+      This file defines all variable properties that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+/*
+ * Global definition
+ *   1) These values will be used through the website. It make the UI elements consistent.
+ *   These values will be referenced cross the site. Any changes from here will affect the
+ *   whole website theme.
+ *   2) You may override these values when needed in your css file...
+ */
+/* font-family definition */
+/* Omnes font-family definition */
+/* font-weight navigation */
+/*@GLOBAL_DEFAULT_FONT_WEIGHT_NAV: 500;*/
+/* link definition */
+/* generic input definition */
+/* generic border definition */
+/* generic margin, padding definition */
+/* default button definition */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_HOVER_BEGIN: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_BEGIN, 30%);*/
+/* grey button */
+/*@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_SHADOW: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 20%);
+@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY_HOVER: desaturate(@GLOBAL_DEFAULT_BTN_BACKGROUND_COLOR_GREY, 40%);*/
+/* Icon definition */
+/* header default font-size definition */
+/* header default color definition
+    h1,h2,h3.h4.h5.h6
+*/
+/* CHOSEN :custom default CHOSEN select tag definition */
+/* DROPKICK :custom select tag definition */
+/* form */

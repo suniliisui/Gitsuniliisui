@@ -1,0 +1,12 @@
+<div id="legal-content" class="bui-screen-width clearfix">
+	<div class="bui-w-100-percent clearfix bui-m-b-20">
+		<div class="clearfix bui-p-lr-30">
+			<p class=" bui-p-t-10"><strong>&#42;4G LTE not available everywhere. LTE is a trademark of ETSI. Learn more at <a href="http://www.att.com/network" target="_blank">att.com/network.</a> </strong></p>
+			<p><strong>Pricing effective 2/15/2013.</strong> Requires a new 2-yr wireless agreement with data (min $14.99/mo.) plan or AT&T Mobile Share plan. If you buy a new tablet you will save $100 off of the non-commitment price. <strong>Subject to change</strong> at any time. 2 tablet purchase limit per account. Equipment price & avail may vary by mrkt & may not be available from independent retailers. Subject to Wireless Customer Agrmt. Credit approval req'd. Activ/upgrade fee $36/line. Geographic, usage and other terms, conditions and restrictions apply, and may result in svc termination. Coverage and svcs not avail everywhere. Taxes and other charges apply. Data (att.com/dataplans): If usage exceeds your monthly data allowance, you will automatically be charged overage for additional data provided. <strong>Early Termination Fee</strong> (att.com/equipmentETF): After 14 days, ETF up to $150. Restocking fee: may be up to 10% of the sales price. <strong>Other Monthly Charges/line</strong> may include a Regulatory Cost Recovery Charge (up to $1.25), a gross receipts surcharge, federal and state universal svc charges, fees and charges for other gov't assessments. These are not taxes or gov't req'd charges. <strong>Visit a store or <a href="http://www.att.com/wireless" target="_blank">att.com/wireless</a> to learn more about wireless devices and services from AT&T.</strong></p>			
+			<p>Requires Mobile Share or a min. DataPro 5GB plan. Devices connected to your Mobile Hotspot use data from your plan. Overage charges apply if the included monthly data allowance is exceeded. The number of devices you can connect depends on your device. Performance may vary depending on the number of devices connected and other factors. If you do not use a password, others will be able to use your Mobile Hotspot connection.</p>
+			<p>All data and standby times depend on network configuration.</p>
+			<p>All marks contained herein are the property of their respective owners.</p>
+			<p>Service provided by AT&T Mobility.</p>
+		</div>
+	</div>
+</div>

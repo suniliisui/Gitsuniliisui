@@ -1,0 +1,127 @@
+// Horizontal-specific styles
+// --------------------------
+@baseLineHeight:        20px;
+@horizontalComponentOffset:       100px;
+
+
+// UTILITY MIXINS
+// --------------------------------------------------
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.bui-form-horizontal {
+// Increase spacing between groups
+
+    @label-width: 30%;
+    @margin-left: 5%;
+
+    .control-group {
+/*        margin-bottom: @baseLineHeight/2;*/
+        margin-bottom: 0;
+        .clearfix();
+        .control-label {
+            float: left;
+            width: @label-width;
+            display: inline-block;
+            padding-top: 5px;
+            text-align: left !important;
+        }
+        .controls {
+        // Super jank IE7 fix to ensure the inputs in .input-append and input-prepend
+        // don't inherit the margin of the parent, in this case .controls
+            *display: inline-block;
+        /*        *padding-left: 20px;*/
+            *padding-left: @margin-left;
+            margin-left: @margin-left;
+            display: inline-block;
+
+            width: 100% - @label-width - @margin-left;
+            &:first-child {
+                *padding-left: @horizontalComponentOffset;
+            }
+        }
+    }
+
+// Remove bottom margin on block level help text since that's accounted for on .control-group
+    .help-block {
+        margin-bottom: 0;
+    }
+// And apply it only to .help-block instances that follow a form control
+    input,
+    select,
+    textarea,
+    .uneditable-input,
+    .input-prepend,
+    .input-append {
+        + .help-block {
+            margin-top: @baseLineHeight / 2;
+        }
+    }
+// Move over buttons in .form-actions to align with .controls
+    .form-actions {
+        padding-left: @horizontalComponentOffset;
+    }
+}
+
+/* Generic form definition
+*  Than Le
+*/
+/* Form generic definition */
+
+.form-label-fn(@font-family, @font-size, @font-text-color) {
+    font-family: @font-family;
+    font-size: @font-size;
+    color: @font-text-color;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.form-input-fn(@input-with) {
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: @input-with
+    }
+}
+
+.form-input-validation-icon-fn(@input-with, @input-padding-right) {
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: @input-with;
+        padding-right: @input-padding-right;
+    }
+}
+
+.form-row-wpr-fn( @margin-bottom ) {
+    margin-bottom: @margin-bottom;
+}
+
+.form-generic-fn() {
+    form.form-generic {
+        .form-row-wpr {
+            .form-row-wpr-fn( 20px );
+            .form-row {
+                label.form-label {
+                    .form-label-fn('clearviewatt', 12px, #444444);
+                }
+            }
+        }
+    }
+}
+.form-generic-fn;
+
+/* End of form generic definition */

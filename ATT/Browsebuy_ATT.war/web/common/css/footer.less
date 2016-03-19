@@ -1,0 +1,157 @@
+@import "sb-variables.less";
+@import "base.less";
+@import "mixin.less";
+
+/*
+ * FOOTER
+ * They are included in every pages
+ */
+
+
+#att-footer {
+    width: 100%;
+    color: @GLOBAL_DEFAULT_HEADER_FOOTER_COLOR;
+    background-color: @GLOBAL_DEFAULT_HEADER_FOOTER_BACKGROUND;
+
+/* Need to be removed */
+ /*   @footer-height: 150px;
+    line-height: @footer-height;
+    vertical-align: middle;
+    text-align: center; */
+/* End of need to be removed */
+
+    .wrapper-footer {
+        margin: 0 auto;
+        
+        #footer-row-1 {
+        	
+        	.att-typography-styles-fn (@GLOBAL_DEFAULT_LIGHT_FONT_FAMILY , @ATT_GLOBAL_TYPOGRAPHY_FONT_SIZE1 , @ATT_GLOBAL_TYPOGRAPHY_FONT_COLOR1);
+        	.bui-grid-2 {
+        		.bui-block-1 {
+        			.bui-grid-2 {
+        				
+        				.bui-block-2 {
+        					#follow-media-header {
+        						
+        						font-weight: bold;
+        					}
+        					.social-media-wpr {
+        						.social-media-icons{
+        							background: transparent url("../common/images/common/footer/social-media-sprites.png") no-repeat 0px -1px;
+        							display:inline-block;
+   									*display: inline;
+								    height: 17px;
+								    width: 18px;
+        						}
+        						.facebook {
+								    background-position: 0 -1px;
+								}
+								.twitter {
+									background-position:-18px -1px;
+									
+								}
+								.linkedin {
+									background-position:-36px -1px;
+								}
+								.rss {
+									background-position:-53px -1px;
+								}
+								.share {
+									background-position:-70px -1px;
+								}
+								.addOn {
+									background-position:-88px -1px;
+								}
+        					}
+        				}
+        			}
+        		}
+        		.bui-block-2 {
+        			.bui-grid-3 {
+        				
+        			}
+        		}
+        	}
+        }
+        
+        a {           
+        	 color: @GLOBAL_DEFAULT_HEADER_FOOTER_COLOR;
+            &:hover {
+                color: @GLOBAL_DEFAULT_HEADER_FOOTER_COLOR;
+            }
+            &:active {
+                color: @GLOBAL_DEFAULT_HEADER_FOOTER_COLOR;
+            }
+        }
+        .att-footer-top {
+        }
+        .att-footer-bottom {
+            .att-footer-bottom-left {
+                .all-rights-reserved {
+                    font-size: @GLOBAL_DEFAULT_COPYRIGHTS_FONT_SIZE;
+                }
+            }
+            .att-footer-bottom-right {
+            }
+        }
+        
+        #footer-row-2 {
+        	.bui-grid-2 {
+        		#footer-copyrights {
+        				
+        			.att-typography-styles-fn (@GLOBAL_DEFAULT_LIGHT_FONT_FAMILY , @GLOBAL_DEFAULT_COPYRIGHTS_FONT_SIZE , @ATT_GLOBAL_TYPOGRAPHY_FONT_COLOR1);
+        		}
+        		.bui-block-1 {
+        			
+        		}
+        		.bui-block-2 {
+        			.bui-grid-3 {
+        				.bui-block-1 {
+        					
+        				}
+        				.bui-block-2 {
+        					.olympics {
+        						background: url("../common/images/common/footer/USA-Sponsor_sprite.png") no-repeat;
+								width: 190px;
+								height: 24px;
+								position: relative;
+								right: 90px;
+								
+        					}
+        				}
+        				.bui-block-3 {
+        					.yellow-page {
+        						background: transparent url("../common/images/common/footer/yellow_pages_sprite.png") no-repeat 0px 0px;
+        						display: inline-block;
+        						*display: inline;
+        						width: 30px;
+        						height: 31px;
+        						position: relative;
+        					}
+        					.yellow-page-img-sprite {
+        						background-position: -5px -1px;
+        					}
+        					.separator {
+        						background-position: -41px -3px;
+        						width: 1px;
+        						height: 28px;
+        					}
+        					.yellow-page-live-more-sprite {
+        						background-position: -46px -3px;
+        						width: 46px;
+        						height: 28px;
+        					}
+        					.yellow-page-com-sprite {
+        						background-position: -6px -35px;
+								width: 74px;
+								height: 5px;
+								left: -90px;
+								top: 7px;
+        					}
+        				}
+        			}
+        		}
+        	}
+        }
+    }
+}

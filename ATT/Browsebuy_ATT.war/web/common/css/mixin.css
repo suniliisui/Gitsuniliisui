@@ -1,0 +1,54 @@
+/* common margin */
+/* 10px */
+.att-common-margin-b {
+  margin-bottom: 10px;
+}
+.att-common-margin-t {
+  margin-top: 10px;
+}
+.att-common-margin-l {
+  margin-left: 10px;
+}
+.att-common-margin-r {
+  margin-right: 10px;
+}
+.att-common-margin-tb {
+  margin: 10px 0;
+}
+.att-common-margin-lr {
+  margin: 0 10px;
+}
+.att-common-margin-all {
+  margin: 10px;
+}
+/* common padding */
+.att-common-padding-l {
+  padding-left: 15px;
+}
+.att-common-padding-r {
+  padding-right: 15px;
+}
+.att-common-padding-t {
+  padding-top: 15px;
+}
+.att-common-padding-b {
+  padding-bottom: 15px;
+}
+.att-common-padding-tb {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.att-common-padding-lr {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.att-common-padding-all {
+  padding: 15px;
+}
+/* divider */
+.att-divider {
+  border-bottom: 1px solid #d7d7d7;
+}
+.att-vertical-divider {
+  border-right: 1px solid #d7d7d7;
+}

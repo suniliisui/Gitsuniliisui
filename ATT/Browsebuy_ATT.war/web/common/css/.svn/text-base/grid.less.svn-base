@@ -1,0 +1,201 @@
+/**********************************************************************
+  File: grid.less
+      This file defines all common grid css that will be used thru the website
+      DO NOT CHANGE ANY THING HERE
+      YOU MAY ADD IN SOME MORE HERE
+  Name: Than Le
+**********************************************************************/
+
+/* bui-grid definition
+  ================================
+   There are 5 bui-grid:
+   1) bui-grid-a: 2 columns
+   2) bui-grid-b: 3 columns
+   3) bui-grid-c: 4 columns
+   4) bui-grid-d: 5 columns
+   There are 5 bui-block(s) can be used with the bui-grid(s).
+   These are: bui-block-a, bui-block-b, bui-block-c, bui-block-d,
+   and bui-block-e
+
+*/
+.bui-grid-a, .bui-grid-b, .bui-grid-c, .bui-grid-d, .bui-grid-e {
+/*  overflow: hidden;*/
+}
+
+.bui-box-sizing(@box-sizing: 'border-box') {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.bui-block-a, .bui-block-b, .bui-block-c, .bui-block-d, .bui-block-e {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    min-height: 1px;
+    .bui-box-sizing();
+}
+
+.bui-block-1, .bui-block-2, .bui-block-3, .bui-block-4, .bui-block-5 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    min-height: 1px;
+    .bui-box-sizing();
+}
+
+/* bui-grid-a definition */
+
+.bui-grid-a,
+.bui-grid-2 {
+    @TWO_COL_BLOCK_WIDTH: 50%;
+    .bui-block-a {
+        width: @TWO_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-b {
+        width: @TWO_COL_BLOCK_WIDTH;
+    }
+    .bui-block-1 {
+        width: @TWO_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-2 {
+        width: @TWO_COL_BLOCK_WIDTH;
+    }
+    
+    .bui-column{
+    	width: @TWO_COL_BLOCK_WIDTH;
+    }
+}
+
+/*.bui-grid-a >:nth-child(n) {
+  width: 50%;
+  margin-right: -.5%;
+}*/
+
+/* bui-grid-b definition */
+.bui-grid-b,
+.bui-grid-3 {
+    @THREE_COL_BLOCK_WIDTH: 33.333%;
+    .bui-block-a {
+        width: @THREE_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-b {
+        width: @THREE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-c {
+        width: @THREE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-1 {
+        width: @THREE_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-2 {
+        width: @THREE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-3 {
+        width: @THREE_COL_BLOCK_WIDTH;
+    }
+    
+    .bui-column{
+    	width: @THREE_COL_BLOCK_WIDTH;
+    }
+}
+
+/*.bui-grid-b >:nth-child(n) {
+  width: 33.333%;
+  margin-right: -.5%;
+}*/
+
+/* bui-grid-c definition */
+.bui-grid-c,
+.bui-grid-4 {
+    @FOUR_COL_BLOCK_WIDTH: 25%;
+    .bui-block-a {
+        width: @FOUR_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-b {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    .bui-block-c {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    .bui-block-d {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    .bui-block-1 {
+        width: @FOUR_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-2 {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    .bui-block-3 {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    .bui-block-4 {
+        width: @FOUR_COL_BLOCK_WIDTH;
+    }
+    
+    .bui-column{
+    	width: @FOUR_COL_BLOCK_WIDTH;
+    }
+}
+
+/*.bui-grid-c >:nth-child(n) {
+  width: 25%;
+  margin-right: -.5%;
+}*/
+
+/* bui-grid-d definition */
+.bui-grid-d,
+.bui-grid-5 {
+    @FIVE_COL_BLOCK_WIDTH: 20%;
+    .bui-block-a {
+        width: @FIVE_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-b {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-c {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-d {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-e {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-1 {
+        width: @FIVE_COL_BLOCK_WIDTH;
+        clear: left;
+    }
+    .bui-block-2 {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-3 {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-4 {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    .bui-block-5 {
+        width: @FIVE_COL_BLOCK_WIDTH;
+    }
+    
+    .bui-column{
+    	width: @FIVE_COL_BLOCK_WIDTH;
+    }
+}
+
+/*.bui-grid-d >:nth-child(n) {
+  width: 20%;
+}*/
+

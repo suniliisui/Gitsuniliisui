@@ -1,0 +1,29 @@
+/*
+ * CSS custom CSS for form validation
+ */
+.validIcon {
+  background: url('../common/images/common/form-validation/green-check-mark.png') no-repeat 97% center !important;
+  background-color: white !important;
+  border: 1px solid #6ebb1f !important;
+  /* This added style for chosen plugin */
+}
+.validIcon a {
+  background-color: #ffffff !important;
+  border: 0 !important;
+}
+.validIcon a div {
+  display: block;
+}
+.errorIcon {
+  background: url('../common/images/common/form-validation/red-error-icon.png') no-repeat 97% center !important;
+  background-color: white !important;
+  border: 1px solid #ff4539 !important;
+  /* This added style for chosen plugin */
+}
+.errorIcon a {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.errorIcon a div {
+  display: none !important;
+}
