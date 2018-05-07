@@ -1,0 +1,72 @@
+<template ngbModalContainer></template>
+<template #tabsConfigureModal let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Configure Tabs</h4>
+  </div>
+  <div class="modal-body">
+    <strong>Active</strong> <span class="limit att-gray">(3 max)</span>
+    <ul class="list-group" dnd-sortable-container [dropZones]="['tabs']" [sortableData]="pendingPreferences.homeTabs.active"
+      (onDropSuccess)="checkActiveLimit($event)">
+      <li *ngFor="let tab of pendingPreferences.homeTabs.active; let i = index" class="list-group-item att-blue" dnd-sortable [sortableIndex]="i"
+        draggable="true">
+        {{tab}}
+      </li>
+    </ul>
+    <img src="assets/images/dashed-line.png" draggable="false" onmousedown="return false">
+    <strong>Inactive</strong> <span class="limit att-gray"></span>
+    <ul class="list-group" dnd-sortable-container [dropZones]="['tabs']" [sortableData]="pendingPreferences.homeTabs.inactive">
+      <li *ngFor="let tab of pendingPreferences.homeTabs.inactive; let i = index" class="list-group-item att-blue" dnd-sortable
+        [sortableIndex]="i" draggable="true">
+        {{tab}}
+      </li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="d('actionbar-close')">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="c()" [disabled]="!modalValid">Save</button>
+  </div>
+</template>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <se-side-nav></se-side-nav>
+    </div>
+    <div class="col-md-9">
+      <ngb-carousel>
+        <template ngbSlide *ngFor="let slide of slides">
+          <img class="carousel-image" draggable="false" src="{{slide.image}}" alt="{{slide.alt}}" [routerLink]="slide.touchUrl">
+          <!-- TODO useful if we're going to display slides with rich content (html markup)
+          <div class="carousel-caption">
+            <h3>{{slide.title}}</h3>
+            <p [innerHTML]="slide.content"></p>
+            <a [routerLink]="slide.actionUrl">
+              <button *ngIf="slide.actionUrl" type="button" class="btn btn-warning">
+                {{slide.actionText}}
+              </button>
+            </a>
+          </div>
+          -->
+        </template>
+      </ngb-carousel>
+      <div class="tabs-container">
+        <se-icon name="gear" color="white" size="28" (click)="showTabsConfigureModal()"></se-icon>
+        <ngb-tabset class="tabs" *ngIf="!preferences?.homeTabs?.active">
+          <!-- Tab configuration not yet loaded, display nothing -->
+        </ngb-tabset>
+        <ngb-tabset #tabs class="tabs" *ngIf="preferences?.homeTabs?.active">
+          <ngb-tab *ngFor="let tab of preferences.homeTabs.active" [id]="tab">
+            <template ngbTabTitle>{{tab}}</template>
+            <template ngbTabContent>
+              <div [ngSwitch]="tab">
+                <se-notifications *ngSwitchCase="'Notifications'"></se-notifications>
+                <se-tspace *ngSwitchCase="'tSpace'"></se-tspace>
+                <se-newsfeed *ngSwitchCase="'Newsfeed'"></se-newsfeed>  
+              </div>
+            </template>
+          </ngb-tab>
+        </ngb-tabset>
+      </div>
+    </div>
+  </div>
+</div>

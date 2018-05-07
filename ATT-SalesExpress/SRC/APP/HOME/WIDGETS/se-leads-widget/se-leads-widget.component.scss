@@ -1,0 +1,126 @@
+.labelView {
+  padding: 5px 10px 10px 6px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.leads-widget {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  padding: 8px 0 0 0;
+  border: 1px solid #D5DAD6;
+  .value-pair {
+    text-align: right;
+  }
+  >div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-between;
+    padding: 0 10px;
+    .value {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 15px;
+      .flameIconConatiner {
+        height: 29px;
+      }
+      .valueLeads {
+        flex: 1;
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 1;
+        float: right;
+      }
+    }
+    .unit {
+      clear: both;
+      font-size: 22px;
+      font-weight: bold;
+      white-space: nowrap;
+      line-height: 1;
+    }
+  }
+  >div+div {
+    border-left: 1px solid #E5EAE6;
+    .leads-circle {
+      width: 80px;
+      height: 80px;
+      margin: 0px auto;
+      font-size: 48px;
+      font-family: 'Omnes ATT II';
+      font-weight: bold;
+      border-radius: 50%;
+      line-height: 1;
+      transition: all 300ms ease;
+      >div {
+        width: 100%;
+        margin-top: 18px;
+        text-align: center;
+      }
+      &.all_leads {
+        background-color: #4ba80b;
+      }
+      &.hot_leads {
+        background-color: #cf292a;
+      }
+      &.zero {
+        background-color: #959595;
+      }
+      /deep/ se-badge {
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 50px;
+        line-height: 0;
+      }
+    }
+    .switch {
+      text-align: center;
+    }
+    .label {
+      margin: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 1200px) {
+  .labelView {
+    padding: 5px 10px 10px 5px;
+    font-size: 22px;
+  }
+  .leads-widget {
+    margin-bottom: 10px;
+    >div {
+      padding: 0 9px;
+      .value {
+        font-size: 26px;
+        margin-left: 0px;
+      }
+      .unit {
+        font-size: 18px;
+      }
+      .valueLeads {
+        font-size: 26px;
+      }
+    }
+    >div+div {
+      .totalLeads {
+        font-size: 25px;
+        margin: -46px 0 25px -6px;
+      }
+    }
+    .toggleDiv {
+      text-align: left;
+      padding-left: 3px;
+    }
+    .totalLeadText {
+      font-size: 12px;
+    }
+  }
+}

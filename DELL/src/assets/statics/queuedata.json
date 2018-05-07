@@ -1,0 +1,23 @@
+{
+  "punchoutLevel": 0,
+  "fullName": "TestFirst TestLast",
+  "email": "test_onboarding@test.com",
+  "phoneNumber": "463-843-8138",
+  "annualSpendingUpto": 250000,
+  "purchasingSystem": {
+    "key": "Ariba",
+    "value": "Ariba"
+  },
+  "catalogType": ["PruchaseOrder"],
+  "transactionType": ["Purchase Orders"],
+  "storeName": "GOLD US MB TEST",
+  "status": 5,
+  "tabIndex": 2,
+  "integrationRequestId": "59c592a22220ad0990d0746b",
+  "userIdentity": {
+    "rcid": "RC3394395",
+    "accessGroup": "00000000-0000-0000-0000-000000000000",
+    "role": "45",
+    "userId": "test_onboarding@test.com"
+  }
+}

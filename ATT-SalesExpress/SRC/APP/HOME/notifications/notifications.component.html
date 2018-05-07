@@ -1,0 +1,22 @@
+<div class="notifications">
+  <div *ngFor="let group of notifications | groupBy:'type'" class="group">
+    <span class="category att-blue">{{group.key | displayStr:'notfications'}}</span>
+    <div class="items">
+      <div *ngFor="let item of group.value" class="item">
+        <div *ngIf="item.all_viewed && item.type !== 'COMP'" class="all-viewed">
+          <se-icon [src]="getIconImage(item)" size="48"></se-icon>
+          <span class="notificationTitle">{{item.title}}</span>
+          <!-- Below code was hidden for the requiremet of US830116 -->
+          <!-- <a routerLink="/coming-soon">View all Notifications</a> -->
+        </div>
+        <div *ngIf="!item.all_viewed">
+          <!-- Notification Item (use [color]="getIconColor(item)" once fonts are fixed)-->
+          <se-notification [notification]="item" [icon]="getIconImage(item)"></se-notification>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="group.key == 'COMP'" class="view-all">
+      <button type="button" class="btn btn-lg att-white" routerLink="/support/notifications">View All Notifications</button>
+    </div>
+  </div>
+</div>

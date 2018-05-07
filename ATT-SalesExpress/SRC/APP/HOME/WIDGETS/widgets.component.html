@@ -1,0 +1,40 @@
+<template #widgetsConfigureModal let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Configure Widgets</h4>
+  </div>
+  <div class="modal-body">
+    Feature not available
+    <!--
+    <strong>Active</strong> <span class="limit att-gray">(3 max)</span>
+    <ul class="list-group" dnd-sortable-container [dropZones]="['widgets']" [sortableData]="pendingPreferences.homeWidgets.active"
+      (onDropSuccess)="checkActiveLimit($event)">
+      <li *ngFor="let widget of pendingPreferences.homeWidgets.active; let i = index" class="list-group-item att-blue" dnd-sortable [sortableIndex]="i"
+        draggable="true">
+        {{widget}}
+      </li>
+    </ul>
+    <img src="assets/images/dashed-line.png" draggable="false" onmousedown="return false">
+    <strong>Inactive</strong> <span class="limit att-gray"></span>
+    <ul class="list-group" dnd-sortable-container [dropZones]="['widgets']" [sortableData]="pendingPreferences.homeWidgets.inactive">
+      <li *ngFor="let widget of pendingPreferences.homeWidgets.inactive; let i = index" class="list-group-item att-blue" dnd-sortable
+        [sortableIndex]="i" draggable="true">
+        {{widget}}
+      </li>
+    </ul>
+    -->
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="d('actionbar-close')">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="c()" [disabled]="!modalValid">Save</button>
+  </div>
+</template>
+
+<se-oppty-widget></se-oppty-widget>
+<se-leads-widget></se-leads-widget>
+
+<div class="actionbar">
+  <a (click)="showWidgetsConfigureModal()" class="att-blue">
+    Configure
+    <se-icon name="gear" color="blue" size="22"></se-icon>
+  </a>
+</div>

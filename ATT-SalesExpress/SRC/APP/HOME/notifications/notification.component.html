@@ -1,0 +1,19 @@
+<!-- Item if viewed - should be in Grayscale except viewed time -->
+<div class="item" [class.viewed]="notification.viewed_timestamp" (click)="handleClick($event)">
+  <div class="content">
+      <div class="left">
+      <!--Icon depends on type and subttype -->
+      <se-icon [src]="icon" size="48" [color]="color"></se-icon>
+      <div class="timestamp">{{notification.timestamp | seDate}}</div>
+      </div>
+    <div class="right">
+      <div class="title att-blue" [ngStyle]="{'color': getIconColor(notification)}">{{notification.title}}</div>
+      <div class="subtitle att-gray" *ngIf="notification.subtitle">{{notification.subtitle}}</div>
+      <div class="subtitle att-gray" *ngIf="!notification.subtitle && notification.type === notifyType_SIP">
+        <span>{{notification.additionalProperties.MRRValue}}</span>
+        <span class="nrr_spacer">{{notification.additionalProperties.NRRValue}}</span>
+      </div>
+     <!-- <div class="viewed_timestamp att-orange" *ngIf="notification.viewed_timestamp">Viewed {{notification.viewed_timestamp | seDate}}</div> -->
+    </div>
+  </div>
+</div>

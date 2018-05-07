@@ -1,0 +1,14 @@
+<se-top-nav></se-top-nav>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <a (click)="openPopup()">
+    <button type="button" class="btn btn-sm btn-outline-primary">Help</button>
+  </a>
+  <se-modal-popup></se-modal-popup>
+</footer>
+
+<template ngbModalContainer></template>

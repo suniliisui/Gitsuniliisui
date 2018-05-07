@@ -1,0 +1,47 @@
+<div class="labelView att-blue">My Opportunties</div>
+<div class="oppty-widget">
+  <div class="content">
+    <div *ngFor="let subteam of subTeams; let i = index;" class="col-xs-6 labelDiv">
+      <input type="radio" id="{{i}}" class="input-assumpte" name="subteam" (change)="toggleData(subteam.name)" [checked]="subteam.value">
+      <label class="subteam-label att-gray" attr.for="{{i}}"></label>
+      <label class="subteam-label att-gray">{{subteam.name}}</label>
+    </div>
+    <div class="clearDiv"></div>
+
+    <div class="row rowAlign">
+      <div class="col-md-4 colAlign ldiv">
+        <div class="value-pair row">
+          <h1 class="value att-blue">{{opptyWidgetData?.preQualified}}</h1>
+          <span class="unit att-gray">Pre-Qual</span>
+        </div>
+        <div class="hr"></div>
+        <div class="value-pair row">
+          <span class="unit padded-unit att-gray">Proposed</span>
+          <h1 class="value att-blue">{{opptyWidgetData?.proposed}}</h1>
+        </div>
+      </div>
+
+      <div class="col-md-4 colAlign paddingB25">
+        <div class="circle">
+          <div class="value-pair alignMiddle">
+            <h1 class="value midValue att-blue">{{opptyWidgetData?.total}}</h1>
+            <span class="unit att-gray total">TOTAL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 colAlign rdiv">
+        <div class="value-pair row">
+          <h1 class="value att-blue">{{opptyWidgetData?.qualified}}</h1>
+          <span class="unit att-gray">Qualified</span>
+        </div>
+        <div class="hr m-l-4"></div>
+        <div class="value-pair row">
+          <span class="unit padded-unit att-gray">Closed/Sale</span>
+          <h1 class="value att-blue">{{opptyWidgetData?.closed}}</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

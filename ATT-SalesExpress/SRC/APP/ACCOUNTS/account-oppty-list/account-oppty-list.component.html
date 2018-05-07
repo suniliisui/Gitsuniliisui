@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="col-xs-12 col-md-12 col-md-offset-1 col-lg-12 col-lg-offset-2 inputDiv">
+    <div class="row">
+      <div class="search">
+        <input #term class="searchBox" (keyup)="search(term.value)" (keyup.enter)="onEnter(term.value)" value="{{searchValue}}" placeholder="Opportunity Name">
+        <span class="searchIcon" (click)="search(term.value)">
+					<span class="icon-accounts-tspace-search"></span>
+        </span>
+        <div class="clearDiv"></div>
+      </div>
+      <div class="context" [ngTemplateOutlet]="headingContext" [ngOutletContext]="{table: _this}"></div>
+      <div class="tableDiv">
+        <data-table id="oppty-grid" headerTitle="" [items]="items" [expandableRows]="true" (rowSelect)="rowSelect($event)" (rowExpand)="rowExpand($event)" [selectOnRowClick]="false" [selectColumn]="true" [limit]="5" [itemCount]="itemCount" (reload)="reloadItems($event)"
+          [pagination]="false" [indexColumn]="false" [header]="false" [multiSelect]="false" (click)="headerClicked(column,$event)">
+          <template #dataTableExpand let-item='item'>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="opptyDetails">
+									<div class="row">
+										<label class="se_label col-md-6">Type:</label>
+										<span class="se_h1 col-md-6">{{item.optyMiniDetails?.opptyType}}</span>
+									</div>
+									<div class="row">
+										<label class="se_label col-md-6">Acquisition Type:</label>
+										<span class="col-md-6">{{item.optyMiniDetails?.acquisitionType}}</span>
+									</div>
+									<div class="row">
+										<label class="se_label col-md-6">Closed Date:</label>
+										<span class="col-md-6">{{item.optyMiniDetails?.closeDate | date: 'MM/dd/y'}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</template>
+          <data-table-column [property]="'opptyName'" [header]="'Opportunity Name'">
+          </data-table-column>
+          <data-table-column [property]="'id'" [header]="'ID'">
+          </data-table-column>
+          <data-table-column [property]="'salesStage'" [header]="'Stage'">
+          </data-table-column>
+        </data-table>
+        <div *ngIf="noRecord" class="no-opptys">
+          No Opportunities to display
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

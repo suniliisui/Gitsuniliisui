@@ -1,0 +1,32 @@
+[{
+  "text":"The Dell PunchOut option within my purchasing system successfully connects to the PremierConnect experience.",
+  "value":"dellPunchout"
+},
+{
+  "text":"The standard configurations from my Premier page are the same in PremierConnect (if you had no standard configurations in Premier then you should check this box if there are still none in PremierConnect).",
+  "value":"standardConfiguration"
+},
+{
+  "text":"The Dell product categories from my Premier page are the same in PremierConnect.",
+  "value":"dellProduct"
+},
+{
+  "text":"The negotiated pricing from my Premier page is the same in PremierConnect (if you had no negotiated pricing in Premier then you should check this box if there is still none in PremierConnect).", 
+  "value":"negotiatedPricing"
+},
+{
+  "text":"The profile information and account settings from my Premier page are the same in PremierConnect.",
+  "value":"profileInformation"
+},
+{
+  "text":"I am able to add item(s) to my Cart.",
+  "value":"addItems"
+},
+{
+  "text":"I am able to submit an order requisition that is returned to my purchasing system.",
+  "value":"submitOrder"
+},
+{
+  "text":"I am able to submit a purchase order to Dell from my purchasing system (<strong>purchase orders from the test environment will not be processed by Dell and you will not be charged</strong>).",
+  "value":"submitPurchase"
+}]

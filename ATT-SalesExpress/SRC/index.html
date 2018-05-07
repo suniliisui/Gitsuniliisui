@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sales Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    /* fix to prevent page scrolling on iPad 
+      html, body {
+        position: fixed;
+        width: 100vw;
+      } */
+    /* required for firefox and iOS to enable HTML5 Drag and Drop API */
+    
+    [draggable=true] {
+      -moz-user-select: none;
+      user-select: none;
+      -khtml-user-drag: element;
+      cursor: move;
+    }
+    
+    [draggable=false] {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <se-app>Loading...</se-app>
+  <script src="assets/js/ios-drag-drop.js"></script>
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/tether-1.3.7.min.js"></script>
+</body>
+
+</html>

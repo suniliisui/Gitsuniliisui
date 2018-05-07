@@ -1,0 +1,91 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  min-height: 77px;
+  padding: 5px 5px 0px 5px;
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+    min-height: 68px !important;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+    .left {
+      text-align: center;
+
+      .timestamp {
+        display: block;
+        margin-top: 2px;
+        font-size: 12px;
+        white-space: nowrap;
+        @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    -ms-word-wrap: break-word;
+    max-width: 355px\11;
+
+    .title {
+      font-size: 14px;
+      font-family: 'Omnes ATT II';
+      font-weight: bold;
+      line-height: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      max-width: 160px;
+      &:last-child {
+        white-space: normal;
+      }
+      @media only screen 
+      and (min-device-width : 768px) 
+      and (max-device-width : 1024px) {
+        max-width: 140px;
+      }
+    }
+
+    .subtitle {
+      margin-bottom: 14px;
+      line-height: 16px;
+      font-family: 'Omnes ATT II';
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      max-width: 160px;
+      @media only screen 
+      and (min-device-width : 768px) 
+      and (max-device-width : 1024px) {
+        max-width: 140px;
+      }
+    }
+
+    .viewed_timestamp {
+      font-family: 'Omnes ATT II';
+      font-style: italic;
+      font-size: 14px;
+      padding: 0px 0 2px 0px;
+    }
+
+    .nrr_spacer {
+      margin-left:20px;
+    }
+  }
+}

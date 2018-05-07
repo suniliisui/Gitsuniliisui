@@ -1,0 +1,152 @@
+/* custom css for tspace component*/
+
+.tspace-tabs /deep/ .nav-tabs { 
+  background-color: #fff;
+
+  .nav-item {
+    margin-right: 5px;
+  }
+
+  .nav-item .nav-link {
+    background: #f2f2f2 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #009fdb;
+  }
+  
+  .nav-item .nav-link.active {
+    background: #5a5a5a !important;
+    color: #fff !important;
+  }
+}
+
+.tspace-tabs /deep/ {
+  .tab-content > .active {
+    border-top: 10px solid #5a5a5a;
+    background: #f2f2f2;
+    padding-right: 2px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+  }
+
+  .tab-content {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+  }
+
+  .icon-quick {
+    font-size: 20px !important;
+    vertical-align: middle;
+  }
+
+  .btn-crpost {
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .margin-top-custom {
+    margin-top: 5px;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  .custom-btn-nobg {
+    border: none;
+    background: none;
+  }
+
+  .custom-btn-nobg:hover {
+    border: none;
+    background: none;
+  }
+
+  .custom-btn-nobg i.icon-clip {
+    font-size: 14px !important;
+  }
+
+  .custom-padding-bottom {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .img-circle-custom {
+    border-radius: 50%;
+  }
+
+  .custom-click,
+  .custom-click se-icon {
+    cursor: pointer;
+  }
+
+  a.custom-click {
+    text-decoration: none;
+  }
+
+  #maindiv {
+    overflow-x: hidden;
+  }
+
+  .tab-pane.active {
+    padding-right: 0px !important;
+  }
+
+  .feed-container {
+    width: 100%;
+  }
+
+  div.feed-container > div:nth-of-type(even) {
+    background: #ffffff;
+  }
+
+  .post-name {
+    color: #009fdb;
+    font-weight: bold;
+  }
+
+  .post-mssg {
+    font-size: 16px;
+    color: #959595;
+    font-weight: normal;
+  }
+
+  .post-date {
+    font-size: 14px;
+    color: #959595;
+  }
+
+  .pad-bottom-10 {
+    padding-bottom: 10px;
+  }
+
+  .pad-botom-20 {
+    padding-bottom: 20px
+  }
+
+  .cust-padding10 {
+    padding: 10px;
+  }
+
+  .cust-padding10-bgw {
+    background: #fff;
+    padding: 10px;
+  }
+
+  .highlightLink {
+    font-size: 16px;
+    color: #009fdb;
+    font-weight: bold;
+  }
+
+}

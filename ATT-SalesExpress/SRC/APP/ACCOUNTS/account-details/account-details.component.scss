@@ -1,0 +1,282 @@
+//colors
+$att_blue: #009fdb;
+$white: #fff;
+$orange: #EF6F00;
+$att_light_grey: #D5DAD6;
+.accountDetails {
+  padding-top: 15px;
+}
+
+.btn-detail {
+  color: $att_blue;
+  background-color: $white;
+  border-color: $att_blue;
+  font-weight: bold;
+  width: 200px;
+}
+
+.icon-star {
+  text-align: left;
+  font-size: 22px;
+}
+
+.favorite {
+  font-family: Omnes ATT II;
+  font-size: 16px;
+  padding-left: 35px;
+  vertical-align: bottom;
+}
+
+.nav_link {
+  color: $att_blue;
+  font-size: 18px;
+}
+
+.cleardiv {
+  clear: both;
+}
+
+.acountDiv {
+  margin-bottom: 40px;
+}
+
+.btnDiv {
+  margin-left: -25px;
+  .w200 {
+    width: 200px;
+  }
+}
+
+.detailsMainContainer {
+  padding: 30px 20px 40px;
+}
+
+.opptyTableContainer {
+  padding: 10px 100px;
+}
+
+.hr-line {
+  margin: 5px 15px;
+}
+
+.opptyBtnDiv {
+  border-top: 1px solid $att_light_grey;
+  text-align: right;
+  margin: 10px 20px;
+}
+
+.oppty-btn {
+  background-color: $orange;
+  color: #f2f2f2;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.imgContainer {
+  text-align: center;
+  padding-top: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  .accountLogoDiv {
+    display: flex;
+    flex-direction: column;
+    .accountLogo {
+      >img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .hiddenBtn {
+    display: none;
+  }
+  .se_link {
+    color: $att_blue;
+  }
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.p-l-0 {
+  padding-left: 0px;
+}
+
+.se_h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: $orange;
+}
+
+.se_nowrap {
+  white-space: nowrap;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.se_label {
+  font-weight: bold;
+}
+
+.se_text {
+  margin-bottom: 15px;
+}
+
+.se_text1 {
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+
+.detailsTableContainer {
+  padding: 30px 20px 40px;
+  border-bottom: 1px solid $att_light_grey;
+}
+
+.oppt-heading {
+  float: left;
+  padding-top: 25px;
+  width: 100%;
+  .oppty-label {
+    color: $att_blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 770px) {
+    .oppty-label {
+      width: 75%;
+    }
+    .salesStageList {
+      width: 25%;
+    }
+  }
+}
+
+.opptyTable /deep/ {
+  @media only screen and (device-width: 768px) {
+    .data-table-box table {
+      font-size: 13px;
+    }
+  }
+  .data-table-box table tr {
+    display: flex;
+    display: -ms-flexbox;
+  }
+  .data-table-box table thead {
+    background-color: #5a5a5a;
+    color: #f2f2f2;
+    cursor: default;
+  }
+  .data-table-box table tr th {
+    flex: 3;
+    border: none;
+    width: 100%;
+    display: inline-block;
+  }
+  .data-table-box table tr th:first-child {
+    flex: 1;
+    order: 5;
+    -ms-flex-order: 5;
+  }
+  .data-table-box table tr th:nth-child(3) {
+    flex: 1;
+  }
+  .data-table-box table tr td {
+    flex: 3;
+    border: none;
+    width: 100%;
+    display: inline-block;
+  }
+  .data-table-box table tr td:first-child {
+    flex: 1;
+    order: 5;
+    -ms-flex-order: 5;
+  }
+  .data-table-box table tr td:nth-child(3) {
+    flex: 1;
+  }
+  th.column-opptyName {
+    white-space: nowrap;
+    flex: 4 !important;
+  }
+  td.column-opptyName {
+    flex: 4 !important;
+  }
+  th.column-opptyName span.column-sort-icon {
+    display: none;
+  }
+  th.column-opptyName span:nth-child(1):after {
+    content: "\e900" !important;
+    font-family: 'sorting-icon' !important;
+    margin-left: 11px;
+    color: #959595;
+    cursor: pointer;
+  }
+  /* Fix for specific to IE11 */
+  @media all and (-ms-high-contrast:none) {
+     ::-ms-backdrop,
+    th.column-opptyName {
+      cursor: pointer;
+    }
+    /* IE11 */
+  }
+  .row-odd {
+    background-color: #f2f2f2;
+  }
+  .icon-arrow_down,
+  .icon-carrot_up {
+    font-size: 15px;
+  }
+  .data-table-box table tr td input[type="checkbox"] {
+    display: none;
+  }
+  .input-assumpte+label {
+    background-color: #fafafa;
+    border: 3px solid $white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px black, inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  .input-assumpte:checked+label {
+    background-color: #595959;
+    color: #595959;
+    content: '\2714';
+    font-size: 10px;
+  }
+  /* Fix for specific to IE11 */
+  @media all and (-ms-high-contrast:none) {
+     ::-ms-backdrop,
+    .input-assumpte+label {
+      box-shadow: 0px 0px 4px black, inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    }
+    /* IE11 */
+  }
+}
+
+
+/* iPad specific updates */
+
+@media only screen and (device-width: 768px) {
+  .btn-detail {
+    width: 150px;
+  }
+  .favorite {
+    padding-left: 12px;
+  }
+  .detailsMainContainer {
+    padding: 30px 0px 40px;
+  }
+  .opptyTableContainer {
+    padding: 10px 30px
+  }
+  .btnDiv {
+    .w200 {
+      width: 150px;
+    }
+  }
+}

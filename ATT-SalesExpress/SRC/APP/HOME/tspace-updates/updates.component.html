@@ -1,0 +1,128 @@
+<se-tspace-post></se-tspace-post>
+<!-- comment start -->
+<div class="updates-panel feed-container">
+    <div class="media custom-padding-bottom" *ngFor="let myfeed of myFeed; let i = index;">
+        <div class="media-left">
+            <img class="media-object img-responsive img-circle-custom " width="64px" src="{{myfeed.posterImageUrl}}" alt="...">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading post-name">{{myfeed.posterName}}<span class="post-mssg"> Posted a message </span></h4>
+            <p [innerHtml]="myfeed.text"></p>
+            <p ng-if="myfeed.attachment.length > 0" *ngFor="let att of myfeed.attachment; let j = index;">
+                <a href="{{att.url}}" target="_blank">
+                    <se-icon name="accounts-tspace-download" color="blue" size="small"></se-icon>
+                    <span>{{att.displayName}}</span>
+                </a>
+            </p>
+            <!-- comment and like button start -->
+            <span class="post-date">{{myfeed.date | date:'mediumDate'}} at {{myfeed.date | date:'shortTime'}} </span>
+            <span class="float-right">
+        <span class="custom-click">
+          <se-icon name="accounts-tspace-comment" color="blue" size="small"  (click)="commentToggle($event, i)"></se-icon>
+        </span>
+            <span>Comment</span> |
+            <span *ngIf="myfeed.iLikeThis === false" class="custom-click">
+          <se-icon name="accounts-tspace-like" color="blue" size="small"  (click)="likeBtnAction($event, myfeed.id)"></se-icon>
+        </span>
+            <span *ngIf="myfeed.iLikeThis === true" class="custom-click">
+          <se-icon name="accounts-tspace-like" color="blue" size="small" ></se-icon>
+        </span>
+            <span> Like</span>
+            <span *ngIf="myfeed.numLikes > 0">({{myfeed.numLikes}})</span>
+            </span>
+            <!-- comment and like button end -->
+        </div>
+        <!-- comment box will start here -->
+        <div [ngClass]="{'comment-box': !isClassVisible[i] }">
+            <form (ngSubmit)="postComment()" #commentform="ngForm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <textarea class="form-control" name="commentText" [(ngModel)]="commentform.commentText" placeholder="Add a comment..." rows="5" cols="50"></textarea>
+                    </div>
+                </div>
+                <div class="row margin-top-custom pad-botom-20">
+                    <div class="col-sm-12 text-right ">
+                        <button type="button" class="btn btn-secondary" (click)="handleClickerk($event, i)" (click)="commentform.reset();">Cancel</button>
+                        <button type="button" class="btn btn-primary " (click)="postComment(commentform, myfeed.id)">Post</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- comment box will end here   -->
+        <!-- display comments starts -->
+        <!-- Previous comments starts here-->
+        <div *ngIf="myfeed.numComments > 2">
+            <div class="default-cursor text-right" (click)="previousCommentToggle($event, i)">
+                <a href="#" (click)="previousComments(myfeed.id)">
+                    <span *ngIf="isPreviousComments[i]">Hide previous comments</span>
+                    <span *ngIf="!isPreviousComments[i]">Show previous comments</span>
+                </a>
+            </div>
+            <div [ngClass]="{'previous-comments': !isPreviousComments[i] }">
+                <div class="media" *ngFor="let allcomments of originResp;">
+                    <div class="row cust-padding10">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-11">
+                            <div class="media-left">
+                                <img class="media-object img-responsive img-circle-custom" width="64px" src="{{allcomments.posterImageUrl}}" alt="...">
+                                <!-- <se-icon name="person" color="gray" size="large" class="img-cirlce" (cick)="post()" ></se-icon>-->
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading post-name">{{allcomments.posterName}}
+                                    <span class="post-mssg">Posted a comment </span>
+                                </h4>
+                                <p [innerHtml]="allcomments.text"></p>
+                                <div>
+                                    <span class="post-date">{{allcomments.date | date:'mediumDate'}}</span>
+                                    <span class="float-right">
+                    <span *ngIf="allcomments.iLikeThis === false" class=" img-responsive custom-click">
+                      <se-icon name="accounts-tspace-like" color="blue" size="small"  (click)="likeOnComment(allcomments.id, myfeed.id)"></se-icon>
+                    </span>
+                                    <span *ngIf="allcomments.iLikeThis === true">
+                      <se-icon name="accounts-tspace-like" color="blue" size="small"  ></se-icon>
+                    </span>
+                                    <span> Like</span>
+                                    <span *ngIf="allcomments.numLikes > 0">({{allcomments.numLikes}})</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Previous comments ends here-->
+        <div class="media" *ngFor="let entrysub of myfeed.comments; let i = index; ">
+            <div class="row cust-padding10">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-11">
+                    <div class="media-left">
+                        <img class="media-object img-responsive img-circle-custom" width="64px" src="{{entrysub.posterImageUrl}}" alt="...">
+                        <!-- <se-icon name="person" color="gray" size="large" class="img-cirlce" (cick)="post()" ></se-icon>-->
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading post-name">{{entrysub.posterName}}
+                            <span class="post-mssg">Posted a comment </span>
+                        </h4>
+                        <p [innerHtml]="entrysub.text"></p>
+                        <div>
+                            <span class="post-date">{{entrysub.date | date:'mediumDate'}}</span>
+                            <span class="float-right">
+                <span *ngIf="entrysub.iLikeThis === false" class="img-responsive custom-click">
+                  <se-icon name="accounts-tspace-like" color="blue" size="small" (click)="likeOnComment(entrysub.id, myfeed.id)"></se-icon>
+                </span>
+                            <span *ngIf="entrysub.iLikeThis === true">
+                  <se-icon name="accounts-tspace-like" color="blue" size="small"></se-icon>
+                </span>
+                            <span> Like</span>
+                            <span *ngIf="entrysub.numLikes > 0">({{entrysub.numLikes}})</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of reply on comment -->
+    </div>
+</div>
+<!-- end of reply on comment -->

@@ -1,0 +1,92 @@
+.notifications {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .category {
+    display: inline-block;
+    font-family: 'Omnes ATT II';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 8px 4px 8px;
+    cursor: default;
+    
+  }
+
+  .group {
+    flex-basis: 30%;
+
+    &:not(:last-child) {
+      padding-bottom: 15px;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #D0D0D0;
+      border-radius: 3px;
+      box-shadow: 0px 1px 1px #f1f1f1;
+
+      .item {
+        &:not(:first-child) {
+          border-top: 1px solid #D0D0D0;
+        }
+      }
+
+      .all-viewed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 154px;
+        padding: 10px;
+        line-height: 1.2;
+        text-align: center;
+        @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+          height: 144px;
+        }
+        @media all and (-ms-high-contrast: none) {
+          // IE11 span is overflowing flexbox
+          ::-ms-backdrop, .notificationTitle {
+          max-width: 100%;
+          }
+        }
+        .notificationTitle{
+          word-wrap: break-word;
+        }
+
+      /* Fix for specific to IE11 */
+      @media all and (-ms-high-contrast:none) {
+        ::-ms-backdrop, .notificationTitle {  max-width: 300px } /* IE11 */
+      }
+
+     } 
+    }
+   }
+
+  @media only screen and (max-width: 930px) {
+    .group {
+      flex-basis: 45%;
+    }
+  }
+
+  .view-all {
+    text-align: center;
+
+    .btn {
+      margin-top: 16px;
+      padding: 15px 25px;
+      font-size: 1rem;
+      background-color: #EF6F00;
+      width: 100%;
+
+      &.tall {
+        margin-top: 170px;
+      }
+    }
+  }
+
+}

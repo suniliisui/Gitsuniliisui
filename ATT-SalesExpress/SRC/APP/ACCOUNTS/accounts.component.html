@@ -1,0 +1,7 @@
+<div class="col-md-3" *ngIf="!isAccountListPage">
+  <se-menu [sideMenuList]="menuList" [activePage]="0" [currentURL]="currentLink" [parentURL]="parentLink"></se-menu>
+</div>
+
+<div [ngClass]="{'col-md-9': !isAccountListPage, 'col-md-12': isAccountListPage }">
+  <router-outlet></router-outlet>
+</div>

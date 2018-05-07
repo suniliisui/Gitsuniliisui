@@ -1,0 +1,47 @@
+<div class="labelView att-blue">My Leads</div>
+<div class="leads-widget">
+  <div>
+    <div class="value-pair">
+      <div class="value">
+        <div  class="flameIconConatiner" *ngIf="isAllLeads && leadsWidget?.hotLeadNotStarted > 0">
+          <se-icon class="hidden-md-down" name="flame-hotlead" color="orange" size="29"></se-icon>
+          <se-icon class="hidden-lg-up" name="flame-hotlead" color="orange" size="22"></se-icon>
+        </div>
+        <span class="valueLeads att-blue">{{notStarted}}</span>
+      </div>
+      <div class="unit att-gray">Not started</div>
+    </div>
+    <div class="value-pair">
+      <div class="value">
+        <div class="flameIconConatiner" *ngIf="isAllLeads && leadsWidget?.hotLeadInProgress > 0">
+          <se-icon class="hidden-md-down" name="flame-hotlead" color="orange" size="29"></se-icon>
+          <se-icon class="hidden-lg-up" name="flame-hotlead" color="orange" size="22"></se-icon>
+        </div>
+        <span class="valueLeads att-blue">{{inProgress}}</span>
+      </div>
+      <div class="unit att-gray">In Progress</div>
+    </div>
+    <div class="value-pair">
+      <div class="value">
+        <div class="flameIconConatiner" *ngIf="isAllLeads && leadsWidget?.hotLeadPromoted > 0">
+          <se-icon class="hidden-md-down" name="flame-hotlead" color="orange" size="29"></se-icon>
+          <se-icon class="hidden-lg-up" name="flame-hotlead" color="orange" size="22"></se-icon>
+        </div>
+        <span class="valueLeads att-blue">{{promoted}}</span>
+      </div>
+      <div class="unit att-gray">Promoted</div>
+    </div>
+  </div>
+  <div>
+    <div class="leads-circle att-white" [ngClass]="{ 'all_leads': isAllLeads, 'hot_leads': isHotLeads, 'zero': count < 1 }">
+      <se-badge *ngIf="isHotLeads" background="white" shadow="true">
+        <se-icon name="flame-hotlead" color="{{ count < 1 ? 'gray' : 'orange' }}" size="32"></se-icon>
+      </se-badge>
+      <div>{{count}}</div>
+    </div>
+    <div class="label att-gray">{{label}}</div>
+    <div class="switch">
+      <toggle-switch (change)="toggleSelectedLead()"></toggle-switch>
+    </div>
+  </div>
+</div>

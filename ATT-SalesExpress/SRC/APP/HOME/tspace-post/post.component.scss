@@ -1,0 +1,18 @@
+input.uploadFile {display: none;}
+.post-comp {margin-bottom: 20px;}
+
+.fileName{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+  font-style: Omnes_ATT II Light;
+}
+.disp_on_device {
+  display: none;
+}
+@media only screen and (device-width: 768px) {
+  .disp_on_device {
+    display: inline;
+  }
+}

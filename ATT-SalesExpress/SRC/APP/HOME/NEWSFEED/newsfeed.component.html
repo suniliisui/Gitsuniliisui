@@ -1,0 +1,60 @@
+<div class="newsfeed">
+	<div class="row news-source">
+		<div class="col-md-7 col-lg-8 news-source-text">
+		</div>
+		<div class="col-md-5 col-lg-4 news-source-list">
+			<!-- <se-action-button [label]="actionLabel" [values]="actionValues" (change)="actionSourceChange($event)"></se-action-button> -->
+			<se-dropdown-menu [label]="actionLabel" [values]="actionValues" (change)="actionSourceChange($event)"></se-dropdown-menu>
+		</div>
+	</div>
+
+	<div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-plain" *ngFor="let entry of newsArticles; let i = index">
+			<div class="panel-heading" role="tab" attr.id="headingOne{{i}}">
+				<h6 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" attr.href="#collapseOne{{i}}" aria-expanded="true" attr.aria-controls="collapseOne{{i}}"
+						class="news-heading collapsed" draggable="false">
+						<div class="row">
+							<span class="col-md-10">
+								<div [class.news-subject]="!expandedIndex[i]"  [class.news-sub]="expandedIndex[i]"  (click)="triggerCollapse($event, i)">
+									{{entry.headline}}
+								</div>
+							</span>
+							<div class="custom-arrow-container" (click)="triggerCollapse($event, i)">
+								<span class="chevron" id="custom-arrow" [class.icon-arrow_down]="!expandedIndex[i]" [class.icon-carrot_up]="expandedIndex[i]"></span>
+							</div>
+							<div class="col-md-10 news-heading-padding grey-text">
+								<div class="col-md-10">
+									<span class="source-text">
+                    {{entry.source}}
+                  </span> {{entry.pubDateTimeValue | date: 'MMM dd, y'}} at {{entry.pubDateTimeValue | date: 'h:mm a'}}
+								</div>
+							</div>
+							<div class="col-md-12 s-contents" [ngbCollapse]="expandedIndex[i]">
+								<label id="newsFeedContent">
+                  {{entry.abstract | slice:0:250}}...
+                </label>
+              </div>
+              <div class="col-md-12 s-contents" [ngbCollapse]="!expandedIndex[i]">
+                <div class="panel-body">
+                  <div class="s-contents stop">
+                    {{entry.abstract}}
+                  </div>
+                </div>
+                <div class="read-full">
+                  <a href="javascript:void(0)" (click)= "goToReadArticleUrl(entry.url)" >
+                    Read Full Article
+                  </a>
+									<span class="icon-expand read-full-img"></span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</h6>
+			</div>
+		</div>
+		<div *ngIf="(totalElements < 1)" class="no-record-error">
+			No Records to display
+		</div>
+	</div>
+</div>

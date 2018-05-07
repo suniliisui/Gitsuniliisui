@@ -1,0 +1,66 @@
+[{
+  "name":"0",
+  "value":"Ariba",
+  "label":"Ariba"
+},
+{
+  "name":"1",
+  "value":"Coupa",
+  "label":"Coupa"
+},
+{
+  "name":"2",
+  "value":"eSchoolMall",
+  "label":"eSchoolMall"
+},
+{
+  "name":"3",
+  "value":"GHX",
+  "label":"GHX"
+},
+{
+  "name":"4",
+  "value":"Jaggaer",
+  "label":"Jaggaer"
+},
+{
+  "name":"5",
+  "value":"Lawson",
+  "label":"Lawson"
+},
+{
+  "name":"6",
+  "value":"Oracle",
+  "label":"Oracle"
+},
+{
+  "name":"7",
+  "value":"PeopleSoft",
+  "label":"PeopleSoft"
+},
+{
+  "name":"8",
+  "value":"Quosal",
+  "label":"Quosal"
+},
+{
+  "name":"9",
+  "value":"Quoteworks",
+  "label":"Quoteworks"
+},
+{
+  "name":"10",
+  "value":"SAP",
+  "label":"SAP"
+},
+{
+  "name":"11",
+  "value":"Skyward",
+  "label":"Skyward"
+},
+{
+  "name":"12",
+  "fontStyle":"bold",
+  "value":"",
+  "label":"Enter a different purchasing system"
+}]

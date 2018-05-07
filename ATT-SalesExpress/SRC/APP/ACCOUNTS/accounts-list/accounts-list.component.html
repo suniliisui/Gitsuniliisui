@@ -1,0 +1,12 @@
+<div class="container-fluid">
+	<div class="row heading">
+		<span>Accounts</span>
+		<se-dropdown-menu [label]="dropDownAccountLabel" [values]="dropDownAccountList" (change)="actionSourceChange($event)"></se-dropdown-menu>
+	</div>
+	<se-table class="dataTableStyles" (handleRowSelect)="handleRowSelected($event)" (searchOnServer)="searchOnServer($event)"
+		(doServerSideSorting)="doServerSideSorting($event)" (handleRowExpand)="handleShowAccountDetails($event)">
+		<template #headingContext>
+			<button type="button" [disabled]="disableDetailBtn" class="btn btn-primary viewBtn" routerLink="{{accountInContext}}/details">View Details</button><br>
+		</template>
+	</se-table>
+</div>

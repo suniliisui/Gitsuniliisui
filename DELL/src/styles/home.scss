@@ -1,0 +1,320 @@
+h1 {
+    color: grey;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 0px solid grey;
+    padding: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.brand-logo {
+    text-align: left;
+    height: 50px;
+}
+
+.react-bs-table-container {
+    .react-bs-table table {
+        table-layout: fixed;
+        thead {
+            tr {
+                th {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.div-step2-selected-wip,
+.div-step3-selected-wip,
+.div-step4-selected-wip {
+    display: block;
+    padding-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border-top: 2px solid #6ea204;
+    border-bottom: 2px solid #6ea204;
+    opacity: 1;
+}
+
+.erp-integration-form {
+    .div-step2-selected {
+        .w-row {
+            .w-col.w-col-11 {
+                .form {
+                    .radio-button {
+                        .w-radio-input {
+                            top: 5px;
+                        }
+                        label {
+                            padding: 2px 10px 2px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stepper-component {
+    border: 1px dashed #f00;
+}
+
+.FormInput .FormError {
+    display: none !important;  
+}
+
+.get-started-step.get-started-step-align {
+    display: block;
+    .numbered-circle {
+        position: relative;
+        left: 25%;
+    }
+}
+
+.react-bs-container-header table {
+    margin-bottom: 0;
+}
+
+
+/*....Start - ERP form modifications according to prototypes....*/
+
+.margin-left-n20 {
+    margin-left: -20px !important;
+}
+
+.padding-left-0 {
+    padding-left: 0px !important;
+}
+
+.margin-left-0 {
+    margin-left: 0px !important;
+}
+
+.step-progress-wrapper {
+    .progress-bar {
+        .progress-step {
+            .progress-step-title {
+                color: #333;
+            }
+        }
+        .finish {
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*....End - ERP form modifications according to prototypes....*/
+
+.intDetailsChevronRotation {
+    transform-style: preserve-3d; 
+    transition: transform 200ms; 
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+}
+
+/*....Start - PanelGroup Styles override....*/
+
+.panel-group{
+    .panel-default{
+        border-color: #ffffff;
+        .panel-heading{
+            background-color: #ffffff;
+            border-top: 1px solid rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+        .panel-body{
+            padding: 0px;
+            border-top: 0;
+            .table-row-block{
+                padding: 5px 6px;
+            }
+        }
+    }
+    .panel-heading+.panel-collapse>.panel-body{
+        border-top: 0;
+    }
+    .panel{
+        margin-top:0;
+        border: 0;
+    }
+    .panel+.panel{
+        margin-top:0;
+    }
+}
+.border-top-0{
+    border-top: 0 !important;
+}
+.padding-top-0{
+    padding-top:0 !important;
+}
+.table-row-block:hover{
+    background-color: #ffffff !important;
+}
+.accordion-link-block-title{
+    cursor: pointer;
+}
+.table-accordian{
+    a{
+        text-decoration: none;
+    }
+}
+
+/*....End - PanelGroup Styles override....*/
+
+
+/*....Start - ERP integration new design Styles override....*/
+
+.show-password-checkbox{
+    margin: 4px !important;
+}
+/*....End - ERP integration new design Styles override....*/
+
+/*.slide-pane__content div:first-child{
+    padding-bottom: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+.slide-pane__content div:nth-child(2) {
+    color: #000;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 300;
+    }
+
+  .slide-pane__content div:nth-child(3){
+    color: #000;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 300;
+     
+}*/
+
+.Accordiantext{
+    line-height: 25px;
+}
+.accordion-item a {
+    text-decoration: none;
+    &:hover,focus{
+        text-decoration: none
+    }
+}
+.accordion-item{
+    font-size:16px;
+    line-height: 3;
+    position: relative;
+    display: block;
+    border-top: 1px solid #d4d4d4;
+}
+
+.accordion-item-text{
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+
+}
+
+.display-none {
+  display: none;  
+}
+
+.req-activation-exit{
+    padding: 10px 45px !important;
+}
+
+/*....End - ERP integration new design Styles override....*/
+
+
+.glyphicon {
+margin-right: 10px;
+}
+
+.ReactModal__Overlay
+{
+  overflow-y: auto ;
+  overflow-x:hidden;
+}
+
+.ReactModal__Body--open
+{
+    height: 100%  ;
+    overflow: hidden  ;
+}
+
+.accordion-item a:hover, .accordion-item a focus{
+    cursor: pointer;
+}
+// for breadcrumb margin
+.setmargin:last-child{
+    color:#5200cd
+}
+.breadcrumb-icon {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Fontawesome webfont', sans-serif;
+    color: #aaa;
+  }
+  
+  .breadcrumb-icon-home {
+    font-family: 'Icon small', sans-serif;
+    color: #aaa;
+    font-size: 12px;
+  }
+  
+  .breadcrumb-link {
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .swal-title {
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: left !important;
+  }
+  .swal2-popup .swal2-content {
+    margin-top: 0;  
+    text-align: left;
+    font-size: 14px;  
+  }
+  .swal2-popup .swal2-title {    
+    text-align: left;    
+  }
+  .swal2-popup .swal2-buttonswrapper {
+    margin-top: 0px;
+  }
+  .swal2-confirm .swal2-styled {
+    margin-top: 0px;
+  }
+  .swal2-popup .swal2-styled {
+    margin-top: 0px;
+  }  
+
+
+
+div.Breadcrumb {
+    span:last-child{
+        a.breadcrumb-link:last-child {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}

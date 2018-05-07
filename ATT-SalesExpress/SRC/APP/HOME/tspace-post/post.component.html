@@ -1,0 +1,41 @@
+<div id="UpdatedPost" class="post-comp">
+  <form (ngSubmit)="createPost()" #postform="ngForm">
+    <div class="row">
+      <div class="col-md-12">
+        <textarea class="form-control" name="myPost" [(ngModel)]="postform.myPost" placeholder="Type your post..." rows="5" cols="50"></textarea>
+      </div>
+    </div>
+    <div class="row margin-top-custom">
+      <div class="col-md-6 ">
+        <span class="custom-click" (click)="file.click()"><se-icon name="clip" color="blue" size="small"></se-icon></span>
+        <span>Attach file</span>
+        <input type="file" id="file" [(ngModel)]="postform.attachfile" name="attachfile" class="uploadFile" (change)="attachFile(file)"
+          #file>
+        <!--
+      <button type="button" class="btn btn-secondary custom-btn-nobg " >
+      <se-icon name="clip" color="blue" size="32px" ></se-icon> Attached File</button>
+      -->
+        <span class="disp_on_device">
+          <span>|</span>
+        <span class="btn btn-secondary custom-btn-nobg" (click)="file.click()">
+            <se-icon name = "camera" color="blue" size="32px"></se-icon> 
+          </span>
+        <span> Take Photo </span>
+        </span>
+      </div>
+      <div class="col-md-6 text-right">
+        <button type="button" class="btn btn-secondary " (click)="postform.reset()">Cancel</button>
+        <button type="button" class="btn btn-primary " (click)="createPost(postform)">Post</button>
+      </div>
+    </div>
+    <div class="row" style="margin-left:15px;">
+      <div class="col-md-12 fileName">
+        {{fileName}}
+      </div>
+      <!--<div class="col-md-6 fileName">
+                    {{fileName}}
+                </div> -->
+    </div>
+
+  </form>
+</div>

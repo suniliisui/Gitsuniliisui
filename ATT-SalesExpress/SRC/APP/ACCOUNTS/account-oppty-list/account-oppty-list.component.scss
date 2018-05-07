@@ -1,0 +1,70 @@
+.inputDiv {
+  clear: both;
+  .search {
+    margin: 25px 0px 15px;
+  }
+  .no-opptys {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .searchBox {
+    width: 25%;
+    height: 35px;
+    background-color: #f8fcff !important;
+    padding: 1px 11px;
+    text-align: left;
+    border: 1px #d2d2d2 solid;
+    border-radius: .25rem;
+    color: #959595;
+    float: left;
+  }
+  /* Fix for specific to IE11 */
+  .searchBox::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  /* IE11 */
+  .searchIcon {
+    background-color: #009fdb;
+    width: 40px;
+    height: 35px;
+    color: #fff;
+    float: left;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -2px;
+  }
+  .icon-accounts-tspace-search {
+    display: table;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .clearDiv {
+    clear: both;
+  }
+}
+
+.tableDiv {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.opptyDetails {
+  margin-left: 18%;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  label {
+    font-weight: bold;
+  }
+}
+
+
+/* iPad specific updates */
+
+@media only screen and (device-width: 768px) {
+  .inputDiv {
+    .searchBox {
+      width: 35%;
+    }
+  }
+}

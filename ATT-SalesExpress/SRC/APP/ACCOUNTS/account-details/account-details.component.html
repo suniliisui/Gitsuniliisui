@@ -1,0 +1,67 @@
+<div class="row acountDiv">
+	<div class="detailsMainContainer">
+		<div class="col-md-3 imgContainer">
+			<div class="accountLogoDiv" *ngIf="imageSrc">
+				<div class="accountLogo"><img *ngIf="imageSrc" [src]="imageSrc" title="Account Logo" draggable="false" /></div>
+				<div><a class="se_link" href="javascript:void(0)" (click)="editClick()" draggable="false" ondragstart="return false;">Edit</a></div>
+			</div>
+			<input #fileInput type="file" accept="image/*" (change)="changeListener($event)" id="imgFile" class="hiddenBtn">
+		</div>
+		<div class="col-md-6">
+			<div><span class="se_h1">{{accountDetails?.subAccountName}}</span></div>
+			<div class="accountDetails">
+				<div class="col-md-7 p-l-0">
+
+					<div class="se_label">Address:</div>
+					<div class="se_nowrap">{{accountDetails?.primaryAddress}}&nbsp;
+						<a routerLink="/coming-soon" draggable="false" ondragstart="return false;"><span class="icon-accounts-tspace-map nav_link"></span></a>
+					</div>
+					<div class="se_text1">{{accountDetails?.primaryCity}}, {{accountDetails?.primaryState}} {{accountDetails?.primaryZipCode | seZipCode}}</div>
+					<div class="se_label">Contact Phone Number:</div>
+					<div class="se_text">{{accountDetails?.primaryContactPhone | sePhone}}</div>
+					<div class="se_label">Account Phone Number:</div>
+					<div class="se_text">{{accountDetails?.customerPhone | sePhone}}</div>
+					<div class="se_label">Email:</div>
+					<div class="se_text"><a class="se_link" href="mailto:{{accountDetails.primaryContactEmail}}">{{accountDetails?.primaryContactEmail}}</a></div>
+				</div>
+				<div class="col-md-5 p-l-0">
+					<div class="se_label">SVID:</div>
+					<div class="se_text">{{accountDetails?.sVId}}</div>
+					<div class="se_label">Status:</div>
+					<div class="se_text">{{accountDetails?.status}}</div>
+					<div class="se_label">Sub-Account ID:</div>
+					<div class="se_text">{{accountDetails?.sAARTAccountId}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 btnDiv">
+			<div>
+				<button type="button" class="btn btn-secondary btn-detail icon-star" routerLink="/coming-soon"><span class="favorite">Favorite</span></button>
+			</div>
+			<div class="m-t-20">
+				<button type="button" class="btn btn-secondary btn-detail" routerLink="/coming-soon">Follow on tSpace</button>
+			</div>
+			<div class="m-t-20 w200">
+				<!-- TODO disabled until scope defined -->
+				<se-action-button label="Create New" [values]="accountsActionValues" (change)="handleActionChange($event)" [disabled]="true"></se-action-button>
+			</div>
+		</div>
+		<div class="cleardiv"></div>
+	</div>
+	<div class="opptyTableContainer">
+		<hr class="hr-line">
+		<div class="oppt-heading">
+			<div class="col-md-8 oppty-label">Opportunities</div>
+			<div class="col-md-4 salesStageList">
+				<se-dropdown-menu [label]="opptySalesStagesLabel" [values]="opptySalesStages" (change)="actionSourceChange($event)"></se-dropdown-menu>
+			</div>
+		</div>
+		<div>
+			<se-account-oppty-table class="opptyTable" (handleRowSelect)="handleRowSelected($event)" (searchOnServer)="searchOnServer($event)"
+				(doServerSideSorting)="doServerSideSorting($event)" (handleRowExpand)="handleShowOptyDetails($event)" [noRecord]="noRecords"></se-account-oppty-table>
+			<div class="opptyBtnDiv">
+				<button type="button" class="btn btn-lg oppty-btn" [disabled]="disableOpptyButton" routerLink="/coming-soon">Open Opportunity</button>
+			</div>
+		</div>
+	</div>
+</div>

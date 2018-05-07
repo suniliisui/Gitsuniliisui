@@ -1,0 +1,13 @@
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.btn-flex .btn-primary {
+  text-align: left;
+}
+
+.btn-flex .dropdown-toggle-split {
+  border-left: 1px solid white;
+}

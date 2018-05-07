@@ -1,0 +1,29 @@
+<!-- this needs to be re-written on another user story regarding contracts widget,
+      for now, all most of the values are hard-coded -->
+<div class="labelView">{{contractsWidgetData.label}}</div>
+<div class="contracts-widget">
+  <div class="btn-group dropdown">
+    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <div class="content">
+    <div>
+      <img src="assets/images/avatar.png"/>
+      <span class="label">Tony Starks' Company</span>
+    </div>
+    <div>
+      <div class="value-pair" *ngFor="let value of contractsWidgetData.values">
+        <span class="value">{{value[0]}}</span>
+        <span class="unit">{{value[1]}}</span>
+      </div>
+    </div>
+  </div>
+</div>

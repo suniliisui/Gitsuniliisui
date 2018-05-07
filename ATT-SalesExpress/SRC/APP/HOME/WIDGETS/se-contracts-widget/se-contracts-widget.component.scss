@@ -1,0 +1,71 @@
+.labelView {
+  line-height: 1rem;
+  font-weight: 600;
+  color: #009fdb;
+  padding: 5px 10px 10px 6px;
+  font-size: 24px;
+}
+
+.contracts-widget {
+  margin-bottom: 16px;
+  border: 1px solid #D5DAD6;
+  .dropdown {
+    padding: 16px;
+    width: 100%;
+    button {
+      width: 100%;
+      text-align: left;
+    }
+    button:after {
+      float: right;
+      margin-top: 6px;
+    }
+  }
+  .content {
+    display: flex;
+    padding-bottom: 16px;
+    flex-direction: row;
+    >div {
+      flex-basis: 50%;
+      padding: 0 16px;
+      text-align: center;
+      color: #31A1CC;
+      >img {
+        margin-bottom: 8px;
+      }
+    }
+    >div+div {
+      padding-left: 0;
+      border-left: 1px solid #E5EAE6;
+      line-height: 90%;
+      text-align: right;
+      .value-pair {
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+      .value {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #31A1CC;
+      }
+      .unit {
+        color: #878278;
+      }
+    }
+    .label {
+      line-height: 1rem;
+      font-size: 0.9rem;
+      color: #244A6F;
+    }
+  }
+}
+
+.actionbar {
+  text-align: right;
+  color: #31A1CC;
+  >i {
+    position: relative;
+    top: 2px;
+  }
+}
